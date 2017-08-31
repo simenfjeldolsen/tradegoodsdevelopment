@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_tradegoodsdevelopment"
+		texturefile = "gfx//interface//buildings//latin_grain_depot.tga"
+		loadType = "INGAME"
+	}
