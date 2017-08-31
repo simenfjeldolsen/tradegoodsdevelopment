@@ -2644,7 +2644,28 @@ guiTypes = {
 				maxHeight = 20
 				format = center
 			}
+			# Orthodox Patriarch - TODO
+			iconType = {
+				name = "patriarch_bg"
+				spriteType = "GFX_patriarchy_slot"
+				position = { x = 12 y = 419 }
+			}			
+	
+			guiButtonType = {
+				name ="consecrate_patriarch_button"
+				quadTextureSprite = "button_type_4"
+				buttonFont = "vic_18"
+				buttonText = "CONSECRATE_BUTTON"
 
+				position = { x = 24 y = 427 }
+			}
+
+			iconType =
+			{
+				name = "consecrate_patriarch"
+				spriteType = "GFX_patriarch_icon"
+				position = { x = 258 y = 426 }
+			}
 		}
 
 		## State Window

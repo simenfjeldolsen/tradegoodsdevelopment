@@ -11,36 +11,8 @@ tradegoodsdevelopment = {
 				owner = { grain = 3 }
 			}
 			AND = {
-				trade_goods = barley
-				owner = { barley = 3 }
-			}
-			AND = {
-				trade_goods = rye
-				owner = { rye = 3 }
-			}
-			AND = {
-				trade_goods = maize
-				owner = { maize = 3 }
-			}
-			AND = {
-				trade_goods = rice
-				owner = { rice = 3 }
-			}
-			AND = {
-				trade_goods = millet
-				owner = { millet = 3 }
-			}
-			AND = {
-				trade_goods = sorghum
-				owner = { sorghum = 3 }
-			}
-			AND = {
 				trade_goods = olives
 				owner = { olives = 3 }
-			}
-			AND = {
-				trade_goods = palm_oil
-				owner = { palm_oil = 2 }
 			}
 			AND = {
 				trade_goods = potatoes
@@ -71,14 +43,6 @@ tradegoodsdevelopment = {
 				owner = { tea = 2 }
 			}
 			AND = {
-				trade_goods = opium
-				owner = { opium = 2 }
-			}
-			AND = {
-				trade_goods = livestock
-				owner = { livestock = 2 }
-			}
-			AND = {
 				trade_goods = cheese
 				owner = { cheese = 2 }
 			}
@@ -87,16 +51,8 @@ tradegoodsdevelopment = {
 				owner = { horses = 2 }
 			}
 			AND = {
-				trade_goods = apiculture
-				owner = { apiculture = 2 }
-			}
-			AND = {
 				trade_goods = fish
 				owner = { fish = 2 }
-			}
-			AND = {
-				trade_goods = whaling
-				owner = { whaling = 2 }
 			}
 			AND = {
 				trade_goods = wine
@@ -115,14 +71,6 @@ tradegoodsdevelopment = {
 				owner = { wool = 2 }
 			}
 			AND = {
-				trade_goods = cashmere
-				owner = { cashmere = 2 }
-			}
-			AND = {
-				trade_goods = camel
-				owner = { camel = 2 }
-			}
-			AND = {
 				trade_goods = cotton
 				owner = { cotton = 2 }
 			}
@@ -135,20 +83,8 @@ tradegoodsdevelopment = {
 				owner = { silk = 2 }
 			}
 			AND = {
-				trade_goods = linen
-				owner = { linen = 2 }
-			}
-			AND = {
-				trade_goods = hemp
-				owner = { hemp = 2 }
-			}
-			AND = {
 				trade_goods = fur
 				owner = { fur = 2 }
-			}
-			AND = {
-				trade_goods = leather
-				owner = { leather = 2 }
 			}
 			AND = {
 				trade_goods = naval_supplies
@@ -159,44 +95,12 @@ tradegoodsdevelopment = {
 				owner = { tar = 2 }
 			}
 			AND = {
-				trade_goods = lumber
-				owner = { lumber = 2 }
-			}
-			AND = {
 				trade_goods = tropical_wood
 				owner = { tropical_wood = 2 }
 			}
 			AND = {
-				trade_goods = sandal
-				owner = { sandal = 2 }
-			}
-			AND = {
-				trade_goods = ebony
-				owner = { ebony = 2 }
-			}
-			AND = {
-				trade_goods = mahogany
-				owner = { mahogany = 2 }
-			}
-			AND = {
-				trade_goods = teak
-				owner = { teak = 2 }
-			}
-			AND = {
-				trade_goods = bloodwood
-				owner = { bloodwood = 2 }
-			}
-			AND = {
 				trade_goods = dyes
 				owner = { dyes = 2 }
-			}
-			AND = {
-				trade_goods = woad
-				owner = { woad = 2 }
-			}
-			AND = {
-				trade_goods = carmine
-				owner = { carmine = 2 }
 			}
 			AND = {
 				trade_goods = ivory
@@ -211,20 +115,8 @@ tradegoodsdevelopment = {
 				owner = { glass = 2 }
 			}
 			AND = {
-				trade_goods = obsidian
-				owner = { obsidian = 2 }
-			}
-			AND = {
-				trade_goods = jade
-				owner = { jade = 2 }
-			}
-			AND = {
 				trade_goods = chinaware
 				owner = { chinaware = 2 }
-			}
-			AND = {
-				trade_goods = carpet
-				owner = { carpet = 2 }
 			}
 			AND = {
 				trade_goods = slaves
@@ -233,14 +125,6 @@ tradegoodsdevelopment = {
 			AND = {
 				trade_goods = gold
 				owner = { gold = 2 }
-			}
-			AND = {
-				trade_goods = silver
-				owner = { silver = 2 }
-			}
-			AND = {
-				trade_goods = gems
-				owner = { gems = 2 }
 			}
 			AND = {
 				trade_goods = iron
@@ -267,10 +151,6 @@ tradegoodsdevelopment = {
 				owner = { mercury = 2 }
 			}
 			AND = {
-				trade_goods = coal
-				owner = { coal = 3 }
-			}
-			AND = {
 				trade_goods = steel
 				owner = { steel = 2 }
 			}
@@ -279,44 +159,16 @@ tradegoodsdevelopment = {
 				owner = { salt = 2 }
 			}
 			AND = {
-				trade_goods = sulphur
-				owner = { sulphur = 2 }
-			}
-			AND = {
-				trade_goods = cinnamon
-				owner = { cinnamon = 2 }
-			}
-			AND = {
 				trade_goods = spices
 				owner = { spices = 2 }
-			}
-			AND = {
-				trade_goods = nutmeg
-				owner = { nutmeg = 2 }
-			}
-			AND = {
-				trade_goods = clove
-				owner = { clove = 2 }
-			}
-			AND = {
-				trade_goods = saffron
-				owner = { saffron = 2 }
 			}
 			AND = {
 				trade_goods = vanilla
 				owner = { vanilla = 2 }
 			}
 			AND = {
-				trade_goods = ginger
-				owner = { ginger = 2 }
-			}
-			AND = {
 				trade_goods = paper
 				owner = { paper = 2 }
-			}
-			AND = {
-				trade_goods = jewelry
-				owner = { jewelry = 2 }
 			}
 			AND = {
 				trade_goods = munitions
@@ -325,10 +177,6 @@ tradegoodsdevelopment = {
 			AND = {
 				trade_goods = machinery
 				owner = { machinery = 2 }
-			}
-			AND = {
-				trade_goods = furniture
-				owner = { furniture = 2 }
 			}
 		}
 	}
