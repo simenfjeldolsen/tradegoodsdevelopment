@@ -14,6 +14,14 @@ province_event = {
 	immediate = {
 		hidden_effect = {
 			remove_building = tradegoodsdevelopment
+
+			remove_province_modifier = stora_kopparberget_modifier
+			remove_province_modifier = cerro_rico_modifier
+			remove_province_modifier = spice_islands_modifier
+			remove_province_modifier = skanemarket
+			remove_province_modifier = hab_schwaz_mine
+
+
 			owner = { every_owned_province = { remove_building = tradegoodsdevelopment } }
 			add_province_modifier = { name = "recently_changed_goods_timer" duration = 10950 }
 			if = {
