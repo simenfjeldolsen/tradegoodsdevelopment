@@ -429,7 +429,7 @@ potatoes = {
 citrus = {
 	#south europe, china
 	color = { 0.90 0.50 0.20 }
-	modifier = { sailor_maintenance_modifer = -0.3 }
+	modifier = { sailor_maintenance_modifer = -0.1 }
 	province = { local_monthly_devastation = -0.1 }
 	chance = {
 		factor = 10
