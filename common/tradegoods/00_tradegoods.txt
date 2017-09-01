@@ -1242,7 +1242,7 @@ beer = {
 }
 rum = {
 	#sugar-based. Caribbean, new england
-	color = { 0.40 0.20 0.20 }
+	color = { 244 185 66 }
 	modifier = { naval_morale = 0.10 }
 	province = { local_unrest = -2 }
 	chance = {
@@ -2132,7 +2132,7 @@ copper = {
 }
 tin = {
  	#used in bronze making, and the increasingly popular pewter
-	color = { 0.55 0.45 0.50 }
+	color = { 139 234 239 }
 	modifier = { artillery_power = 0.1 }
 	province = { production_efficiency = 0.1 }
 	chance = {
