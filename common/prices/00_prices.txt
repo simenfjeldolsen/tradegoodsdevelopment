@@ -65,4 +65,3 @@ machinery	=	{ base_price = 4 }
 uniforms	=	{ base_price = 3.5 }
 
 unknown		=	{ base_price = 0 }
-dummy_good	=	{ base_price = 0 }

@@ -2516,7 +2516,3 @@ uniforms = {
 unknown = {
 	color = { 0.5 0.5 0.5 }
 }
-dummy_good = {
-	color = { 0.00 0.00 0.00 }
-	chance = { factor = 0 }
-}
