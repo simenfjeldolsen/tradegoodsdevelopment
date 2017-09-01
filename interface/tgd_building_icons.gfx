@@ -5,3 +5,4 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//latin_grain_depot.tga"
 		loadType = "INGAME"
 	}
+}
