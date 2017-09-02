@@ -8,15 +8,15 @@ tradegoodsdevelopment = {
 		OR = {
 			AND = {
 				trade_goods = grain
-				owner = { grain = 3 }
+				owner = { grain = 2 }
 			}
 			AND = {
 				trade_goods = olives
-				owner = { olives = 3 }
+				owner = { olives = 2 }
 			}
 			AND = {
 				trade_goods = potatoes
-				owner = { potatoes = 3 }
+				owner = { potatoes = 2 }
 			}
 			AND = {
 				trade_goods = citrus
@@ -132,7 +132,7 @@ tradegoodsdevelopment = {
 			}
 			AND = {
 				trade_goods = copper
-				owner = { copper = 3 }
+				owner = { copper = 2 }
 			}
 			AND = {
 				trade_goods = tin
