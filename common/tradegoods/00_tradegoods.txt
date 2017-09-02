@@ -294,7 +294,7 @@ vanilla = {
 olives = {
 	#mediterranean staple
 	color = { 0.20 0.35 0.00 }
-	modifier = { stability_cost_modifier = -0.15 }
+	modifier = { global_autonomy = -0.05 }
 	province = { local_monthly_devastation = -0.1 }
 	chance = {
 		factor = 20
@@ -429,7 +429,7 @@ potatoes = {
 citrus = {
 	#south europe, china
 	color = { 0.90 0.50 0.20 }
-	modifier = { sailor_maintenance_modifer = -0.3 }
+	modifier = { sailor_maintenance_modifer = -0.1 }
 	province = { local_monthly_devastation = -0.1 }
 	chance = {
 		factor = 10
@@ -1242,7 +1242,7 @@ beer = {
 }
 rum = {
 	#sugar-based. Caribbean, new england
-	color = { 0.40 0.20 0.20 }
+	color = { 244 185 66 }
 	modifier = { naval_morale = 0.10 }
 	province = { local_unrest = -2 }
 	chance = {
@@ -2132,7 +2132,7 @@ copper = {
 }
 tin = {
  	#used in bronze making, and the increasingly popular pewter
-	color = { 0.55 0.45 0.50 }
+	color = { 139 234 239 }
 	modifier = { artillery_power = 0.1 }
 	province = { production_efficiency = 0.1 }
 	chance = {
@@ -2515,8 +2515,4 @@ uniforms = {
 
 unknown = {
 	color = { 0.5 0.5 0.5 }
-}
-dummy_good = {
-	color = { 0.00 0.00 0.00 }
-	chance = { factor = 0 }
 }
