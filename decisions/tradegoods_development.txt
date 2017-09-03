@@ -24,5 +24,41 @@ country_decisions = {
 			factor = 0
 		}
 	}
+	subject_dev = {
+		major = yes
+		potential = {
+			ai = no
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = manual_dev_explanation
+
+				any_subject_country = {
+					is_colonial_nation = yes
+					any_owned_province = {
+						has_building = tradegoodsdevelopment
+					}
+				}
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					is_colonial_nation = yes
+					any_owned_province = {
+						has_building = tradegoodsdevelopment
+					}
+				}
+				random_owned_province = {
+					limit = { has_building = tradegoodsdevelopment }
+					custom_tooltip = manual_dev_fire
+				}
+			}
+			hidden_effect = { country_event = { id = tgd_tradegoodsdevelopment.11 } }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
 }

@@ -15,14 +15,14 @@ tea			=	{ base_price = 3 }
 cheese 		=	{ base_price = 3.5 }
 horses		=	{ base_price = 2.5 }
 fish		=	{ base_price = 2.5 }
-wine 		= 	{ base_price = 3 }
+wine 		= 	{ base_price = 2.5 }
 beer		=	{ base_price = 2.5 }
 rum			=	{ base_price = 3 }
 
 #textiles
 wool		=	{ base_price = 2.5 }
 cotton		=	{ base_price = 3 }
-cloth		=	{ base_price = 3.5 }
+cloth		=	{ base_price = 3 }
 silk		=	{ base_price = 4 }
 fur			=	{ base_price = 2 }
 

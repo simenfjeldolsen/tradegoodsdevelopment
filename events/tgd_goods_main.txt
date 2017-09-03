@@ -264,3 +264,510 @@ province_event = {
 		owner = {  add_treasury = -1000 }
 	}
 }
+
+country_event = {
+	id = tgd_tradegoodsdevelopment.11
+	title = tgd_tradegoodsdevelopment.11.t
+	desc = tgd_tradegoodsdevelopment.10.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	#immediate prevents player from enacting decision several times to get event in several provinces
+	#which can otherwise bypass the 'must have 3 of a good to develop' rule
+	#dev_tier variable adds up to +500 ducats
+	immediate = {
+		hidden_effect = {
+			every_subject_country = {
+				limit = {
+					any_owned_province = {
+						has_building = tradegoodsdevelopment
+					}
+				}
+				random_owned_province = {
+					limit = { has_building = tradegoodsdevelopment }
+
+					#remove_building = tradegoodsdevelopment
+
+					remove_province_modifier = stora_kopparberget_modifier
+					remove_province_modifier = cerro_rico_modifier
+					remove_province_modifier = spice_islands_modifier
+					remove_province_modifier = skanemarket
+					remove_province_modifier = hab_schwaz_mine
+
+
+					#owner = { every_owned_province = { remove_building = tradegoodsdevelopment } }
+					add_province_modifier = { name = "recently_changed_goods_timer" duration = 10950 }
+					if = {
+						limit = {
+							OR = {
+								has_terrain = glacier
+								has_terrain = desert
+								has_terrain = jungle
+							}
+						}
+						change_variable = { which = dev_tier_variable value = 4 }
+					}
+					if = {
+						limit = {
+							OR = {
+								has_terrain = highlands
+								has_terrain = mountain
+								has_terrain = coastal_desert
+								island = yes
+							}
+						}
+						change_variable = { which = dev_tier_variable value = 3 }
+					}
+					if = {
+						limit = {
+							OR = {
+								has_terrain = marsh
+								has_terrain = hills
+								has_terrain = coastline
+								has_terrain = steppe
+							}
+						}
+						change_variable = { which = dev_tier_variable value = 2 }
+					}
+					if = {
+						limit = {
+							OR = {
+								has_terrain = woods
+								has_terrain = drylands
+								has_terrain = savannah
+							}
+						}
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					#has_terrain = grasslands, value = 0
+					if = {
+						limit = { has_terrain = farmlands }
+						change_variable = { which = dev_tier_variable value = -1 }
+					}
+					if = {
+						limit = { is_overseas = yes }
+						change_variable = { which = dev_tier_variable value = -1 }
+					}
+					if = {
+						limit = { has_climate = arctic }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 10 }
+						change_variable = { which = dev_tier_variable value = 2 }
+					}
+					if = {
+						limit = { development = 20 }
+						change_variable = { which = dev_tier_variable value = 2 }
+					}
+					if = {
+						limit = { development = 30 }
+						change_variable = { which = dev_tier_variable value = 2 }
+					}
+				}
+			}
+		}
+	}
+
+	#custom triggers checks if relevant goods can be produced
+	#then fires goods change event in
+	option = {
+		name = tgd_tradegoodsdevelopment.10.nevermind
+		#remove_province_modifier = "recently_changed_goods_timer"
+		add_treasury = 200
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+			}
+		}
+		#hidden_effect = { set_variable = { which = dev_tier_variable value = 0 } }
+		custom_tooltip = nevermind_tooltip
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.horses
+		trigger = { colonial_nation_horses_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = horses
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
+		add_treasury = -100
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.beer
+		trigger = { colonial_nation_beer_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = beer
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		add_treasury = -250
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.tar
+		trigger = { colonial_nation_tar_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = tar
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
+		add_treasury = -100
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.olives
+		trigger = { colonial_nation_olives_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = olives
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
+		add_treasury = -100
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.cheese
+		trigger = { colonial_nation_cheese_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = cheese
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		add_treasury = -250
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.vanilla
+		trigger = { colonial_nation_vanilla_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = vanilla
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		add_treasury = -250
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.glass
+		trigger = { colonial_nation_glass_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = glass
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		add_treasury = -500
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.paper
+		trigger = { colonial_nation_paper_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = paper
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		add_treasury = -500
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.steel
+		trigger = { colonial_nation_steel_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = steel
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		add_treasury = -500
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.citrus
+		trigger = { colonial_nation_citrus_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = citrus
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		add_treasury = -250
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.zinc
+		trigger = { colonial_nation_zinc_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = zinc
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		add_treasury = -500
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.munitions
+		trigger = { colonial_nation_munitions_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = munitions
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		add_treasury = -500
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.tin
+		trigger = { colonial_nation_tin_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = tin
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		add_treasury = -500
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.potatoes
+		trigger = { colonial_nation_potatoes_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = potatoes
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
+		add_treasury = -100
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.rum
+		trigger = { colonial_nation_rum_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = rum
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		add_treasury = -250
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.uniforms
+		trigger = { colonial_nation_uniforms_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = uniforms
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
+		add_treasury = -1000
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.marble
+		trigger = { colonial_nation_marble_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = marble
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
+		add_treasury = -1000
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.machinery
+		trigger = { colonial_nation_machinery_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = machinery
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
+		add_treasury = -1000
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.lead
+		trigger = { colonial_nation_lead_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = lead
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
+		add_treasury = -1000
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.mercury
+		trigger = { colonial_nation_mercury_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				change_trade_goods = mercury
+			}
+		}
+		#dev_tier_cost_effect = yes
+		add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
+		add_treasury = -1000
+	}
+}

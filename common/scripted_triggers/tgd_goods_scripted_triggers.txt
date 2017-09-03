@@ -149,3 +149,224 @@ mercury_dev = {
 		adm_tech = 25
 	}
 }
+
+# For developing in Colonial nations
+
+colonial_nation_horses_dev ={
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			OR = {
+				has_terrain = grasslands
+				has_terrain = steppe
+				has_terrain = drylands
+			}
+		}
+	}
+} 
+colonial_nation_beer_dev = {
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+		}
+	}
+} 
+colonial_nation_tar_dev = {
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			OR = {
+				has_terrain = woods
+				has_terrain = forest
+			}
+		}
+	}
+}
+colonial_nation_olives_dev = {
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			NOT = { has_terrain = mountain }
+			NOT = { has_winter = severe_winter }
+			NOT = { has_winter = normal_winter }
+			NOT = { has_winter = mild_winter }
+		}
+	}
+} 
+colonial_nation_cheese_dev = {	
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+		}
+	}
+} 
+colonial_nation_vanilla_dev = {
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			OR = {
+				area = madagascar_highlands_area
+				area = betsimasaraka_area
+				area = sakalava_area
+				area = southern_madagascar
+			}
+		}
+	}
+} 
+colonial_nation_glass_dev = {
+	dip_tech = 5
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			development = 25
+		}
+	}
+} 
+colonial_nation_paper_dev = {
+	owner = {
+		adm_tech = 8
+	}
+	development = 18
+}
+colonial_nation_steel_dev = {
+	adm_tech = 9
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			OR = {
+				trade_goods = iron
+				trade_goods = copper
+				trade_goods = lead
+				trade_goods = mercury
+				trade_goods = tin
+				trade_goods = zinc
+			}
+		}
+	}
+}
+colonial_nation_citrus_dev = {
+	dip_tech = 12
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			NOT = { has_terrain = mountain }
+			NOT = { has_winter = severe_winter }
+			NOT = { has_winter = normal_winter }
+			NOT = { has_winter = mild_winter }
+		}
+	}
+}
+colonial_nation_zinc_dev = {
+	adm_tech = 13
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			OR = {
+				trade_goods = iron
+				trade_goods = copper
+				trade_goods = lead
+				trade_goods = mercury
+				trade_goods = tin
+				trade_goods = steel
+			}
+		}
+	}
+}
+colonial_nation_munitions_dev = {
+	adm_tech = 15
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			development = 30
+		}
+	}
+}
+colonial_nation_tin_dev = {
+	adm_tech = 16
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			OR = {
+				trade_goods = iron
+				trade_goods = copper
+				trade_goods = lead
+				trade_goods = mercury
+				trade_goods = zinc
+				trade_goods = steel
+			}
+		}
+	}
+}
+colonial_nation_potatoes_dev = {
+	dip_tech = 16
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			NOT = { has_terrain = mountain }
+			NOT = { has_terrain = glacier }
+			NOT = { has_terrain = desert }
+			NOT = { has_terrain = jungle }
+		}
+	}
+}
+colonial_nation_rum_dev {
+	dip_tech = 18
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+		}
+	}
+}
+colonial_nation_uniforms_dev = {
+	adm_tech = 19
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			OR = {
+				development = 35
+				AND = {
+					development = 25
+					OR = {
+						trade_goods = cloth
+						trade_goods = silk
+						trade_goods = dyes
+						trade_goods = wool
+					}
+				}
+			}
+		}
+	}
+}
+colonial_nation_marble_dev = {
+	adm_tech = 20
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+		}
+	}
+}
+colonial_nation_machinery_dev = {
+	dip_tech = 20
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			development = 20
+		}
+	}
+}
+colonial_nation_lead_dev = {
+	adm_tech = 21
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+		}
+	}
+}
+colonial_nation_mercury_dev = {
+	adm_tech = 25
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+		}
+	}
+}
