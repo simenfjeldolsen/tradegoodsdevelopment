@@ -1,4 +1,4 @@
-#checks for basic grains, for develop custo'm' triggers
+#title
 
 horses_dev ={
 	OR = {
@@ -8,6 +8,7 @@ horses_dev ={
 	}
 } 
 beer_dev = {	
+	NOT = { has_terrain = desert }
 }
 tar_dev = {
 	OR = {
@@ -40,6 +41,8 @@ tar_dev = {
 }
 olives_dev = {
 	NOT = { has_terrain = mountain }
+	NOT = { has_terrain = desert }
+	NOT = { has_terrain = jungle }
 	NOT = { has_winter = severe_winter }
 	NOT = { has_winter = normal_winter }
 	NOT = { has_winter = mild_winter }
@@ -55,7 +58,11 @@ vanilla_dev = {
 		area = mascarenes_area
 		province_id = 4020
 		province_id = 1201
-	} #all islands in Zanzibar
+		AND = {
+			region = mexico
+			development = 18
+		}
+	} #all islands in Zanzibar trade node, or high dev in mexico
 	owner = {
 		OR = {
 			dip_tech = 16
@@ -99,6 +106,7 @@ citrus_dev = {
 	NOT = { has_winter = severe_winter }
 	NOT = { has_winter = normal_winter }
 	NOT = { has_winter = mild_winter }
+	NOT = { has_terrain = desert }
 }
 zinc_dev = {
 	owner = {
@@ -117,7 +125,7 @@ munitions_dev = {
 	owner = {
 		adm_tech = 21
 	}
-	development = 30
+	development = 32
 }
 tin_dev = {
 	owner = {
@@ -136,7 +144,6 @@ potatoes_dev = {
 	owner = {
 		dip_tech = 16
 	}
-	NOT = { has_terrain = mountain }
 	NOT = { has_terrain = glacier }
 	NOT = { has_terrain = desert }
 	NOT = { has_terrain = jungle }
@@ -159,7 +166,7 @@ rum_dev {
 		area = eastern_llanos
 		area = venezuela_area
 		area = maracaibo_area
-	}
+	} # Caribbean trade node
 }
 uniforms_dev = {
 	owner = {
@@ -182,12 +189,17 @@ marble_dev = {
 	owner = {
 		adm_tech = 20
 	}
+	OR = {
+		has_terrain = mountain
+		has_terrain = highlands
+		has_terrain = hills
+	}
 }
 machinery_dev = {
 	owner = {
 		dip_tech = 20
 	}
-	development = 20
+	development = 25
 }
 lead_dev = {
 	owner = {
@@ -218,9 +230,9 @@ cinnamon_dev = {
 		trade_goods = spices
 		owner = {
 			OR = {
-				dip_tech = 20
+				dip_tech = 21
 				AND = {
-					dip_tech = 15
+					dip_tech = 16
 					cinnamon = 1
 				}
 			}
@@ -275,16 +287,22 @@ optics_dev = {
 	owner = {
 		dip_tech = 21
 	}
+	OR = {
+		development = 32
+		trade_goods = glass
+	}
 }
 gunpowder_dev = {
 	owner = {
 		adm_tech = 13
 	}
+	development = 25
 }
 leather_dev = {
 	owner = {
 		adm_tech = 9
 	}
+	development = 22
 }
 
 
@@ -308,6 +326,7 @@ colonial_nation_beer_dev = {
 	any_subject_country = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
+			NOT = { has_terrain = desert }
 		}
 	}
 } 
@@ -316,8 +335,31 @@ colonial_nation_tar_dev = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			OR = {
-				has_terrain = woods
-				has_terrain = forest
+				AND = {
+					has_terrain = woods
+					development = 16
+					has_port = yes
+				}
+				AND = {
+					has_terrain = forest
+					has_port = yes
+				}
+				OR = {
+					area = south_appalachia_area
+					area = chesapeake_area
+					area = great_valley_area
+					area = piedmont_north_america_area
+					area = american_georgia_area 
+					area = carolinas_area
+					area = south_carolina_area
+					area = upper_american_georgia_area
+					area = great_woods_area
+					area = massachusetts_bay_area
+					area = connecticut_valley_area
+					area = hudson_valley_area
+					area = delaware_valley_area
+					area = maryland_area
+				}
 			}
 		}
 	}
@@ -327,6 +369,8 @@ colonial_nation_olives_dev = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			NOT = { has_terrain = mountain }
+			NOT = { has_terrain = desert }
+			NOT = { has_terrain = jungle }
 			NOT = { has_winter = severe_winter }
 			NOT = { has_winter = normal_winter }
 			NOT = { has_winter = mild_winter }
@@ -341,6 +385,16 @@ colonial_nation_cheese_dev = {
 	}
 } 
 colonial_nation_vanilla_dev = {
+	OR = {
+		dip_tech = 16
+		AND = {
+			dip_tech = 11
+			OR = {
+				vanilla = 1
+				any_subject_country = { vanilla = 1 }
+			}
+		}
+	}
 	any_subject_country = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
@@ -349,7 +403,14 @@ colonial_nation_vanilla_dev = {
 				area = betsimasaraka_area
 				area = sakalava_area
 				area = southern_madagascar
-			}
+				area = mascarenes_area
+				province_id = 4020
+				province_id = 1201
+				AND = {
+					region = mexico
+					development = 18
+				}
+			} #all islands in Zanzibar trade node, or high dev in mexico
 		}
 	}
 } 
@@ -393,6 +454,7 @@ colonial_nation_citrus_dev = {
 			NOT = { has_winter = severe_winter }
 			NOT = { has_winter = normal_winter }
 			NOT = { has_winter = mild_winter }
+			NOT = { has_terrain = desert }
 		}
 	}
 }
@@ -417,7 +479,7 @@ colonial_nation_munitions_dev = {
 	any_subject_country = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
-			development = 30
+			development = 32
 		}
 	}
 }
@@ -442,7 +504,6 @@ colonial_nation_potatoes_dev = {
 	any_subject_country = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
-			NOT = { has_terrain = mountain }
 			NOT = { has_terrain = glacier }
 			NOT = { has_terrain = desert }
 			NOT = { has_terrain = jungle }
@@ -454,6 +515,21 @@ colonial_nation_rum_dev {
 	any_subject_country = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
+			trade_goods = sugar
+			OR = {
+				area = florida_area
+				area = north_florida_area
+				area = cuba_area
+				area = east_cuba_area
+				area = hispaniola_area
+				area = greater_antilles_area
+				area = leeward_islands_area
+				area = windward_islands_area
+				area = lucayan_area
+				area = eastern_llanos
+				area = venezuela_area
+				area = maracaibo_area
+			} # Caribbean trade node
 		}
 	}
 }
@@ -482,6 +558,11 @@ colonial_nation_marble_dev = {
 	any_subject_country = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
+			OR = {
+				has_terrain = mountain
+				has_terrain = highlands
+				has_terrain = hills
+			}
 		}
 	}
 }
@@ -490,7 +571,7 @@ colonial_nation_machinery_dev = {
 	any_subject_country = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
-			development = 20
+			development = 25
 		}
 	}
 }
@@ -510,3 +591,43 @@ colonial_nation_mercury_dev = {
 		}
 	}
 }
+colonial_nation_brass_dev = {
+	adm_tech = 16
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+		}
+	}
+}
+colonial_nation_optics_dev = {
+	dip_tech = 21
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			OR = {
+				development = 32
+				trade_goods = glass
+			}
+		}
+	}
+}
+colonial_nation_gunpowder_dev = {
+	adm_tech = 13
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			development = 25
+		}
+	}
+}
+colonial_nation_leather_dev = {
+	adm_tech = 9
+	any_subject_country = {
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			development = 22
+		}
+	}
+}
+#Cinnamon and Exotic Spices excluded on the basis of-
+#-not being able to be developed in colonial regions

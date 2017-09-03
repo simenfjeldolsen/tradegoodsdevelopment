@@ -6,7 +6,7 @@ citrus		=	{ base_price = 3 }
 
 #plantations
 coffee 		= 	{ base_price = 3.5 }
-sugar		=	{ base_price = 3 }
+sugar		=	{ base_price = 4 }
 cocoa		=	{ base_price = 4 }
 tobacco		=	{ base_price = 3.5 }
 tea			=	{ base_price = 3 }
@@ -28,7 +28,7 @@ fur			=	{ base_price = 2 }
 leather		=	{ base_price = 3 }
 
 #naval supplies, wood
-naval_supplies	= {base_price = 2.5 }
+naval_supplies	=	{ base_price = 2.5 }
 tar				=	{ base_price = 2.5 }
 tropical_wood	=	{ base_price = 2.5 }
 optics			=	{ base_price = 4 }
@@ -49,27 +49,27 @@ gold		=	{ base_price = 0 goldtype = yes }
 #raw ores
 iron		=	{ base_price = 3 }
 copper		=	{ base_price = 3 }
-tin			=	{ base_price = 3.5 }
+tin			=	{ base_price = 3 }
 lead		=	{ base_price = 3 }
-zinc		=	{ base_price = 3.5 }
-mercury		=	{ base_price = 4 }
+zinc		=	{ base_price = 3 }
+mercury		=	{ base_price = 3 }
 salt		=	{ base_price = 3 }
 
 #refined metals
 steel		=	{ base_price = 3.5 }
-brass		=	{ base_price = 3.5 }
+brass		=	{ base_price = 3 }
 
 #spices
-spices		=	{ base_price = 3 }
-vanilla		=	{ base_price = 4 }
-exotic_spices	=	{ base_price = 4 }
-cinnamon	=	{ base_price = 4 }
+spices		=	{ base_price = 4 }
+vanilla		=	{ base_price = 5.5 }
+exotic_spices	=	{ base_price = 5 }
+cinnamon	=	{ base_price = 4.5 }
 
 #misc/industrial
 paper		=	{ base_price = 3 }
 munitions	=	{ base_price = 4 }
-machinery	=	{ base_price = 4 }
+machinery	=	{ base_price = 4.5 }
 uniforms	=	{ base_price = 3.5 }
-gunpowder	=	{ base_price = 3 }
+gunpowder	=	{ base_price = 3.5 }
 
 unknown		=	{ base_price = 0 }
