@@ -11,8 +11,31 @@ beer_dev = {
 }
 tar_dev = {
 	OR = {
-		has_terrain = woods
-		has_terrain = forest
+		AND = {
+			has_terrain = woods
+			development = 16
+			has_port = yes
+		}
+		AND = {
+			has_terrain = forest
+			has_port = yes
+		}
+		OR = {
+			area = south_appalachia_area
+			area = chesapeake_area
+			area = great_valley_area
+			area = piedmont_north_america_area
+			area = american_georgia_area 
+			area = carolinas_area
+			area = south_carolina_area
+			area = upper_american_georgia_area
+			area = great_woods_area
+			area = massachusetts_bay_area
+			area = connecticut_valley_area
+			area = hudson_valley_area
+			area = delaware_valley_area
+			area = maryland_area
+		}
 	}
 }
 olives_dev = {
@@ -29,6 +52,18 @@ vanilla_dev = {
 		area = betsimasaraka_area
 		area = sakalava_area
 		area = southern_madagascar
+		area = mascarenes_area
+		province_id = 4020
+		province_id = 1201
+	} #all islands in Zanzibar
+	owner = {
+		OR = {
+			dip_tech = 16
+			AND = {
+				dip_tech = 11
+				vanilla = 1
+			}
+		}
 	}
 }
 glass_dev = {
@@ -45,7 +80,7 @@ paper_dev = {
 }
 steel_dev = {
 	owner = {
-		adm_tech = 9
+		adm_tech = 6
 	}
 	OR = {
 		trade_goods = iron
@@ -80,7 +115,7 @@ zinc_dev = {
 }
 munitions_dev = {
 	owner = {
-		adm_tech = 15
+		adm_tech = 21
 	}
 	development = 30
 }
@@ -109,6 +144,21 @@ potatoes_dev = {
 rum_dev {
 	owner = {
 		dip_tech = 18
+	}
+	trade_goods = sugar
+	OR = {
+		area = florida_area
+		area = north_florida_area
+		area = cuba_area
+		area = east_cuba_area
+		area = hispaniola_area
+		area = greater_antilles_area
+		area = leeward_islands_area
+		area = windward_islands_area
+		area = lucayan_area
+		area = eastern_llanos
+		area = venezuela_area
+		area = maracaibo_area
 	}
 }
 uniforms_dev = {
@@ -149,6 +199,96 @@ mercury_dev = {
 		adm_tech = 25
 	}
 }
+cinnamon_dev = {
+		OR = {
+			area = kerala_area
+			area = rayalaseema_area
+			area = mysore_area
+			area = coromandel_area
+			area = madura_area
+			area = lanka_area
+			area = carnatic_area
+			area = luzon_area
+			area = great_moluccas_area
+			area = mindanao_area
+			province_id = 651
+			
+		} #Ceylon and Philippines Trade Nodes
+		NOT = { province_id = 634 }
+		trade_goods = spices
+		owner = {
+			OR = {
+				dip_tech = 20
+				AND = {
+					dip_tech = 15
+					cinnamon = 1
+				}
+			}
+		}
+}
+exotic_spices_dev = {
+	OR = {
+		area = east_java_area
+		area = central_java_area
+		area = west_java_area
+		area = lesser_sunda_islands_area
+		area = north_sumatra_area
+		area = central_sumatra_area
+		area = south_sumatra_area
+		area = indian_ocean_islands_area
+		area = tenasserim_area
+		area = malaya_area
+		area = malacca_area
+		area = batak_area
+		area = minangkabau_area
+		area = kutai_area
+		area = brunei_area
+		area = kalimantan_area
+		area = indonesian_islands_area
+		area = molluca_area
+		area = sulawesi_area
+		area = vogelkop_area
+		area = timor_area
+		area = south_sulawesi_area
+		area = ceram_area
+		area = spice_islands_area
+		province_id = 634
+	} #Moluccas and Malaya Trade Nodes
+	NOT = { province_id = 651 }
+	trade_goods = spices
+	owner = {
+		OR = {
+			dip_tech = 26
+			AND = {
+				dip_tech = 21
+				exotic_spices = 1
+			}
+		}
+	} 
+}
+brass_dev = {
+	owner = {
+		adm_tech = 16
+	}
+}
+optics_dev = {
+	owner = {
+		dip_tech = 21
+	}
+}
+gunpowder_dev = {
+	owner = {
+		adm_tech = 13
+	}
+}
+leather_dev = {
+	owner = {
+		adm_tech = 9
+	}
+}
+
+
+
 
 # For developing in Colonial nations
 
@@ -229,7 +369,7 @@ colonial_nation_paper_dev = {
 	development = 18
 }
 colonial_nation_steel_dev = {
-	adm_tech = 9
+	adm_tech = 6
 	any_subject_country = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
@@ -273,7 +413,7 @@ colonial_nation_zinc_dev = {
 	}
 }
 colonial_nation_munitions_dev = {
-	adm_tech = 15
+	adm_tech = 21
 	any_subject_country = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment

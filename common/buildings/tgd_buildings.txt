@@ -178,6 +178,30 @@ tradegoodsdevelopment = {
 				trade_goods = machinery
 				owner = { machinery = 2 }
 			}
+			AND = {
+				trade_goods = gunpowder
+				owner = { gunpowder = 2 }
+			}
+			AND = {
+				trade_goods = brass
+				owner = { brass = 2 }
+			}
+			AND = {
+				trade_goods = optics
+				owner = { optics = 2 }
+			}
+			AND = {
+				trade_goods = cinnamon
+				owner = { cinnamon = 2 }
+			}
+			AND = {
+				trade_goods = exotic_spices
+				owner = { exotic_spices = 2 }
+			}
+			AND = {
+				trade_goods = leather
+				owner = { leather = 2 }
+			}
 		}
 	}
 

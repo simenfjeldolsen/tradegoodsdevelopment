@@ -770,4 +770,52 @@ country_event = {
 		add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
 		add_treasury = -1000
 	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.cinnamon
+		trigger = { cinnamon_dev = yes }
+		change_trade_goods = cinnamon
+		dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -250 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.exotic_spices
+		trigger = { exotic_spices_dev = yes }
+		change_trade_goods = exotic_spices
+		dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -250 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.brass
+		trigger = { brass_dev = yes }
+		change_trade_goods = brass
+		dev_tier_cost_effect = yes
+		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -500 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.gunpowder
+		trigger = { gunpowder_dev = yes }
+		change_trade_goods = gunpowder
+		dev_tier_cost_effect = yes
+		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -500 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.optics
+		trigger = { optics_dev = yes }
+		change_trade_goods = optics
+		dev_tier_cost_effect = yes
+		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -500 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.leather
+		trigger = { leather_dev = yes }
+		change_trade_goods = leather
+		dev_tier_cost_effect = yes
+		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -500 }
+	}
 }

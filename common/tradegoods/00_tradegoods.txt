@@ -86,7 +86,7 @@ machinery = {
 munitions = {
 	#weapons, ammo
 	color = { 0.17 0.14 0.12 }
-	modifier = { fire_damage = 0.1 }
+	modifier = { infantry_power = 0.10 }
 	province = { regiment_recruit_speed = -0.3 }
 	chance = { factor = 0 }
 }
@@ -786,8 +786,8 @@ tea = {
 steel = {
  	#valuable alloy for weapons etc.
 	color = { 0.35 0.25 0.10 }
-	modifier = { shock_damage_received = -0.1 }
-	province = { production_efficiency = 0.15 }
+	modifier = { shock_damage = 0.10 }
+	province = { production_efficiency = 0.10 }
 	chance = {
 		factor = 3
 		modifier = {
@@ -2133,7 +2133,7 @@ copper = {
 tin = {
  	#used in bronze making, and the increasingly popular pewter
 	color = { 139 234 239 }
-	modifier = { artillery_power = 0.1 }
+	modifier = { production_efficiency = 0.05 }
 	province = { production_efficiency = 0.1 }
 	chance = {
 		factor = 7
@@ -2227,7 +2227,7 @@ tin = {
 lead = {
  	#amunition, appliances, construction, cosmetics
 	color = { 0.15 0.15 0.15 }
-	modifier = { infantry_power = 0.10 }
+	modifier = { production_efficiency = 0.05 }
 	province = { production_efficiency = 0.10 }
 	chance = {
 		factor = 10
@@ -2509,9 +2509,46 @@ mercury = {
 uniforms = {
 	color = { 0.86 0.19 0.19 }
 	modifier = { land_morale = 0.10 }
-	province = { land_forcelimit = 1 }
+	province = { land_forcelimit = 0.5 }
 	chance = { factor = 0 }
 }
+gunpowder = {
+	color = { 0.86 0.19 0.19 }
+	modifier = { fire_damage = 0.1 }
+	province = { regiment_recruit_speed = -0.30 }
+	chance = { factor = 0 }
+}
+brass = {
+	color = { 0.86 0.19 0.19 }
+	modifier = { artillery_power = 0.10 }
+	province = { local_build_time = -0.20 }
+	chance = { factor = 0 }
+}
+optics = {
+	color = { 0.86 0.19 0.19 }
+	modifier = { heavy_ship_power = 0.10 }
+	province = { naval_forcelimit = 1 }
+	chance = { factor = 0 }
+}
+cinnamon = {
+	color = { 0.86 0.19 0.19 }
+	modifier = { trade_efficiency = 0.075 }
+	province = { local_monthly_devastation = -0.1 }
+	chance = { factor = 0 }
+}
+exotic_spices = {
+	color = { 0.86 0.19 0.19 }
+	modifier = { trade_efficiency = 0.075 }
+	province = { local_monthly_devastation = -0.1 }
+	chance = { factor = 0 }
+}
+leather = {
+	color = { 0.86 0.19 0.19 }
+	modifier = { shock_damage_received = -0.10 }
+	province = { regiment_recruit_speed = -0.30 }
+	chance = { factor = 0 }
+}
+
 
 unknown = {
 	color = { 0.5 0.5 0.5 }
