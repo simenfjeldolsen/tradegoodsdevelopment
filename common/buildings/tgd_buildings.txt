@@ -215,3 +215,39 @@ tradegoodsdevelopment = {
 		factor = 0
 	}
 }
+prospecting = {
+	cost = 150
+	time = 0
+
+	trigger = {
+		OR = {
+			mountain_prospecting_1 = yes
+			mountain_prospecting_2 = yes
+			mountain_prospecting_3 = yes
+			mountain_prospecting_4 = yes
+			mountain_prospecting_5 = yes
+			mountain_prospecting_6 = yes
+			forest_prospecting_2 = yes
+			forest_prospecting_3 = yes
+			forest_prospecting_4 = yes
+			forest_prospecting_5 = yes
+			forest_prospecting_6 = yes
+			desert_prospecting_1 = yes
+			desert_prospecting_2 = yes
+			desert_prospecting_3 = yes
+			desert_prospecting_4 = yes
+			desert_prospecting_5 = yes
+			desert_prospecting_6 = yes
+		}
+	}
+
+	one_per_country = yes
+
+	modifier = {
+		allowed_num_of_buildings = 1
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}

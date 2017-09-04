@@ -60,5 +60,29 @@ country_decisions = {
 			factor = 0
 		}
 	}
+	prospecting_desc = {
+		major = yes
+		potential = {
+			ai = no
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = prospecting_d
+				any_owned_province = {
+					has_building = prospecting
+				}
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = { has_building = prospecting }
+				custom_tooltip = manual_dev_fire
+				hidden_effect = { province_event = { id = tgd_tradegoodsdevelopment.13 } }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
 }

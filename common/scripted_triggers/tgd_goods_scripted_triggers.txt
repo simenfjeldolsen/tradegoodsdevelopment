@@ -380,12 +380,12 @@ colonial_nation_cheese_dev = {
 } 
 colonial_nation_vanilla_dev = {
 	OR = {
+	
 		dip_tech = 16
 		AND = {
-			dip_tech = 11
 			OR = {
-				vanilla = 1
-				any_subject_country = { vanilla = 1 }
+				any_owned_province = { trade_goods = vanilla }
+				any_subject_country = { any_owned_province = { trade_goods = vanilla } }
 			}
 		}
 	}
@@ -393,18 +393,18 @@ colonial_nation_vanilla_dev = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			OR = {
-				area = madagascar_highlands_area
-				area = betsimasaraka_area
-				area = sakalava_area
-				area = southern_madagascar
-				area = mascarenes_area
-				province_id = 4020
-				province_id = 1201
 				AND = {
-					region = mexico
+					OR = {
+						region = mexico_region
+						area = guatemala_area
+						area = yucatan_area
+						area = east_yucatan_area
+						area = chiapas_area
+					}
+					has_terrain = jungle
 					development = 18
 				}
-			} #all islands in Zanzibar trade node, or high dev in mexico
+			} #no CNs in zanzibar
 		}
 	}
 } 
@@ -625,3 +625,164 @@ colonial_nation_leather_dev = {
 }
 #Cinnamon and Exotic Spices excluded on the basis of-
 #-not being able to be developed in colonial regions
+
+#############
+#Prospecting#
+#############
+
+mountain_prospecting_1 = {
+	owner = { adm_tech = 1 }
+	NOT = { owner = { adm_tech = 13 } }
+	OR = {
+		has_terrain = mountain
+		has_terrain = highlands
+		has_terrain = hills
+	}
+}
+mountain_prospecting_2 = {
+	owner = { adm_tech = 13 }
+	NOT = { owner = { adm_tech = 16 } }
+	OR = {
+		has_terrain = mountain
+		has_terrain = highlands
+		has_terrain = hills
+	}
+}
+mountain_prospecting_3 = {
+	owner = { adm_tech = 16 }
+	NOT = { owner = { adm_tech = 20 } }
+	OR = {
+		has_terrain = mountain
+		has_terrain = highlands
+		has_terrain = hills
+	}
+}
+mountain_prospecting_4 = {
+	owner = { adm_tech = 20 }
+	NOT = { owner = { adm_tech = 21 } }
+	OR = {
+		has_terrain = mountain
+		has_terrain = highlands
+		has_terrain = hills
+		has_terrain = glacier
+	}
+}
+mountain_prospecting_5 = {
+	owner = { adm_tech = 21 }
+	NOT = { owner = { adm_tech = 25 } }
+	OR = {
+		has_terrain = mountain
+		has_terrain = highlands
+		has_terrain = hills
+		has_terrain = glacier
+	}
+}
+mountain_prospecting_6 = {
+	owner = { adm_tech = 25 }
+	OR = {
+		has_terrain = mountain
+		has_terrain = highlands
+		has_terrain = hills
+		has_terrain = glacier
+	}
+}
+forest_prospecting_1 = {
+	owner = { adm_tech = 1 }
+	NOT = { owner = { adm_tech = 13 } }
+	OR = {
+		has_terrain = forest
+		has_terrain = woods
+		has_terrain = jungle
+	}
+}
+forest_prospecting_2 = {
+	owner = { adm_tech = 13 }
+	NOT =  {owner = { adm_tech = 16 } }
+	OR = {
+		has_terrain = forest
+		has_terrain = woods
+		has_terrain = jungle
+	}
+}
+forest_prospecting_3 = {
+	owner = { adm_tech = 16 }
+	NOT = { owner = { adm_tech = 20 } }
+	OR = {
+		has_terrain = forest
+		has_terrain = woods
+		has_terrain = jungle
+	}
+}
+forest_prospecting_4 = {
+	owner = { adm_tech = 20 }
+	NOT = { owner = { adm_tech = 21 } }
+	OR = {
+		has_terrain = forest
+		has_terrain = woods
+		has_terrain = jungle
+	}
+}
+forest_prospecting_5 = {
+	owner = { adm_tech = 21 }
+	NOT = { owner = { adm_tech = 25 } }
+	OR = {
+		has_terrain = forest
+		has_terrain = woods
+		has_terrain = jungle
+	}
+}
+forest_prospecting_6 = {
+	owner = { adm_tech = 25 }
+	OR = {
+		has_terrain = forest
+		has_terrain = woods
+		has_terrain = jungle
+	}
+}
+desert_prospecting_1 = {
+	owner = { adm_tech = 1 }
+	NOT = { owner = { adm_tech = 13 } }
+	OR = {
+		has_terrain = desert
+		has_terrain = coastal_desert
+	}
+}
+desert_prospecting_2 = {
+	owner = { adm_tech = 13 }
+	NOT = { owner = { adm_tech = 16 } }
+	OR = {
+		has_terrain = desert
+		has_terrain = coastal_desert
+	}
+}
+desert_prospecting_3 = {
+	owner = { adm_tech = 16 }
+	NOT = { owner = { adm_tech = 20 } }
+	OR = {
+		has_terrain = desert
+		has_terrain = coastal_desert
+	}
+}
+desert_prospecting_4 = {
+	owner = { adm_tech = 20 }
+	NOT = { owner = { adm_tech = 21 } }
+	OR = {
+		has_terrain = desert
+		has_terrain = coastal_desert
+	}
+}
+desert_prospecting_5 = {
+	owner = { adm_tech = 21 }
+	NOT = { owner = { adm_tech = 25 } }
+	OR = {
+		has_terrain = desert
+		has_terrain = coastal_desert
+	}
+}
+desert_prospecting_6 = {
+	owner = { adm_tech = 25 }
+	OR = {
+		has_terrain = desert
+		has_terrain = coastal_desert
+	}
+}
