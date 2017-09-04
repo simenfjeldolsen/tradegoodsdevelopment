@@ -60,7 +60,19 @@
  machinery: "Machinery"
  machineryDESC: "Machinery represents all kinds of items and goods needed to operate machinery, as well as pre-industrial constructions such as clockwork."
  uniforms: "Uniforms"
- uniformsDESC: "A uniform is a type of clothing worn by members of an organization while participating in that organization's activity."
+ uniformsDESC: "For as long as there have been professional militaries, there have been uniforms. Or at least there has been a soldier complaining about a lack thereof. Styilsh uniforms not only help distinguish troops on the battlefield, but also give a sense of national pride to all those who wear them."
+ gunpowder: "Powder"
+ gunpowderDESC: "Gunpowder, or black powder, is a chemical explosive consisting of sulfer, charcoal, and saltpeter, with a wide range of uses - most of them involving war. Gunpowder has been used since its inception for firearms, rockets, fireworks, and as a blasting powder for mining and quarrying."
+ brass: "Brass"
+ brassDESC: "Brass is an alloy consisting primarily of Copper and Zinc, sometimes including marginal amounts of Lead, Aluminium, and Silicon. While Brass is often frivolously used for decorative purposes, it is invaluable in situations that require a spark not be struck, such as in the fittings of cannons."
+ optics: "Optics"
+ opticsDESC: "Telescopes were one of the most important inventions of the 17th century, allowing man to look upon the sky in greater detail than ever before. Even more important than science, though, is war - soon after their invention, telescopes became vital instruments for all navies."
+ cinnamon: "Cinnamon"
+ cinnamonDESC: "Cinnamon is produced from the bark of the cinnamon tree, and has been a valuable spice since it was first discovered. Europeans knew very little of the spice's origin for a long time, inventing such stories as that it was fished out of the sea at the end of the world. The island of Ceylon is now known as the origin of most Cinnamon produced throughout history."
+ exotic_spices: "Exotic Spices"
+ exotic_spicesDESC: "The term 'Exotic Spices' represents a wide range of spices that can only be found in the East Indies, such as Nutmeg and Cloves."
+ leather: "Leather"
+ leatherDESC: "Leather is a strong and ductile material produced from tanning animal skins, often cattle hide. It is used in the production of many valuable goods, such as clothing, books, armor, wallpaper, and furniture. A wide range of techniques are used across the world to produce many different varieties."
  ####################
  ### Price Events ###
  ####################

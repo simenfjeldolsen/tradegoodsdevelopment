@@ -1,0 +1,1014 @@
+namespace = tgd_info
+
+country_event = {
+	id = tgd_info.1
+	title = tgd_info.1.t
+	desc = tgd_info.1.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tgd_info.1.exit
+	}
+	option = {
+		name = tgd_info.1.beer
+		country_event = { id = tgd_info.2 }
+	}
+	option = {
+		name = tgd_info.1.brass
+		country_event = { id = tgd_info.48 }
+	}
+	option = {
+		name = tgd_info.1.cheese
+		country_event = { id = tgd_info.3 }
+	}
+	option = {
+		name = tgd_info.1.chinaware
+		country_event = { id = tgd_info.4 }
+	}
+	option = {
+		name = tgd_info.1.cinnamon
+		country_event = { id = tgd_info.46 }
+	}
+	option = {
+		name = tgd_info.1.citrus
+		country_event = { id = tgd_info.5 }
+	}
+	option = {
+		name = tgd_info.1.cloth
+		country_event = { id = tgd_info.6 }
+	}
+	option = {
+		name = tgd_info.1.cocoa
+		country_event = { id = tgd_info.7 }
+	}
+	option = {
+		name = tgd_info.1.coffee
+		country_event = { id = tgd_info.8 }
+	}
+	option = {
+		name = tgd_info.1.copper
+		country_event = { id = tgd_info.9 }
+	}
+	option = {
+		name = tgd_info.1.cotton
+		country_event = { id = tgd_info.10 }
+	}
+	option = {
+		name = tgd_info.1.dyes
+		country_event = { id = tgd_info.11 }
+	}
+	option = {
+		name = tgd_info.1.exotic_spices
+		country_event = { id = tgd_info.47 }
+	}
+	option = {
+		name = tgd_info.1.fish
+		country_event = { id = tgd_info.12 }
+	}
+	option = {
+		name = tgd_info.1.fur
+		country_event = { id = tgd_info.13 }
+	}
+	option = {
+		name = tgd_info.1.glass
+		country_event = { id = tgd_info.14 }
+	}
+	option = {
+		name = tgd_info.1.gold
+		country_event = { id = tgd_info.15 }
+	}
+	option = {
+		name = tgd_info.1.grain
+		country_event = { id = tgd_info.16 }
+	}
+	option = {
+		name = tgd_info.1.gunpowder
+		country_event = { id = tgd_info.50 }
+	}
+	option = {
+		name = tgd_info.1.horses
+		country_event = { id = tgd_info.17 }
+	}
+	option = {
+		name = tgd_info.1.iron
+		country_event = { id = tgd_info.18 }
+	}
+	option = {
+		name = tgd_info.1.ivory
+		country_event = { id = tgd_info.19 }
+	}
+	option = {
+		name = tgd_info.1.lead
+		country_event = { id = tgd_info.20 }
+	}
+	option = {
+		name = tgd_info.1.leather
+		country_event = { id = tgd_info.51 }
+	}
+	option = {
+		name = tgd_info.1.machinery
+		country_event = { id = tgd_info.21 }
+	}
+	option = {
+		name = tgd_info.1.marble
+		country_event = { id = tgd_info.22 }
+	}
+	option = {
+		name = tgd_info.1.mercury
+		country_event = { id = tgd_info.23 }
+	}
+	option = {
+		name = tgd_info.1.munitions
+		country_event = { id = tgd_info.24 }
+	}
+	option = {
+		name = tgd_info.1.naval_supplies
+		country_event = { id = tgd_info.25 }
+	}
+	option = {
+		name = tgd_info.1.olives
+		country_event = { id = tgd_info.26 }
+	}
+	option = {
+		name = tgd_info.1.optics
+		country_event = { id = tgd_info.49 }
+	}
+	option = {
+		name = tgd_info.1.paper
+		country_event = { id = tgd_info.27 }
+	}
+	option = {
+		name = tgd_info.1.potatoes
+		country_event = { id = tgd_info.28 }
+	}
+	option = {
+		name = tgd_info.1.rum
+		country_event = { id = tgd_info.29 }
+	}
+	option = {
+		name = tgd_info.1.salt
+		country_event = { id = tgd_info.30 }
+	}
+	option = {
+		name = tgd_info.1.silk
+		country_event = { id = tgd_info.31 }
+	}
+	option = {
+		name = tgd_info.1.slaves
+		country_event = { id = tgd_info.32 }
+	}
+	option = {
+		name = tgd_info.1.spices
+		country_event = { id = tgd_info.33 }
+	}
+	option = {
+		name = tgd_info.1.steel
+		country_event = { id = tgd_info.34 }
+	}
+	option = {
+		name = tgd_info.1.sugar
+		country_event = { id = tgd_info.35 }
+	}
+	option = {
+		name = tgd_info.1.tar
+		country_event = { id = tgd_info.36 }
+	}
+	option = {
+		name = tgd_info.1.tea
+		country_event = { id = tgd_info.37 }
+	}
+	option = {
+		name = tgd_info.1.tin
+		country_event = { id = tgd_info.38 }
+	}
+	option = {
+		name = tgd_info.1.tobacco
+		country_event = { id = tgd_info.39 }
+	}
+	option = {
+		name = tgd_info.1.tropical_wood
+		country_event = { id = tgd_info.40 }
+	}
+	option = {
+		name = tgd_info.1.uniforms
+		country_event = { id = tgd_info.41 }
+	}
+	option = {
+		name = tgd_info.1.vanilla
+		country_event = { id = tgd_info.42 }
+	}
+	option = {
+		name = tgd_info.1.wine
+		country_event = { id = tgd_info.43 }
+	}
+	option = {
+		name = tgd_info.1.wool
+		country_event = { id = tgd_info.44 }
+	}
+	option = {
+		name = tgd_info.1.zinc
+		country_event = { id = tgd_info.45 }
+	}
+}
+
+country_event = {
+	id = tgd_info.2
+	title = tgd_info.2.t
+	desc = tgd_info.2.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.2.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.2.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.3
+	title = tgd_info.3.t
+	desc = tgd_info.3.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.3.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.3.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.4
+	title = tgd_info.4.t
+	desc = tgd_info.4.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.4.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.4.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.5
+	title = tgd_info.5.t
+	desc = tgd_info.5.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.5.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.5.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.6
+	title = tgd_info.6.t
+	desc = tgd_info.6.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.6.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.6.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.7
+	title = tgd_info.7.t
+	desc = tgd_info.7.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.7.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.7.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.8
+	title = tgd_info.8.t
+	desc = tgd_info.8.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.8.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.8.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.9
+	title = tgd_info.9.t
+	desc = tgd_info.9.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.9.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.9.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.10
+	title = tgd_info.10.t
+	desc = tgd_info.10.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.10.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.10.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.11
+	title = tgd_info.11.t
+	desc = tgd_info.11.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.11.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.11.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.12
+	title = tgd_info.12.t
+	desc = tgd_info.12.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.12.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.12.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.13
+	title = tgd_info.13.t
+	desc = tgd_info.13.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.13.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.13.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.14
+	title = tgd_info.14.t
+	desc = tgd_info.14.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.14.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.14.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.15
+	title = tgd_info.15.t
+	desc = tgd_info.15.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.15.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.15.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.16
+	title = tgd_info.16.t
+	desc = tgd_info.16.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.16.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.16.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.17
+	title = tgd_info.17.t
+	desc = tgd_info.17.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.17.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.17.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.18
+	title = tgd_info.18.t
+	desc = tgd_info.18.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.18.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.18.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.19
+	title = tgd_info.19.t
+	desc = tgd_info.19.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.19.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.19.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.20
+	title = tgd_info.20.t
+	desc = tgd_info.20.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.20.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.20.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.21
+	title = tgd_info.21.t
+	desc = tgd_info.21.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.21.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.21.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.22
+	title = tgd_info.22.t
+	desc = tgd_info.22.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.22.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.22.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.23
+	title = tgd_info.23.t
+	desc = tgd_info.23.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.23.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.23.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.24
+	title = tgd_info.24.t
+	desc = tgd_info.24.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.24.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.24.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.25
+	title = tgd_info.25.t
+	desc = tgd_info.25.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.25.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.25.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.26
+	title = tgd_info.26.t
+	desc = tgd_info.26.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.26.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.26.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.27
+	title = tgd_info.27.t
+	desc = tgd_info.27.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.27.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.27.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.28
+	title = tgd_info.28.t
+	desc = tgd_info.28.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.28.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.28.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.29
+	title = tgd_info.29.t
+	desc = tgd_info.29.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.29.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.29.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.30
+	title = tgd_info.30.t
+	desc = tgd_info.30.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.30.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.30.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.31
+	title = tgd_info.31.t
+	desc = tgd_info.31.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.31.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.31.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.32
+	title = tgd_info.32.t
+	desc = tgd_info.32.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.32.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.32.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.33
+	title = tgd_info.33.t
+	desc = tgd_info.33.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.33.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.33.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.34
+	title = tgd_info.34.t
+	desc = tgd_info.34.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.34.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.34.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.35
+	title = tgd_info.35.t
+	desc = tgd_info.35.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.35.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.35.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.36
+	title = tgd_info.36.t
+	desc = tgd_info.36.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.36.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.36.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.37
+	title = tgd_info.37.t
+	desc = tgd_info.37.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.37.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.37.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.38
+	title = tgd_info.38.t
+	desc = tgd_info.38.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.38.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.38.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.39
+	title = tgd_info.39.t
+	desc = tgd_info.39.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.39.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.39.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.40
+	title = tgd_info.40.t
+	desc = tgd_info.40.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.40.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.40.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.41
+	title = tgd_info.41.t
+	desc = tgd_info.41.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.41.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.41.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.42
+	title = tgd_info.42.t
+	desc = tgd_info.42.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.42.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.42.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.43
+	title = tgd_info.43.t
+	desc = tgd_info.43.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.43.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.43.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.44
+	title = tgd_info.44.t
+	desc = tgd_info.44.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.44.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.44.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.45
+	title = tgd_info.45.t
+	desc = tgd_info.45.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.45.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.45.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.46
+	title = tgd_info.46.t
+	desc = tgd_info.46.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.46.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.46.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.47
+	title = tgd_info.47.t
+	desc = tgd_info.47.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.47.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.47.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.48
+	title = tgd_info.48.t
+	desc = tgd_info.48.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.48.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.48.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.49
+	title = tgd_info.49.t
+	desc = tgd_info.49.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.49.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.49.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.50
+	title = tgd_info.50.t
+	desc = tgd_info.50.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.50.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.50.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.51
+	title = tgd_info.51.t
+	desc = tgd_info.51.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.51.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.51.exit
+	}
+}
