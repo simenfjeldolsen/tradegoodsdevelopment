@@ -164,6 +164,7 @@ technology = {
 
 
 	production_efficiency 	=	0.05
+	guildhouse = yes
 
 
 }

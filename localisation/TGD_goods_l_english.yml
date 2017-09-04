@@ -18,6 +18,9 @@
  tradegoodsdevelopment_short: "Prepare Tradegood Development"
  building_tradegoodsdevelopment: "Prepare Tradegood Development"
  building_tradegoodsdevelopment_desc: "Prepares the province for tradegood development."
+ building_prospecting: "Mining Operation"
+ building_prospecting_desc: "Constructs a mine in the province to discover if there are any ores under the surface."
+ building_guildhouse: "Guildhouse"
  ##################
  ### Tradegoods ###
  ##################
@@ -194,6 +197,8 @@
  #############
  #Prospecting#
  #############
+ prospecting_des_title: "Strike the Earth"
+ prospecting_des_desc: "With our mining operation nearing completetion, it is time to see if we have found anything of value."
  tgd_tradegoodsdevelopment.13.t: "Riches of the Earth"
  tgd_tradegoodsdevelopment.13.d: "It has been some time now, and our mining operation in [Root.GetProvinceName] should have found some sort of ore by now. We have sent for a report, and are expecting a reply any day now."
  tgd_tradegoodsdevelopment.13.mountain1: "Let us hope they've found something of value..."
@@ -214,6 +219,7 @@
  tgd_tradegoodsdevelopment.13.desert4: "Let us hope they've found something of value..."
  tgd_tradegoodsdevelopment.13.desert5: "Let us hope they've found something of value..."
  tgd_tradegoodsdevelopment.13.desert6: "Let us hope they've found something of value..."
+ tgd_tradegoodsdevelopment.13.error: "If you're seeing this, either something is broken or you build a mine where you weren't able to."
  tgd_tradegoodsdevelopment.14.t: "Results from Prospecting"
  tgd_tradegoodsdevelopment.14.d: "The results of our prospecting endeavour in [Root.GetProvinceName] have come in..."
  tgd_tradegoodsdevelopment.14.nothing: "We have found nothing. I suppose we'll have to try again..."

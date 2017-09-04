@@ -5,4 +5,19 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//latin_grain_depot.tga"
 		loadType = "INGAME"
 	}
+	spriteType = {
+		name = "GFX_prospecting"
+		texturefile = "gfx//interface//buildings//muslim_road_network.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_guildhouse"
+		texturefile = "gfx//interface//buildings//latin_road_network.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_banner_left_6"
+		texturefile = "gfx//interface//banner_left_6.dds"
+		loadType = "INGAME"
+	}
 }

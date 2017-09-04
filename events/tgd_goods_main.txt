@@ -1259,9 +1259,9 @@ province_event = {
 				0 = { set_variable = { which = ores_variable value = 3 } } #Lead
 				0 = { set_variable = { which = ores_variable value = 4 } } #Tin
 				4 = { set_variable = { which = ores_variable value = 5 } } #Zinc
-				1 = { set_variable = { which = ores_variable value = 6 } } #Mercury
+				0 = { set_variable = { which = ores_variable value = 6 } } #Mercury
 				0 = { set_variable = { which = ores_variable value = 7 } } #Gold
-				0 = { set_variable = { which = ores_variable value = 8 } } #Marble
+				1 = { set_variable = { which = ores_variable value = 8 } } #Marble
 				40 = { set_variable = { which = ores_variable value = 9 } } #Salt
 			}
 		}

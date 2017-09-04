@@ -60,14 +60,14 @@ country_decisions = {
 			factor = 0
 		}
 	}
-	prospecting_desc = {
+	prospecting_des = {
 		major = yes
 		potential = {
 			ai = no
 		}
 		allow = {
 			custom_trigger_tooltip = {
-				tooltip = prospecting_d
+				tooltip = prospecting_des
 				any_owned_province = {
 					has_building = prospecting
 				}
