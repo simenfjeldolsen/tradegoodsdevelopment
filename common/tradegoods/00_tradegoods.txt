@@ -258,6 +258,10 @@ spices = {
 			region = indonesia_region
 			region = moluccas_region
 		}
+		modifier = {
+			factor = 0
+			province_id = 646
+		}
 	}
 }
 vanilla = {
@@ -519,6 +523,10 @@ coffee = {
 			continent = new_world #Always in RNW
 			NOT = { has_climate = tropical }
 		}
+		modifier = {
+			factor = 0
+			province_id = 646
+		}
 	}
 }
 sugar = {
@@ -735,6 +743,10 @@ tea = {
 				area = sao_paolo_area  #Yerba Mate
 				area = west_sao_paolo_area  #Yerba Mate
 			}
+		}
+		modifier = {
+			factor = 0
+			province_id = 646
 		}
 	}
 }
@@ -961,6 +973,10 @@ cheese = {
 				has_terrain = hills
 			}
 		}
+		modifier = {
+			factor = 0
+			province_id = 646
+		}
 	}
 }
 horses = {
@@ -1060,6 +1076,10 @@ fish = {
 		modifier = {
 			factor = 1.2
 			has_terrain = glacier
+		}
+		modifier = {
+			factor = 0
+			province_id = 646
 		}
 	}
 }
@@ -1180,6 +1200,10 @@ beer = {
 		modifier = {
 			factor = 1.5
 			region = germany_region
+		}
+		modifier = {
+			factor = 0
+			province_id = 646
 		}
 	}
 }
@@ -1538,6 +1562,10 @@ naval_supplies = {
 				has_terrain = jungle
 			}
 		}
+		modifier = {
+			factor = 0
+			province_id = 646
+		}
 	}
 }
 tar = {
@@ -1639,6 +1667,10 @@ tropical_wood = {
 			region = malaya_region
 			region = moluccas_region
 			region = indonesia_region
+		}
+		modifier = {
+			factor = 0
+			province_id = 646
 		}
 	}
 }
@@ -1758,6 +1790,10 @@ chinaware = {
 			factor = 0
 			NOT = { development = 8 }
 		}
+		modifier = {
+			factor = 0
+			province_id = 646
+		}
 	}
 }
 slaves = {
@@ -1791,6 +1827,10 @@ slaves = {
 		modifier = {
 			factor = 0.5
 			region = south_africa_region
+		}
+		modifier = {
+			factor = 0
+			province_id = 646
 		}
 	}
 }
@@ -2429,7 +2469,13 @@ exotic_spices = {
 	color = { 0.86 0.19 0.19 }
 	modifier = { trade_efficiency = 0.075 }
 	province = { province_trade_power_value = 2 }
-	chance = { factor = 0 }
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { province_id = 646 }
+		}
+	}
 }
 leather = {
 	color = { 0.86 0.19 0.19 }

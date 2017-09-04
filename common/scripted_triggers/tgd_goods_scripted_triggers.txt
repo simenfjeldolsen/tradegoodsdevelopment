@@ -60,14 +60,21 @@ vanilla_dev = {
 			province_id = 4020
 			province_id = 1201
 			AND = {
-				region = mexico
+				OR = {
+					region = mexico_region
+					area = guatemala_area
+					area = yucatan_area
+					area = east_yucatan_area
+					area = chiapas_area
+				}
+				has_terrain = jungle
 				development = 18
 			}
-		} #all islands in Zanzibar trade node, or high dev in mexico
+		} #all islands in Zanzibar trade node, or high dev jungle in mexico
 		OR = {
 			has_global_flag = vanillaspread_happened
 			owner = { dip_tech = 16 }
-			owner = { vanilla = 1 }
+			owner = { any_owned_province = { trade_goods = vanilla } }
 		}
 	}
 }
@@ -227,7 +234,7 @@ cinnamon_dev = {
 	OR = {
 		has_global_flag = cinnamonspread_happened
 		owner = { dip_tech = 21 }
-		owner = { cinnamon = 1 }
+		owner = { any_owned_province = { trade_goods = cinnamon } }
 	}
 }
 exotic_spices_dev = {
@@ -261,12 +268,8 @@ exotic_spices_dev = {
 	NOT = { province_id = 651 }
 	OR = {
 		has_global_flag = spicespread_happened
-		owner = {
-			OR = {
-				dip_tech = 26
-				exotic_spices = 1
-			}
-		}
+		owner = { dip_tech = 26 }
+		owner = { any_owned_province = { trade_goods = exotic_spices } }
 	}
 }
 brass_dev = {

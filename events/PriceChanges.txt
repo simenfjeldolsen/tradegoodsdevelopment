@@ -1846,17 +1846,15 @@ country_event = {
 	major = yes
 
 	trigger = {
-		any_country = {
-			num_of_owned_provinces_with = {
-				value = 1
-				NOT = {
-					OR = {
-						province_id = 848
-						province_id = 2647
-					}
+		num_of_owned_provinces_with = {
+			value = 1
+			NOT = {
+				OR = {
+					province_id = 848
+					province_id = 2647
 				}
-				trade_goods = vanilla
 			}
+			trade_goods = vanilla
 		}
 		NOT = { has_global_flag = vanillaspread_happened }
 	}
@@ -1870,6 +1868,7 @@ country_event = {
 	
 	option = {
 		name = prices.33.a
+		custom_tooltip = "prices.33.a.tt"
 		change_price = {
 			trade_goods = vanilla
 			key = VANILLASPREAD
@@ -1978,18 +1977,16 @@ country_event = {
 	major = yes
 
 	trigger = {
-		any_country = {
-			num_of_owned_provinces_with = {
-				value = 1
-				NOT = {
-					OR = {
-						province_id = 572
-						province_id = 2099
-					}
+		num_of_owned_provinces_with = {
+			value = 1
+			NOT = {
+				OR = {
+					province_id = 572
+					province_id = 2099
 				}
+			}
 				trade_goods = cinnamon
 			}
-		}
 		NOT = { has_global_flag = cinnamonspread_happened }
 	}
 	mean_time_to_happen = {
@@ -2002,6 +1999,7 @@ country_event = {
 	
 	option = {
 		name = prices.36.a
+		custom_tooltip = "prices.36.a.tt"
 		change_price = {
 			trade_goods = cinnamon
 			key = CINNAMONSPREAD
@@ -2152,18 +2150,17 @@ country_event = {
 	major = yes
 
 	trigger = {
-		any_country = {
-			num_of_owned_provinces_with = {
-				value = 1
-				NOT = {
-					OR = {
-						province_id = 572
-						province_id = 2099
-					}
+		num_of_owned_provinces_with = {
+			value = 1
+			NOT = {
+				OR = {
+					province_id = 646
+					province_id = 649
+					province_id = 650
 				}
-				trade_goods = exotic_spices
 			}
-		}
+			trade_goods = exotic_spices
+			}
 		NOT = { has_global_flag = spicespread_happened }
 	}
 	mean_time_to_happen = {
@@ -2176,6 +2173,7 @@ country_event = {
 	
 	option = {
 		name = prices.40.a
+		custom_tooltip = "prices.40.a.tt"
 		change_price = {
 			trade_goods = exotic_spices
 			key = SPICESPREAD

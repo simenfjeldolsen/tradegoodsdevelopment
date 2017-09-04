@@ -61,7 +61,7 @@ brass		=	{ base_price = 3.5 }
 
 #spices
 spices		=	{ base_price = 4 }
-vanilla		=	{ base_price = 4.5 }
+vanilla		=	{ base_price = 5 }
 exotic_spices	=	{ base_price = 5 }
 cinnamon	=	{ base_price = 5 }
 
