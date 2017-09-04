@@ -261,27 +261,10 @@ spices = {
 	}
 }
 vanilla = {
- 	#mexico
 	color = { 0.20 0.10 0.05 }
 	modifier = { trade_efficiency = 0.075 }
 	province = { local_monthly_devastation = -0.1 }
-	chance = {
-		factor = 10
-		modifier = {
-			factor = 0
-			NOT = { region = mexico_region }
-			NOT = { region = central_america_region }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				has_terrain = mountain
-				has_terrain = highlands
-				has_climate = arid
-				area = texas_area
-			}
-		}
-	}
+	chance = { factor = 0 }
 }
 olives = {
 	#mediterranean staple

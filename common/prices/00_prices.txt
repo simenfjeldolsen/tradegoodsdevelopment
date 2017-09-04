@@ -57,16 +57,16 @@ salt		=	{ base_price = 3 }
 
 #refined metals
 steel		=	{ base_price = 3.5 }
-brass		=	{ base_price = 3 }
+brass		=	{ base_price = 3.5 }
 
 #spices
 spices		=	{ base_price = 4 }
-vanilla		=	{ base_price = 5.5 }
+vanilla		=	{ base_price = 4.5 }
 exotic_spices	=	{ base_price = 5 }
-cinnamon	=	{ base_price = 4.5 }
+cinnamon	=	{ base_price = 5 }
 
 #misc/industrial
-paper		=	{ base_price = 3 }
+paper		=	{ base_price = 2.5 }
 munitions	=	{ base_price = 4 }
 machinery	=	{ base_price = 4.5 }
 uniforms	=	{ base_price = 3.5 }

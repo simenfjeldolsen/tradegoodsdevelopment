@@ -50,26 +50,24 @@ olives_dev = {
 cheese_dev = {	
 }
 vanilla_dev = {
-	OR = {
-		area = madagascar_highlands_area
-		area = betsimasaraka_area
-		area = sakalava_area
-		area = southern_madagascar
-		area = mascarenes_area
-		province_id = 4020
-		province_id = 1201
-		AND = {
-			region = mexico
-			development = 18
-		}
-	} #all islands in Zanzibar trade node, or high dev in mexico
-	owner = {
+	AND = {
 		OR = {
-			dip_tech = 16
+			area = madagascar_highlands_area
+			area = betsimasaraka_area
+			area = sakalava_area
+			area = southern_madagascar
+			area = mascarenes_area
+			province_id = 4020
+			province_id = 1201
 			AND = {
-				dip_tech = 11
-				vanilla = 1
+				region = mexico
+				development = 18
 			}
+		} #all islands in Zanzibar trade node, or high dev in mexico
+		OR = {
+			has_global_flag = vanillaspread_happened
+			owner = { dip_tech = 16 }
+			owner = { vanilla = 1 }
 		}
 	}
 }
@@ -212,31 +210,25 @@ mercury_dev = {
 	}
 }
 cinnamon_dev = {
-		OR = {
-			area = kerala_area
-			area = rayalaseema_area
-			area = mysore_area
-			area = coromandel_area
-			area = madura_area
-			area = lanka_area
-			area = carnatic_area
-			area = luzon_area
-			area = great_moluccas_area
-			area = mindanao_area
-			province_id = 651
-			
-		} #Ceylon and Philippines Trade Nodes
-		NOT = { province_id = 634 }
-		trade_goods = spices
-		owner = {
-			OR = {
-				dip_tech = 21
-				AND = {
-					dip_tech = 16
-					cinnamon = 1
-				}
-			}
-		}
+	OR = {
+		area = kerala_area
+		area = rayalaseema_area
+		area = mysore_area
+		area = coromandel_area
+		area = madura_area
+		area = lanka_area
+		area = carnatic_area
+		area = luzon_area
+		area = great_moluccas_area
+		area = mindanao_area
+		province_id = 651
+	} #Ceylon and Philippines Trade Nodes
+	NOT = { province_id = 634 }
+	OR = {
+		has_global_flag = cinnamonspread_happened
+		owner = { dip_tech = 21 }
+		owner = { cinnamon = 1 }
+	}
 }
 exotic_spices_dev = {
 	OR = {
@@ -267,16 +259,15 @@ exotic_spices_dev = {
 		province_id = 634
 	} #Moluccas and Malaya Trade Nodes
 	NOT = { province_id = 651 }
-	trade_goods = spices
-	owner = {
-		OR = {
-			dip_tech = 26
-			AND = {
-				dip_tech = 21
+	OR = {
+		has_global_flag = spicespread_happened
+		owner = {
+			OR = {
+				dip_tech = 26
 				exotic_spices = 1
 			}
 		}
-	} 
+	}
 }
 brass_dev = {
 	owner = {
