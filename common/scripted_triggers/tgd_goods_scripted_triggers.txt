@@ -630,6 +630,7 @@ colonial_nation_leather_dev = {
 
 mountain_prospecting_1 = {
 	NOT = { owner = { adm_tech = 13 } }
+	owner = { OR = { is_subject = no ai = no } }
 	OR = {
 		has_terrain = mountain
 		has_terrain = highlands
@@ -638,6 +639,7 @@ mountain_prospecting_1 = {
 }
 mountain_prospecting_2 = {
 	owner = { adm_tech = 13 }
+	owner = { OR = { is_subject = no ai = no } }
 	OR = {
 		has_terrain = mountain
 		has_terrain = highlands
@@ -646,6 +648,7 @@ mountain_prospecting_2 = {
 }
 forest_prospecting_1 = {
 	NOT = { owner = { adm_tech = 13 } }
+	owner = { OR = { is_subject = no ai = no } }
 	OR = {
 		has_terrain = forest
 		has_terrain = woods
@@ -654,6 +657,7 @@ forest_prospecting_1 = {
 }
 forest_prospecting_2 = {
 	owner = { adm_tech = 13 }
+	owner = { OR = { is_subject = no ai = no } }
 	OR = {
 		has_terrain = forest
 		has_terrain = woods
@@ -662,6 +666,7 @@ forest_prospecting_2 = {
 }
 desert_prospecting_1 = {
 	NOT = { owner = { adm_tech = 13 } }
+	owner = { OR = { is_subject = no ai = no } }
 	OR = {
 		has_terrain = desert
 		has_terrain = coastal_desert
@@ -669,6 +674,7 @@ desert_prospecting_1 = {
 }
 desert_prospecting_2 = {
 	owner = { adm_tech = 13 }
+	owner = { OR = { is_subject = no ai = no } }
 	OR = {
 		has_terrain = desert
 		has_terrain = coastal_desert

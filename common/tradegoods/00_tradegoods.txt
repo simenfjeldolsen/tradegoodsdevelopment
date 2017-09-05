@@ -83,7 +83,7 @@ munitions = {
 	#weapons, ammo
 	color = { 0.17 0.14 0.12 }
 	modifier = { infantry_power = 0.10 }
-	province = { production_efficiency = 0.10 }
+	province = { local_production_efficiency = 0.10 }
 	chance = { factor = 0 }
 }
 paper = {
@@ -754,7 +754,7 @@ steel = {
  	#valuable alloy for weapons etc.
 	color = { 0.35 0.25 0.10 }
 	modifier = { shock_damage = 0.10 }
-	province = { production_efficiency = 0.10 }
+	province = { local_production_efficiency = 0.10 }
 	chance = {
 		factor = 3
 		modifier = {
@@ -1926,7 +1926,7 @@ gold = {
 }
 iron = {
 	color = { 0.2 0.2 0.2 }
-	province = { production_efficiency = 0.10 }
+	province = { local_production_efficiency = 0.10 }
 	chance = {
 		factor = 10
 		modifier = {
@@ -1972,7 +1972,7 @@ iron = {
 }
 copper = {
 	color = { 0.85 0.46 0.15 }
-	province = { production_efficiency = 0.10 }
+	province = { local_production_efficiency = 0.10 }
 	chance = {
 		factor = 15
 		modifier = {
@@ -2052,7 +2052,7 @@ copper = {
 sulfer = {
  	#refined into gunpowder
 	color = { 139 234 239 }
-	province = { production_efficiency = 0.10 }
+	province = { local_production_efficiency = 0.10 }
 	chance = {
 		factor = 7
 		modifier = {
@@ -2145,7 +2145,7 @@ sulfer = {
 lead = {
  	#amunition, appliances, construction, cosmetics
 	color = { 0.15 0.15 0.15 }
-	province = { production_efficiency = 0.10 }
+	province = { local_production_efficiency = 0.10 }
 	chance = {
 		factor = 10
 		modifier = {
@@ -2236,8 +2236,9 @@ lead = {
 zinc = {
  	#construction, cosmetics; india+china
 	color = { 0.65 0.65 0.70 }
-	province = { production_efficiency = 0.10 }
+	province = { local_production_efficiency = 0.10 }
 	chance = {
+		factor = 5
 		factor = 5
 		modifier = {
 			factor = 0
@@ -2328,7 +2329,7 @@ zinc = {
 bronze = {
 	color = { 0.86 0.19 0.19 }
 	modifier = { artillery_power = 0.10 }
-	province = { production_efficiency = 0.10 }
+	province = { local_production_efficiency = 0.10 }
 	chance = { factor = 0 }
 }
 uniforms = {
@@ -2340,13 +2341,13 @@ uniforms = {
 gunpowder = {
 	color = { 0.86 0.19 0.19 }
 	modifier = { fire_damage = 0.1 }
-	province = { production_efficiency = 0.10 }
+	province = { local_production_efficiency = 0.10 }
 	chance = { factor = 0 }
 }
 brass = {
 	color = { 0.86 0.19 0.19 }
 	modifier = { backrow_artillery_damage = 0.15 }
-	province = { production_efficiency = 0.10 }
+	province = { local_production_efficiency = 0.10 }
 	chance = { factor = 0 }
 }
 optics = {

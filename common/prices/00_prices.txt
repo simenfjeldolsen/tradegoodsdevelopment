@@ -1,5 +1,5 @@
 #cereals
-grain		=	{ base_price = 2 }	#wheat
+grain		=	{ base_price = 2 }	#
 olives		=	{ base_price = 3 }  # +10%(0.3) prices.12, dip 20
 potatoes	=	{ base_price = 2.5 }
 citrus		=	{ base_price = 3 } # +50%(1.5) prices.43, dip 21
