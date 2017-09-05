@@ -1,16 +1,19 @@
 #title
 
 horses_dev ={
+	NOT = { trade_goods = horses }
 	OR = {
 		has_terrain = grasslands
 		has_terrain = steppe
 		has_terrain = drylands
 	}
 } 
-beer_dev = {	
+beer_dev = {
+	NOT = { trade_goods = beer }
 	NOT = { has_terrain = desert }
 }
 tar_dev = {
+	NOT = { trade_goods = tar }
 	OR = {
 		AND = {
 			has_terrain = woods
@@ -40,6 +43,7 @@ tar_dev = {
 	}
 }
 olives_dev = {
+	NOT = { trade_goods = olives }
 	NOT = { has_terrain = mountain }
 	NOT = { has_terrain = desert }
 	NOT = { has_terrain = jungle }
@@ -47,9 +51,11 @@ olives_dev = {
 	NOT = { has_winter = normal_winter }
 	NOT = { has_winter = mild_winter }
 }
-cheese_dev = {	
+cheese_dev = {
+	NOT = { trade_goods = cheese }
 }
 vanilla_dev = {
+	NOT = { trade_goods = vanilla }
 	AND = {
 		OR = {
 			area = madagascar_highlands_area
@@ -79,18 +85,21 @@ vanilla_dev = {
 	}
 }
 glass_dev = {
+	NOT = { trade_goods = glass }
 	owner = {
 		dip_tech = 5
 	}
 	development = 25
 } 
 paper_dev = {
+	NOT = { trade_goods = paper }
 	owner = {
 		adm_tech = 8
 	}
 	development = 18
 }
 steel_dev = {
+	NOT = { trade_goods = steel }
 	owner = {
 		adm_tech = 6
 		OR = {
@@ -101,6 +110,7 @@ steel_dev = {
 	development = 16
 }
 citrus_dev = {
+	NOT = { trade_goods = citrus }
 	owner = {
 		dip_tech = 12
 	}
@@ -111,6 +121,7 @@ citrus_dev = {
 	NOT = { has_terrain = desert }
 }
 #zinc_dev = {
+#	NOT = { trade_goods = zinc }
 #	owner = {
 #		adm_tech = 13
 #	}
@@ -124,6 +135,7 @@ citrus_dev = {
 #	}
 #}
 munitions_dev = {
+	NOT = { trade_goods = munitions }
 	owner = {
 		adm_tech = 21
 		OR = {
@@ -133,7 +145,9 @@ munitions_dev = {
 	}
 	development = 32
 }
+
 #sulfer_dev = {
+#	NOT = { trade_goods = sulfer }
 #	owner = {
 #		adm_tech = 16
 #	}
@@ -147,6 +161,7 @@ munitions_dev = {
 #	}
 #}
 potatoes_dev = {
+	NOT = { trade_goods = potatoes }
 	owner = {
 		dip_tech = 16
 	}
@@ -155,6 +170,7 @@ potatoes_dev = {
 	NOT = { has_terrain = jungle }
 }
 rum_dev {
+	NOT = { trade_goods = rum }
 	owner = {
 		dip_tech = 18
 	}
@@ -175,6 +191,7 @@ rum_dev {
 	} # Caribbean trade node
 }
 uniforms_dev = {
+	NOT = { trade_goods = uniforms }
 	owner = {
 		adm_tech = 19
 	}
@@ -192,6 +209,7 @@ uniforms_dev = {
 	}
 }
 marble_dev = {
+	NOT = { trade_goods = marble }
 	owner = {
 		adm_tech = 20
 	}
@@ -202,17 +220,20 @@ marble_dev = {
 	}
 }
 machinery_dev = {
+	NOT = { trade_goods = machinery }
 	owner = {
 		dip_tech = 20
 	}
 	development = 25
 }
 #lead_dev = {
+#	NOT = { trade_goods = lead }
 #	owner = {
 #		adm_tech = 21
 #	}
 #}
 bronze_dev = {
+	NOT = { trade_goods = bronze }
 	owner = {
 		adm_tech = 9
 		OR = {
@@ -222,6 +243,7 @@ bronze_dev = {
 	}
 }
 cinnamon_dev = {
+	NOT = { trade_goods = cinnamon }
 	OR = {
 		area = kerala_area
 		area = rayalaseema_area
@@ -243,6 +265,7 @@ cinnamon_dev = {
 	}
 }
 exotic_spices_dev = {
+	NOT = { trade_goods = exotic_spices }
 	OR = {
 		area = east_java_area
 		area = central_java_area
@@ -278,6 +301,7 @@ exotic_spices_dev = {
 	}
 }
 brass_dev = {
+	NOT = { trade_goods = brass }
 	owner = {
 		adm_tech = 16
 		OR = {
@@ -288,6 +312,7 @@ brass_dev = {
 	development = 18
 }
 optics_dev = {
+	NOT = { trade_goods = optics }
 	owner = {
 		dip_tech = 21
 	}
@@ -297,6 +322,7 @@ optics_dev = {
 	}
 }
 gunpowder_dev = {
+	NOT = { trade_goods = gunpowder }
 	owner = {
 		adm_tech = 13
 		OR = {
@@ -307,6 +333,7 @@ gunpowder_dev = {
 	development = 25
 }
 leather_dev = {
+	NOT = { trade_goods = leather }
 	owner = {
 		adm_tech = 9
 	}
@@ -318,7 +345,8 @@ leather_dev = {
 
 # For developing in Colonial nations
 
-colonial_nation_horses_dev ={
+colonial_nation_horses_dev = {
+	NOT = { trade_goods = horses }
 	any_subject_country = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
@@ -331,6 +359,7 @@ colonial_nation_horses_dev ={
 	}
 } 
 colonial_nation_beer_dev = {
+	NOT = { trade_goods = beer }
 	any_subject_country = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
@@ -339,7 +368,9 @@ colonial_nation_beer_dev = {
 	}
 } 
 colonial_nation_tar_dev = {
+	NOT = { trade_goods = tar }
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			OR = {
@@ -373,7 +404,9 @@ colonial_nation_tar_dev = {
 	}
 }
 colonial_nation_olives_dev = {
+	NOT = { trade_goods = olives }
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			NOT = { has_terrain = mountain }
@@ -386,13 +419,16 @@ colonial_nation_olives_dev = {
 	}
 } 
 colonial_nation_cheese_dev = {	
+	NOT = { trade_goods = cheese_ }
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 		}
 	}
 } 
 colonial_nation_vanilla_dev = {
+	NOT = { trade_goods = vanilla }
 	OR = {
 	
 		dip_tech = 16
@@ -404,6 +440,7 @@ colonial_nation_vanilla_dev = {
 		}
 	}
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			OR = {
@@ -423,8 +460,10 @@ colonial_nation_vanilla_dev = {
 	}
 } 
 colonial_nation_glass_dev = {
+	NOT = { trade_goods = glass }
 	dip_tech = 5
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			development = 25
@@ -432,21 +471,26 @@ colonial_nation_glass_dev = {
 	}
 } 
 colonial_nation_paper_dev = {
+	NOT = { trade_goods = paper }
 	owner = {
 		adm_tech = 8
 	}
 	development = 18
 }
 colonial_nation_steel_dev = {
+	NOT = { trade_goods = steel }
 	adm_tech = 6
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = { has_building = tradegoodsdevelopment }
 		any_owned_province = { trade_goods = iron }
 	}
 }
 colonial_nation_citrus_dev = {
+	NOT = { trade_goods = citrus }
 	dip_tech = 12
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			NOT = { has_terrain = mountain }
@@ -458,6 +502,8 @@ colonial_nation_citrus_dev = {
 	}
 }
 #colonial_nation_zinc_dev = {
+
+#	NOT = { trade_goods = zinc }
 #	adm_tech = 13
 #	any_subject_country = {
 #		any_owned_province = {
@@ -474,8 +520,10 @@ colonial_nation_citrus_dev = {
 #	}
 #}
 colonial_nation_munitions_dev = {
+	NOT = { trade_goods = munitions }
 	adm_tech = 21
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			development = 32
@@ -484,8 +532,10 @@ colonial_nation_munitions_dev = {
 	}
 }
 colonial_nation_sulfer_dev = {
+	NOT = { trade_goods = sulfer }
 	adm_tech = 16
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			any_owned_province = { trade_goods = sulfer }
@@ -493,8 +543,10 @@ colonial_nation_sulfer_dev = {
 	}
 }
 colonial_nation_potatoes_dev = {
+	NOT = { trade_goods = potatoes }
 	dip_tech = 16
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			NOT = { has_terrain = glacier }
@@ -504,8 +556,10 @@ colonial_nation_potatoes_dev = {
 	}
 }
 colonial_nation_rum_dev {
+	NOT = { trade_goods = r }
 	dip_tech = 18
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			trade_goods = sugar
@@ -527,8 +581,10 @@ colonial_nation_rum_dev {
 	}
 }
 colonial_nation_uniforms_dev = {
+	NOT = { trade_goods = uniforms }
 	adm_tech = 19
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			OR = {
@@ -547,8 +603,10 @@ colonial_nation_uniforms_dev = {
 	}
 }
 colonial_nation_marble_dev = {
+	NOT = { trade_goods = marble }
 	adm_tech = 20
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			OR = {
@@ -560,8 +618,10 @@ colonial_nation_marble_dev = {
 	}
 }
 colonial_nation_machinery_dev = {
+	NOT = { trade_goods = machinery }
 	dip_tech = 20
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			development = 25
@@ -569,6 +629,8 @@ colonial_nation_machinery_dev = {
 	}
 }
 #colonial_nation_lead_dev = {
+
+#	NOT = { trade_goods = lead }
 #	adm_tech = 21
 #	any_subject_country = {
 #		any_owned_province = {
@@ -577,22 +639,28 @@ colonial_nation_machinery_dev = {
 #	}
 #}
 colonial_nation_bronze_dev = {
+	NOT = { trade_goods = bronze }
 	adm_tech = 9
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = { has_building = tradegoodsdevelopment }
 		any_owned_province = { trade_goods = copper }
 	}
 }
 colonial_nation_brass_dev = {
+	NOT = { trade_goods = brass }
 	adm_tech = 16
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = { has_building = tradegoodsdevelopment }
 		any_owned_province = { trade_goods = zinc }
 	}
 }
 colonial_nation_optics_dev = {
+	NOT = { trade_goods = optics }
 	dip_tech = 21
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			OR = {
@@ -603,8 +671,10 @@ colonial_nation_optics_dev = {
 	}
 }
 colonial_nation_gunpowder_dev = {
+	NOT = { trade_goods = gunpowder }
 	adm_tech = 13
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			development = 25
@@ -613,8 +683,10 @@ colonial_nation_gunpowder_dev = {
 	}
 }
 colonial_nation_leather_dev = {
+	NOT = { trade_goods = leather }
 	adm_tech = 9
 	any_subject_country = {
+		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			development = 22
