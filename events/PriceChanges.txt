@@ -1606,12 +1606,6 @@ country_event = {
 			duration = -1
 		}
 		#other industries that are affected by iron/steel
-		change_price = {
-			trade_goods = sulfer
-			key = IRON_WORKING
-			value = -0.10
-			duration = -1
-		}
 	}
 }
 
@@ -1641,7 +1635,7 @@ country_event = {
 				value = 2
 				OR = {
 					trade_goods = sugar
-					trade_goods = vanilla			#vanilla was an important chocolate flavouring
+					trade_goods = vanilla
 				}
 			}
 		}
@@ -1666,7 +1660,7 @@ country_event = {
 		change_price = {
 			trade_goods = vanilla
 			key = HOT_CHOCOLATE
-			value = 0.4
+			value = 0.25
 			duration = -1
 		}
 	}
@@ -1751,7 +1745,7 @@ country_event = {
 		change_price = {
 			trade_goods = leather
 			key = BOOKBINDING
-			value = 0.20
+			value = 0.10
 			duration = -1
 		}
 		change_price = {
@@ -1792,17 +1786,11 @@ country_event = {
 		change_price = {
 			trade_goods = paper
 			key = PRINTINGPRESS
-			value = 0.25
+			value = 0.20
 			duration = -1
 		}
 		change_price = {
-			trade_goods = lead
-			key = PRINTINGPRESS
-			value = 0.10
-			duration = -1
-		}
-		change_price = {
-			trade_goods = sulfer
+			trade_goods = iron
 			key = PRINTINGPRESS
 			value = 0.10
 			duration = -1
@@ -1810,7 +1798,7 @@ country_event = {
 		change_price = {
 			trade_goods = paper
 			key = PRINTINGPRESS
-			value = 0.50
+			value = 0.40
 			duration = 3650
 		}
 	}
@@ -1888,7 +1876,7 @@ country_event = {
 		change_price = {
 			trade_goods = steel
 			key = STEEL_DEVELOPMENT
-			value = 0.35
+			value = 0.40
 			duration = -1
 		}
 		change_price = {
@@ -2019,7 +2007,7 @@ country_event = {
 		change_price = {
 			trade_goods = beer
 			key = BEER_INDUSTRY
-			value = 0.30
+			value = 0.20
 			duration = -1
 		}
 		add_years_of_income  = 0.1
@@ -2279,12 +2267,6 @@ country_event = {
 		}
 		change_price = {
 			trade_goods = gunpowder
-			key = MUNITION_EXPANSION
-			value = 0.15
-			duration = -1
-		}
-		change_price = {
-			trade_goods = uniforms
 			key = MUNITION_EXPANSION
 			value = 0.15
 			duration = -1

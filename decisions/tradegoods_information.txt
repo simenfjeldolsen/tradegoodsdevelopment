@@ -1,7 +1,7 @@
 country_decisions = {
 
 	tradegoods_info = {
-		major = no
+		major = yes
 		potential = { ai = no }
 		allow = { ai = no }
 		effect = { country_event = { id = tgd_info.1 } }
