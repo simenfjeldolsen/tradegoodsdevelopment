@@ -866,17 +866,13 @@ province_event = {
 		owner = { add_adm_power = -15 add_mil_power = -15 add_dip_power = -15 }
 		hidden_effect = {
 			random_list = {
-					#each variable represents an ore
-				10 = { set_variable = { which = ores_variable value = 0 } } #Nothing
-				40 = { set_variable = { which = ores_variable value = 1 } } #Iron
-				30 = { set_variable = { which = ores_variable value = 2 } } #Copper
-				0 = { set_variable = { which = ores_variable value = 3 } } #Lead
-				0 = { set_variable = { which = ores_variable value = 4 } } #Unused
-				0 = { set_variable = { which = ores_variable value = 5 } } #Zinc
-				19 = { set_variable = { which = ores_variable value = 6 } } #Sulfer
-				1 = { set_variable = { which = ores_variable value = 7 } } #Gold
-				0 = { set_variable = { which = ores_variable value = 8 } } #Marble
-				0 = { set_variable = { which = ores_variable value = 9 } } #Salt
+				45 = { set_variable = { which = ores_variable value = 0 } } #Iron
+				20 = { set_variable = { which = ores_variable value = 1 } } #Copper
+				19 = { set_variable = { which = ores_variable value = 2 } } #Sulfer
+				0 = { set_variable = { which = ores_variable value = 3 } } #Zinc
+				0 = { set_variable = { which = ores_variable value = 4 } } #Lead
+				1 = { set_variable = { which = ores_variable value = 5 } } #Gold
+				15 = { set_variable = { which = ores_variable value = 6 } } #No Ore
 			}
 		}
 		province_event = { id = tgd_tradegoodsdevelopment.14 }
@@ -889,17 +885,13 @@ province_event = {
 		owner = { add_adm_power = -15 add_mil_power = -15 add_dip_power = -15 }
 		hidden_effect = {
 			random_list = {
-					#each variable represents an ore
-				0 = { set_variable = { which = ores_variable value = 0 } } #Nothing
-				20 = { set_variable = { which = ores_variable value = 1 } } #Iron
-				15 = { set_variable = { which = ores_variable value = 2 } } #Copper
-				25 = { set_variable = { which = ores_variable value = 3 } } #Lead
-				0 = { set_variable = { which = ores_variable value = 4 } } #Unused
-				20 = { set_variable = { which = ores_variable value = 5 } } #Zinc
-				15 = { set_variable = { which = ores_variable value = 6 } } #Sulfer
-				1 = { set_variable = { which = ores_variable value = 7 } } #Gold
-				4 = { set_variable = { which = ores_variable value = 8 } } #Marble
-				0 = { set_variable = { which = ores_variable value = 9 } } #Salt
+				20 = { set_variable = { which = ores_variable value = 0 } } #Iron
+				10 = { set_variable = { which = ores_variable value = 1 } } #Copper
+				15 = { set_variable = { which = ores_variable value = 2 } } #Sulfer
+				19 = { set_variable = { which = ores_variable value = 3 } } #Zinc
+				35 = { set_variable = { which = ores_variable value = 4 } } #Lead
+				1 = { set_variable = { which = ores_variable value = 5 } } #Gold
+				0 = { set_variable = { which = ores_variable value = 6 } } #No Ore
 			}
 		}
 		province_event = { id = tgd_tradegoodsdevelopment.14 }
@@ -912,17 +904,13 @@ province_event = {
 		owner = { add_adm_power = -15 add_mil_power = -15 add_dip_power = -15 }
 		hidden_effect = {
 			random_list = {
-					#each variable represents an ore
-				45 = { set_variable = { which = ores_variable value = 0 } } #Nothing
-				25 = { set_variable = { which = ores_variable value = 1 } } #Iron
-				20 = { set_variable = { which = ores_variable value = 2 } } #Copper
-				0 = { set_variable = { which = ores_variable value = 3 } } #Lead
-				0 = { set_variable = { which = ores_variable value = 4 } } #Unused
-				0 = { set_variable = { which = ores_variable value = 5 } } #Zinc
-				10 = { set_variable = { which = ores_variable value = 6 } } #Sulfer
-				0 = { set_variable = { which = ores_variable value = 7 } } #Gold
-				0 = { set_variable = { which = ores_variable value = 8 } } #Marble
-				0 = { set_variable = { which = ores_variable value = 9 } } #Salt
+				15 = { set_variable = { which = ores_variable value = 0 } } #Iron
+				35 = { set_variable = { which = ores_variable value = 1 } } #Copper
+				10 = { set_variable = { which = ores_variable value = 2 } } #Sulfer
+				0 = { set_variable = { which = ores_variable value = 3 } } #Zinc
+				0 = { set_variable = { which = ores_variable value = 4 } } #Lead
+				0 = { set_variable = { which = ores_variable value = 5 } } #Gold
+				40 = { set_variable = { which = ores_variable value = 6 } } #No Ore
 			}
 		}
 		random_owned_province = {
@@ -938,17 +926,13 @@ province_event = {
 		owner = { add_adm_power = -15 add_mil_power = -15 add_dip_power = -15 }
 		hidden_effect = {
 			random_list = {
-					#each variable represents an ore
-				0 = { set_variable = { which = ores_variable value = 0 } } #Nothing
-				35 = { set_variable = { which = ores_variable value = 1 } } #Iron
-				20 = { set_variable = { which = ores_variable value = 2 } } #Copper
-				10 = { set_variable = { which = ores_variable value = 3 } } #Lead
-				0 = { set_variable = { which = ores_variable value = 4 } } #Unused
-				15 = { set_variable = { which = ores_variable value = 5 } } #Zinc
-				15 = { set_variable = { which = ores_variable value = 6 } } #Sulfer
-				0 = { set_variable = { which = ores_variable value = 7 } } #Gold
-				5 = { set_variable = { which = ores_variable value = 8 } } #Marble
-				0 = { set_variable = { which = ores_variable value = 9 } } #Salt
+				25 = { set_variable = { which = ores_variable value = 0 } } #Iron
+				20 = { set_variable = { which = ores_variable value = 1 } } #Copper
+				10 = { set_variable = { which = ores_variable value = 2 } } #Sulfer
+				35 = { set_variable = { which = ores_variable value = 3 } } #Zinc
+				10 = { set_variable = { which = ores_variable value = 4 } } #Lead
+				0 = { set_variable = { which = ores_variable value = 5 } } #Gold
+				0 = { set_variable = { which = ores_variable value = 6 } } #No Ore
 			}
 		}
 		province_event = { id = tgd_tradegoodsdevelopment.14 }
@@ -961,17 +945,13 @@ province_event = {
 		owner = { add_adm_power = -15 add_mil_power = -15 add_dip_power = -15 }
 		hidden_effect = {
 			random_list = {
-					#each variable represents an ore
-				15 = { set_variable = { which = ores_variable value = 0 } } #Nothing
-				15 = { set_variable = { which = ores_variable value = 1 } } #Iron
-				10 = { set_variable = { which = ores_variable value = 2 } } #Copper
-				0 = { set_variable = { which = ores_variable value = 3 } } #Lead
-				0 = { set_variable = { which = ores_variable value = 4 } } #Unused
-				0 = { set_variable = { which = ores_variable value = 5 } } #Zinc
-				20 = { set_variable = { which = ores_variable value = 6 } } #Sulfer
-				0 = { set_variable = { which = ores_variable value = 7 } } #Gold
-				5 = { set_variable = { which = ores_variable value = 8 } } #Marble
-				35 = { set_variable = { which = ores_variable value = 9 } } #Salt
+				15 = { set_variable = { which = ores_variable value = 0 } } #Iron
+				10 = { set_variable = { which = ores_variable value = 1 } } #Copper
+				25 = { set_variable = { which = ores_variable value = 2 } } #Sulfer
+				0 = { set_variable = { which = ores_variable value = 3 } } #Zinc
+				0 = { set_variable = { which = ores_variable value = 4 } } #Lead
+				0 = { set_variable = { which = ores_variable value = 5 } } #Gold
+				50 = { set_variable = { which = ores_variable value = 6 } } #No Ore
 			}
 		}
 		province_event = { id = tgd_tradegoodsdevelopment.14 }
@@ -984,17 +964,13 @@ province_event = {
 		owner = { add_adm_power = -15 add_mil_power = -15 add_dip_power = -15 }
 		hidden_effect = {
 			random_list = {
-					#each variable represents an ore
-				0 = { set_variable = { which = ores_variable value = 0 } } #Nothing
-				10 = { set_variable = { which = ores_variable value = 1 } } #Iron
-				10 = { set_variable = { which = ores_variable value = 2 } } #Copper
-				9 = { set_variable = { which = ores_variable value = 3 } } #Lead
-				0 = { set_variable = { which = ores_variable value = 4 } } #Unused
-				10 = { set_variable = { which = ores_variable value = 5 } } #Zinc
-				30 = { set_variable = { which = ores_variable value = 6 } } #Sulfer
-				1 = { set_variable = { which = ores_variable value = 7 } } #Gold
-				0 = { set_variable = { which = ores_variable value = 8 } } #Marble
-				30 = { set_variable = { which = ores_variable value = 9 } } #Salt
+				10 = { set_variable = { which = ores_variable value = 0 } } #Iron
+				10 = { set_variable = { which = ores_variable value = 1 } } #Copper
+				35 = { set_variable = { which = ores_variable value = 2 } } #Sulfer
+				10 = { set_variable = { which = ores_variable value = 3 } } #Zinc
+				10 = { set_variable = { which = ores_variable value = 4 } } #Lead
+				1 = { set_variable = { which = ores_variable value = 5 } } #Gold
+				24 = { set_variable = { which = ores_variable value = 6 } } #No Ore
 			}
 		}
 		province_event = { id = tgd_tradegoodsdevelopment.14 }
@@ -1039,19 +1015,10 @@ province_event = {
 	}
 	
 	option = {
-		name = tgd_tradegoodsdevelopment.14.nothing
+		name = tgd_tradegoodsdevelopment.14.iron
 		trigger = { 
 			check_variable = { which = ores_variable value = 0 }
 			NOT = { check_variable = { which = ores_variable value = 1 } }
-		}
-		owner = { add_treasury = 100 }
-		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.14.iron
-		trigger = { 
-			check_variable = { which = ores_variable value = 1 }
-			NOT = { check_variable = { which = ores_variable value = 2 } }
 		}
 		change_trade_goods = iron
 		owner = { add_treasury = -75 }
@@ -1061,8 +1028,8 @@ province_event = {
 	option = {
 		name = tgd_tradegoodsdevelopment.14.copper
 		trigger = { 
-			check_variable = { which = ores_variable value = 2 }
-			NOT = { check_variable = { which = ores_variable value = 3 } }
+			check_variable = { which = ores_variable value = 1 }
+			NOT = { check_variable = { which = ores_variable value = 2 } }
 		}
 		change_trade_goods = copper
 		owner = { add_treasury = -75 }
@@ -1070,43 +1037,10 @@ province_event = {
 		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.14.lead
-		trigger = { 
-			check_variable = { which = ores_variable value = 3 }
-			NOT = { check_variable = { which = ores_variable value = 4 } }
-		}
-		change_trade_goods = lead
-		owner = { add_treasury = -75 }
-		owner = { add_adm_power = -15 add_mil_power = -15 add_dip_power = -15 }
-		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.14.unused
-		trigger = { 
-			check_variable = { which = ores_variable value = 4 }
-			NOT = { check_variable = { which = ores_variable value = 5 } }
-		}
-		#change_trade_goods = sulfer
-		owner = { add_treasury = -75 }
-		owner = { add_adm_power = -15 add_mil_power = -15 add_dip_power = -15 }
-		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.14.zinc
-		trigger = { 
-			check_variable = { which = ores_variable value = 5 }
-			NOT = { check_variable = { which = ores_variable value = 6 } }
-		}
-		change_trade_goods = zinc
-		owner = { add_treasury = -75 }
-		owner = { add_adm_power = -15 add_mil_power = -15 add_dip_power = -15 }
-		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
-	}
-	option = {
 		name = tgd_tradegoodsdevelopment.14.sulfer
 		trigger = { 
-			check_variable = { which = ores_variable value = 6 }
-			NOT = { check_variable = { which = ores_variable value = 7 } }
+			check_variable = { which = ores_variable value = 2 }
+			NOT = { check_variable = { which = ores_variable value = 3 } }
 		}
 		change_trade_goods = sulfer
 		owner = { add_treasury = -75 }
@@ -1114,36 +1048,62 @@ province_event = {
 		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
 	}
 	option = {
+		name = tgd_tradegoodsdevelopment.14.zinc
+		trigger = { 
+			check_variable = { which = ores_variable value = 3 }
+			NOT = { check_variable = { which = ores_variable value = 4 } }
+		}
+		change_trade_goods = zinc
+		owner = { add_treasury = -75 }
+		owner = { add_adm_power = -15 add_mil_power = -15 add_dip_power = -15 }
+		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.14.lead
+		trigger = { 
+			check_variable = { which = ores_variable value = 4 }
+			NOT = { check_variable = { which = ores_variable value = 5 } }
+		}
+		#change_trade_goods = lead
+		owner = { add_treasury = -75 }
+		owner = { add_adm_power = -15 add_mil_power = -15 add_dip_power = -15 }
+		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
+	}
+	option = {
 		name = tgd_tradegoodsdevelopment.14.gold
 		trigger = { 
-			check_variable = { which = ores_variable value = 7 }
-			NOT = { check_variable = { which = ores_variable value = 8 } }
+			check_variable = { which = ores_variable value = 5 }
+			NOT = { check_variable = { which = ores_variable value = 6 } }
 		}
 		change_trade_goods = gold
-		owner = { add_treasury = 75 }
-		owner = { add_inflation = 0.5 }
+		owner = { add_treasury = 100 }
+		owner = { add_inflation = 1 }
 		owner = { add_adm_power = -15 add_mil_power = -15 add_dip_power = -15 }
 		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.14.marble
+		name = tgd_tradegoodsdevelopment.14.nothing
 		trigger = { 
-			check_variable = { which = ores_variable value = 8 }
-			NOT = { check_variable = { which = ores_variable value = 9 } }
+			check_variable = { which = ores_variable value = 6 }
+			NOT = { check_variable = { which = ores_variable value = 7 } }
 		}
-		change_trade_goods = marble
-		owner = { add_treasury = -75 }
-		owner = { add_adm_power = -15 add_mil_power = -15 add_dip_power = -15 }
+		change_trade_goods = sulfer
+		owner = { add_treasury = 50 }
 		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.14.salt
+		name = tgd_tradegoodsdevelopment.14.butsalt
 		trigger = { 
-			check_variable = { which = ores_variable value = 9 }
+			check_variable = { which = ores_variable value = 6 }
+			NOT = { check_variable = { which = ores_variable value = 7 } }
+			OR = {
+				desert_prospecting_1 = yes
+				desert_prospecting_2 = yes
+			}
 		}
 		change_trade_goods = salt
-		owner = { add_treasury = -75 }
-		owner = { add_adm_power = -15 add_mil_power = -15 add_dip_power = -15 }
+		owner = { add_treasury = -50 }
+		owner = { add_adm_power = -5 add_mil_power = -5 add_dip_power = -5 }
 		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
 	}
 }
