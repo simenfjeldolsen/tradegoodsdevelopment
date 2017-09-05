@@ -2327,43 +2327,43 @@ zinc = {
 	}
 }
 bronze = {
-	color = { 0.86 0.19 0.19 }
+	color = { 124 98 28 }
 	modifier = { artillery_power = 0.10 }
 	province = { local_production_efficiency = 0.10 }
 	chance = { factor = 0 }
 }
 uniforms = {
-	color = { 0.86 0.19 0.19 }
+	color = { 0 49 83 }
 	modifier = { land_morale = 0.10 }
 	province = { local_manpower_modifier = 0.15 }
 	chance = { factor = 0 }
 }
 gunpowder = {
-	color = { 0.86 0.19 0.19 }
+	color = { 204 198 172 }
 	modifier = { fire_damage = 0.1 }
 	province = { local_production_efficiency = 0.10 }
 	chance = { factor = 0 }
 }
 brass = {
-	color = { 0.86 0.19 0.19 }
+	color = { 211 180 34 }
 	modifier = { backrow_artillery_damage = 0.15 }
 	province = { local_production_efficiency = 0.10 }
 	chance = { factor = 0 }
 }
 optics = {
-	color = { 0.86 0.19 0.19 }
+	color = { 58 83 191 }
 	modifier = { heavy_ship_power = 0.15 }
 	province = { naval_forcelimit = 1 }
 	chance = { factor = 0 }
 }
 cinnamon = {
-	color = { 0.86 0.19 0.19 }
+	color = { 168 64 40 }
 	modifier = { trade_efficiency = 0.075 }
 	province = { province_trade_power_value = 2 }
 	chance = { factor = 0 }
 }
 exotic_spices = {
-	color = { 0.86 0.19 0.19 }
+	color = { 160 113 30 }
 	modifier = { trade_efficiency = 0.075 }
 	province = { province_trade_power_value = 2 }
 	chance = {
@@ -2375,7 +2375,7 @@ exotic_spices = {
 	}
 }
 leather = {
-	color = { 0.86 0.19 0.19 }
+	color = { 102 70 13 }
 	modifier = { shock_damage_received = -0.10 }
 	province = { local_trade_goods_size_modifier = 0.05 }
 	chance = { factor = 0 }
