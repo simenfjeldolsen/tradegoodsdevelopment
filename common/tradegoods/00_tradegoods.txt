@@ -873,14 +873,6 @@ steel = {
 			factor = 1.5
 			native_size = 60
 		}
-		modifier = {
-			factor = 1.5
-			iron = 5
-		}
-		modifier = {
-			factor = 1.5
-			iron = 10
-		}
 	}
 }
 salt = {

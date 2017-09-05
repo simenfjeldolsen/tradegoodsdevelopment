@@ -141,12 +141,6 @@ country_event = {
 			value = -0.25
 			duration = -1
 		}
-		change_price = {
-			trade_goods = sulfer
-			key = JOHAN_FRIEDRICH_BOTTGER
-			value = -0.15
-			duration = -1
-		}
 		61 = {
 			add_base_tax = 2
 			change_trade_goods = chinaware
@@ -543,7 +537,7 @@ country_event = {
 		change_price = {
 			trade_goods = slaves
 			key = ABOLITIONISM
-			value = -0.4
+			value = -0.80
 			duration = -1
 		}
 		add_prestige = 10
@@ -683,6 +677,12 @@ country_event = {
 			duration = 3650
 		}
 		change_price = {
+			trade_goods = leather #Same as Fur.
+			key = LITTLE_ICE_AGE
+			value = 0.25
+			duration = 3650
+		}
+		change_price = {
 			trade_goods = citrus
 			key = LITTLE_ICE_AGE
 			value = -0.25
@@ -738,25 +738,25 @@ country_event = {
 		change_price = {
 			trade_goods = wine
 			key = WINE_CORKS
-			value = 0.25
+			value = 0.40
 			duration = -1
 		}
 		change_price = {
 			trade_goods = glass
 			key = WINE_CORKS
-			value = 0.1
+			value = 0.25
 			duration = -1
 		}
 		change_price = {
 			trade_goods = olives
 			key = WINE_CORKS
-			value = 0.1
+			value = 0.10
 			duration = -1
 		}
 		change_price = {
 			trade_goods = beer
 			key = WINE_CORKS
-			value = 0.1
+			value = 0.20
 			duration = -1
 		}
 	}
@@ -843,7 +843,7 @@ country_event = {
 		change_price = {
 			trade_goods = uniforms
 			key = REGULATED_UNIFORMS
-			value = 0.25
+			value = 0.40
 			duration = -1
 		}
 	}
@@ -986,7 +986,7 @@ country_event = {
 		is_year = 1570
 	}
 	mean_time_to_happen = {
-		months = 3
+		months = 1
 	}
 	
 	immediate = {
@@ -1033,7 +1033,7 @@ country_event = {
 		NOT = { has_global_flag = felt_hats_happened }
 	}
 	mean_time_to_happen = {
-		months = 3
+		months = 1
 	}
 	
 	immediate = {
@@ -1092,7 +1092,7 @@ country_event = {
 		change_price = {
 			trade_goods = optics
 			key = PERMANENT_NAVIES
-			value = 0.25
+			value = 0.20
 			duration = -1
 		}
 	}
@@ -1113,7 +1113,6 @@ country_event = {
 		mil_tech = 7
 		OR = {
 			copper = 1
-			sulfer = 1
 		}
 		NOT = { has_global_flag = bronze_cannons_happened }
 	}
@@ -1131,18 +1130,6 @@ country_event = {
 			trade_goods = copper
 			key = BRONZE_CANNONS
 			value = 0.5
-			duration = -1
-		}
-		change_price = {
-			trade_goods = sulfer
-			key = BRONZE_CANNONS
-			value = 0.5
-			duration = -1
-		}
-		change_price = {
-			trade_goods = lead
-			key = BRONZE_CANNONS
-			value = 0.1
 			duration = -1
 		}
 	}
