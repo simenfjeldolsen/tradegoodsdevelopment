@@ -1,15 +1,20 @@
 #cereals
-grain		=	{ base_price = 2.5 }	#wheat
+grain		=	{ base_price = 2 }	#wheat
 olives		=	{ base_price = 3 }
 potatoes	=	{ base_price = 2.5 }
 citrus		=	{ base_price = 3 }
 
 #plantations
+<<<<<<< HEAD
 coffee 		= 	{ base_price = 3.5 }
 sugar		=	{ base_price = 4 }
+=======
+coffee 		= 	{ base_price = 3 }
+sugar		=	{ base_price = 3 }
+>>>>>>> 93e8b7bc9e3e75855fb4e082447224fc525c0f22
 cocoa		=	{ base_price = 4 }
-tobacco		=	{ base_price = 3.5 }
-tea			=	{ base_price = 3 }
+tobacco		=	{ base_price = 3 }
+tea			=	{ base_price = 2 }
 
 #other foods and drink
 cheese 		=	{ base_price = 3.5 }
