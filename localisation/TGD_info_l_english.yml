@@ -274,7 +274,7 @@
  tgd_info.110.back: "Back"
  tgd_info.110.exit: "Exit"
  tgd_info.111.t: "Where can I prospect for ores?"
- tgd_info.111.d: "There are three terrain types in which ores can be found:\nMountainous, which includes Mountains, Hills, and Highlands\nForest, which includes Forest, Woods, and Jungle\nand Desert, which includes Desert and Coastal Desert.\nAt the start of the game, you can only prospect in Mountainous and Desert terrain types, but the ability to prospect in Forests is unlocked with the advent of blasting powder at admin tech 13."
+ tgd_info.111.d: "There are three terrain types in which ores can be found:\nMountainous, which includes Mountains, Hills, and Highlands\nForest, which includes Forest, Woods, and Jungle\nand Desert, which includes Desert and Coastal Desert.\nAt the start of the game, prospecting in forests has a high chance of failure, but this changes with the advent of blasting powder at admin tech 13."
  tgd_info.111.back: "Back"
  tgd_info.111.exit: "Exit"
  tgd_info.112.t: "When"

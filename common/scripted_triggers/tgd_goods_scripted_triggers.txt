@@ -93,7 +93,10 @@ paper_dev = {
 steel_dev = {
 	owner = {
 		adm_tech = 6
-		any_owned_province = { trade_goods = iron }
+		OR = {
+			any_owned_province = { trade_goods = iron }
+			any_subject_country = { any_owned_province = { trade_goods = iron } }
+		}
 	}
 	development = 16
 }
@@ -123,7 +126,10 @@ citrus_dev = {
 munitions_dev = {
 	owner = {
 		adm_tech = 21
-		any_owned_province = { trade_goods = lead }
+		OR = {
+			any_owned_province = { trade_goods = lead }
+			any_subject_country = { any_owned_province = { trade_goods = lead } }
+		}
 	}
 	development = 32
 }
@@ -208,8 +214,11 @@ machinery_dev = {
 #}
 bronze_dev = {
 	owner = {
-		adm_tech = 8
-		any_owned_province = { trade_goods = copper }
+		adm_tech = 9
+		OR = {
+			any_owned_province = { trade_goods = copper }
+			any_subject_country = { any_owned_province = { trade_goods = copper } }
+		}
 	}
 }
 cinnamon_dev = {
@@ -271,7 +280,10 @@ exotic_spices_dev = {
 brass_dev = {
 	owner = {
 		adm_tech = 16
-		any_owned_province = { trade_goods = zinc }
+		OR = {
+			any_owned_province = { trade_goods = zinc }
+			any_subject_country = { any_owned_province = { trade_goods = zinc } }
+		}
 	}
 	development = 18
 }
@@ -287,7 +299,10 @@ optics_dev = {
 gunpowder_dev = {
 	owner = {
 		adm_tech = 13
-		any_owned_province = { trade_goods = sulfer }
+		OR = {
+			any_owned_province = { trade_goods = sulfer }
+			any_subject_country = { any_owned_province = { trade_goods = sulfer } }
+		}
 	}
 	development = 25
 }
@@ -425,17 +440,8 @@ colonial_nation_paper_dev = {
 colonial_nation_steel_dev = {
 	adm_tech = 6
 	any_subject_country = {
-		any_owned_province = {
-			has_building = tradegoodsdevelopment
-			OR = {
-				trade_goods = iron
-				trade_goods = copper
-				trade_goods = lead
-				trade_goods = bronze
-				trade_goods = sulfer
-				trade_goods = zinc
-			}
-		}
+		any_owned_province = { has_building = tradegoodsdevelopment }
+		any_owned_province = { trade_goods = iron }
 	}
 }
 colonial_nation_citrus_dev = {
@@ -451,22 +457,22 @@ colonial_nation_citrus_dev = {
 		}
 	}
 }
-colonial_nation_zinc_dev = {
-	adm_tech = 13
-	any_subject_country = {
-		any_owned_province = {
-			has_building = tradegoodsdevelopment
-			OR = {
-				trade_goods = iron
-				trade_goods = copper
-				trade_goods = lead
-				trade_goods = bronze
-				trade_goods = sulfer
-				trade_goods = steel
-			}
-		}
-	}
-}
+#colonial_nation_zinc_dev = {
+#	adm_tech = 13
+#	any_subject_country = {
+#		any_owned_province = {
+#			has_building = tradegoodsdevelopment
+#			OR = {
+#				trade_goods = iron
+#				trade_goods = copper
+#				trade_goods = lead
+#				trade_goods = bronze
+#				trade_goods = sulfer
+#				trade_goods = steel
+#			}
+#		}
+#	}
+#}
 colonial_nation_munitions_dev = {
 	adm_tech = 21
 	any_subject_country = {
@@ -474,6 +480,7 @@ colonial_nation_munitions_dev = {
 			has_building = tradegoodsdevelopment
 			development = 32
 		}
+		any_owned_province = { trade_goods = lead }
 	}
 }
 colonial_nation_sulfer_dev = {
@@ -481,14 +488,7 @@ colonial_nation_sulfer_dev = {
 	any_subject_country = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
-			OR = {
-				trade_goods = iron
-				trade_goods = copper
-				trade_goods = lead
-				trade_goods = bronze
-				trade_goods = zinc
-				trade_goods = steel
-			}
+			any_owned_province = { trade_goods = sulfer }
 		}
 	}
 }
@@ -568,28 +568,26 @@ colonial_nation_machinery_dev = {
 		}
 	}
 }
-colonial_nation_lead_dev = {
-	adm_tech = 21
-	any_subject_country = {
-		any_owned_province = {
-			has_building = tradegoodsdevelopment
-		}
-	}
-}
+#colonial_nation_lead_dev = {
+#	adm_tech = 21
+#	any_subject_country = {
+#		any_owned_province = {
+#			has_building = tradegoodsdevelopment
+#		}
+#	}
+#}
 colonial_nation_bronze_dev = {
-	adm_tech = 25
+	adm_tech = 9
 	any_subject_country = {
-		any_owned_province = {
-			has_building = tradegoodsdevelopment
-		}
+		any_owned_province = { has_building = tradegoodsdevelopment }
+		any_owned_province = { trade_goods = copper }
 	}
 }
 colonial_nation_brass_dev = {
 	adm_tech = 16
 	any_subject_country = {
-		any_owned_province = {
-			has_building = tradegoodsdevelopment
-		}
+		any_owned_province = { has_building = tradegoodsdevelopment }
+		any_owned_province = { trade_goods = zinc }
 	}
 }
 colonial_nation_optics_dev = {
@@ -611,6 +609,7 @@ colonial_nation_gunpowder_dev = {
 			has_building = tradegoodsdevelopment
 			development = 25
 		}
+		any_owned_province = { trade_goods = sulfer }
 	}
 }
 colonial_nation_leather_dev = {
@@ -630,7 +629,6 @@ colonial_nation_leather_dev = {
 #############
 
 mountain_prospecting_1 = {
-	owner = { adm_tech = 1 }
 	NOT = { owner = { adm_tech = 13 } }
 	OR = {
 		has_terrain = mountain
@@ -640,106 +638,29 @@ mountain_prospecting_1 = {
 }
 mountain_prospecting_2 = {
 	owner = { adm_tech = 13 }
-#	NOT = { owner = { adm_tech = 2 } }
 	OR = {
 		has_terrain = mountain
 		has_terrain = highlands
 		has_terrain = hills
 	}
 }
-#mountain_prospecting_3 = {
-#	owner = { adm_tech = 16 }
-#	NOT = { owner = { adm_tech = 20 } }
-#	OR = {
-#		has_terrain = mountain
-#		has_terrain = highlands
-#		has_terrain = hills
-#	}
-#}
-#mountain_prospecting_4 = {
-#	owner = { adm_tech = 20 }
-#	NOT = { owner = { adm_tech = 21 } }
-#	OR = {
-#		has_terrain = mountain
-#		has_terrain = highlands
-#		has_terrain = hills
-#		has_terrain = glacier
-#	}
-#}
-#mountain_prospecting_5 = {
-#	owner = { adm_tech = 21 }
-#	NOT = { owner = { adm_tech = 25 } }
-#	OR = {
-#		has_terrain = mountain
-#		has_terrain = highlands
-#		has_terrain = hills
-#		has_terrain = glacier
-#	}
-#}
-#mountain_prospecting_6 = {
-#	owner = { adm_tech = 25 }
-#	OR = {
-#		has_terrain = mountain
-#		has_terrain = highlands
-#		has_terrain = hills
-#		has_terrain = glacier
-#	}
-#}
-#forest_prospecting_1 = {
-#	owner = { adm_tech = 1 }
-#	NOT = { owner = { adm_tech = 13 } }
-#	OR = {
-#		has_terrain = forest
-#		has_terrain = woods
-#		has_terrain = jungle
-#	}
-#}
-forest_prospecting_2 = {
-	owner = { adm_tech = 13 }
-#	NOT =  {owner = { adm_tech = 16 } }
+forest_prospecting_1 = {
+	NOT = { owner = { adm_tech = 13 } }
 	OR = {
 		has_terrain = forest
 		has_terrain = woods
 		has_terrain = jungle
 	}
 }
-#forest_prospecting_3 = {
-#	owner = { adm_tech = 16 }
-#	NOT = { owner = { adm_tech = 20 } }
-#	OR = {
-#		has_terrain = forest
-#		has_terrain = woods
-#		has_terrain = jungle
-#	}
-#}
-#forest_prospecting_4 = {
-#	owner = { adm_tech = 20 }
-#	NOT = { owner = { adm_tech = 21 } }
-#	OR = {
-#		has_terrain = forest
-#		has_terrain = woods
-#		has_terrain = jungle
-#	}
-#}
-#forest_prospecting_5 = {
-#	owner = { adm_tech = 21 }
-#	NOT = { owner = { adm_tech = 25 } }
-#	OR = {
-#		has_terrain = forest
-#		has_terrain = woods
-#		has_terrain = jungle
-#	}
-#}
-#forest_prospecting_6 = {
-#	owner = { adm_tech = 25 }
-#	OR = {
-#		has_terrain = forest
-#		has_terrain = woods
-#		has_terrain = jungle
-#	}
-#}
+forest_prospecting_2 = {
+	owner = { adm_tech = 13 }
+	OR = {
+		has_terrain = forest
+		has_terrain = woods
+		has_terrain = jungle
+	}
+}
 desert_prospecting_1 = {
-	owner = { adm_tech = 1 }
 	NOT = { owner = { adm_tech = 13 } }
 	OR = {
 		has_terrain = desert
@@ -748,40 +669,8 @@ desert_prospecting_1 = {
 }
 desert_prospecting_2 = {
 	owner = { adm_tech = 13 }
-#	NOT = { owner = { adm_tech = 16 } }
 	OR = {
 		has_terrain = desert
 		has_terrain = coastal_desert
 	}
 }
-#desert_prospecting_3 = {
-#	owner = { adm_tech = 16 }
-#	NOT = { owner = { adm_tech = 20 } }
-#	OR = {
-#		has_terrain = desert
-#		has_terrain = coastal_desert
-#	}
-#}
-#desert_prospecting_4 = {
-#	owner = { adm_tech = 20 }
-#	NOT = { owner = { adm_tech = 21 } }
-#	OR = {
-#		has_terrain = desert
-#		has_terrain = coastal_desert
-#	}
-#}
-#desert_prospecting_5 = {
-#	owner = { adm_tech = 21 }
-#	NOT = { owner = { adm_tech = 25 } }
-#	OR = {
-#		has_terrain = desert
-#		has_terrain = coastal_desert
-#	}
-#}
-#desert_prospecting_6 = {
-#	owner = { adm_tech = 25 }
-#	OR = {
-#		has_terrain = desert
-#		has_terrain = coastal_desert
-#	}
-#}

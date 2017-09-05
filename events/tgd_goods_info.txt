@@ -38,7 +38,7 @@ country_event = {
 	}
 	option = {
 		name = tgd_info.2.bronze
-		country_event = { id = tgd_info.53 }
+		country_event = { id = tgd_info.23 }
 	}
 	option = {
 		name = tgd_info.2.cheese
@@ -47,10 +47,6 @@ country_event = {
 	option = {
 		name = tgd_info.2.chinaware
 		country_event = { id = tgd_info.4 }
-	}
-	option = {
-		name = tgd_info.2.sulfer
-		country_event = { id = tgd_info.38 }
 	}
 	option = {
 		name = tgd_info.2.cinnamon
@@ -141,10 +137,6 @@ country_event = {
 		country_event = { id = tgd_info.22 }
 	}
 	option = {
-		name = tgd_info.2.mercury
-		country_event = { id = tgd_info.23 }
-	}
-	option = {
 		name = tgd_info.2.munitions
 		country_event = { id = tgd_info.24 }
 	}
@@ -195,6 +187,10 @@ country_event = {
 	option = {
 		name = tgd_info.2.sugar
 		country_event = { id = tgd_info.35 }
+	}
+	option = {
+		name = tgd_info.2.sulfer
+		country_event = { id = tgd_info.38 }
 	}
 	option = {
 		name = tgd_info.2.tar

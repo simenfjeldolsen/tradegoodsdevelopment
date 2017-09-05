@@ -184,25 +184,9 @@ province_event = {
 		owner = {  add_treasury = -250 }
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.10.zinc
-		trigger = { zinc_dev = yes }
-		change_trade_goods = zinc
-		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -500 }
-	}
-	option = {
 		name = tgd_tradegoodsdevelopment.10.munitions
 		trigger = { munitions_dev = yes }
 		change_trade_goods = munitions
-		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -500 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.sulfer
-		trigger = { sulfer_dev = yes }
-		change_trade_goods = sulfer
 		dev_tier_cost_effect = yes
 		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
 		owner = {  add_treasury = -500 }
@@ -243,14 +227,6 @@ province_event = {
 		name = tgd_tradegoodsdevelopment.10.machinery
 		trigger = { machinery_dev = yes }
 		change_trade_goods = machinery
-		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
-		owner = {  add_treasury = -1000 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.lead
-		trigger = { lead_dev = yes }
-		change_trade_goods = lead
 		dev_tier_cost_effect = yes
 		owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
 		owner = {  add_treasury = -1000 }
@@ -530,7 +506,7 @@ country_event = {
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = cheese
 			}
 		}
@@ -550,7 +526,7 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = vanilla
 			}
 		}
@@ -570,7 +546,7 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = glass
 			}
 		}
@@ -590,7 +566,7 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = paper
 			}
 		}
@@ -610,7 +586,7 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = steel
 			}
 		}
@@ -630,33 +606,13 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = citrus
 			}
 		}
 		#dev_tier_cost_effect = yes
 		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
 		add_treasury = -250
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.zinc
-		trigger = { colonial_nation_zinc_dev = yes }
-		every_subject_country = {
-			limit = {
-				any_owned_province = {
-					has_building = tradegoodsdevelopment
-				}
-			}
-			random_owned_province = {
-				limit = { has_building = tradegoodsdevelopment }
-				remove_building = tradegoodsdevelopment
-remove_building = prospecting
-				change_trade_goods = zinc
-			}
-		}
-		#dev_tier_cost_effect = yes
-		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
-		add_treasury = -500
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.munitions
@@ -670,28 +626,8 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
-				change_trade_goods = munitions
-			}
-		}
-		#dev_tier_cost_effect = yes
-		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
-		add_treasury = -500
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.sulfer
-		trigger = { colonial_nation_sulfer_dev = yes }
-		every_subject_country = {
-			limit = {
-				any_owned_province = {
-					has_building = tradegoodsdevelopment
-				}
-			}
-			random_owned_province = {
-				limit = { has_building = tradegoodsdevelopment }
-				remove_building = tradegoodsdevelopment
 				remove_building = prospecting
-				change_trade_goods = sulfer
+				change_trade_goods = munitions
 			}
 		}
 		#dev_tier_cost_effect = yes
@@ -710,7 +646,7 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = potatoes
 			}
 		}
@@ -730,7 +666,7 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = rum
 			}
 		}
@@ -750,7 +686,7 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = uniforms
 			}
 		}
@@ -770,7 +706,7 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = marble
 			}
 		}
@@ -790,28 +726,8 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = machinery
-			}
-		}
-		#dev_tier_cost_effect = yes
-		add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
-		add_treasury = -1000
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.lead
-		trigger = { colonial_nation_lead_dev = yes }
-		every_subject_country = {
-			limit = {
-				any_owned_province = {
-					has_building = tradegoodsdevelopment
-				}
-			}
-			random_owned_province = {
-				limit = { has_building = tradegoodsdevelopment }
-				remove_building = tradegoodsdevelopment
-remove_building = prospecting
-				change_trade_goods = lead
 			}
 		}
 		#dev_tier_cost_effect = yes
@@ -830,7 +746,7 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = bronze
 			}
 		}
@@ -850,7 +766,7 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = brass
 			}
 		}
@@ -870,7 +786,7 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = gunpowder
 			}
 		}
@@ -890,7 +806,7 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = optics
 			}
 		}
@@ -910,7 +826,7 @@ remove_building = prospecting
 			random_owned_province = {
 				limit = { has_building = tradegoodsdevelopment }
 				remove_building = tradegoodsdevelopment
-remove_building = prospecting
+				remove_building = prospecting
 				change_trade_goods = leather
 			}
 		}
