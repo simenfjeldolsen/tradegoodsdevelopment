@@ -37,12 +37,20 @@ country_event = {
 		country_event = { id = tgd_info.48 }
 	}
 	option = {
+		name = tgd_info.2.bronze
+		country_event = { id = tgd_info.53 }
+	}
+	option = {
 		name = tgd_info.2.cheese
 		country_event = { id = tgd_info.3 }
 	}
 	option = {
 		name = tgd_info.2.chinaware
 		country_event = { id = tgd_info.4 }
+	}
+	option = {
+		name = tgd_info.2.sulfer
+		country_event = { id = tgd_info.38 }
 	}
 	option = {
 		name = tgd_info.2.cinnamon
@@ -197,10 +205,6 @@ country_event = {
 		country_event = { id = tgd_info.37 }
 	}
 	option = {
-		name = tgd_info.2.tin
-		country_event = { id = tgd_info.38 }
-	}
-	option = {
 		name = tgd_info.2.tobacco
 		country_event = { id = tgd_info.39 }
 	}
@@ -266,6 +270,22 @@ country_event = {
 	}
 	option = {
 		name = tgd_info.3.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.53
+	title = tgd_info.53.t
+	desc = tgd_info.53.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.53.back
+		country_event = { id = tgd_info.2 }
+	}
+	option = {
+		name = tgd_info.53.exit
 	}
 }
 
@@ -1180,131 +1200,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = tgd_info.120.1
-		country_event = { id = tgd_info.121 }
-	}
-	option = {
-		name = tgd_info.120.2
-		country_event = { id = tgd_info.122 }
-	}
-	option = {
-		name = tgd_info.120.3
-		country_event = { id = tgd_info.123 }
-	}
-	option = {
-		name = tgd_info.120.4
-		country_event = { id = tgd_info.124 }
-	}
-	option = {
-		name = tgd_info.120.5
-		country_event = { id = tgd_info.125 }
-	}
-	option = {
-		name = tgd_info.120.6
-		country_event = { id = tgd_info.126 }
-	}
-	option = {
 		name = tgd_info.120.back
 		country_event = { id = tgd_info.113 }
 	}
 	option = {
 		name = tgd_info.120.exit
-	}
-}
-country_event = {
-	id = tgd_info.121
-	title = tgd_info.121.t
-	desc = tgd_info.121.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.121.back
-		country_event = { id = tgd_info.120 }
-	}
-	option = {
-		name = tgd_info.121.exit
-	}
-}
-country_event = {
-	id = tgd_info.122
-	title = tgd_info.122.t
-	desc = tgd_info.122.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.122.back
-		country_event = { id = tgd_info.120 }
-	}
-	option = {
-		name = tgd_info.122.exit
-	}
-}
-country_event = {
-	id = tgd_info.123
-	title = tgd_info.123.t
-	desc = tgd_info.123.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.123.back
-		country_event = { id = tgd_info.120 }
-	}
-	option = {
-		name = tgd_info.123.exit
-	}
-}
-country_event = {
-	id = tgd_info.124
-	title = tgd_info.124.t
-	desc = tgd_info.124.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.124.back
-		country_event = { id = tgd_info.120 }
-	}
-	option = {
-		name = tgd_info.124.exit
-	}
-}
-country_event = {
-	id = tgd_info.125
-	title = tgd_info.125.t
-	desc = tgd_info.125.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.125.back
-		country_event = { id = tgd_info.120 }
-	}
-	option = {
-		name = tgd_info.125.exit
-	}
-}
-country_event = {
-	id = tgd_info.126
-	title = tgd_info.126.t
-	desc = tgd_info.126.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.126.back
-		country_event = { id = tgd_info.120 }
-	}
-	option = {
-		name = tgd_info.126.exit
 	}
 }
 country_event = {
@@ -1314,133 +1214,12 @@ country_event = {
 	picture = TRADEGOODS_eventPicture
 	
 	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.130.1
-		country_event = { id = tgd_info.131 }
-	}
-	option = {
-		name = tgd_info.130.2
-		country_event = { id = tgd_info.132 }
-	}
-	option = {
-		name = tgd_info.130.3
-		country_event = { id = tgd_info.133 }
-	}
-	option = {
-		name = tgd_info.130.4
-		country_event = { id = tgd_info.134 }
-	}
-	option = {
-		name = tgd_info.130.5
-		country_event = { id = tgd_info.135 }
-	}
-	option = {
-		name = tgd_info.130.6
-		country_event = { id = tgd_info.136 }
-	}
 	option = {
 		name = tgd_info.130.back
 		country_event = { id = tgd_info.113 }
 	}
 	option = {
 		name = tgd_info.130.exit
-	}
-}
-country_event = {
-	id = tgd_info.131
-	title = tgd_info.131.t
-	desc = tgd_info.131.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.131.back
-		country_event = { id = tgd_info.130 }
-	}
-	option = {
-		name = tgd_info.131.exit
-	}
-}
-country_event = {
-	id = tgd_info.132
-	title = tgd_info.132.t
-	desc = tgd_info.132.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.132.back
-		country_event = { id = tgd_info.130 }
-	}
-	option = {
-		name = tgd_info.132.exit
-	}
-}
-country_event = {
-	id = tgd_info.133
-	title = tgd_info.133.t
-	desc = tgd_info.133.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.133.back
-		country_event = { id = tgd_info.130 }
-	}
-	option = {
-		name = tgd_info.133.exit
-	}
-}
-country_event = {
-	id = tgd_info.134
-	title = tgd_info.134.t
-	desc = tgd_info.134.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.134.back
-		country_event = { id = tgd_info.130 }
-	}
-	option = {
-		name = tgd_info.134.exit
-	}
-}
-country_event = {
-	id = tgd_info.135
-	title = tgd_info.135.t
-	desc = tgd_info.135.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.135.back
-		country_event = { id = tgd_info.130 }
-	}
-	option = {
-		name = tgd_info.135.exit
-	}
-}
-country_event = {
-	id = tgd_info.136
-	title = tgd_info.136.t
-	desc = tgd_info.136.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.136.back
-		country_event = { id = tgd_info.130 }
-	}
-	option = {
-		name = tgd_info.136.exit
 	}
 }
 country_event = {
@@ -1452,130 +1231,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = tgd_info.140.1
-		country_event = { id = tgd_info.141 }
-	}
-	option = {
-		name = tgd_info.140.2
-		country_event = { id = tgd_info.142 }
-	}
-	option = {
-		name = tgd_info.140.3
-		country_event = { id = tgd_info.143 }
-	}
-	option = {
-		name = tgd_info.140.4
-		country_event = { id = tgd_info.144 }
-	}
-	option = {
-		name = tgd_info.140.5
-		country_event = { id = tgd_info.145 }
-	}
-	option = {
-		name = tgd_info.140.6
-		country_event = { id = tgd_info.146 }
-	}
-	option = {
 		name = tgd_info.140.back
 		country_event = { id = tgd_info.113 }
 	}
 	option = {
 		name = tgd_info.140.exit
-	}
-}
-country_event = {
-	id = tgd_info.141
-	title = tgd_info.141.t
-	desc = tgd_info.141.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.141.back
-		country_event = { id = tgd_info.140 }
-	}
-	option = {
-		name = tgd_info.141.exit
-	}
-}
-country_event = {
-	id = tgd_info.142
-	title = tgd_info.142.t
-	desc = tgd_info.142.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.142.back
-		country_event = { id = tgd_info.140 }
-	}
-	option = {
-		name = tgd_info.142.exit
-	}
-}
-country_event = {
-	id = tgd_info.143
-	title = tgd_info.143.t
-	desc = tgd_info.143.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.143.back
-		country_event = { id = tgd_info.140 }
-	}
-	option = {
-		name = tgd_info.143.exit
-	}
-}
-country_event = {
-	id = tgd_info.144
-	title = tgd_info.144.t
-	desc = tgd_info.144.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.144.back
-		country_event = { id = tgd_info.140 }
-	}
-	option = {
-		name = tgd_info.144.exit
-	}
-}
-country_event = {
-	id = tgd_info.145
-	title = tgd_info.145.t
-	desc = tgd_info.145.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.145.back
-		country_event = { id = tgd_info.140 }
-	}
-	option = {
-		name = tgd_info.145.exit
-	}
-}
-country_event = {
-	id = tgd_info.146
-	title = tgd_info.146.t
-	desc = tgd_info.146.d
-	picture = TRADEGOODS_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tgd_info.146.back
-		country_event = { id = tgd_info.140 }
-	}
-	option = {
-		name = tgd_info.146.exit
 	}
 }

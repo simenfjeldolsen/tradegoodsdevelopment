@@ -1443,11 +1443,11 @@ weapons = {
 		brass
 		gunpowder
 		lead
-		mercury
 		munitions
 		steel
-		tin
+		sulfer
 		zinc
+		bronze
 	}
 	modifier = {
 		trade_goods_size = 1.0

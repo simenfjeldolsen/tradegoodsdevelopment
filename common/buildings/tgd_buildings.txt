@@ -135,8 +135,8 @@ tradegoodsdevelopment = {
 				owner = { copper = 2 }
 			}
 			AND = {
-				trade_goods = tin
-				owner = { tin = 2 }
+				trade_goods = sulfer
+				owner = { sulfer = 2 }
 			}
 			AND = {
 				trade_goods = lead
@@ -147,8 +147,8 @@ tradegoodsdevelopment = {
 				owner = { zinc = 2 }
 			}
 			AND = {
-				trade_goods = mercury
-				owner = { mercury = 2 }
+				trade_goods = bronze
+				owner = { bronze = 2 }
 			}
 			AND = {
 				trade_goods = steel

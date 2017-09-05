@@ -93,15 +93,9 @@ paper_dev = {
 steel_dev = {
 	owner = {
 		adm_tech = 6
+		any_owned_province = { trade_goods = iron }
 	}
-	OR = {
-		trade_goods = iron
-		trade_goods = copper
-		trade_goods = lead
-		trade_goods = mercury
-		trade_goods = tin
-		trade_goods = zinc
-	}
+	development = 16
 }
 citrus_dev = {
 	owner = {
@@ -113,38 +107,39 @@ citrus_dev = {
 	NOT = { has_winter = mild_winter }
 	NOT = { has_terrain = desert }
 }
-zinc_dev = {
-	owner = {
-		adm_tech = 13
-	}
-	OR = {
-		trade_goods = iron
-		trade_goods = copper
-		trade_goods = lead
-		trade_goods = mercury
-		trade_goods = tin
-		trade_goods = steel
-	}
-}
+#zinc_dev = {
+#	owner = {
+#		adm_tech = 13
+#	}
+#	OR = {
+#		trade_goods = iron
+#		trade_goods = copper
+#		trade_goods = lead
+#		trade_goods = bronze
+#		trade_goods = sulfer
+#		trade_goods = steel
+#	}
+#}
 munitions_dev = {
 	owner = {
 		adm_tech = 21
+		any_owned_province = { trade_goods = lead }
 	}
 	development = 32
 }
-tin_dev = {
-	owner = {
-		adm_tech = 16
-	}
-	OR = {
-		trade_goods = iron
-		trade_goods = copper
-		trade_goods = lead
-		trade_goods = mercury
-		trade_goods = zinc
-		trade_goods = steel
-	}
-}
+#sulfer_dev = {
+#	owner = {
+#		adm_tech = 16
+#	}
+#	OR = {
+#		trade_goods = iron
+#		trade_goods = copper
+#		trade_goods = lead
+#		trade_goods = bronze
+#		trade_goods = zinc
+#		trade_goods = steel
+#	}
+#}
 potatoes_dev = {
 	owner = {
 		dip_tech = 16
@@ -206,14 +201,15 @@ machinery_dev = {
 	}
 	development = 25
 }
-lead_dev = {
+#lead_dev = {
+#	owner = {
+#		adm_tech = 21
+#	}
+#}
+bronze_dev = {
 	owner = {
-		adm_tech = 21
-	}
-}
-mercury_dev = {
-	owner = {
-		adm_tech = 25
+		adm_tech = 8
+		any_owned_province = { trade_goods = copper }
 	}
 }
 cinnamon_dev = {
@@ -275,7 +271,9 @@ exotic_spices_dev = {
 brass_dev = {
 	owner = {
 		adm_tech = 16
+		any_owned_province = { trade_goods = zinc }
 	}
+	development = 18
 }
 optics_dev = {
 	owner = {
@@ -289,6 +287,7 @@ optics_dev = {
 gunpowder_dev = {
 	owner = {
 		adm_tech = 13
+		any_owned_province = { trade_goods = sulfer }
 	}
 	development = 25
 }
@@ -432,8 +431,8 @@ colonial_nation_steel_dev = {
 				trade_goods = iron
 				trade_goods = copper
 				trade_goods = lead
-				trade_goods = mercury
-				trade_goods = tin
+				trade_goods = bronze
+				trade_goods = sulfer
 				trade_goods = zinc
 			}
 		}
@@ -461,8 +460,8 @@ colonial_nation_zinc_dev = {
 				trade_goods = iron
 				trade_goods = copper
 				trade_goods = lead
-				trade_goods = mercury
-				trade_goods = tin
+				trade_goods = bronze
+				trade_goods = sulfer
 				trade_goods = steel
 			}
 		}
@@ -477,7 +476,7 @@ colonial_nation_munitions_dev = {
 		}
 	}
 }
-colonial_nation_tin_dev = {
+colonial_nation_sulfer_dev = {
 	adm_tech = 16
 	any_subject_country = {
 		any_owned_province = {
@@ -486,7 +485,7 @@ colonial_nation_tin_dev = {
 				trade_goods = iron
 				trade_goods = copper
 				trade_goods = lead
-				trade_goods = mercury
+				trade_goods = bronze
 				trade_goods = zinc
 				trade_goods = steel
 			}
@@ -577,7 +576,7 @@ colonial_nation_lead_dev = {
 		}
 	}
 }
-colonial_nation_mercury_dev = {
+colonial_nation_bronze_dev = {
 	adm_tech = 25
 	any_subject_country = {
 		any_owned_province = {
@@ -641,104 +640,104 @@ mountain_prospecting_1 = {
 }
 mountain_prospecting_2 = {
 	owner = { adm_tech = 13 }
-	NOT = { owner = { adm_tech = 16 } }
+#	NOT = { owner = { adm_tech = 2 } }
 	OR = {
 		has_terrain = mountain
 		has_terrain = highlands
 		has_terrain = hills
 	}
 }
-mountain_prospecting_3 = {
-	owner = { adm_tech = 16 }
-	NOT = { owner = { adm_tech = 20 } }
-	OR = {
-		has_terrain = mountain
-		has_terrain = highlands
-		has_terrain = hills
-	}
-}
-mountain_prospecting_4 = {
-	owner = { adm_tech = 20 }
-	NOT = { owner = { adm_tech = 21 } }
-	OR = {
-		has_terrain = mountain
-		has_terrain = highlands
-		has_terrain = hills
-		has_terrain = glacier
-	}
-}
-mountain_prospecting_5 = {
-	owner = { adm_tech = 21 }
-	NOT = { owner = { adm_tech = 25 } }
-	OR = {
-		has_terrain = mountain
-		has_terrain = highlands
-		has_terrain = hills
-		has_terrain = glacier
-	}
-}
-mountain_prospecting_6 = {
-	owner = { adm_tech = 25 }
-	OR = {
-		has_terrain = mountain
-		has_terrain = highlands
-		has_terrain = hills
-		has_terrain = glacier
-	}
-}
-forest_prospecting_1 = {
-	owner = { adm_tech = 1 }
-	NOT = { owner = { adm_tech = 13 } }
-	OR = {
-		has_terrain = forest
-		has_terrain = woods
-		has_terrain = jungle
-	}
-}
+#mountain_prospecting_3 = {
+#	owner = { adm_tech = 16 }
+#	NOT = { owner = { adm_tech = 20 } }
+#	OR = {
+#		has_terrain = mountain
+#		has_terrain = highlands
+#		has_terrain = hills
+#	}
+#}
+#mountain_prospecting_4 = {
+#	owner = { adm_tech = 20 }
+#	NOT = { owner = { adm_tech = 21 } }
+#	OR = {
+#		has_terrain = mountain
+#		has_terrain = highlands
+#		has_terrain = hills
+#		has_terrain = glacier
+#	}
+#}
+#mountain_prospecting_5 = {
+#	owner = { adm_tech = 21 }
+#	NOT = { owner = { adm_tech = 25 } }
+#	OR = {
+#		has_terrain = mountain
+#		has_terrain = highlands
+#		has_terrain = hills
+#		has_terrain = glacier
+#	}
+#}
+#mountain_prospecting_6 = {
+#	owner = { adm_tech = 25 }
+#	OR = {
+#		has_terrain = mountain
+#		has_terrain = highlands
+#		has_terrain = hills
+#		has_terrain = glacier
+#	}
+#}
+#forest_prospecting_1 = {
+#	owner = { adm_tech = 1 }
+#	NOT = { owner = { adm_tech = 13 } }
+#	OR = {
+#		has_terrain = forest
+#		has_terrain = woods
+#		has_terrain = jungle
+#	}
+#}
 forest_prospecting_2 = {
 	owner = { adm_tech = 13 }
-	NOT =  {owner = { adm_tech = 16 } }
+#	NOT =  {owner = { adm_tech = 16 } }
 	OR = {
 		has_terrain = forest
 		has_terrain = woods
 		has_terrain = jungle
 	}
 }
-forest_prospecting_3 = {
-	owner = { adm_tech = 16 }
-	NOT = { owner = { adm_tech = 20 } }
-	OR = {
-		has_terrain = forest
-		has_terrain = woods
-		has_terrain = jungle
-	}
-}
-forest_prospecting_4 = {
-	owner = { adm_tech = 20 }
-	NOT = { owner = { adm_tech = 21 } }
-	OR = {
-		has_terrain = forest
-		has_terrain = woods
-		has_terrain = jungle
-	}
-}
-forest_prospecting_5 = {
-	owner = { adm_tech = 21 }
-	NOT = { owner = { adm_tech = 25 } }
-	OR = {
-		has_terrain = forest
-		has_terrain = woods
-		has_terrain = jungle
-	}
-}
-forest_prospecting_6 = {
-	owner = { adm_tech = 25 }
-	OR = {
-		has_terrain = forest
-		has_terrain = woods
-		has_terrain = jungle
-	}
-}
+#forest_prospecting_3 = {
+#	owner = { adm_tech = 16 }
+#	NOT = { owner = { adm_tech = 20 } }
+#	OR = {
+#		has_terrain = forest
+#		has_terrain = woods
+#		has_terrain = jungle
+#	}
+#}
+#forest_prospecting_4 = {
+#	owner = { adm_tech = 20 }
+#	NOT = { owner = { adm_tech = 21 } }
+#	OR = {
+#		has_terrain = forest
+#		has_terrain = woods
+#		has_terrain = jungle
+#	}
+#}
+#forest_prospecting_5 = {
+#	owner = { adm_tech = 21 }
+#	NOT = { owner = { adm_tech = 25 } }
+#	OR = {
+#		has_terrain = forest
+#		has_terrain = woods
+#		has_terrain = jungle
+#	}
+#}
+#forest_prospecting_6 = {
+#	owner = { adm_tech = 25 }
+#	OR = {
+#		has_terrain = forest
+#		has_terrain = woods
+#		has_terrain = jungle
+#	}
+#}
 desert_prospecting_1 = {
 	owner = { adm_tech = 1 }
 	NOT = { owner = { adm_tech = 13 } }
@@ -749,40 +748,40 @@ desert_prospecting_1 = {
 }
 desert_prospecting_2 = {
 	owner = { adm_tech = 13 }
-	NOT = { owner = { adm_tech = 16 } }
+#	NOT = { owner = { adm_tech = 16 } }
 	OR = {
 		has_terrain = desert
 		has_terrain = coastal_desert
 	}
 }
-desert_prospecting_3 = {
-	owner = { adm_tech = 16 }
-	NOT = { owner = { adm_tech = 20 } }
-	OR = {
-		has_terrain = desert
-		has_terrain = coastal_desert
-	}
-}
-desert_prospecting_4 = {
-	owner = { adm_tech = 20 }
-	NOT = { owner = { adm_tech = 21 } }
-	OR = {
-		has_terrain = desert
-		has_terrain = coastal_desert
-	}
-}
-desert_prospecting_5 = {
-	owner = { adm_tech = 21 }
-	NOT = { owner = { adm_tech = 25 } }
-	OR = {
-		has_terrain = desert
-		has_terrain = coastal_desert
-	}
-}
-desert_prospecting_6 = {
-	owner = { adm_tech = 25 }
-	OR = {
-		has_terrain = desert
-		has_terrain = coastal_desert
-	}
-}
+#desert_prospecting_3 = {
+#	owner = { adm_tech = 16 }
+#	NOT = { owner = { adm_tech = 20 } }
+#	OR = {
+#		has_terrain = desert
+#		has_terrain = coastal_desert
+#	}
+#}
+#desert_prospecting_4 = {
+#	owner = { adm_tech = 20 }
+#	NOT = { owner = { adm_tech = 21 } }
+#	OR = {
+#		has_terrain = desert
+#		has_terrain = coastal_desert
+#	}
+#}
+#desert_prospecting_5 = {
+#	owner = { adm_tech = 21 }
+#	NOT = { owner = { adm_tech = 25 } }
+#	OR = {
+#		has_terrain = desert
+#		has_terrain = coastal_desert
+#	}
+#}
+#desert_prospecting_6 = {
+#	owner = { adm_tech = 25 }
+#	OR = {
+#		has_terrain = desert
+#		has_terrain = coastal_desert
+#	}
+#}

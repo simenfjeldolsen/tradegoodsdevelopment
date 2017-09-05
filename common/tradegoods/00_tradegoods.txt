@@ -83,7 +83,7 @@ munitions = {
 	#weapons, ammo
 	color = { 0.17 0.14 0.12 }
 	modifier = { infantry_power = 0.10 }
-	province = { regiment_recruit_speed = -0.30 }
+	province = { production_efficiency = 0.10 }
 	chance = { factor = 0 }
 }
 paper = {
@@ -1934,8 +1934,7 @@ gold = {
 }
 iron = {
 	color = { 0.2 0.2 0.2 }
-	modifier = { global_regiment_cost = -0.05 }
-	province = { local_build_time = -0.2 }
+	province = { production_efficiency = 0.10 }
 	chance = {
 		factor = 10
 		modifier = {
@@ -1981,8 +1980,7 @@ iron = {
 }
 copper = {
 	color = { 0.85 0.46 0.15 }
-	modifier = { global_regiment_recruit_speed = -0.20 }
-	province = { regiment_recruit_speed = -0.20 }
+	province = { production_efficiency = 0.10 }
 	chance = {
 		factor = 15
 		modifier = {
@@ -2059,11 +2057,10 @@ copper = {
 		}
 	}
 }
-tin = {
- 	#used in bronze making, and the increasingly popular pewter
+sulfer = {
+ 	#refined into gunpowder
 	color = { 139 234 239 }
-	modifier = { production_efficiency = 0.05 }
-	province = { production_efficiency = 0.1 }
+	province = { production_efficiency = 0.10 }
 	chance = {
 		factor = 7
 		modifier = {
@@ -2156,7 +2153,6 @@ tin = {
 lead = {
  	#amunition, appliances, construction, cosmetics
 	color = { 0.15 0.15 0.15 }
-	modifier = { production_efficiency = 0.05 }
 	province = { production_efficiency = 0.10 }
 	chance = {
 		factor = 10
@@ -2248,8 +2244,7 @@ lead = {
 zinc = {
  	#construction, cosmetics; india+china
 	color = { 0.65 0.65 0.70 }
-	modifier = { fire_damage_received = -0.1 }
-	province = { local_defensiveness = 0.15 }
+	province = { production_efficiency = 0.10 }
 	chance = {
 		factor = 5
 		modifier = {
@@ -2338,102 +2333,11 @@ zinc = {
 		}
 	}
 }
-mercury = {
- 	#italy, slovenia, spain and its colonies, lucrative post 1550s (patio process)
-	color = { 0.55 0.55 0.65 }
-	modifier = { backrow_artillery_damage = 0.15 }
-	province = { local_tax_modifier = 0.1 }
-	chance = {
-		factor = 5
-		modifier = {
-			factor = 0
-			OR = {
-				FROM = { is_tribal = yes }
-				FROM = { technology_group = north_american }
-				FROM = { technology_group = aboriginal }
-				FROM = { technology_group = south_american }
-				#only settled civilizations
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				AND = {
-					is_random_new_world = no
-					NOT = {
-						OR = {
-							continent = north_america
-							continent = south_america
-						}
-					}
-				}
-				AND = {
-					is_random_new_world = yes
-					NOT = { continent = new_world }
-				}
-			}
-			normal_or_historical_nations = yes
-			NOT = { region = west_siberia_region }
-			NOT = { region = east_siberia_region }
-			NOT = { province_id = 18 }
-			NOT = { continent = africa }
-			NOT = { region = australia_region }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				island = yes
-				AND = {
-					has_terrain = desert
-					NOT = { region = australia_region }
-				}
-				has_terrain = glacier
-			}
-		}
-		modifier = {
-			factor = 0.3
-			OR = {
-				has_terrain = savannah
-				has_terrain = jungle
-				has_terrain = steppes
-				continent = africa
-			}
-		}
-		modifier = {
-			factor = 0.6
-			OR = {
-				continent = north_america
-				continent = south_america
-				continent = new_world
-				continent = africa
-			}
-			NOT = {
-				OR = {
-					has_terrain = mountain
-					has_terrain = hills
-					has_terrain = highlands
-				}
-			}
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_terrain = mountain
-				has_terrain = hills
-				has_terrain = highlands
-			}
-		}
-		modifier = {
-			factor = 1.5
-			continent = south_america
-		}
-		modifier = {
-			factor = 1.5
-			is_random_new_world = yes
-			has_terrain = mountain
-			continent = new_world #Always in RNW
-		}
-	}
+bronze = {
+	color = { 0.86 0.19 0.19 }
+	modifier = { artillery_power = 0.10 }
+	province = { production_efficiency = 0.10 }
+	chance = { factor = 0 }
 }
 uniforms = {
 	color = { 0.86 0.19 0.19 }
@@ -2444,12 +2348,12 @@ uniforms = {
 gunpowder = {
 	color = { 0.86 0.19 0.19 }
 	modifier = { fire_damage = 0.1 }
-	province = { local_defensiveness = 0.10 }
+	province = { production_efficiency = 0.10 }
 	chance = { factor = 0 }
 }
 brass = {
 	color = { 0.86 0.19 0.19 }
-	modifier = { artillery_power = 0.10 }
+	modifier = { backrow_artillery_damage = 0.15 }
 	province = { production_efficiency = 0.10 }
 	chance = { factor = 0 }
 }
@@ -2483,6 +2387,7 @@ leather = {
 	province = { local_trade_goods_size_modifier = 0.05 }
 	chance = { factor = 0 }
 }
+
 
 
 unknown = {

@@ -18,6 +18,7 @@ fish		=	{ base_price = 2.5 }
 wine 		= 	{ base_price = 2.5 }
 beer		=	{ base_price = 2.5 }
 rum			=	{ base_price = 3 }
+salt		=	{ base_price = 3 }
 
 #textiles
 wool		=	{ base_price = 2.5 }
@@ -49,15 +50,16 @@ gold		=	{ base_price = 0 goldtype = yes }
 #raw ores
 iron		=	{ base_price = 3 }
 copper		=	{ base_price = 3 }
-tin			=	{ base_price = 3 }
-lead		=	{ base_price = 3 }
+sulfer		=	{ base_price = 3 }
 zinc		=	{ base_price = 3 }
-mercury		=	{ base_price = 3 }
-salt		=	{ base_price = 3 }
+lead		=	{ base_price = 3 }
 
-#refined metals
+#refined metals and munitions
 steel		=	{ base_price = 3.5 }
-brass		=	{ base_price = 3.5 }
+bronze		=	{ base_price = 3.5 }
+gunpowder	=	{ base_price = 3.5 }
+brass		=	{ base_price = 4 }
+munitions	=	{ base_price = 4 }
 
 #spices
 spices		=	{ base_price = 4 }
@@ -67,9 +69,8 @@ cinnamon	=	{ base_price = 5 }
 
 #misc/industrial
 paper		=	{ base_price = 2.5 }
-munitions	=	{ base_price = 4 }
 machinery	=	{ base_price = 4.5 }
 uniforms	=	{ base_price = 3.5 }
-gunpowder	=	{ base_price = 3.5 }
+
 
 unknown		=	{ base_price = 0 }
