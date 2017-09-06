@@ -120,20 +120,6 @@ citrus_dev = {
 	NOT = { has_winter = mild_winter }
 	NOT = { has_terrain = desert }
 }
-#zinc_dev = {
-#	NOT = { trade_goods = zinc }
-#	owner = {
-#		adm_tech = 13
-#	}
-#	OR = {
-#		trade_goods = iron
-#		trade_goods = copper
-#		trade_goods = lead
-#		trade_goods = bronze
-#		trade_goods = sulfer
-#		trade_goods = steel
-#	}
-#}
 munitions_dev = {
 	NOT = { trade_goods = munitions }
 	owner = {
@@ -145,21 +131,6 @@ munitions_dev = {
 	}
 	development = 32
 }
-
-#sulfer_dev = {
-#	NOT = { trade_goods = sulfer }
-#	owner = {
-#		adm_tech = 16
-#	}
-#	OR = {
-#		trade_goods = iron
-#		trade_goods = copper
-#		trade_goods = lead
-#		trade_goods = bronze
-#		trade_goods = zinc
-#		trade_goods = steel
-#	}
-#}
 potatoes_dev = {
 	NOT = { trade_goods = potatoes }
 	owner = {
@@ -226,12 +197,6 @@ machinery_dev = {
 	}
 	development = 25
 }
-#lead_dev = {
-#	NOT = { trade_goods = lead }
-#	owner = {
-#		adm_tech = 21
-#	}
-#}
 bronze_dev = {
 	NOT = { trade_goods = bronze }
 	owner = {
@@ -339,16 +304,235 @@ leather_dev = {
 	}
 	development = 22
 }
-
+cocoa_dev = {
+	NOT = { trade_goods = cocoa }
+	OR = {
+		region = central_america_region
+		continent = south_america
+	}
+	OR = {
+		has_terrain = jungle
+		has_terrain = mountain
+		has_terrain = hills
+	}
+}
+chinaware_dev = {
+	NOT = { trade_goods = chinaware }
+	OR = {
+		AND = {
+			development = 12
+			OR = {
+				region = south_china_region
+				region = xinan_region
+				region = north_china_region
+			}
+		}
+		AND = {
+			development = 18
+			has_global_flag = bottger_happened
+		}
+	}
+}
+cloth_dev = {
+	NOT = { trade_goods = cloth }
+	development = 22
+	OR = {
+		has_terrain = grasslands
+		has_terrain = farmlands
+		has_terrain = drylands
+		has_terrain = hills
+		has_terrain = forest
+		has_terrain = woods
+	}
+}
+coffee_dev = {
+	NOT = { trade_goods = coffee }
+	development = 10
+	NOT = {
+		has_terrain = savannah
+		has_terrain = desert
+		has_terrain = coastal_desert
+	}
+	OR = {
+		continent = south_america
+		region = horn_of_africa_region
+		region = arabia_region
+	}
+}
+cotton_dev = {
+	NOT = { trade_goods = cotton }
+	NOT = {
+		has_terrain = mountain
+		has_terrain = highlands
+		has_terrain = jungle
+	}
+	OR = {
+		continent = north_america
+		region = coromandel_region
+		region = deccan_region
+		region = west_india_region
+		region = bengal_region
+		region = hindusthan_region
+	}
+}
+dyes_dev = {
+	NOT = { trade_goods = dyes }
+	development = 16
+	continent = asia
+}
+fish_dev = {
+	NOT = { trade_goods = fish }
+	has_port = yes
+}
+fur_dev = {
+	NOT = { trade_goods = fur }
+	has_winter = severe_winter
+}
+grain_dev = {
+	NOT = { trade_goods = grain }
+	NOT = {
+		has_terrain = mountain
+		has_terrain = highlands
+		has_terrain = jungle
+		has_terrain = glacier
+	}
+}
+ivory_dev = {
+	NOT = { trade_goods = ivory }
+	OR = {
+		region = sahel_region
+		region = niger_region
+		region = guinea_region
+		region = horn_of_africa_region
+		region = east_africa_region
+		region = central_africa_region
+		region = kongo_region
+		region = south_africa_region
+		region = malaya_region
+		region = indonesia_region
+		region = indo_china_region
+		region = burma_region
+		region = coromandel_region
+		region = deccan_region
+		region = west_india_region
+		region = bengal_region
+		region = hindusthan_region
+	}
+}
+naval_supplies_dev = {
+	NOT = { trade_goods = naval_supplies }
+	development = 12
+	has_port = yes
+	NOT = { has_terrain = glacier }
+}
+salt_dev = {
+	NOT = { trade_goods = salt }
+	OR = {
+		AND = {
+			development = 12
+			OR ={
+				has_port = yes
+				has_terrain = mountain
+				has_terrain = highlands
+				has_terrain = desert
+			}
+		}
+		development = 25
+	}
+}
+slaves_dev = {
+	NOT = { trade_goods = slaves }
+	OR = {
+		region = sahel_region
+		region = niger_region
+		region = guinea_region
+		region = horn_of_africa_region
+		region = east_africa_region
+		region = central_africa_region
+		region = kongo_region
+		region = south_africa_region
+	}
+}
+spices_dev = {
+	NOT = { trade_goods = spices }
+	NOT ={
+		has_terrain = mountain
+		has_terrain = highlands
+	}
+	continent = asia
+	has_climate = tropical
+}
+sugar_dev = {
+	NOT = { trade_goods = sugar }
+	has_port = yes
+	OR = {
+		region = carribeans_region
+		region = colombia_region
+		region = brazil_region
+	}
+}
+tea_dev = {
+	NOT = { trade_goods = tea }
+	OR = {
+		region = malaya_region
+		region = indonesia_region
+		region = moluccas_region
+		region = indo_china_region
+		region = south_china_region			
+		region = xinan_region
+		region = north_china_region
+		region = japan_region
+	}
+}
+tobacco_dev = {
+	NOT = { trade_goods = tobacco }
+	OR = {
+		region = carribeans_region
+		region = southeast_america_region
+		region = northeast_america_region
+	}
+}
+tropical_wood_dev = {
+	NOT = { trade_goods = tropical_wood }
+	OR = {
+		region = coromandel_region
+		region = deccan_region
+		region = west_india_region
+		region = bengal_region
+		region = hindusthan_region
+		region = malaya_region
+		region = indonesia_region
+		region = moluccas_region
+		region = indo_china_region
+		region = burma_region
+	}
+	OR = {
+		has_terrain = jungle
+		has_terrain = hills
+	}
+}
+wine_dev = {
+	NOT = { trade_goods = wine }
+	has_climate = temperate
+	OR = {
+		has_terrain = farmlands
+		has_terrain = grasslands
+		has_terrain = drylands
+	}
+}
+wool_dev = {
+	NOT = { trade_goods = wool }
+	NOT = { has_climate = temperate }
+}
 
 
 
 # For developing in Colonial nations
 
 colonial_nation_horses_dev = {
-	NOT = { trade_goods = horses }
 	any_subject_country = {
 		any_owned_province = {
+			NOT = { trade_goods = horses }
 			has_building = tradegoodsdevelopment
 			OR = {
 				has_terrain = grasslands
@@ -359,19 +543,20 @@ colonial_nation_horses_dev = {
 	}
 } 
 colonial_nation_beer_dev = {
-	NOT = { trade_goods = beer }
+
 	any_subject_country = {
 		any_owned_province = {
+			NOT = { trade_goods = beer }
 			has_building = tradegoodsdevelopment
 			NOT = { has_terrain = desert }
 		}
 	}
 } 
 colonial_nation_tar_dev = {
-	NOT = { trade_goods = tar }
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
+			NOT = { trade_goods = tar }
 			has_building = tradegoodsdevelopment
 			OR = {
 				AND = {
@@ -404,10 +589,10 @@ colonial_nation_tar_dev = {
 	}
 }
 colonial_nation_olives_dev = {
-	NOT = { trade_goods = olives }
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
+			NOT = { trade_goods = olives }
 			has_building = tradegoodsdevelopment
 			NOT = { has_terrain = mountain }
 			NOT = { has_terrain = desert }
@@ -419,18 +604,16 @@ colonial_nation_olives_dev = {
 	}
 } 
 colonial_nation_cheese_dev = {	
-	NOT = { trade_goods = cheese_ }
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
+			NOT = { trade_goods = cheese }
 			has_building = tradegoodsdevelopment
 		}
 	}
 } 
 colonial_nation_vanilla_dev = {
-	NOT = { trade_goods = vanilla }
 	OR = {
-	
 		dip_tech = 16
 		AND = {
 			OR = {
@@ -443,6 +626,7 @@ colonial_nation_vanilla_dev = {
 		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
+			NOT = { trade_goods = vanilla }
 			OR = {
 				AND = {
 					OR = {
@@ -460,22 +644,26 @@ colonial_nation_vanilla_dev = {
 	}
 } 
 colonial_nation_glass_dev = {
-	NOT = { trade_goods = glass }
 	dip_tech = 5
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
+			NOT = { trade_goods = glass }
 			has_building = tradegoodsdevelopment
 			development = 25
 		}
 	}
 } 
 colonial_nation_paper_dev = {
-	NOT = { trade_goods = paper }
-	owner = {
-		adm_tech = 8
+	adm_tech = 8
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = paper }
+			has_building = tradegoodsdevelopment
+			development = 18
+		}
 	}
-	development = 18
 }
 colonial_nation_steel_dev = {
 	NOT = { trade_goods = steel }
@@ -487,11 +675,11 @@ colonial_nation_steel_dev = {
 	}
 }
 colonial_nation_citrus_dev = {
-	NOT = { trade_goods = citrus }
 	dip_tech = 12
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
+			NOT = { trade_goods = citrus }
 			has_building = tradegoodsdevelopment
 			NOT = { has_terrain = mountain }
 			NOT = { has_winter = severe_winter }
@@ -501,30 +689,12 @@ colonial_nation_citrus_dev = {
 		}
 	}
 }
-#colonial_nation_zinc_dev = {
-
-#	NOT = { trade_goods = zinc }
-#	adm_tech = 13
-#	any_subject_country = {
-#		any_owned_province = {
-#			has_building = tradegoodsdevelopment
-#			OR = {
-#				trade_goods = iron
-#				trade_goods = copper
-#				trade_goods = lead
-#				trade_goods = bronze
-#				trade_goods = sulfer
-#				trade_goods = steel
-#			}
-#		}
-#	}
-#}
 colonial_nation_munitions_dev = {
-	NOT = { trade_goods = munitions }
 	adm_tech = 21
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
+			NOT = { trade_goods = munitions }
 			has_building = tradegoodsdevelopment
 			development = 32
 		}
@@ -532,22 +702,22 @@ colonial_nation_munitions_dev = {
 	}
 }
 colonial_nation_sulfer_dev = {
-	NOT = { trade_goods = sulfer }
 	adm_tech = 16
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
+			NOT = { trade_goods = sulfer }
 			has_building = tradegoodsdevelopment
 			any_owned_province = { trade_goods = sulfer }
 		}
 	}
 }
 colonial_nation_potatoes_dev = {
-	NOT = { trade_goods = potatoes }
 	dip_tech = 16
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
+			NOT = { trade_goods = potatoes }
 			has_building = tradegoodsdevelopment
 			NOT = { has_terrain = glacier }
 			NOT = { has_terrain = desert }
@@ -556,11 +726,11 @@ colonial_nation_potatoes_dev = {
 	}
 }
 colonial_nation_rum_dev {
-	NOT = { trade_goods = r }
 	dip_tech = 18
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
+			NOT = { trade_goods = rum }
 			has_building = tradegoodsdevelopment
 			trade_goods = sugar
 			OR = {
@@ -581,11 +751,11 @@ colonial_nation_rum_dev {
 	}
 }
 colonial_nation_uniforms_dev = {
-	NOT = { trade_goods = uniforms }
 	adm_tech = 19
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
+			NOT = { trade_goods = uniforms }
 			has_building = tradegoodsdevelopment
 			OR = {
 				development = 35
@@ -603,11 +773,11 @@ colonial_nation_uniforms_dev = {
 	}
 }
 colonial_nation_marble_dev = {
-	NOT = { trade_goods = marble }
 	adm_tech = 20
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
+			NOT = { trade_goods = marble }
 			has_building = tradegoodsdevelopment
 			OR = {
 				has_terrain = mountain
@@ -618,50 +788,44 @@ colonial_nation_marble_dev = {
 	}
 }
 colonial_nation_machinery_dev = {
-	NOT = { trade_goods = machinery }
 	dip_tech = 20
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
+			NOT = { trade_goods = machinery }
 			has_building = tradegoodsdevelopment
 			development = 25
 		}
 	}
 }
-#colonial_nation_lead_dev = {
-
-#	NOT = { trade_goods = lead }
-#	adm_tech = 21
-#	any_subject_country = {
-#		any_owned_province = {
-#			has_building = tradegoodsdevelopment
-#		}
-#	}
-#}
 colonial_nation_bronze_dev = {
-	NOT = { trade_goods = bronze }
 	adm_tech = 9
 	any_subject_country = {
 		is_colonial_nation = yes
-		any_owned_province = { has_building = tradegoodsdevelopment }
+		any_owned_province = {
+			NOT = { trade_goods = bronze }
+			has_building = tradegoodsdevelopment
+		}
 		any_owned_province = { trade_goods = copper }
 	}
 }
 colonial_nation_brass_dev = {
-	NOT = { trade_goods = brass }
 	adm_tech = 16
 	any_subject_country = {
 		is_colonial_nation = yes
-		any_owned_province = { has_building = tradegoodsdevelopment }
+		any_owned_province = {
+			has_building = tradegoodsdevelopment
+			NOT = { trade_goods = brass }
+		}
 		any_owned_province = { trade_goods = zinc }
 	}
 }
 colonial_nation_optics_dev = {
-	NOT = { trade_goods = optics }
 	dip_tech = 21
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
+			NOT = { trade_goods = optics }
 			has_building = tradegoodsdevelopment
 			OR = {
 				development = 32
@@ -671,11 +835,11 @@ colonial_nation_optics_dev = {
 	}
 }
 colonial_nation_gunpowder_dev = {
-	NOT = { trade_goods = gunpowder }
 	adm_tech = 13
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
+			NOT = { trade_goods = gunpowder }
 			has_building = tradegoodsdevelopment
 			development = 25
 		}
@@ -683,16 +847,264 @@ colonial_nation_gunpowder_dev = {
 	}
 }
 colonial_nation_leather_dev = {
-	NOT = { trade_goods = leather }
 	adm_tech = 9
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
+			NOT = { trade_goods = leather }
 			has_building = tradegoodsdevelopment
 			development = 22
 		}
 	}
 }
+colonial_nation_cocoa_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = cocoa }
+			has_building = tradegoodsdevelopment
+			OR = {
+				region = central_america_region
+				continent = south_america
+			}
+			OR = {
+				has_terrain = jungle
+				has_terrain = mountain
+				has_terrain = hills
+			}
+		}
+	}
+}
+colonial_nation_chinaware_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = chinaware }
+			has_building = tradegoodsdevelopment
+			OR = {
+				AND = {
+					development = 12
+					OR = {
+						region = south_china_region
+						region = xinan_region
+						region = north_china_region
+					}
+				}
+				AND = {
+					development = 18
+					has_global_flag = bottger_happened
+				}
+			}
+		}
+	}
+}
+colonial_nation_cloth_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = cloth }
+			has_building = tradegoodsdevelopment
+			development = 22
+			OR = {
+				has_terrain = grasslands
+				has_terrain = farmlands
+				has_terrain = drylands
+				has_terrain = hills
+				has_terrain = forest
+				has_terrain = woods
+			}
+		}
+	}
+}
+colonial_nation_coffee_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = coffee }
+			has_building = tradegoodsdevelopment
+			development = 10
+			NOT = {
+				has_terrain = savannah
+				has_terrain = desert
+				has_terrain = coastal_desert
+			}
+			continent = south_america
+		}
+	}
+}
+colonial_nation_coffee_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = coffee }
+			has_building = tradegoodsdevelopment
+			development = 10
+			NOT = {
+				has_terrain = savannah
+				has_terrain = desert
+				has_terrain = coastal_desert
+			}
+			continent = south_america
+		}
+	}
+}
+colonial_nation_cotton_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = cotton }
+			has_building = tradegoodsdevelopment
+			NOT = {
+				has_terrain = mountain
+				has_terrain = highlands
+				has_terrain = jungle
+			}
+			continent = north_america
+		}
+	}
+}
+colonial_nation_dyes_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = dyes }
+			has_building = tradegoodsdevelopment
+			continent = asia
+		}
+	}
+}
+colonial_nation_fish_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = fish }
+			has_building = tradegoodsdevelopment
+			has_port = yes
+		}
+	}
+}
+colonial_nation_fur_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = fur }
+			has_building = tradegoodsdevelopment
+			has_winter = severe_winter
+		}
+	}
+}
+colonial_nation_grain_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = grain }
+			has_building = tradegoodsdevelopment
+			NOT = {
+				has_terrain = mountain
+				has_terrain = highlands
+				has_terrain = jungle
+				has_terrain = glacier
+			}
+		}
+	}
+}
+colonial_nation_naval_supplies_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = naval_supplies  }
+			has_building = tradegoodsdevelopment
+			development = 12
+			has_port = yes
+			NOT = { has_terrain = glacier }
+		}
+	}
+}
+colonial_nation_salt_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = salt  }
+			has_building = tradegoodsdevelopment
+			OR = {
+				AND = {
+					development = 12
+					OR ={
+						has_port = yes
+						has_terrain = mountain
+						has_terrain = highlands
+						has_terrain = desert
+					}
+				}
+				development = 25
+			}
+		}
+	}
+}
+colonial_nation_sugar_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = sugar  }
+			has_building = tradegoodsdevelopment
+			has_port = yes
+			OR = {
+				region = carribeans_region
+				region = colombia_region
+				region = brazil_region
+			}
+		}
+	}
+}
+colonial_nation_tea_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = tea  }
+			has_building = tradegoodsdevelopment
+			OR = {
+				region = malaya_region
+				region = indonesia_region
+				region = moluccas_region
+				region = indo_china_region
+				region = south_china_region			
+				region = xinan_region
+				region = north_china_region
+				region = japan_region
+			}
+		}
+	}
+}
+colonial_nation_tobacco_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = tobacco  }
+			has_building = tradegoodsdevelopment
+			OR = {
+				region = carribeans_region
+				region = southeast_america_region
+				region = northeast_america_region
+			}
+		}
+	}
+}
+colonial_nation_wine_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = wine }
+			has_building = tradegoodsdevelopment
+			has_climate = temperate
+			OR = {
+				has_terrain = farmlands
+				has_terrain = grasslands
+				has_terrain = drylands
+			}
+		}
+	}
+}
+
 #Cinnamon and Exotic Spices excluded on the basis of-
 #-not being able to be developed in colonial regions
 
