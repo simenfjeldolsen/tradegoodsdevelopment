@@ -8,7 +8,7 @@
  tgd_info.1.metals: "Tell me about the Metals and Alloys"
  tgd_info.1.exit: "Nevermind"
  tgd_info.2.t: "Information About the Trade Goods"
- tgd_info.2.d: "Most trade goods in the game are able to be developed - that is, nations are able to change a province from producing one trade good to another. To develop a trade good, you must build a Trade Goods Development building in the province that you wish to develop, and that province must meet the requirements for the good you wish to produce.\mThe requirements for all of the goods vary, click on one below for more information. You may need to scroll to see all of the goods."
+ tgd_info.2.d: "Most trade goods in the game are able to be developed - that is, nations are able to change a province from producing one trade good to another. To develop a trade good, you must build a Trade Goods Development building in the province that you wish to develop, and that province must meet the requirements for the good you wish to produce.\nThe requirements for all of the goods vary, click on one below for more information. You may need to scroll to see all of the goods."
  tgd_info.2.wheat: "Wheat"
  tgd_info.2.olives: "Olives"
  tgd_info.2.potatoes: "Potatoes"
