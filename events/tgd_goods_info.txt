@@ -377,6 +377,10 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
+		name = tgd_info.9.metals
+		country_event = { id = tgd_info.200 }
+	}
+	option = {
 		name = tgd_info.9.back
 		country_event = { id = tgd_info.2 }
 	}
@@ -521,6 +525,10 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
+		name = tgd_info.18.metals
+		country_event = { id = tgd_info.200 }
+	}
+	option = {
 		name = tgd_info.18.back
 		country_event = { id = tgd_info.2 }
 	}
@@ -552,6 +560,10 @@ country_event = {
 	picture = TRADEGOODS_eventPicture
 
 	is_triggered_only = yes
+	option = {
+		name = tgd_info.20.metals
+		country_event = { id = tgd_info.200 }
+	}
 	option = {
 		name = tgd_info.20.back
 		country_event = { id = tgd_info.2 }
@@ -601,6 +613,10 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
+		name = tgd_info.23.metals
+		country_event = { id = tgd_info.200 }
+	}
+	option = {
 		name = tgd_info.23.back
 		country_event = { id = tgd_info.2 }
 	}
@@ -616,6 +632,10 @@ country_event = {
 	picture = TRADEGOODS_eventPicture
 
 	is_triggered_only = yes
+	option = {
+		name = tgd_info.24.metals
+		country_event = { id = tgd_info.200 }
+	}
 	option = {
 		name = tgd_info.24.back
 		country_event = { id = tgd_info.2 }
@@ -777,6 +797,10 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
+		name = tgd_info.34.metals
+		country_event = { id = tgd_info.200 }
+	}
+	option = {
 		name = tgd_info.34.back
 		country_event = { id = tgd_info.2 }
 	}
@@ -840,6 +864,10 @@ country_event = {
 	picture = TRADEGOODS_eventPicture
 
 	is_triggered_only = yes
+	option = {
+		name = tgd_info.38.metals
+		country_event = { id = tgd_info.200 }
+	}
 	option = {
 		name = tgd_info.38.back
 		country_event = { id = tgd_info.2 }
@@ -953,6 +981,10 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
+		name = tgd_info.45.metals
+		country_event = { id = tgd_info.200 }
+	}
+	option = {
 		name = tgd_info.45.back
 		country_event = { id = tgd_info.2 }
 	}
@@ -1001,6 +1033,10 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
+		name = tgd_info.48.metals
+		country_event = { id = tgd_info.200 }
+	}
+	option = {
 		name = tgd_info.48.back
 		country_event = { id = tgd_info.2 }
 	}
@@ -1032,6 +1068,10 @@ country_event = {
 	picture = TRADEGOODS_eventPicture
 
 	is_triggered_only = yes
+	option = {
+		name = tgd_info.50.metals
+		country_event = { id = tgd_info.200 }
+	}
 	option = {
 		name = tgd_info.50.back
 		country_event = { id = tgd_info.2 }

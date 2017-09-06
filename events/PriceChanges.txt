@@ -1377,69 +1377,67 @@ country_event = {
 	}
 }
 
-####################This event implies that I should code some price change events for when you develop a lot of a good
-####################Maybe a ticking variable for each good? At so and such variable its price declines by 10%
 # Expansion of the Bengali Dye Production
-country_event = {
-	id = prices.25
-	title = prices.25.t
-	desc = prices.25.d
-	picture = TRADEGOODS_eventPicture
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		capital_scope = { continent = europe }
-		owns = 2047 #Tirhut
-		owns = 2063 #Central Doabd
-		bengal_region = { type = all owned_by = ROOT }
-		bihar_area = { type = all owned_by = ROOT }
-		NOT = { has_global_flag = bengali_dye }
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	
-	immediate = {
-		set_global_flag = bengali_dye
-	}
-	
-	option = {
-		name = prices.25.a
-		random_owned_province = {
-			limit = {
-				region = bengal_region
-				NOT = { trade_goods = silk }
-				NOT = { trade_goods = dyes }
-			}
-			change_trade_goods = dyes
-		}
-		random_owned_province = {
-			limit = {
-				area = bihar_area
-				NOT = { trade_goods = silk }
-				NOT = { trade_goods = dyes }
-			}
-			change_trade_goods = dyes
-		}
-		every_owned_province = {
-			limit = { trade_goods = dyes }
-			add_unrest = 5
-		}
-		change_price = {
-			trade_goods = dyes
-			key = BENGALI_INDIGO_PRODUCTION
-			value = -0.25
-			duration = -1
-		}
-	}
-	option = {
-		name = prices.25.b
-		add_stability = -1
-	}
-}
+#country_event = {
+#	id = prices.25
+#	title = prices.25.t
+#	desc = prices.25.d
+#	picture = TRADEGOODS_eventPicture
+#
+#	fire_only_once = yes
+#	
+#	major = yes
+#
+#	trigger = {
+#		capital_scope = { continent = europe }
+#		owns = 2047 #Tirhut
+#		owns = 2063 #Central Doabd
+#		bengal_region = { type = all owned_by = ROOT }
+#		bihar_area = { type = all owned_by = ROOT }
+#		NOT = { has_global_flag = bengali_dye }
+#	}
+#	mean_time_to_happen = {
+#		months = 60
+#	}
+#	
+#	immediate = {
+#		set_global_flag = bengali_dye
+#	}
+#	
+#	option = {
+#		name = prices.25.a
+#		random_owned_province = {
+#			limit = {
+#				region = bengal_region
+#				NOT = { trade_goods = silk }
+#				NOT = { trade_goods = dyes }
+#			}
+#			change_trade_goods = dyes
+#		}
+#		random_owned_province = {
+#			limit = {
+#				area = bihar_area
+#				NOT = { trade_goods = silk }
+#				NOT = { trade_goods = dyes }
+#			}
+#			change_trade_goods = dyes
+#		}
+#		every_owned_province = {
+#			limit = { trade_goods = dyes }
+#			add_unrest = 5
+#		}
+#		change_price = {
+#			trade_goods = dyes
+#			key = BENGALI_INDIGO_PRODUCTION
+#			value = -0.25
+#			duration = -1
+#		}
+#	}
+#	option = {
+#		name = prices.25.b
+#		add_stability = -1
+#	}
+#}
 
 # Development of Veneering
 country_event = {
@@ -1710,9 +1708,9 @@ country_event = {
 	}
 }
 
-############
-#TGD events#
-############
+#######################################################
+#TGD events: some carried over from SE, others by Maxo#
+#######################################################
 
 #Bookbinding
 country_event = {
@@ -1815,15 +1813,21 @@ country_event = {
 	major = yes
 
 	trigger = {
-		num_of_owned_provinces_with = {
-			value = 1
-			NOT = {
-				OR = {
-					province_id = 848
-					province_id = 2647
+		OR = {
+			any_country = {
+				AND = {
+					num_of_owned_provinces_with = {
+						value = 1
+						NOT = {
+							province_id = 572
+							province_id = 2099
+						}
+						trade_goods = vanilla
+					}
+					NOT = { owns = 572 }
+					NOT = { owns = 2099 }
 				}
 			}
-			trade_goods = vanilla
 		}
 		NOT = { has_global_flag = vanillaspread_happened }
 	}
@@ -1946,16 +1950,20 @@ country_event = {
 	major = yes
 
 	trigger = {
-		num_of_owned_provinces_with = {
-			value = 1
-			NOT = {
-				OR = {
-					province_id = 572
-					province_id = 2099
+		OR = {
+			AND = {
+				num_of_owned_provinces_with = {
+					value = 1
+					NOT = {
+						province_id = 572
+						province_id = 2099
+					}
+					trade_goods = cinnamon
 				}
+				NOT = { owns = 572 }
+				NOT = { owns = 2099 }
 			}
-				trade_goods = cinnamon
-			}
+		}
 		NOT = { has_global_flag = cinnamonspread_happened }
 	}
 	mean_time_to_happen = {
@@ -2119,19 +2127,27 @@ country_event = {
 	major = yes
 
 	trigger = {
-		num_of_owned_provinces_with = {
-			value = 1
-			NOT = {
-				OR = {
-					province_id = 646
-					province_id = 649
-					province_id = 650
+		OR = {
+			any_country = {
+				AND = {
+					num_of_owned_provinces_with = {
+						value = 1
+						NOT = {
+							province_id = 646
+							province_id = 649
+							province_id = 650
+						}
+						trade_goods = exotic_spices
+					}
+					NOT = { owns = 646 }
+					NOT = { owns = 649 }
+					NOT = { owns = 650 }
 				}
 			}
-			trade_goods = exotic_spices
-			}
+		}
 		NOT = { has_global_flag = spicespread_happened }
 	}
+	
 	mean_time_to_happen = {
 		months = 1
 	}
@@ -2239,7 +2255,7 @@ country_event = {
 
 	trigger = {
 		mil_tech = 21
-		munitions = 3			#if you have lots of munitions, demand for lead increases
+		munitions = 3
 		NOT = { has_global_flag = munition_happened }
 	}
 	
@@ -2262,13 +2278,19 @@ country_event = {
 		change_price = {
 			trade_goods = lead
 			key = MUNITION_EXPANSION
-			value = 0.30
+			value = 0.20
 			duration = -1
 		}
 		change_price = {
 			trade_goods = gunpowder
 			key = MUNITION_EXPANSION
 			value = 0.15
+			duration = -1
+		}
+		change_price = {
+			trade_goods = sulfer
+			key = MUNITION_EXPANSION
+			value = 0.35
 			duration = -1
 		}
 	}

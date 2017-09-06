@@ -50,9 +50,9 @@ gold		=	{ base_price = 0 goldtype = yes }
 #raw ores
 iron		=	{ base_price = 3 } # +50%(1.5) prices.28, mil 18# +10%(0.3) prices.32, adm 13# +10%(0.3) prices.34, adm 16
 copper		=	{ base_price = 3 } # +50%(1.5) prices.20, mil 7# -35%(1) prices.28, mil 18# +20%(0.6) prices.44, adm 16
-sulfer		=	{ base_price = 3 }
+sulfer		=	{ base_price = 3 } # +35%(1) prices.49, mil 21
 zinc		=	{ base_price = 3 } # +30%(0.9) prices.44, adm 16
-lead		=	{ base_price = 3 } # +10%(0.3) prices.28, mil 18# +30%(0.9) prices.49, mil 21
+lead		=	{ base_price = 3 } # +10%(0.3) prices.28, mil 18# +20%(0.6) prices.49, mil 21
 
 #refined metals and munitions
 steel		=	{ base_price = 3.5 } # +40%(1.4) prices.34, adm 16
