@@ -2,7 +2,7 @@
 #requires you to own 2 (or 3, if grains) of the good you are developing away from, to avoid maxing out everything in your country
 tradegoodsdevelopment = {
 	cost = 200
-	time = 0
+	time = 12
 
 	trigger = {
 		OR = {
@@ -217,7 +217,7 @@ tradegoodsdevelopment = {
 }
 prospecting = {
 	cost = 150
-	time = 0
+	time = 30
 
 	trigger = {
 		OR = {
