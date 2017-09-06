@@ -616,6 +616,7 @@ colonial_nation_vanilla_dev = {
 			OR = {
 				any_owned_province = { trade_goods = vanilla }
 				any_subject_country = { any_owned_province = { trade_goods = vanilla } }
+				has_global_flag = vanillaspread_happened
 			}
 		}
 	}

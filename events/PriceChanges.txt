@@ -1814,19 +1814,17 @@ country_event = {
 
 	trigger = {
 		OR = {
-			any_country = {
-				AND = {
-					num_of_owned_provinces_with = {
-						value = 1
-						NOT = {
-							province_id = 572
-							province_id = 2099
-						}
-						trade_goods = vanilla
+			AND = {
+				num_of_owned_provinces_with = {
+					value = 1
+					NOT = {
+						province_id = 848
+						province_id = 2647
 					}
-					NOT = { owns = 572 }
-					NOT = { owns = 2099 }
+					trade_goods = vanilla
 				}
+				NOT = { owns = 848 }
+				NOT = { owns = 2647 }
 			}
 		}
 		NOT = { has_global_flag = vanillaspread_happened }
@@ -2128,21 +2126,19 @@ country_event = {
 
 	trigger = {
 		OR = {
-			any_country = {
-				AND = {
-					num_of_owned_provinces_with = {
-						value = 1
-						NOT = {
-							province_id = 646
-							province_id = 649
-							province_id = 650
-						}
-						trade_goods = exotic_spices
+			AND = {
+				num_of_owned_provinces_with = {
+					value = 1
+					NOT = {
+						province_id = 646
+						province_id = 649
+						province_id = 650
 					}
-					NOT = { owns = 646 }
-					NOT = { owns = 649 }
-					NOT = { owns = 650 }
+					trade_goods = exotic_spices
 				}
+				NOT = { owns = 646 }
+				NOT = { owns = 649 }
+				NOT = { owns = 650 }
 			}
 		}
 		NOT = { has_global_flag = spicespread_happened }
