@@ -79,7 +79,6 @@ vanilla_dev = {
 		} #all islands in Zanzibar trade node, or high dev jungle in mexico
 		OR = {
 			has_global_flag = vanillaspread_happened
-			owner = { dip_tech = 16 }
 			owner = { any_owned_province = { trade_goods = vanilla } }
 		}
 	}
@@ -225,7 +224,6 @@ cinnamon_dev = {
 	NOT = { province_id = 634 }
 	OR = {
 		has_global_flag = cinnamonspread_happened
-		owner = { dip_tech = 21 }
 		owner = { any_owned_province = { trade_goods = cinnamon } }
 	}
 }
@@ -261,7 +259,6 @@ exotic_spices_dev = {
 	NOT = { province_id = 651 }
 	OR = {
 		has_global_flag = spicespread_happened
-		owner = { dip_tech = 26 }
 		owner = { any_owned_province = { trade_goods = exotic_spices } }
 	}
 }
