@@ -33,6 +33,13 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+		name = tgd_info.2.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.2.exit
+	}
+	option = {
 		name = tgd_info.2.beer
 		country_event = { id = tgd_info.52 }
 	}
@@ -231,13 +238,6 @@ country_event = {
 	option = {
 		name = tgd_info.2.zinc
 		country_event = { id = tgd_info.45 }
-	}
-	option = {
-		name = tgd_info.2.back
-		country_event = { id = tgd_info.1 }
-	}
-	option = {
-		name = tgd_info.2.exit
 	}
 }
 

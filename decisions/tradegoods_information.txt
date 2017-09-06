@@ -3,8 +3,13 @@ country_decisions = {
 	tradegoods_info = {
 		major = yes
 		potential = { ai = no }
-		allow = { ai = no }
-		effect = { country_event = { id = tgd_info.1 } }
+		custom_trigger_tooltip = {
+				tooltip = info_allow
+				ai = no
+			}
+		effect = {
+			country_event = { id = tgd_info.1 }
+		}
 		ai_will_do = { factor = 0 }
 	}
 	

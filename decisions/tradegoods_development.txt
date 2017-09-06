@@ -67,7 +67,7 @@ country_decisions = {
 		}
 		allow = {
 			custom_trigger_tooltip = {
-				tooltip = prospecting_des
+				tooltip = prospecting_desc
 				any_owned_province = {
 					has_building = prospecting
 				}
@@ -76,7 +76,7 @@ country_decisions = {
 		effect = {
 			random_owned_province = {
 				limit = { has_building = prospecting }
-				custom_tooltip = manual_dev_fire
+				custom_tooltip = prospecting_fire
 				hidden_effect = { province_event = { id = tgd_tradegoodsdevelopment.13 } }
 			}
 		}
