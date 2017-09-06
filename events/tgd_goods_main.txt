@@ -99,7 +99,7 @@ province_event = {
 	option = {
 		name = tgd_tradegoodsdevelopment.10.nevermind
 		remove_province_modifier = "recently_changed_goods_timer"
-		owner { add_treasury = 200 }
+		owner { add_treasury = 100 }
 		hidden_effect = { set_variable = { which = dev_tier_variable value = 0 } }
 		custom_tooltip = nevermind_tooltip
 	}
