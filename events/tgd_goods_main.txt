@@ -1543,7 +1543,7 @@ province_event = {
 			NOT = { check_variable = { which = ores_variable value = 6 } }
 		}
 		change_trade_goods = gold
-		owner = { add_treasury = add_years_of_income = 0.50 }
+		owner = { add_years_of_income = 0.50 }
 		owner = { add_inflation = 1 }
 		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
 	}
