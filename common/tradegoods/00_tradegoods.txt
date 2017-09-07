@@ -2380,7 +2380,7 @@ exotic_spices = {
 leather = {
 	color = { 102 70 13 }
 	modifier = { shock_damage_received = -0.10 }
-	province = { local_trade_goods_size_modifier = 0.05 }
+	province = { trade_goods_size_modifier= 0.05 }
 	chance = { factor = 0 }
 }
 
