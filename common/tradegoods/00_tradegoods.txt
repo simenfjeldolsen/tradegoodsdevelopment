@@ -400,7 +400,8 @@ potatoes = {
 		modifier = {
 			factor = 2
 			OR = {
-				region = ireland_region
+				area = eastern_ireland_area
+				area = western_ireland_area
 			}
 		}
 	}
@@ -1191,7 +1192,10 @@ beer = {
 		}
 		modifier = {
 			factor = 1.5
-			region = germany_region
+			OR = {
+				region = north_german_region
+				region = south_german_region
+			}
 		}
 		modifier = {
 			factor = 0
