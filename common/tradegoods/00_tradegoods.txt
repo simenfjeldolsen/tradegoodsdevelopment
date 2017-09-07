@@ -193,7 +193,7 @@ paper = {
 			factor = 0.3
 			OR = {
 				has_terrain = savannah
-				has_terrain = steppes
+				has_terrain = steppe
 				has_climate = tropical
 			}
 		}
@@ -848,7 +848,7 @@ steel = {
 				has_terrain = savannah
 				has_terrain = desert
 				has_terrain = glacier
-				has_terrain = steppes
+				has_terrain = steppe
 				has_climate = tropical
 				continent = africa
 			}
@@ -2098,7 +2098,7 @@ sulfer = {
 			OR = {
 				has_terrain = savannah
 				has_terrain = jungle
-				has_terrain = steppes
+				has_terrain = steppe
 			}
 		}
 		modifier = {
@@ -2196,7 +2196,7 @@ lead = {
 			OR = {
 				has_terrain = savannah
 				has_terrain = jungle
-				has_terrain = steppes
+				has_terrain = steppe
 			}
 		}
 		modifier = {
@@ -2289,7 +2289,7 @@ zinc = {
 			OR = {
 				has_terrain = savannah
 				has_terrain = jungle
-				has_terrain = steppes
+				has_terrain = steppe
 			}
 		}
 		modifier = {
