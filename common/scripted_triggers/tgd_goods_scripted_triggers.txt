@@ -80,6 +80,10 @@ vanilla_dev = {
 		OR = {
 			has_global_flag = vanillaspread_happened
 			owner = { any_owned_province = { trade_goods = vanilla } }
+			trading_bonus = {
+				trade_goods = vanilla
+				value = yes
+			}
 		}
 	}
 }

@@ -24,72 +24,228 @@ province_event = {
 
 			owner = { every_owned_province = { remove_building = tradegoodsdevelopment } }
 			add_province_modifier = { name = "recently_changed_goods_timer" duration = 10950 }
+#			if = {
+#				limit = {
+#					OR = {
+#						has_terrain = glacier
+#						has_terrain = desert
+#						has_terrain = jungle
+#					}
+#				}
+#				change_variable = { which = dev_tier_variable value = 4 }
+#			}
+#			if = {
+#				limit = {
+#					OR = {
+#						has_terrain = highlands
+#						has_terrain = mountain
+#						has_terrain = coastal_desert
+#						island = yes
+#					}
+#				}
+#				change_variable = { which = dev_tier_variable value = 3 }
+#			}
+#			if = {
+#				limit = {
+#					OR = {
+#						has_terrain = marsh
+#						has_terrain = hills
+#						has_terrain = coastline
+#						has_terrain = steppe
+#					}
+#				}
+#				change_variable = { which = dev_tier_variable value = 2 }
+#			}
+#			if = {
+#				limit = {
+#					OR = {
+#						has_terrain = woods
+#						has_terrain = drylands
+#						has_terrain = savannah
+#					}
+#				}
+#				change_variable = { which = dev_tier_variable value = 1 }
+#			}
+#			#has_terrain = grasslands, value = 0
+#			if = {
+#				limit = { has_terrain = farmlands }
+#				change_variable = { which = dev_tier_variable value = -1 }
+#			}
+#			if = {
+#				limit = { is_overseas = yes }
+#				change_variable = { which = dev_tier_variable value = -1 }
+#			}
+#			if = {
+#				limit = { has_climate = arctic }
+#				change_variable = { which = dev_tier_variable value = 1 }
+#			}
+#			if = {
+#				limit = { development = 10 }
+#				change_variable = { which = dev_tier_variable value = 2 }
+#			}
+#			if = {
+#				limit = { development = 20 }
+#				change_variable = { which = dev_tier_variable value = 2 }
+#			}
+#			if = {
+#				limit = { development = 30 }
+#				change_variable = { which = dev_tier_variable value = 2 }
+#			}
 			if = {
-				limit = {
-					OR = {
-						has_terrain = glacier
-						has_terrain = desert
-						has_terrain = jungle
-					}
-				}
-				change_variable = { which = dev_tier_variable value = 4 }
-			}
-			if = {
-				limit = {
-					OR = {
-						has_terrain = highlands
-						has_terrain = mountain
-						has_terrain = coastal_desert
-						island = yes
-					}
-				}
-				change_variable = { which = dev_tier_variable value = 3 }
-			}
-			if = {
-				limit = {
-					OR = {
-						has_terrain = marsh
-						has_terrain = hills
-						has_terrain = coastline
-						has_terrain = steppe
-					}
-				}
-				change_variable = { which = dev_tier_variable value = 2 }
-			}
-			if = {
-				limit = {
-					OR = {
-						has_terrain = woods
-						has_terrain = drylands
-						has_terrain = savannah
-					}
-				}
+				limit = { development = 2 }
 				change_variable = { which = dev_tier_variable value = 1 }
 			}
-			#has_terrain = grasslands, value = 0
 			if = {
-				limit = { has_terrain = farmlands }
-				change_variable = { which = dev_tier_variable value = -1 }
+				limit = { development = 3 }
+				change_variable = { which = dev_tier_variable value = 1 }
 			}
 			if = {
-				limit = { is_overseas = yes }
-				change_variable = { which = dev_tier_variable value = -1 }
+				limit = { development = 4 }
+				change_variable = { which = dev_tier_variable value = 1 }
 			}
 			if = {
-				limit = { has_climate = arctic }
+				limit = { development = 5 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 6 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 7 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 8 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 9 }
 				change_variable = { which = dev_tier_variable value = 1 }
 			}
 			if = {
 				limit = { development = 10 }
-				change_variable = { which = dev_tier_variable value = 2 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 11 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 12 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 13 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 14 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 15 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 16 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 17 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 18 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 19 }
+				change_variable = { which = dev_tier_variable value = 1 }
 			}
 			if = {
 				limit = { development = 20 }
-				change_variable = { which = dev_tier_variable value = 2 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 21 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 22 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 23 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 24 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 25 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 26 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 27 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 28 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 29 }
+				change_variable = { which = dev_tier_variable value = 1 }
 			}
 			if = {
 				limit = { development = 30 }
-				change_variable = { which = dev_tier_variable value = 2 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 31 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 32 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 33 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 34 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 35 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 36 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 37 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 38 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 39 }
+				change_variable = { which = dev_tier_variable value = 1 }
+			}
+			if = {
+				limit = { development = 40 }
+				change_variable = { which = dev_tier_variable value = 1 }
 			}
 		}
 	}
@@ -108,344 +264,344 @@ province_event = {
 		trigger = { horses_dev = yes }
 		change_trade_goods = horses
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-		owner = {  add_treasury = -100 }
+		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.beer
 		trigger = { beer_dev = yes }
 		change_trade_goods = beer
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.tar
 		trigger = { tar_dev = yes }
 		change_trade_goods = tar
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-		owner = {  add_treasury = -100 }
+		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.olives
 		trigger = { olives_dev = yes }
 		change_trade_goods = olives
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-		owner = {  add_treasury = -100 }
+		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.cheese
 		trigger = { cheese_dev = yes }
 		change_trade_goods = cheese
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.vanilla
 		trigger = { vanilla_dev = yes }
 		change_trade_goods = vanilla
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -100 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.glass
 		trigger = { glass_dev = yes }
 		change_trade_goods = glass
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -500 }
+		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -100 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.paper
 		trigger = { paper_dev = yes }
 		change_trade_goods = paper
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -500 }
+		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -100 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.steel
 		trigger = { steel_dev = yes }
 		change_trade_goods = steel
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -500 }
+		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -100 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.citrus
 		trigger = { citrus_dev = yes }
 		change_trade_goods = citrus
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.munitions
 		trigger = { munitions_dev = yes }
 		change_trade_goods = munitions
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -500 }
+		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -250 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.potatoes
 		trigger = { potatoes_dev = yes }
 		change_trade_goods = potatoes
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-		owner = {  add_treasury = -100 }
+		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.rum
 		trigger = { rum_dev = yes }
 		change_trade_goods = rum
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -100 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.uniforms
 		trigger = { uniforms_dev = yes }
 		change_trade_goods = uniforms
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
-		owner = {  add_treasury = -1000 }
+		#owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
+		owner = {  add_treasury = -500 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.marble
 		trigger = { marble_dev = yes }
 		change_trade_goods = marble
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
-		owner = {  add_treasury = -1000 }
+		#owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
+		owner = {  add_treasury = -100 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.machinery
 		trigger = { machinery_dev = yes }
 		change_trade_goods = machinery
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
-		owner = {  add_treasury = -1000 }
+		#owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
+		owner = {  add_treasury = -500 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.bronze
 		trigger = { bronze_dev = yes }
 		change_trade_goods = bronze
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
-		owner = {  add_treasury = -1000 }
+		#owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
+		owner = {  add_treasury = -100 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.cinnamon
 		trigger = { cinnamon_dev = yes }
 		change_trade_goods = cinnamon
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -100 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.exotic_spices
 		trigger = { exotic_spices_dev = yes }
 		change_trade_goods = exotic_spices
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -100 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.brass
 		trigger = { brass_dev = yes }
 		change_trade_goods = brass
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -500 }
+		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -250 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.gunpowder
 		trigger = { gunpowder_dev = yes }
 		change_trade_goods = gunpowder
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -500 }
+		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -200 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.optics
 		trigger = { optics_dev = yes }
 		change_trade_goods = optics
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -500 }
+		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -250 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.leather
 		trigger = { leather_dev = yes }
 		change_trade_goods = leather
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -500 }
+		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -100 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.cocoa
 		trigger = { cocoa_dev = yes }	
 		change_trade_goods = cocoa
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.chinaware
 		trigger = { chinaware_dev = yes }	
 		change_trade_goods = chinaware
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -500 }
+		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.cloth
 		trigger = { cloth_dev = yes }	
 		change_trade_goods = cloth
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -500 }
+		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.coffee
 		trigger = { coffee_dev = yes }	
 		change_trade_goods = coffee
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.cotton
 		trigger = { cotton_dev = yes }	
 		change_trade_goods = cotton
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.dyes
 		trigger = { dyes_dev = yes }	
 		change_trade_goods = dyes
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -500 }
+		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -100 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.fish
 		trigger = { fish_dev = yes }	
 		change_trade_goods = fish
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-		owner = {  add_treasury = -100 }
+		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.fur
 		trigger = { fur_dev = yes }	
 		change_trade_goods = fur
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.grain
 		trigger = { grain_dev = yes }	
 		change_trade_goods = grain
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-		owner = {  add_treasury = -100 }
+		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.ivory
 		trigger = { ivory_dev = yes }	
 		change_trade_goods = ivory
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.naval_supplies
 		trigger = { naval_supplies_dev = yes }	
 		change_trade_goods = naval_supplies
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.salt
 		trigger = { salt_dev = yes }	
 		change_trade_goods = salt
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -500 }
+		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -100 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.slaves
 		trigger = { slaves_dev = yes }	
 		change_trade_goods = slaves
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.spices
 		trigger = { spices_dev = yes }	
 		change_trade_goods = spices
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -100 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.sugar
 		trigger = { sugar_dev = yes }	
 		change_trade_goods = sugar
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.tea
 		trigger = { tea_dev = yes }	
 		change_trade_goods = tea
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.tobacco
 		trigger = { tobacco_dev = yes }	
 		change_trade_goods = tobacco
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.tropical_wood
 		trigger = { tropical_wood_dev = yes }	
 		change_trade_goods = tropical_wood
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.wine
 		trigger = { wine_dev = yes }	
 		change_trade_goods = wine
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -250 }
+		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.wool
 		trigger = { wool_dev = yes }	
 		change_trade_goods = wool
 		dev_tier_cost_effect = yes
-		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-		owner = {  add_treasury = -100 }
+		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
+		owner = {  add_treasury = -50 }
 	}
 }
 
@@ -591,7 +747,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
+		#add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
 		add_treasury = -100
 	}
 	option = {
@@ -611,7 +767,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		#add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
 		add_treasury = -250
 	}
 	option = {
@@ -631,7 +787,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
+		#add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
 		add_treasury = -100
 	}
 	option = {
@@ -651,7 +807,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
+		#add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
 		add_treasury = -100
 	}
 	option = {
@@ -671,7 +827,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		#add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
 		add_treasury = -250
 	}
 	option = {
@@ -691,7 +847,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		#add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
 		add_treasury = -250
 	}
 	option = {
@@ -711,7 +867,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		#add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
 		add_treasury = -500
 	}
 	option = {
@@ -731,7 +887,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		#add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
 		add_treasury = -500
 	}
 	option = {
@@ -751,7 +907,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		#add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
 		add_treasury = -500
 	}
 	option = {
@@ -771,7 +927,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		#add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
 		add_treasury = -250
 	}
 	option = {
@@ -791,7 +947,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		#add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
 		add_treasury = -500
 	}
 	option = {
@@ -811,7 +967,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
+		#add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
 		add_treasury = -100
 	}
 	option = {
@@ -831,7 +987,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		#add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
 		add_treasury = -250
 	}
 	option = {
@@ -851,7 +1007,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
+		#add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
 		add_treasury = -1000
 	}
 	option = {
@@ -871,7 +1027,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
+		#add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
 		add_treasury = -1000
 	}
 	option = {
@@ -891,7 +1047,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
+		#add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
 		add_treasury = -1000
 	}
 	option = {
@@ -911,7 +1067,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
+		#add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
 		add_treasury = -1000
 	}
 	option = {
@@ -931,7 +1087,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		#add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
 		add_treasury = -500
 	}
 	option = {
@@ -951,7 +1107,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		#add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
 		add_treasury = -500
 	}
 	option = {
@@ -971,7 +1127,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		#add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
 		add_treasury = -500
 	}
 	option = {
@@ -991,7 +1147,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		#add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
 		add_treasury = -500
 	}
 	option = {
@@ -1011,7 +1167,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		#add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
 		add_treasury = -250
 	}
 	option = {
@@ -1031,7 +1187,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		#add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
 		add_treasury = -500
 	}
 	option = {
@@ -1051,7 +1207,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		#add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
 		add_treasury = -500
 	}
 	option = {
@@ -1071,7 +1227,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		#add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
 		add_treasury = -250
 	}
 	option = {
@@ -1091,7 +1247,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		#add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
 		add_treasury = -250
 	}
 	option = {
@@ -1111,7 +1267,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		#add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
 		add_treasury = -500
 	}
 	option = {
@@ -1131,7 +1287,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
+		#add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
 		add_treasury = -100
 	}
 	option = {
@@ -1151,7 +1307,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		#add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
 		add_treasury = -250
 	}
 	option = {
@@ -1171,7 +1327,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
+		#add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
 		add_treasury = -100
 	}
 	option = {
@@ -1191,7 +1347,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		#add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
 		add_treasury = -250
 	}
 	option = {
@@ -1211,7 +1367,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		#add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
 		add_treasury = -500
 	}
 	option = {
@@ -1231,7 +1387,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		#add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
 		add_treasury = -250
 	}
 	option = {
@@ -1251,7 +1407,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		#add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
 		add_treasury = -250
 	}
 	option = {
@@ -1271,7 +1427,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		#add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
 		add_treasury = -250
 	}
 	option = {
@@ -1291,7 +1447,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
+		#add_adm_power = -20 add_mil_power = -20 add_dip_power = -20
 		add_treasury = -250
 	}
 	option = {
@@ -1311,7 +1467,7 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
+		#add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
 		add_treasury = -100
 	}
 }
