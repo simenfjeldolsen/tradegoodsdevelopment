@@ -1548,7 +1548,10 @@ country_event = {
 		every_province = {
 			limit = {
 				continent = asia
-				NOT = { region = siberia_region }
+				NOT = {
+					region = west_siberia_region
+					region = east_siberia_region
+				}
 				trade_goods = ivory
 			}
 			add_permanent_province_modifier = {

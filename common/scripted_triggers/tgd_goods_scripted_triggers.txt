@@ -7,6 +7,10 @@ horses_dev ={
 		has_terrain = steppe
 		has_terrain = drylands
 	}
+	NOT = {
+		has_climate = arctic
+		has_climate = tropical
+	}
 } 
 beer_dev = {
 	NOT = { trade_goods = beer }
@@ -514,7 +518,13 @@ tropical_wood_dev = {
 }
 wine_dev = {
 	NOT = { trade_goods = wine }
-	has_climate = temperate
+	NOT = {
+		has_climate = tropical
+		has_climate = arid
+		has_climate = arctic
+		has_winter = normal_winter
+		has_winter = severe_winter
+	}
 	OR = {
 		has_terrain = farmlands
 		has_terrain = grasslands
@@ -523,7 +533,7 @@ wine_dev = {
 }
 wool_dev = {
 	NOT = { trade_goods = wool }
-	NOT = { has_climate = temperate }
+	NOT = { has_climate = tropical }
 }
 
 
@@ -1097,12 +1107,28 @@ colonial_nation_wine_dev = {
 		any_owned_province = {
 			NOT = { trade_goods = wine }
 			has_building = tradegoodsdevelopment
-			has_climate = temperate
+			NOT = {
+				has_climate = tropical
+				has_climate = arid
+				has_climate = arctic
+				has_winter = normal_winter
+				has_winter = severe_winter
+			}
 			OR = {
 				has_terrain = farmlands
 				has_terrain = grasslands
 				has_terrain = drylands
 			}
+		}
+	}
+}
+colonial_nation_wool_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = wool }
+			has_building = tradegoodsdevelopment
+			NOT = { has_climate = tropical }
 		}
 	}
 }
