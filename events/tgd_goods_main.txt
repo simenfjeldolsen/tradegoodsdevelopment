@@ -639,71 +639,160 @@ country_event = {
 					#owner = { every_owned_province = { remove_building = tradegoodsdevelopment } }
 					add_province_modifier = { name = "recently_changed_goods_timer" duration = 10950 }
 					if = {
-						limit = {
-							OR = {
-								has_terrain = glacier
-								has_terrain = desert
-								has_terrain = jungle
-							}
-						}
-						change_variable = { which = dev_tier_variable value = 4 }
-					}
-					if = {
-						limit = {
-							OR = {
-								has_terrain = highlands
-								has_terrain = mountain
-								has_terrain = coastal_desert
-								island = yes
-							}
-						}
-						change_variable = { which = dev_tier_variable value = 3 }
-					}
-					if = {
-						limit = {
-							OR = {
-								has_terrain = marsh
-								has_terrain = hills
-								has_terrain = coastline
-								has_terrain = steppe
-							}
-						}
-						change_variable = { which = dev_tier_variable value = 2 }
-					}
-					if = {
-						limit = {
-							OR = {
-								has_terrain = woods
-								has_terrain = drylands
-								has_terrain = savannah
-							}
-						}
+						limit = { development = 2 }
 						change_variable = { which = dev_tier_variable value = 1 }
 					}
-					#has_terrain = grasslands, value = 0
 					if = {
-						limit = { has_terrain = farmlands }
-						change_variable = { which = dev_tier_variable value = -1 }
+						limit = { development = 3 }
+						change_variable = { which = dev_tier_variable value = 1 }
 					}
 					if = {
-						limit = { is_overseas = yes }
-						change_variable = { which = dev_tier_variable value = -1 }
+						limit = { development = 4 }
+						change_variable = { which = dev_tier_variable value = 1 }
 					}
 					if = {
-						limit = { has_climate = arctic }
+						limit = { development = 5 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 6 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 7 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 8 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 9 }
 						change_variable = { which = dev_tier_variable value = 1 }
 					}
 					if = {
 						limit = { development = 10 }
-						change_variable = { which = dev_tier_variable value = 2 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 11 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 12 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 13 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 14 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 15 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 16 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 17 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 18 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 19 }
+						change_variable = { which = dev_tier_variable value = 1 }
 					}
 					if = {
 						limit = { development = 20 }
-						change_variable = { which = dev_tier_variable value = 2 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 21 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 22 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 23 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 24 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 25 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 26 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 27 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 28 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 29 }
+						change_variable = { which = dev_tier_variable value = 1 }
 					}
 					if = {
 						limit = { development = 30 }
-						change_variable = { which = dev_tier_variable value = 2 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 31 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 32 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 33 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 34 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 35 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 36 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 37 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 38 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 39 }
+						change_variable = { which = dev_tier_variable value = 1 }
+					}
+					if = {
+						limit = { development = 40 }
+						change_variable = { which = dev_tier_variable value = 1 }
 					}
 				}
 			}
