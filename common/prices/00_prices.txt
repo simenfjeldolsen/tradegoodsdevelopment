@@ -65,7 +65,7 @@ munitions	=	{ base_price = 4 } # +25%(1) prices.49, mil 21
 spices		=	{ base_price = 4 } # +50% (2) prices.8, around 1550# -40%(1.6) prices.22, 1600
 vanilla		=	{ base_price = 4 } # +25% (1) prices.8, around 1550# +25%(1) prices.23, dip 20# +25%(1) prices.29, dip 16
 exotic_spices	=	{ base_price = 5 } # +25% (1.25) prices.8, around 1550
-cinnamon	=	{ base_price = 5 } # +25% (1.25) prices.8, around 1550
+cinnamon	=	{ base_price = 6 } # +15% (0.9) prices.8, around 1550
 
 #misc/industrial
 paper		=	{ base_price = 2.5 } # +20%(0.5) prices.31, adm 11# +20%(0.5) prices.32, adm 13# +20%(0.5) prices.39, adm 24

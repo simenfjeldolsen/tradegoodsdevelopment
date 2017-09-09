@@ -233,6 +233,10 @@ cinnamon_dev = {
 	OR = {
 		has_global_flag = cinnamonspread_happened
 		owner = { any_owned_province = { trade_goods = cinnamon } }
+		trading_bonus = {
+			trade_goods = cinnamon
+			value = yes
+		}
 	}
 }
 exotic_spices_dev = {
@@ -268,6 +272,10 @@ exotic_spices_dev = {
 	OR = {
 		has_global_flag = spicespread_happened
 		owner = { any_owned_province = { trade_goods = exotic_spices } }
+		trading_bonus = {
+			trade_goods = exotic_spices
+			value = yes
+		}
 	}
 }
 brass_dev = {
