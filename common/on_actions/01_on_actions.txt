@@ -1,0 +1,1 @@
+on_startup = { events = {  tgd_mapchanges.1 } }
