@@ -155,7 +155,7 @@
  tgd_info.25.back: "Back"
  tgd_info.25.exit: "Exit"
  tgd_info.26.t: "Olives"
- tgd_info.26.d: "Trading-in Bonus: Global Autonomy -0.05\nLocal Bonus: Monthly Devastation -0.10\n\nOlives are spread around the Mediterranean Sea, and can be developed anywhere that has no winters and does not have mountain, desert, or jungle terrain."
+ tgd_info.26.d: "Trading-in Bonus: Global Autonomy -0.05\nLocal Bonus: Monthly Devastation -0.10\n\nOlives are spread around the Mediterranean Sea, and can be developed anywhere that has no winters, is not tropical, and does not have mountain, desert, or jungle terrain."
  tgd_info.26.back: "Back"
  tgd_info.26.exit: "Exit"
  tgd_info.27.t: "Paper"

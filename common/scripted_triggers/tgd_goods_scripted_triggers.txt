@@ -54,6 +54,7 @@ olives_dev = {
 	NOT = { has_winter = severe_winter }
 	NOT = { has_winter = normal_winter }
 	NOT = { has_winter = mild_winter }
+	NOT = { has_climate = tropical }
 }
 cheese_dev = {
 	NOT = { trade_goods = cheese }
@@ -630,6 +631,7 @@ colonial_nation_olives_dev = {
 			NOT = { has_winter = severe_winter }
 			NOT = { has_winter = normal_winter }
 			NOT = { has_winter = mild_winter }
+			NOT = { has_climate = tropical }
 		}
 	}
 } 
