@@ -540,6 +540,14 @@ province_event = {
 		owner = {  add_treasury = -100 }
 	}
 	option = {
+		name = tgd_tradegoodsdevelopment.10.silk
+		trigger = { silk_dev = yes }	
+		change_trade_goods = silk
+		dev_tier_cost_effect = yes
+		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -100 }
+	}
+	option = {
 		name = tgd_tradegoodsdevelopment.10.slaves
 		trigger = { slaves_dev = yes }	
 		change_trade_goods = slaves
@@ -1458,6 +1466,26 @@ country_event = {
 		#dev_tier_cost_effect = yes
 		#add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
 		add_treasury = -500
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.silk
+		trigger = { colonial_nation_silk_dev = yes }	
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				remove_building = prospecting
+				change_trade_goods = silk
+			}
+		}
+		dev_tier_cost_effect = yes
+		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+		owner = {  add_treasury = -100 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.sugar

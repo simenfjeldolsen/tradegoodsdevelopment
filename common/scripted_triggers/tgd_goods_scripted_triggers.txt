@@ -543,8 +543,19 @@ wool_dev = {
 	NOT = { trade_goods = wool }
 	NOT = { has_climate = tropical }
 }
-
-
+silk_dev = {
+	OR = {
+		AND = {
+			continent = asia
+			development = 25
+			trade_goods = cloth
+		}
+		AND = {
+			development = 35
+			trade_goods = cloth
+		}
+	}
+}
 
 # For developing in Colonial nations
 
@@ -1137,6 +1148,17 @@ colonial_nation_wool_dev = {
 			NOT = { trade_goods = wool }
 			has_building = tradegoodsdevelopment
 			NOT = { has_climate = tropical }
+		}
+	}
+}
+colonial_nation_silk_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = silk }
+			has_building = tradegoodsdevelopment
+			development = 35
+			trade_goods = cloth
 		}
 	}
 }
