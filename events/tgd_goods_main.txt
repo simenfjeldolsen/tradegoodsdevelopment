@@ -393,7 +393,7 @@ province_event = {
 		change_trade_goods = bronze
 		dev_tier_cost_effect = yes
 		#owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
-		owner = {  add_treasury = -100 }
+		owner = {  add_treasury = -1000 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.cinnamon
@@ -1164,8 +1164,8 @@ country_event = {
 			}
 		}
 		#dev_tier_cost_effect = yes
-		#add_adm_power = -40 add_mil_power = -40 add_dip_power = -40
-		add_treasury = -1000
+		#add_adm_power = -30 add_mil_power = -30 add_dip_power = -30
+		add_treasury = -500
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.brass
