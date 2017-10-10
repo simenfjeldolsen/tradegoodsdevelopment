@@ -701,10 +701,13 @@ colonial_nation_paper_dev = {
 colonial_nation_steel_dev = {
 	NOT = { trade_goods = steel }
 	adm_tech = 6
+	OR = {
+		any_owned_province = { trade_goods = iron }
+		any_subject_country = { any_owned_province = { trade_goods = iron } }
+	}
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = { has_building = tradegoodsdevelopment }
-		any_owned_province = { trade_goods = iron }
 	}
 }
 colonial_nation_citrus_dev = {
@@ -724,6 +727,10 @@ colonial_nation_citrus_dev = {
 }
 colonial_nation_munitions_dev = {
 	adm_tech = 21
+	OR = {
+		any_owned_province = { trade_goods = lead }
+		any_subject_country = { any_owned_province = { trade_goods = lead } }
+	}
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
@@ -731,7 +738,6 @@ colonial_nation_munitions_dev = {
 			has_building = tradegoodsdevelopment
 			development = 32
 		}
-		any_owned_province = { trade_goods = lead }
 	}
 }
 colonial_nation_sulfer_dev = {
@@ -833,24 +839,30 @@ colonial_nation_machinery_dev = {
 }
 colonial_nation_bronze_dev = {
 	adm_tech = 9
+	OR = {
+		any_owned_province = { trade_goods = copper }
+		any_subject_country = { any_owned_province = { trade_goods = copper } }
+	}
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
 			NOT = { trade_goods = bronze }
 			has_building = tradegoodsdevelopment
 		}
-		any_owned_province = { trade_goods = copper }
 	}
 }
 colonial_nation_brass_dev = {
 	adm_tech = 16
+	OR = {
+		any_owned_province = { trade_goods = zinc }
+		any_subject_country = { any_owned_province = { trade_goods = zinc } }
+	}
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			NOT = { trade_goods = brass }
 		}
-		any_owned_province = { trade_goods = zinc }
 	}
 }
 colonial_nation_optics_dev = {
@@ -869,6 +881,10 @@ colonial_nation_optics_dev = {
 }
 colonial_nation_gunpowder_dev = {
 	adm_tech = 13
+	OR = {
+		any_owned_province = { trade_goods = sulfer }
+		any_subject_country = { any_owned_province = { trade_goods = sulfer } }
+	}
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
@@ -876,7 +892,6 @@ colonial_nation_gunpowder_dev = {
 			has_building = tradegoodsdevelopment
 			development = 25
 		}
-		any_owned_province = { trade_goods = sulfer }
 	}
 }
 colonial_nation_leather_dev = {
