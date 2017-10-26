@@ -1251,7 +1251,6 @@ country_event = {
 
 	trigger = {
 		capital_scope = { continent = europe }
-		sugar = 5
 		dip_tech = 20
 		OR = {
 			trading_part = {
@@ -1623,21 +1622,15 @@ country_event = {
 
 	trigger = {
 		dip_tech = 16
-		num_of_colonial_subjects = 1
-		any_subject_country = {
-			is_colonial_nation = yes
-			OR = {
-				capital_scope = { continent = north_america }
-				capital_scope = { continent = south_america }
-				capital_scope = { continent = new_world }
+		capital_scope = { continent = europe }
+		AND = {
+			trading_part = {
+				trade_goods = cocoa
+				value = 0.05
 			}
-			cocoa = 7
-			num_of_owned_provinces_with = {
-				value = 2
-				OR = {
-					trade_goods = sugar
-					trade_goods = vanilla
-				}
+			trading_part = {
+				trade_goods = vanilla
+				value = 0.05
 			}
 		}
 		NOT = { has_global_flag = hot_chocolate_happened }
@@ -2166,6 +2159,100 @@ country_event = {
 		}
 	}
 }
+#Advent of Gunpowder
+country_event = {
+	id = prices.41
+	title = prices.41.t
+	desc = prices.41.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		adm_tech = 13
+		gunpowder = 2
+		NOT = { has_global_flag = gunpowder_happened }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	immediate = {
+		set_global_flag = gunpowder_happened
+	}
+	
+	option = {
+		name = prices.41.a
+		change_price = {
+			trade_goods = gunpowder
+			key = ADVENT_GUNPOWDER
+			value = 0.25
+			duration = -1
+		}
+		change_price = {
+			trade_goods = steel
+			key = ADVENT_GUNPOWDER
+			value = 0.25
+			duration = -1
+		}
+		change_price = {
+			trade_goods = horses
+			key = ADVENT_GUNPOWDER
+			value = -0.15
+			duration = -1
+		}
+	}
+}
+#Cartridges
+country_event = {
+	id = prices.42
+	title = prices.42.t
+	desc = prices.42.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		adm_tech = 16
+		brass = 2
+		NOT = { has_global_flag = cartridges_happened }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	immediate = {
+		set_global_flag = cartridges_happened
+	}
+	
+	option = {
+		name = prices.42.a
+		change_price = {
+			trade_goods = gunpowder
+			key = CARTRIDGES
+			value = 0.25
+			duration = -1
+		}
+		change_price = {
+			trade_goods = bronze
+			key = CARTRIDGES
+			value = 0.25
+			duration = -1
+		}
+		change_price = {
+			trade_goods = brass
+			key = CARTRIDGES
+			value = 0.10
+			duration = -1
+		}
+	}
+}
 # Limes
 country_event = {
 	id = prices.43
@@ -2236,6 +2323,47 @@ country_event = {
 		change_price = {
 			trade_goods = copper
 			key = BRASSMAKING
+			value = 0.2
+			duration = -1
+		}
+	}
+}
+# Watt's Steam Engine
+country_event = {
+	id = prices.45
+	title = prices.45.t
+	desc = prices.45.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		adm_tech = 16
+		brass = 1
+		NOT = { has_global_flag = watt_steam }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		set_global_flag = watt_steam
+	}
+	
+	option = {
+		name = prices.45.a
+		change_price = {
+			trade_goods = machinery
+			key = WATT_STEAM
+			value = 0.25
+			duration = -1
+		}
+		change_price = {
+			trade_goods = copper
+			key = WATT_STEAM
 			value = 0.2
 			duration = -1
 		}

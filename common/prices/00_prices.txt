@@ -1,7 +1,7 @@
 #cereals
 grain		=	{ base_price = 2 }	#
 olives		=	{ base_price = 3 }  # +10%(0.3) prices.12, dip 20
-potatoes	=	{ base_price = 2.5 }
+potatoes	=	{ base_price = 2.5 } #
 citrus		=	{ base_price = 3 } # +50%(1.5) prices.43, dip 21
 
 #plantations
@@ -12,8 +12,8 @@ tobacco		=	{ base_price = 3 } # +50%(1.5) prices.30, dip 16
 tea			=	{ base_price = 2 } # +25%(0.5) prices.7, around 1600# +25%(0.5) prices.21, dip 8
 
 #other foods and drink
-cheese 		=	{ base_price = 3.5 }
-horses		=	{ base_price = 2.5 }
+cheese 		=	{ base_price = 3.0 } #
+horses		=	{ base_price = 3.0 } # -15%(0.45) prices.41
 fish		=	{ base_price = 2.5 } # -10%(0.25) prices.4, around 1520# -10%(0.25) prices.15, around 1500
 wine 		= 	{ base_price = 2.5 } # +40%(1) prices.12, dip 20
 beer		=	{ base_price = 2.5 } # +20%(0.5) prices.12, dip 20# +20%(0.5) prices.37, adm 10
@@ -23,7 +23,7 @@ salt		=	{ base_price = 3 } # +10%(0.3) prices.4, around 1520# +10%(0.3) prices.1
 #textiles
 wool		=	{ base_price = 2.5 } # -20%(0.5) prices.13, dip 11
 cotton		=	{ base_price = 3 } # +45%(1.35) prices.16, dip 22
-cloth		=	{ base_price = 3 } # +20%(0.3) prices.13, dip 11# +15%(0.2) prices.14, mil 21
+cloth		=	{ base_price = 3 } # +20%(0.6) prices.13, dip 11# +15%(0.45) prices.14, mil 21
 silk		=	{ base_price = 4 } # +25%(1) prices.24, dip 18
 fur			=	{ base_price = 2 } # +40%(0.8) prices.17, 1570# +35%(0.7) prices.18, around 1550
 leather		=	{ base_price = 3 } # +10%(0.3) prices.31, adm 11
@@ -55,21 +55,21 @@ zinc		=	{ base_price = 3 } # +30%(0.9) prices.44, adm 16
 lead		=	{ base_price = 3 } # +10%(0.3) prices.28, mil 18# +20%(0.6) prices.49, mil 21
 
 #refined metals and munitions
-steel		=	{ base_price = 3.5 } # +40%(1.4) prices.34, adm 16
-bronze		=	{ base_price = 3.5 }
-gunpowder	=	{ base_price = 3.5 } # +15%(0.5) prices.49, mil 21
-brass		=	{ base_price = 4 }
+steel		=	{ base_price = 3 } #+25% (0.75) prices.41#+25% (0.75) prices.42#+40%(1.2) prices.34, adm 16
+bronze		=	{ base_price = 3.5 } #+25% (0.85) prices.42
+gunpowder	=	{ base_price = 3 } #+25%(0.75) prices.41# +25%(0.75) prices.49, mil 21
+brass		=	{ base_price = 4 } #+10% (0.4) prices.41
 munitions	=	{ base_price = 4 } # +25%(1) prices.49, mil 21
 
 #spices
 spices		=	{ base_price = 4 } # +50% (2) prices.8, around 1550# -40%(1.6) prices.22, 1600
-vanilla		=	{ base_price = 4 } # +25% (1) prices.8, around 1550# +25%(1) prices.23, dip 20# +25%(1) prices.29, dip 16
-exotic_spices	=	{ base_price = 5 } # +25% (1.25) prices.8, around 1550
-cinnamon	=	{ base_price = 6 } # +15% (0.9) prices.8, around 1550
+vanilla		=	{ base_price = 5 } # +25% (1.25) prices.8, around 1550# -25% (1.25) prices.22, around 1600# +25%(1.25) prices.23, dip 20# +25%(1.25) prices.29, dip 16
+exotic_spices	=	{ base_price = 5 } # +25% (1.25) prices.8, around 1550# -25% (1.25) prices.22, around 1600
+cinnamon	=	{ base_price = 6 } # +15% (0.9) prices.8, around 1550# -25% (1.5) prices.22, around 1600
 
 #misc/industrial
 paper		=	{ base_price = 2.5 } # +20%(0.5) prices.31, adm 11# +20%(0.5) prices.32, adm 13# +20%(0.5) prices.39, adm 24
-machinery	=	{ base_price = 4.5 }
+machinery	=	{ base_price = 4 }
 uniforms	=	{ base_price = 3 } # +40%(1.2) prices.14, mil 21
 
 

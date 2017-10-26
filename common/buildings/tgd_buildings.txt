@@ -240,3 +240,17 @@ prospecting = {
 		factor = 0
 	}
 }
+goodstest = {
+	cost = 0
+	time = -1
+
+	one_per_country = yes
+
+	modifier = {
+		allowed_num_of_buildings = 1
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}

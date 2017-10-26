@@ -54,6 +54,7 @@ technology = {
 	production_efficiency	=	0.05
 	tradegoodsdevelopment = yes
 	prospecting = yes
+	goodstest = yes
 	may_support_rebels = yes
 }
 
