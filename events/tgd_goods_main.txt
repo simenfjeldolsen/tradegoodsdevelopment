@@ -24,73 +24,7 @@ province_event = {
 
 			owner = { every_owned_province = { remove_building = tradegoodsdevelopment } }
 			add_province_modifier = { name = "recently_changed_goods_timer" duration = 10950 }
-#			if = {
-#				limit = {
-#					OR = {
-#						has_terrain = glacier
-#						has_terrain = desert
-#						has_terrain = jungle
-#					}
-#				}
-#				change_variable = { which = dev_tier_variable value = 4 }
-#			}
-#			if = {
-#				limit = {
-#					OR = {
-#						has_terrain = highlands
-#						has_terrain = mountain
-#						has_terrain = coastal_desert
-#						island = yes
-#					}
-#				}
-#				change_variable = { which = dev_tier_variable value = 3 }
-#			}
-#			if = {
-#				limit = {
-#					OR = {
-#						has_terrain = marsh
-#						has_terrain = hills
-#						has_terrain = coastline
-#						has_terrain = steppe
-#					}
-#				}
-#				change_variable = { which = dev_tier_variable value = 2 }
-#			}
-#			if = {
-#				limit = {
-#					OR = {
-#						has_terrain = woods
-#						has_terrain = drylands
-#						has_terrain = savannah
-#					}
-#				}
-#				change_variable = { which = dev_tier_variable value = 1 }
-#			}
-#			#has_terrain = grasslands, value = 0
-#			if = {
-#				limit = { has_terrain = farmlands }
-#				change_variable = { which = dev_tier_variable value = -1 }
-#			}
-#			if = {
-#				limit = { is_overseas = yes }
-#				change_variable = { which = dev_tier_variable value = -1 }
-#			}
-#			if = {
-#				limit = { has_climate = arctic }
-#				change_variable = { which = dev_tier_variable value = 1 }
-#			}
-#			if = {
-#				limit = { development = 10 }
-#				change_variable = { which = dev_tier_variable value = 2 }
-#			}
-#			if = {
-#				limit = { development = 20 }
-#				change_variable = { which = dev_tier_variable value = 2 }
-#			}
-#			if = {
-#				limit = { development = 30 }
-#				change_variable = { which = dev_tier_variable value = 2 }
-#			}
+
 			if = {
 				limit = { development = 2 }
 				change_variable = { which = dev_tier_variable value = 1 }
@@ -274,6 +208,14 @@ province_event = {
 		dev_tier_cost_effect = yes
 		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
+		if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 12 }
+			NOT = { check_variable = { which = dev_tier_variable value = 13 } }
+		}
+		owner = { add_treasury = -130 }
+		owner = { add_adm_power = -13 add_mil_power = -13 add_dip_power = -13 }
+	}
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.tar
