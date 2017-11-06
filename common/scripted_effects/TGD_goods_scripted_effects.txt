@@ -1,0 +1,283 @@
+dev_tier_cost_effect = {
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 0 }
+			NOT = { check_variable = { which = dev_tier_variable value = 1 } }
+		}
+		owner = { add_treasury = -10 add_adm_power = -1 add_mil_power = -1 add_dip_power = -1 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 1 }
+			NOT = { check_variable = { which = dev_tier_variable value = 2 } }
+		}
+		owner = { add_treasury = -20 add_adm_power = -2 add_mil_power = -2 add_dip_power = -2 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 2 }
+			NOT = { check_variable = { which = dev_tier_variable value = 3 } }
+		}
+		owner = { add_treasury = -30 add_adm_power = -3 add_mil_power = -3 add_dip_power = -3 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 3 }
+			NOT = { check_variable = { which = dev_tier_variable value = 4 } }
+		}
+		owner = { add_treasury = -40 add_adm_power = -4 add_mil_power = -4 add_dip_power = -4 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 4 }
+			NOT = { check_variable = { which = dev_tier_variable value = 5 } }
+		}
+		owner = { add_treasury = -50 add_adm_power = -5 add_mil_power = -5 add_dip_power = -5 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 5 }
+			NOT = { check_variable = { which = dev_tier_variable value = 6 } }
+		}
+		owner = { add_treasury = -60 add_adm_power = -6 add_mil_power = -6 add_dip_power = -6 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 6 }
+			NOT = { check_variable = { which = dev_tier_variable value = 7 } }
+		}
+		owner = { add_treasury = -70 add_adm_power = -7 add_mil_power = -7 add_dip_power = -7 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 7 }
+			NOT = { check_variable = { which = dev_tier_variable value = 8 } }
+		}
+		owner = { add_treasury = -80 add_adm_power = -8 add_mil_power = -8 add_dip_power = -8 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 8 }
+			NOT = { check_variable = { which = dev_tier_variable value = 9 } }
+		}
+		owner = { add_treasury = -90 add_adm_power = -9 add_mil_power = -9 add_dip_power = -9 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 9 }
+			NOT = { check_variable = { which = dev_tier_variable value = 10 } }
+		}
+		owner = { add_treasury = -100 add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 10 }
+			NOT = { check_variable = { which = dev_tier_variable value = 11 } }
+		}
+		owner = { add_treasury = -110 add_adm_power = -11 add_mil_power = -11 add_dip_power = -11 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 11 }
+			NOT = { check_variable = { which = dev_tier_variable value = 12 } }
+		}
+		owner = { add_treasury = -120 add_adm_power = -12 add_mil_power = -12 add_dip_power = -12 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 12 }
+			NOT = { check_variable = { which = dev_tier_variable value = 13 } }
+		}
+		owner = { add_treasury = -130 add_adm_power = -13 add_mil_power = -13 add_dip_power = -13 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 13 }
+			NOT = { check_variable = { which = dev_tier_variable value = 14 } }
+		}
+		owner = { add_treasury = -140 add_adm_power = -14 add_mil_power = -14 add_dip_power = -14 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 14 }
+			NOT = { check_variable = { which = dev_tier_variable value = 15 } }
+		}
+		owner = { add_treasury = -150 add_adm_power = -15 add_mil_power = -15 add_dip_power = -15 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 15 }
+			NOT = { check_variable = { which = dev_tier_variable value = 16 } }
+		}
+		owner = { add_treasury = -160 add_adm_power = -16 add_mil_power = -16 add_dip_power = -16 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 16 }
+			NOT = { check_variable = { which = dev_tier_variable value = 17 } }
+		}
+		owner = { add_treasury = -170 add_adm_power = -17 add_mil_power = -17 add_dip_power = -17 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 17 }
+			NOT = { check_variable = { which = dev_tier_variable value = 18 } }
+		}
+		owner = { add_treasury = -180 add_adm_power = -18 add_mil_power = -18 add_dip_power = -18 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 18 }
+			NOT = { check_variable = { which = dev_tier_variable value = 19 } }
+		}
+		owner = { add_treasury = -190 add_adm_power = -19 add_mil_power = -19 add_dip_power = -19 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 19 }
+			NOT = { check_variable = { which = dev_tier_variable value = 20 } }
+		}
+		owner = { add_treasury = -200 add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 20 }
+			NOT = { check_variable = { which = dev_tier_variable value = 21 } }
+		}
+		owner = { add_treasury = -210 add_adm_power = -21 add_mil_power = -21 add_dip_power = -21 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 21 }
+			NOT = { check_variable = { which = dev_tier_variable value = 22 } }
+		}
+		owner = { add_treasury = -220 add_adm_power = -22 add_mil_power = -22 add_dip_power = -22 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 22 }
+			NOT = { check_variable = { which = dev_tier_variable value = 23 } }
+		}
+		owner = { add_treasury = -230 add_adm_power = -23 add_mil_power = -23 add_dip_power = -23 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 23 }
+			NOT = { check_variable = { which = dev_tier_variable value = 24 } }
+		}
+		owner = { add_treasury = -240 add_adm_power = -24 add_mil_power = -24 add_dip_power = -24 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 24 }
+			NOT = { check_variable = { which = dev_tier_variable value = 25 } }
+		}
+		owner = { add_treasury = -250 add_adm_power = -25 add_mil_power = -25 add_dip_power = -25 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 25 }
+			NOT = { check_variable = { which = dev_tier_variable value = 26 } }
+		}
+		owner = { add_treasury = -260 add_adm_power = -26 add_mil_power = -26 add_dip_power = -26 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 26 }
+			NOT = { check_variable = { which = dev_tier_variable value = 27 } }
+		}
+		owner = { add_treasury = -270 add_adm_power = -27 add_mil_power = -27 add_dip_power = -27 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 27 }
+			NOT = { check_variable = { which = dev_tier_variable value = 28 } }
+		}
+		owner = { add_treasury = -280 add_adm_power = -28 add_mil_power = -28 add_dip_power = -28 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 28 }
+			NOT = { check_variable = { which = dev_tier_variable value = 29 } }
+		}
+		owner = { add_treasury = -290 add_adm_power = -29 add_mil_power = -29 add_dip_power = -29 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 29 }
+			NOT = { check_variable = { which = dev_tier_variable value = 30 } }
+		}
+		owner = { add_treasury = -300 add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 30 }
+			NOT = { check_variable = { which = dev_tier_variable value = 31 } }
+		}
+		owner = { add_treasury = -310 add_adm_power = -31 add_mil_power = -31 add_dip_power = -31 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 31 }
+			NOT = { check_variable = { which = dev_tier_variable value = 32 } }
+		}
+		owner = { add_treasury = -320 add_adm_power = -32 add_mil_power = -32 add_dip_power = -32 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 32 }
+			NOT = { check_variable = { which = dev_tier_variable value = 33 } }
+		}
+		owner = { add_treasury = -330 add_adm_power = -33 add_mil_power = -33 add_dip_power = -33 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 33 }
+			NOT = { check_variable = { which = dev_tier_variable value = 34 } }
+		}
+		owner = { add_treasury = -340 add_adm_power = -34 add_mil_power = -34 add_dip_power = -34 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 34 }
+			NOT = { check_variable = { which = dev_tier_variable value = 35 } }
+		}
+		owner = { add_treasury = -350 add_adm_power = -35 add_mil_power = -35 add_dip_power = -35 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 35 }
+			NOT = { check_variable = { which = dev_tier_variable value = 36 } }
+		}
+		owner = { add_treasury = -360 add_adm_power = -36 add_mil_power = -36 add_dip_power = -36 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 36 }
+			NOT = { check_variable = { which = dev_tier_variable value = 37 } }
+		}
+		owner = { add_treasury = -370 add_adm_power = -37 add_mil_power = -37 add_dip_power = -37 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 37 }
+			NOT = { check_variable = { which = dev_tier_variable value = 38 } }
+		}
+		owner = { add_treasury = -380 add_adm_power = -38 add_mil_power = -38 add_dip_power = -38 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 38 }
+			NOT = { check_variable = { which = dev_tier_variable value = 39 } }
+		}
+		owner = { add_treasury = -390 add_adm_power = -39 add_mil_power = -39 add_dip_power = -39 }
+	}
+	if = {
+		limit = {
+			check_variable = { which = dev_tier_variable value = 39 }
+			NOT = { check_variable = { which = dev_tier_variable value = 40 } }
+		}
+		owner = { add_treasury = -400 add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
+	}
+	hidden_effect = { set_variable = { which = dev_tier_variable value = 0 } }
+}

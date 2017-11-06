@@ -40,7 +40,7 @@ dyes		=	{ base_price = 4 } # +25%(1) prices.14, mil 21# +15%(0.6) prices.16, dip
 #tradegoods
 ivory		=	{ base_price = 4 } # +25%(1) prices.27, 1750
 marble 		= 	{ base_price = 4 } 
-glass		=	{ base_price = 4 } # +25%(5) prices.12, dip 20
+glass		=	{ base_price = 4 } # +25%(1) prices.12, dip 20# -10%(0.4) prices.35
 chinaware 	= 	{ base_price = 3 }	# +50%(1.5) prices.2, around 1600. -25%(0.75) prices.3, admin 24
 slaves		=	{ base_price = 2.5 } # +100%(2.5) prices.1, around 1550. -40% (2) prices.9, at 1700
 
@@ -62,7 +62,7 @@ brass		=	{ base_price = 4 } #+10% (0.4) prices.41
 munitions	=	{ base_price = 4 } # +25%(1) prices.49, mil 21
 
 #spices
-spices		=	{ base_price = 4 } # +50% (2) prices.8, around 1550# -40%(1.6) prices.22, 1600
+spices		=	{ base_price = 4 } # +50% (1.5) prices.8, around 1550# -40%(1.3) prices.22, 1600
 vanilla		=	{ base_price = 5 } # +25% (1.25) prices.8, around 1550# -25% (1.25) prices.22, around 1600# +25%(1.25) prices.23, dip 20# +25%(1.25) prices.29, dip 16
 exotic_spices	=	{ base_price = 5 } # +25% (1.25) prices.8, around 1550# -25% (1.25) prices.22, around 1600
 cinnamon	=	{ base_price = 6 } # +15% (0.9) prices.8, around 1550# -25% (1.5) prices.22, around 1600

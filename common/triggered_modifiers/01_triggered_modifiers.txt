@@ -1,0 +1,591 @@
+###########################################
+# Trade Good Source Bonuses
+###########################################
+beer_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = beer }
+			any_subject_country = { any_owned_province = { trade_goods = beer } }
+		}
+	}
+	land_morale = 0.005
+}
+brass_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = brass }
+			any_subject_country = { any_owned_province = { trade_goods = brass } }
+		}
+	}
+	backrow_artillery_damage = 0.025
+}
+bronze_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = bronze }
+			any_subject_country = { any_owned_province = { trade_goods = bronze } }
+		}
+	}
+	artillery_power = 0.025
+}
+cheese_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = cheese }
+			any_subject_country = { any_owned_province = { trade_goods = cheese } }
+		}
+	}
+	fort_maintenance_modifier = -0.05
+}
+chinaware_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = chinaware }
+			any_subject_country = { any_owned_province = { trade_goods = chinaware } }
+		}
+	}
+	global_own_trade_power = 0.025	
+}
+citrus_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = citrus }
+			any_subject_country = { any_owned_province = { trade_goods = citrus } }
+		}
+	}
+	sailor_maintenance_modifer = -0.025
+}
+cloth_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = cloth }
+			any_subject_country = { any_owned_province = { trade_goods = cloth } }
+		}
+	}
+	#
+}
+cocoa_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = cocoa }
+			any_subject_country = { any_owned_province = { trade_goods = cocoa } }
+		}
+	}
+	spy_offence = 0.05
+}
+coffee_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = coffee }
+			any_subject_country = { any_owned_province = { trade_goods = coffee } }
+		}
+	}
+	global_institution_spread = 0.05
+}
+cinnamon_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = cinnamon }
+			any_subject_country = { any_owned_province = { trade_goods = cinnamon } }
+		}
+	}
+	#
+}
+copper_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = copper }
+			any_subject_country = { any_owned_province = { trade_goods = copper } }
+		}
+	}
+	#
+}
+cotton_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = cotton }
+			any_subject_country = { any_owned_province = { trade_goods = cotton } }
+		}
+	}
+	production_efficiency = 0.025
+}
+dyes_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = dyes }
+			any_subject_country = { any_owned_province = { trade_goods = dyes } }
+		}
+	}
+	#
+}
+exotic_spices_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = exotic_spices }
+			any_subject_country = { any_owned_province = { trade_goods = exotic_spices } }
+		}
+	}
+	#
+}
+fish_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = fish }
+			any_subject_country = { any_owned_province = { trade_goods = fish } }
+		}
+	}
+	global_sailors_modifier = 0.05
+}
+fur_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = fur }
+			any_subject_country = { any_owned_province = { trade_goods = fur } }
+		}
+	}
+	land_attrition = -0.025
+}
+glass_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = glass }
+			any_subject_country = { any_owned_province = { trade_goods = glass } }
+		}
+	}
+	#
+}
+gunpowder_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = gunpowder }
+			any_subject_country = { any_owned_province = { trade_goods = gunpowder } }
+		}
+	}
+	fire_damage = 0.025
+}
+grain_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = grain }
+			any_subject_country = { any_owned_province = { trade_goods = grain } }
+		}
+	}
+	land_forcelimit_modifier = 0.05
+}
+horses_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = horses }
+			any_subject_country = { any_owned_province = { trade_goods = horses } }
+		}
+	}
+	cavalry_cost = -0.05
+}
+iron_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = iron }
+			any_subject_country = { any_owned_province = { trade_goods = iron } }
+		}
+	}
+	#
+}
+ivory_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = ivory }
+			any_subject_country = { any_owned_province = { trade_goods = ivory } }
+		}
+	}
+	trade_efficiency = 0.01
+}
+lead_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = lead }
+			any_subject_country = { any_owned_province = { trade_goods = lead } }
+		}
+	}
+	#
+}
+leather_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = leather }
+			any_subject_country = { any_owned_province = { trade_goods = leather } }
+		}
+	}
+	shock_damage_received = -0.025
+}
+machinery_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = machinery }
+			any_subject_country = { any_owned_province = { trade_goods = machinery } }
+		}
+	}
+	global_trade_goods_size_modifier = 0.025
+}
+marble_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = marble }
+			any_subject_country = { any_owned_province = { trade_goods = marble } }
+		}
+	}
+	build_cost = -0.025
+}
+munitions_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = munitions }
+			any_subject_country = { any_owned_province = { trade_goods = munitions } }
+		}
+	}
+	infantry_power = 0.025
+}
+naval_supplies_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = naval_supplies }
+			any_subject_country = { any_owned_province = { trade_goods = naval_supplies } }
+		}
+	}
+	naval_forcelimit_modifier = 0.05
+}
+olives_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = olives }
+			any_subject_country = { any_owned_province = { trade_goods = olives } }
+		}
+	}
+	global_autonomy = -0.01
+}
+optics_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = optics }
+			any_subject_country = { any_owned_province = { trade_goods = optics } }
+		}
+	}
+	heavy_ship_cost = -0.05
+}
+paper_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = paper }
+			any_subject_country = { any_owned_province = { trade_goods = paper } }
+		}
+	}
+	global_tax_modifier = 0.025
+}
+potatoes_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = potatoes }
+			any_subject_country = { any_owned_province = { trade_goods = potatoes } }
+		}
+	}
+	manpower_recovery_speed = 0.025
+}
+rum_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = rum }
+			any_subject_country = { any_owned_province = { trade_goods = rum } }
+		}
+	}
+	privateer_efficiency = 0.10
+}
+salt_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = salt }
+			any_subject_country = { any_owned_province = { trade_goods = salt } }
+		}
+	}
+	land_maintenance_modifier = -0.025
+}
+silk_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = silk }
+			any_subject_country = { any_owned_province = { trade_goods = silk } }
+		}
+	}
+	trade_efficiency = 0.01
+}
+slaves_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = slaves }
+			any_subject_country = { any_owned_province = { trade_goods = slaves } }
+		}
+	}
+	global_trade_goods_size_modifier = 0.01
+}
+spices_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = spices }
+			any_subject_country = { any_owned_province = { trade_goods = spices } }
+		}
+	}
+	trade_efficiency = 0.01
+}
+steel_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = steel }
+			any_subject_country = { any_owned_province = { trade_goods = steel } }
+		}
+	}
+	shock_damage = 0.025
+}
+sugar_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = sugar }
+			any_subject_country = { any_owned_province = { trade_goods = sugar } }
+		}
+	}
+	#
+}
+sulfer_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = sulfer }
+			any_subject_country = { any_owned_province = { trade_goods = sulfer } }
+		}
+	}
+	#
+}
+tar_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = tar }
+			any_subject_country = { any_owned_province = { trade_goods = tar } }
+		}
+	}
+	ship_durability = 0.025	
+}
+tea_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = tea }
+			any_subject_country = { any_owned_province = { trade_goods = tea } }
+		}
+	}
+	advisor_cost = -0.025
+}
+tobacco_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = tobacco }
+			any_subject_country = { any_owned_province = { trade_goods = tobacco } }
+		}
+	}
+	global_foreign_trade_power = 0.025
+}
+tropical_wood_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = tropical_wood }
+			any_subject_country = { any_owned_province = { trade_goods = tropical_wood } }
+		}
+	}
+	build_time = -0.10
+}
+uniforms_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = uniforms }
+			any_subject_country = { any_owned_province = { trade_goods = uniforms } }
+		}
+	}
+	land_morale = 0.025
+}
+vanilla_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = vanilla }
+			any_subject_country = { any_owned_province = { trade_goods = vanilla } }
+		}
+	}
+	#
+}
+wine_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = wine }
+			any_subject_country = { any_owned_province = { trade_goods = wine } }
+		}
+	}
+	global_unrest = -0.25
+}
+wool_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = wool }
+			any_subject_country = { any_owned_province = { trade_goods = wool } }
+		}
+	}
+	global_ship_cost = -0.025
+}
+zinc_source = {
+	potential = {
+		is_ai = no	
+	}
+	trigger = {
+		OR = {
+			any_owned_province = { trade_goods = zinc }
+			any_subject_country = { any_owned_province = { trade_goods = zinc } }
+		}
+	}
+	#
+}

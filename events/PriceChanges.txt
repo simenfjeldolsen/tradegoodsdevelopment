@@ -1913,12 +1913,6 @@ country_event = {
 	option = {
 		name = prices.35.a
 		change_price = {
-			trade_goods = sulfer
-			key = PEWTER_POPULARIZED
-			value = 0.25
-			duration = -1
-		}
-		change_price = {
 			trade_goods = lead
 			key = PEWTER_POPULARIZED
 			value = 0.10
@@ -1928,6 +1922,12 @@ country_event = {
 			trade_goods = copper
 			key = PEWTER_POPULARIZED
 			value = 0.10
+			duration = -1
+		}
+		change_price = {
+			trade_goods = glass
+			key = PEWTER_POPULARIZED
+			value = -0.10
 			duration = -1
 		}
 	}

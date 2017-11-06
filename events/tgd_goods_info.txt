@@ -4,10 +4,14 @@ country_event = {
 	id = tgd_info.1
 	title = tgd_info.1.t
 	desc = tgd_info.1.d
-	picture = TRADEGOODS_eventPicture
+	picture = BIG_BOOK_eventPicture
 	
 	is_triggered_only = yes
 
+	option = {
+		name = tgd_info.1.basic
+		country_event = { id = tgd_info.70 }
+	}
 	option = {
 		name = tgd_info.1.goods
 		country_event = { id = tgd_info.2 }
@@ -1094,6 +1098,22 @@ country_event = {
 	}
 	option = {
 		name = tgd_info.51.exit
+	}
+}
+
+country_event = {
+	id = tgd_info.70
+	title = tgd_info.70.t
+	desc = tgd_info.70.d
+	picture = OVEREXTENSION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.70.back
+		country_event = { id = tgd_info.1 }
+	}
+	option = {
+		name = tgd_info.70.exit
 	}
 }
 

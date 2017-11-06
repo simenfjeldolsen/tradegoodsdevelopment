@@ -20,12 +20,8 @@ tar_dev = {
 	NOT = { trade_goods = tar }
 	OR = {
 		AND = {
-			has_terrain = woods
-			development = 16
-			has_port = yes
-		}
-		AND = {
 			has_terrain = forest
+			development = 12
 			has_port = yes
 		}
 		OR = {
@@ -79,7 +75,7 @@ vanilla_dev = {
 					area = chiapas_area
 				}
 				has_terrain = jungle
-				development = 18
+				development = 15
 			}
 		} #all islands in Zanzibar trade node, or high dev jungle in mexico
 		OR = {
@@ -153,7 +149,12 @@ rum_dev {
 	owner = {
 		dip_tech = 18
 	}
-	trade_goods = sugar
+	owner = {
+		OR = {
+			any_owned_province = { trade_goods = sugar }
+			any_subject_country = { any_owned_province = { trade_goods = sugar } }
+		}
+	}
 	OR = {
 		area = florida_area
 		area = north_florida_area
@@ -174,18 +175,17 @@ uniforms_dev = {
 	owner = {
 		adm_tech = 19
 	}
-	OR = {
-		development = 35
-		AND = {
-			development = 25
-			OR = {
-				trade_goods = cloth
-				trade_goods = silk
-				trade_goods = dyes
-				trade_goods = wool
-			}
+	owner = {
+		OR = {
+			any_owned_province = { trade_goods = cloth }
+			any_subject_country = { any_owned_province = { trade_goods = cloth } }
+		}
+		OR = {
+			any_owned_province = { trade_goods = dyes }
+			any_subject_country = { any_owned_province = { trade_goods = dyes } }
 		}
 	}
+	development = 35
 }
 marble_dev = {
 	NOT = { trade_goods = marble }
@@ -203,7 +203,7 @@ machinery_dev = {
 	owner = {
 		dip_tech = 20
 	}
-	development = 25
+	development = 28
 }
 bronze_dev = {
 	NOT = { trade_goods = bronze }
@@ -214,6 +214,7 @@ bronze_dev = {
 			any_subject_country = { any_owned_province = { trade_goods = copper } }
 		}
 	}
+	development = 12
 }
 cinnamon_dev = {
 	NOT = { trade_goods = cinnamon }
@@ -294,11 +295,12 @@ optics_dev = {
 	NOT = { trade_goods = optics }
 	owner = {
 		dip_tech = 21
+		OR = {
+			any_owned_province = { trade_goods = glass }
+			any_subject_country = { any_owned_province = { trade_goods = glass } }
+		}
 	}
-	OR = {
-		development = 32
-		trade_goods = glass
-	}
+	development = 32
 }
 gunpowder_dev = {
 	NOT = { trade_goods = gunpowder }
@@ -548,11 +550,11 @@ silk_dev = {
 	OR = {
 		AND = {
 			continent = asia
-			development = 25
+			development = 27
 			trade_goods = cloth
 		}
 		AND = {
-			development = 35
+			development = 33
 			trade_goods = cloth
 		}
 	}
@@ -1180,8 +1182,7 @@ colonial_nation_silk_dev = {
 	}
 }
 
-#Cinnamon and Exotic Spices excluded on the basis of-
-#-not being able to be developed in colonial regions
+#Cinnamon and Exotic Spices excluded on the basis of not being able to be developed in colonial regions
 
 #############
 #Prospecting#

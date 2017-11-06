@@ -8,9 +8,6 @@ province_event = {
 
 	is_triggered_only = yes
 
-	#immediate prevents player from enacting decision several times to get event in several provinces
-	#which can otherwise bypass the 'must have 3 of a good to develop' rule
-	#dev_tier variable adds up to +500 ducats
 	immediate = {
 		hidden_effect = {
 			remove_building = tradegoodsdevelopment
@@ -21,76 +18,7 @@ province_event = {
 			remove_province_modifier = skanemarket
 			remove_province_modifier = hab_schwaz_mine
 
-
 			owner = { every_owned_province = { remove_building = tradegoodsdevelopment } }
-			add_province_modifier = { name = "recently_changed_goods_timer" duration = 10950 }
-#			if = {
-#				limit = {
-#					OR = {
-#						has_terrain = glacier
-#						has_terrain = desert
-#						has_terrain = jungle
-#					}
-#				}
-#				change_variable = { which = dev_tier_variable value = 4 }
-#			}
-#			if = {
-#				limit = {
-#					OR = {
-#						has_terrain = highlands
-#						has_terrain = mountain
-#						has_terrain = coastal_desert
-#						island = yes
-#					}
-#				}
-#				change_variable = { which = dev_tier_variable value = 3 }
-#			}
-#			if = {
-#				limit = {
-#					OR = {
-#						has_terrain = marsh
-#						has_terrain = hills
-#						has_terrain = coastline
-#						has_terrain = steppe
-#					}
-#				}
-#				change_variable = { which = dev_tier_variable value = 2 }
-#			}
-#			if = {
-#				limit = {
-#					OR = {
-#						has_terrain = woods
-#						has_terrain = drylands
-#						has_terrain = savannah
-#					}
-#				}
-#				change_variable = { which = dev_tier_variable value = 1 }
-#			}
-#			#has_terrain = grasslands, value = 0
-#			if = {
-#				limit = { has_terrain = farmlands }
-#				change_variable = { which = dev_tier_variable value = -1 }
-#			}
-#			if = {
-#				limit = { is_overseas = yes }
-#				change_variable = { which = dev_tier_variable value = -1 }
-#			}
-#			if = {
-#				limit = { has_climate = arctic }
-#				change_variable = { which = dev_tier_variable value = 1 }
-#			}
-#			if = {
-#				limit = { development = 10 }
-#				change_variable = { which = dev_tier_variable value = 2 }
-#			}
-#			if = {
-#				limit = { development = 20 }
-#				change_variable = { which = dev_tier_variable value = 2 }
-#			}
-#			if = {
-#				limit = { development = 30 }
-#				change_variable = { which = dev_tier_variable value = 2 }
-#			}
 			if = {
 				limit = { development = 2 }
 				change_variable = { which = dev_tier_variable value = 1 }
@@ -249,9 +177,7 @@ province_event = {
 			}
 		}
 	}
-
-	#custom triggers checks if relevant goods can be produced
-	#then fires goods change event in
+	
 	option = {
 		name = tgd_tradegoodsdevelopment.10.nevermind
 		remove_province_modifier = "recently_changed_goods_timer"
@@ -264,7 +190,6 @@ province_event = {
 		trigger = { horses_dev = yes }
 		change_trade_goods = horses
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -272,7 +197,6 @@ province_event = {
 		trigger = { beer_dev = yes }
 		change_trade_goods = beer
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -280,7 +204,6 @@ province_event = {
 		trigger = { tar_dev = yes }
 		change_trade_goods = tar
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -288,7 +211,6 @@ province_event = {
 		trigger = { olives_dev = yes }
 		change_trade_goods = olives
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -296,7 +218,6 @@ province_event = {
 		trigger = { cheese_dev = yes }
 		change_trade_goods = cheese
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -304,7 +225,6 @@ province_event = {
 		trigger = { vanilla_dev = yes }
 		change_trade_goods = vanilla
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -100 }
 	}
 	option = {
@@ -312,7 +232,6 @@ province_event = {
 		trigger = { glass_dev = yes }
 		change_trade_goods = glass
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
 		owner = {  add_treasury = -100 }
 	}
 	option = {
@@ -320,7 +239,6 @@ province_event = {
 		trigger = { paper_dev = yes }
 		change_trade_goods = paper
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
 		owner = {  add_treasury = -100 }
 	}
 	option = {
@@ -328,15 +246,13 @@ province_event = {
 		trigger = { steel_dev = yes }
 		change_trade_goods = steel
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -100 }
+		owner = {  add_treasury = -150 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.citrus
 		trigger = { citrus_dev = yes }
 		change_trade_goods = citrus
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -344,7 +260,6 @@ province_event = {
 		trigger = { munitions_dev = yes }
 		change_trade_goods = munitions
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
 		owner = {  add_treasury = -250 }
 	}
 	option = {
@@ -352,7 +267,6 @@ province_event = {
 		trigger = { potatoes_dev = yes }
 		change_trade_goods = potatoes
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -360,47 +274,41 @@ province_event = {
 		trigger = { rum_dev = yes }
 		change_trade_goods = rum
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -100 }
+		owner = {  add_treasury = -150 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.uniforms
 		trigger = { uniforms_dev = yes }
 		change_trade_goods = uniforms
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
-		owner = {  add_treasury = -500 }
+		owner = {  add_treasury = -250 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.marble
 		trigger = { marble_dev = yes }
 		change_trade_goods = marble
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
-		owner = {  add_treasury = -100 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.machinery
 		trigger = { machinery_dev = yes }
 		change_trade_goods = machinery
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
-		owner = {  add_treasury = -500 }
+		owner = {  add_treasury = -250 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.bronze
 		trigger = { bronze_dev = yes }
 		change_trade_goods = bronze
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
-		owner = {  add_treasury = -100 }
+		owner = {  add_treasury = -150 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.cinnamon
 		trigger = { cinnamon_dev = yes }
 		change_trade_goods = cinnamon
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -100 }
 	}
 	option = {
@@ -408,7 +316,6 @@ province_event = {
 		trigger = { exotic_spices_dev = yes }
 		change_trade_goods = exotic_spices
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -100 }
 	}
 	option = {
@@ -416,7 +323,6 @@ province_event = {
 		trigger = { brass_dev = yes }
 		change_trade_goods = brass
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
 		owner = {  add_treasury = -250 }
 	}
 	option = {
@@ -424,15 +330,13 @@ province_event = {
 		trigger = { gunpowder_dev = yes }
 		change_trade_goods = gunpowder
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -200 }
+		owner = {  add_treasury = -250 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.optics
 		trigger = { optics_dev = yes }
 		change_trade_goods = optics
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
 		owner = {  add_treasury = -250 }
 	}
 	option = {
@@ -440,7 +344,6 @@ province_event = {
 		trigger = { leather_dev = yes }
 		change_trade_goods = leather
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
 		owner = {  add_treasury = -100 }
 	}
 	option = {
@@ -448,7 +351,6 @@ province_event = {
 		trigger = { cocoa_dev = yes }	
 		change_trade_goods = cocoa
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -456,7 +358,6 @@ province_event = {
 		trigger = { chinaware_dev = yes }	
 		change_trade_goods = chinaware
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -464,7 +365,6 @@ province_event = {
 		trigger = { cloth_dev = yes }	
 		change_trade_goods = cloth
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -472,7 +372,6 @@ province_event = {
 		trigger = { coffee_dev = yes }	
 		change_trade_goods = coffee
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -480,7 +379,6 @@ province_event = {
 		trigger = { cotton_dev = yes }	
 		change_trade_goods = cotton
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -488,15 +386,13 @@ province_event = {
 		trigger = { dyes_dev = yes }	
 		change_trade_goods = dyes
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -100 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.fish
 		trigger = { fish_dev = yes }	
 		change_trade_goods = fish
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -504,7 +400,6 @@ province_event = {
 		trigger = { fur_dev = yes }	
 		change_trade_goods = fur
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -512,7 +407,6 @@ province_event = {
 		trigger = { grain_dev = yes }	
 		change_trade_goods = grain
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -520,7 +414,6 @@ province_event = {
 		trigger = { ivory_dev = yes }	
 		change_trade_goods = ivory
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -528,7 +421,6 @@ province_event = {
 		trigger = { naval_supplies_dev = yes }	
 		change_trade_goods = naval_supplies
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -536,23 +428,20 @@ province_event = {
 		trigger = { salt_dev = yes }	
 		change_trade_goods = salt
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -100 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.silk
 		trigger = { silk_dev = yes }	
 		change_trade_goods = silk
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -100 }
+		owner = {  add_treasury = -50 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.slaves
 		trigger = { slaves_dev = yes }	
 		change_trade_goods = slaves
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -560,7 +449,6 @@ province_event = {
 		trigger = { spices_dev = yes }	
 		change_trade_goods = spices
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -100 }
 	}
 	option = {
@@ -568,7 +456,6 @@ province_event = {
 		trigger = { sugar_dev = yes }	
 		change_trade_goods = sugar
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -576,7 +463,6 @@ province_event = {
 		trigger = { tea_dev = yes }	
 		change_trade_goods = tea
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -584,7 +470,6 @@ province_event = {
 		trigger = { tobacco_dev = yes }	
 		change_trade_goods = tobacco
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -592,7 +477,6 @@ province_event = {
 		trigger = { tropical_wood_dev = yes }	
 		change_trade_goods = tropical_wood
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -600,7 +484,6 @@ province_event = {
 		trigger = { wine_dev = yes }	
 		change_trade_goods = wine
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
 		owner = {  add_treasury = -50 }
 	}
 	option = {
@@ -608,7 +491,6 @@ province_event = {
 		trigger = { wool_dev = yes }	
 		change_trade_goods = wool
 		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
 		owner = {  add_treasury = -50 }
 	}
 }
@@ -645,7 +527,6 @@ country_event = {
 
 
 					#owner = { every_owned_province = { remove_building = tradegoodsdevelopment } }
-					add_province_modifier = { name = "recently_changed_goods_timer" duration = 10950 }
 					if = {
 						limit = { development = 2 }
 						change_variable = { which = dev_tier_variable value = 1 }
