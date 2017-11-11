@@ -1,0 +1,32 @@
+namespace = tgd_flavor
+
+ccountry_event = {
+	id = tgd_flavor.1
+	title = tgd_flavor.1.t
+	desc = tgd_flavor.1.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		grain = 1
+		cheese = 1
+		owns = 44
+		NOT = { has_country_flag = hamburgers }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	immediate = {
+		set_country_flag = hamburgers
+	}
+	
+	option = {
+		name = tgd_flavor.1.a
+		manpower = 100
+	}
+}

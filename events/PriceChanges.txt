@@ -1704,9 +1704,9 @@ country_event = {
 	}
 }
 
-#######################################################
-#TGD events: some carried over from SE, others by Maxo#
-#######################################################
+##########################################################
+#TGD events: some carried over from SE; most added by Maxo
+##########################################################
 
 #Bookbinding
 country_event = {
@@ -2340,8 +2340,8 @@ country_event = {
 	major = yes
 
 	trigger = {
-		adm_tech = 16
-		brass = 1
+		adm_tech = 26
+		brass = 2
 		NOT = { has_global_flag = watt_steam }
 	}
 	
@@ -2364,7 +2364,43 @@ country_event = {
 		change_price = {
 			trade_goods = copper
 			key = WATT_STEAM
-			value = 0.2
+			value = 0.10
+			duration = -1
+		}
+	}
+}
+# Synthetic Dyes
+country_event = {
+	id = prices.46
+	title = prices.46.t
+	desc = prices.46.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		adm_tech = 17
+		NOT = { has_global_flag = synthetic_dyes }
+		dyes = 0
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		set_global_flag = synthetic_dyes
+	}
+	
+	option = {
+		name = prices.46.a
+		custom_tooltip = "prices.46.a.tt"
+		change_price = {
+			trade_goods = dyes
+			key = SYNTHETIC_DYES
+			value = -0.20
 			duration = -1
 		}
 	}

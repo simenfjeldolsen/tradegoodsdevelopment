@@ -185,7 +185,7 @@ uniforms_dev = {
 			any_subject_country = { any_owned_province = { trade_goods = dyes } }
 		}
 	}
-	development = 35
+	development = 32
 }
 marble_dev = {
 	NOT = { trade_goods = marble }
@@ -214,7 +214,7 @@ bronze_dev = {
 			any_subject_country = { any_owned_province = { trade_goods = copper } }
 		}
 	}
-	development = 12
+	development = 17
 }
 cinnamon_dev = {
 	NOT = { trade_goods = cinnamon }
@@ -289,7 +289,7 @@ brass_dev = {
 			any_subject_country = { any_owned_province = { trade_goods = zinc } }
 		}
 	}
-	development = 18
+	development = 19
 }
 optics_dev = {
 	NOT = { trade_goods = optics }
@@ -394,7 +394,10 @@ cotton_dev = {
 dyes_dev = {
 	NOT = { trade_goods = dyes }
 	development = 16
-	continent = asia
+	OR = {
+		continent = asia
+		has_global_flag = synthetic_dyes
+	}
 }
 fish_dev = {
 	NOT = { trade_goods = fish }
@@ -503,9 +506,26 @@ tea_dev = {
 tobacco_dev = {
 	NOT = { trade_goods = tobacco }
 	OR = {
-		region = carribeans_region
-		region = southeast_america_region
-		region = northeast_america_region
+		OR = {
+			region = carribeans_region
+			region = southeast_america_region
+			region = northeast_america_region
+		}
+		AND = {
+			has_global_flag = popularization_of_tobacco_happened
+			OR = {
+				terrain = grasslands
+				terrain = farmlands
+			}
+			OR = {
+				region = iberia_region
+				region = coromandel_region
+				region = deccan_region
+				region = west_india_region
+				region = bengal_region
+				region = hindusthan_region
+			}
+		}
 	}
 }
 tropical_wood_dev = {
@@ -550,12 +570,11 @@ silk_dev = {
 	OR = {
 		AND = {
 			continent = asia
-			development = 27
-			trade_goods = cloth
+			development = 26
 		}
 		AND = {
-			development = 33
-			trade_goods = cloth
+			has_global_flag = popular_silk_happened
+			development = 26
 		}
 	}
 }
@@ -572,9 +591,13 @@ colonial_nation_horses_dev = {
 				has_terrain = steppe
 				has_terrain = drylands
 			}
+			NOT = {
+				has_climate = arctic
+				has_climate = tropical
+			}
 		}
 	}
-} 
+}
 colonial_nation_beer_dev = {
 
 	any_subject_country = {
@@ -593,12 +616,8 @@ colonial_nation_tar_dev = {
 			has_building = tradegoodsdevelopment
 			OR = {
 				AND = {
-					has_terrain = woods
-					development = 16
-					has_port = yes
-				}
-				AND = {
 					has_terrain = forest
+					development = 12
 					has_port = yes
 				}
 				OR = {
@@ -627,6 +646,7 @@ colonial_nation_olives_dev = {
 		any_owned_province = {
 			NOT = { trade_goods = olives }
 			has_building = tradegoodsdevelopment
+			NOT = { trade_goods = olives }
 			NOT = { has_terrain = mountain }
 			NOT = { has_terrain = desert }
 			NOT = { has_terrain = jungle }
@@ -647,34 +667,41 @@ colonial_nation_cheese_dev = {
 	}
 } 
 colonial_nation_vanilla_dev = {
-	OR = {
-		dip_tech = 16
-		AND = {
-			OR = {
-				any_owned_province = { trade_goods = vanilla }
-				any_subject_country = { any_owned_province = { trade_goods = vanilla } }
-				has_global_flag = vanillaspread_happened
-			}
-		}
-	}
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			NOT = { trade_goods = vanilla }
-			OR = {
-				AND = {
-					OR = {
-						region = mexico_region
-						area = guatemala_area
-						area = yucatan_area
-						area = east_yucatan_area
-						area = chiapas_area
+			AND = {
+				OR = {
+					area = madagascar_highlands_area
+					area = betsimasaraka_area
+					area = sakalava_area
+					area = southern_madagascar
+					area = mascarenes_area
+					province_id = 4020
+					province_id = 1201
+					AND = {
+						OR = {
+							region = mexico_region
+							area = guatemala_area
+							area = yucatan_area
+							area = east_yucatan_area
+							area = chiapas_area
+						}
+						has_terrain = jungle
+						development = 15
 					}
-					has_terrain = jungle
-					development = 18
+				} #all islands in Zanzibar trade node, or high dev jungle in mexico
+				OR = {
+					has_global_flag = vanillaspread_happened
+					owner = { any_owned_province = { trade_goods = vanilla } }
+					trading_bonus = {
+						trade_goods = vanilla
+						value = yes
+					}
 				}
-			} #no CNs in zanzibar
+			}
 		}
 	}
 } 
@@ -709,7 +736,11 @@ colonial_nation_steel_dev = {
 	}
 	any_subject_country = {
 		is_colonial_nation = yes
-		any_owned_province = { has_building = tradegoodsdevelopment }
+		any_owned_province = {
+			NOT = { trade_goods = steel }
+			has_building = tradegoodsdevelopment
+			development = 16
+		}
 	}
 }
 colonial_nation_citrus_dev = {
@@ -742,17 +773,6 @@ colonial_nation_munitions_dev = {
 		}
 	}
 }
-colonial_nation_sulfer_dev = {
-	adm_tech = 16
-	any_subject_country = {
-		is_colonial_nation = yes
-		any_owned_province = {
-			NOT = { trade_goods = sulfer }
-			has_building = tradegoodsdevelopment
-			any_owned_province = { trade_goods = sulfer }
-		}
-	}
-}
 colonial_nation_potatoes_dev = {
 	dip_tech = 16
 	any_subject_country = {
@@ -768,12 +788,15 @@ colonial_nation_potatoes_dev = {
 }
 colonial_nation_rum_dev {
 	dip_tech = 18
+	OR = {
+		any_owned_province = { trade_goods = sugar }
+		any_subject_country = { any_owned_province = { trade_goods = sugar } }
+	}
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
 			NOT = { trade_goods = rum }
 			has_building = tradegoodsdevelopment
-			trade_goods = sugar
 			OR = {
 				area = florida_area
 				area = north_florida_area
@@ -793,23 +816,20 @@ colonial_nation_rum_dev {
 }
 colonial_nation_uniforms_dev = {
 	adm_tech = 19
+	OR = {
+		any_owned_province = { trade_goods = cloth }
+		any_subject_country = { any_owned_province = { trade_goods = cloth } }
+	}
+	OR = {
+		any_owned_province = { trade_goods = dyes }
+		any_subject_country = { any_owned_province = { trade_goods = dyes } }
+	}
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
 			NOT = { trade_goods = uniforms }
 			has_building = tradegoodsdevelopment
-			OR = {
-				development = 35
-				AND = {
-					development = 25
-					OR = {
-						trade_goods = cloth
-						trade_goods = silk
-						trade_goods = dyes
-						trade_goods = wool
-					}
-				}
-			}
+			development = 32
 		}
 	}
 }
@@ -835,7 +855,7 @@ colonial_nation_machinery_dev = {
 		any_owned_province = {
 			NOT = { trade_goods = machinery }
 			has_building = tradegoodsdevelopment
-			development = 25
+			development = 28
 		}
 	}
 }
@@ -850,6 +870,7 @@ colonial_nation_bronze_dev = {
 		any_owned_province = {
 			NOT = { trade_goods = bronze }
 			has_building = tradegoodsdevelopment
+			development = 17
 		}
 	}
 }
@@ -864,20 +885,22 @@ colonial_nation_brass_dev = {
 		any_owned_province = {
 			has_building = tradegoodsdevelopment
 			NOT = { trade_goods = brass }
+			development = 19
 		}
 	}
 }
 colonial_nation_optics_dev = {
 	dip_tech = 21
+	OR = {
+		any_owned_province = { trade_goods = glass }
+		any_subject_country = { any_owned_province = { trade_goods = glass } }
+	}
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
 			NOT = { trade_goods = optics }
 			has_building = tradegoodsdevelopment
-			OR = {
-				development = 32
-				trade_goods = glass
-			}
+			development = 32
 		}
 	}
 }
@@ -1014,12 +1037,13 @@ colonial_nation_cotton_dev = {
 	}
 }
 colonial_nation_dyes_dev = {
+	has_global_flag = synthetic_dyes
 	any_subject_country = {
 		is_colonial_nation = yes
 		any_owned_province = {
 			NOT = { trade_goods = dyes }
 			has_building = tradegoodsdevelopment
-			continent = asia
+			development = 16
 		}
 	}
 }
@@ -1106,25 +1130,6 @@ colonial_nation_sugar_dev = {
 		}
 	}
 }
-colonial_nation_tea_dev = {
-	any_subject_country = {
-		is_colonial_nation = yes
-		any_owned_province = {
-			NOT = { trade_goods = tea  }
-			has_building = tradegoodsdevelopment
-			OR = {
-				region = malaya_region
-				region = indonesia_region
-				region = moluccas_region
-				region = indo_china_region
-				region = south_china_region			
-				region = xinan_region
-				region = north_china_region
-				region = japan_region
-			}
-		}
-	}
-}
 colonial_nation_tobacco_dev = {
 	any_subject_country = {
 		is_colonial_nation = yes
@@ -1132,9 +1137,26 @@ colonial_nation_tobacco_dev = {
 			NOT = { trade_goods = tobacco  }
 			has_building = tradegoodsdevelopment
 			OR = {
-				region = carribeans_region
-				region = southeast_america_region
-				region = northeast_america_region
+				OR = {
+					region = carribeans_region
+					region = southeast_america_region
+					region = northeast_america_region
+				}
+				AND = {
+					has_global_flag = popularization_of_tobacco_happened
+					OR = {
+						terrain = grasslands
+						terrain = farmlands
+					}
+					OR = {
+						region = iberia_region
+						region = coromandel_region
+						region = deccan_region
+						region = west_india_region
+						region = bengal_region
+						region = hindusthan_region
+					}
+				}
 			}
 		}
 	}
@@ -1176,8 +1198,8 @@ colonial_nation_silk_dev = {
 		any_owned_province = {
 			NOT = { trade_goods = silk }
 			has_building = tradegoodsdevelopment
-			development = 35
-			trade_goods = cloth
+			has_global_flag = popular_silk_happened
+			development = 26
 		}
 	}
 }
