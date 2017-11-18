@@ -4,4 +4,4 @@ tags={
 	"Trade"
 }
 picture="tradegoodsdevelopment.jpg"
-supported_version="1.22.*.*"
+supported_version="1.23.*.*"
