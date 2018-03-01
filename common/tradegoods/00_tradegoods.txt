@@ -1124,7 +1124,7 @@ silk = {
 }
 fur = {
 	color = { 0.54 0.40 0.31 }
-	modifier = { prestige = 0.5 }
+	modifier = { prestige = 1 }
 	province = { province_trade_power_modifier = 0.10 }
 	chance = {
 		factor = 15
