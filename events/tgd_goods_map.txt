@@ -15,208 +15,203 @@ country_event = {
 	}
 	
 	immediate = { hidden_effect = { set_global_flag = new_goods } }
-	
-#	option = {
-#		name = tgd_mapchanges.1.no
-#	}
+
 	option = {
 		name = tgd_mapchanges.1.yes
-	# Horses
-		155 = { change_trade_goods = horses }
-		157 = { change_trade_goods = horses }
-		224 = { change_trade_goods = horses }
-		225 = { change_trade_goods = horses }
-		283 = { change_trade_goods = horses }
-		297 = { change_trade_goods = horses }
-		301 = { change_trade_goods = horses }
-		303 = { change_trade_goods = horses }
-		304 = { change_trade_goods = horses }
-		323 = { change_trade_goods = horses }
-		399 = { change_trade_goods = horses }
-		464 = { change_trade_goods = horses }
-		466 = { change_trade_goods = horses }
-		468 = { change_trade_goods = horses }
-		472 = { change_trade_goods = horses }
-		475 = { change_trade_goods = horses }
-		476 = { change_trade_goods = horses }
-		714 = { change_trade_goods = horses }
-		724 = { change_trade_goods = horses }
-		728 = { change_trade_goods = horses }
-		730 = { change_trade_goods = horses }
-		1082 = { change_trade_goods = horses }
-		1749 = { change_trade_goods = horses }
-		1864 = { change_trade_goods = horses }
-		1944 = { change_trade_goods = horses }
-		2114 = { change_trade_goods = horses }
-		2329 = { change_trade_goods = horses }
-		2353 = { change_trade_goods = horses }
-		2357 = { change_trade_goods = horses }
-		2360 = { change_trade_goods = horses }
-		2368 = { change_trade_goods = horses }
-		2408 = { change_trade_goods = horses }
-		2411 = { change_trade_goods = horses }
-		2414 = { change_trade_goods = horses }
-		2421 = { change_trade_goods = horses }
-		4147 = { change_trade_goods = horses }
-		4219 = { change_trade_goods = horses }
-	# Olives	
-		102 = { change_trade_goods = olives }
-		115 = { change_trade_goods = olives }
-		121 = { change_trade_goods = olives }
-		122 = { change_trade_goods = olives }
-		123 = { change_trade_goods = olives }
-		125 = { change_trade_goods = olives }
-		127 = { change_trade_goods = olives }
-		136 = { change_trade_goods = olives }
-		138 = { change_trade_goods = olives }
-		144 = { change_trade_goods = olives }
-		148 = { change_trade_goods = olives }
-		197 = { change_trade_goods = olives }
-		200 = { change_trade_goods = olives }
-		218 = { change_trade_goods = olives }
-		221 = { change_trade_goods = olives }
-		229 = { change_trade_goods = olives }
-		230 = { change_trade_goods = olives }
-		316 = { change_trade_goods = olives }
-		318 = { change_trade_goods = olives }
-		329 = { change_trade_goods = olives }
-		330 = { change_trade_goods = olives }
-		337 = { change_trade_goods = olives }
-		338 = { change_trade_goods = olives }
-		356 = { change_trade_goods = olives }
-		378 = { change_trade_goods = olives }
-		407 = { change_trade_goods = olives }
-		1247 = { change_trade_goods = olives }
-		1750 = { change_trade_goods = olives }
-		1764 = { change_trade_goods = olives }
-		1773 = { change_trade_goods = olives }
-		1853 = { change_trade_goods = olives }
-		1855 = { change_trade_goods = olives }
-		1933 = { change_trade_goods = olives }
-		2296 = { change_trade_goods = olives }
-		2299 = { change_trade_goods = olives }
-		2302 = { change_trade_goods = olives }
-		2452 = { change_trade_goods = olives }
-		2455 = { change_trade_goods = olives }
-		2751 = { change_trade_goods = olives }
-		3003 = { change_trade_goods = olives }
-		4174 = { change_trade_goods = olives }
-	# Sulfur (ignore the name being misspelled)	
-		124 = { change_trade_goods = sulfer }
-		2982 = { change_trade_goods = sulfer }
-	# Bier	
-		52 = { change_trade_goods = beer }
-		62 = { change_trade_goods = beer }
-		65 = { change_trade_goods = beer }
-		67 = { change_trade_goods = beer }
-		74 = { change_trade_goods = beer }
-		79 = { change_trade_goods = beer }
-		80 = { change_trade_goods = beer }
-		84 = { change_trade_goods = beer }
-		85 = { change_trade_goods = beer }
-		88 = { change_trade_goods = beer }
-		89 = { change_trade_goods = beer }
-		90 = { change_trade_goods = beer }
-		95 = { change_trade_goods = beer }
-		127 = { change_trade_goods = beer }
-		132 = { change_trade_goods = beer }
-		265 = { change_trade_goods = beer }
-		267 = { change_trade_goods = beer }
-		373 = { change_trade_goods = beer }
-		1763 = { change_trade_goods = beer }
-		2955 = { change_trade_goods = beer }
-		2956 = { change_trade_goods = beer }
-		2968 = { change_trade_goods = beer }
-		2971 = { change_trade_goods = beer }
-		2974 = { change_trade_goods = beer }
-		2993 = { change_trade_goods = beer }
-		2996 = { change_trade_goods = beer }
-		4149 = { change_trade_goods = beer }
-	# Cheese
-		14 = { change_trade_goods = cheese }
-		54 = { change_trade_goods = cheese }
-		59 = { change_trade_goods = cheese }
-		75 = { change_trade_goods = cheese }
-		81 = { change_trade_goods = cheese }
-		86 = { change_trade_goods = cheese }
-		94 = { change_trade_goods = cheese }
-		97 = { change_trade_goods = cheese }
-		99 = { change_trade_goods = cheese }
-		105 = { change_trade_goods = cheese }
-		108 = { change_trade_goods = cheese }
-		110 = { change_trade_goods = cheese }
-		118 = { change_trade_goods = cheese }
-		165 = { change_trade_goods = cheese }
-		173 = { change_trade_goods = cheese }
-		175 = { change_trade_goods = cheese }
-		178 = { change_trade_goods = cheese }
-		181 = { change_trade_goods = cheese }
-		185 = { change_trade_goods = cheese }
-		193 = { change_trade_goods = cheese }
-		195 = { change_trade_goods = cheese }
-		198 = { change_trade_goods = cheese }
-		203 = { change_trade_goods = cheese }
-		204 = { change_trade_goods = cheese }
-		216 = { change_trade_goods = cheese }
-		240 = { change_trade_goods = cheese }
-		242 = { change_trade_goods = cheese }
-		1742 = { change_trade_goods = cheese }
-		1747 = { change_trade_goods = cheese }
-		1748 = { change_trade_goods = cheese } # File says La Mancha, but province is Jaen. Not replacing any gold mines here.
-		1867 = { change_trade_goods = cheese }
-		1870 = { change_trade_goods = cheese }
-		1873 = { change_trade_goods = cheese }
-		2202 = { change_trade_goods = cheese }
-		2207 = { change_trade_goods = cheese }
-		2977 = { change_trade_goods = cheese }
-		2979 = { change_trade_goods = cheese }
-		4130 = { change_trade_goods = cheese }
-		4144 = { change_trade_goods = cheese }
-	# Vanilla
-		848 = { change_trade_goods = vanilla }
-		2647 = { change_trade_goods = vanilla }
-	# Cinnamon
-		572 = { change_trade_goods = cinnamon }
-		2099 = { change_trade_goods = cinnamon }
-	# Exotic Spices
-		649 = { change_trade_goods = exotic_spices }
-		650 = { change_trade_goods = exotic_spices }
-	# Marble
-		2 = { change_trade_goods = marble }
-		32 = { change_trade_goods = marble }
-		117 = { change_trade_goods = marble }
-		144 = { change_trade_goods = marble }
-		156 = { change_trade_goods = marble }
-		164 = { change_trade_goods = marble }
-		209 = { change_trade_goods = marble }
-		1757 = { change_trade_goods = marble }
-		2066 = { change_trade_goods = marble }
-		2980 = { change_trade_goods = marble }
-		3001 = { change_trade_goods = marble }
-	# Tar
-		9 = { change_trade_goods = tar }
-		11 = { change_trade_goods = tar }
-		18 = { change_trade_goods = tar }
-		19 = { change_trade_goods = tar }
-		28 = { change_trade_goods = tar }
-		34 = { change_trade_goods = tar }
-		313 = { change_trade_goods = tar }
-		4113 = { change_trade_goods = tar }
-		4114 = { change_trade_goods = tar }
-		4258 = { change_trade_goods = tar }
-	# Glass
-		112 = { change_trade_goods = glass }
-		151 = { change_trade_goods = glass }
-	# Steel	
-		382 = { change_trade_goods = steel }
-		533 = { change_trade_goods = steel }
-		2141 = { change_trade_goods = steel }
-	# The following are to add more vanilla goods that have been changed away (and to make Europe's goods more accurate)
-		227 = { change_trade_goods = salt }
-		231 = { change_trade_goods = salt }
-		1761 = { change_trade_goods = wine }
-		1851 = { change_trade_goods = fish }
-		4150 = { change_trade_goods = grain }
+		hidden_effect = {
+		# Horses
+			155 = { change_trade_goods = horses }
+			157 = { change_trade_goods = horses }
+			224 = { change_trade_goods = horses }
+			225 = { change_trade_goods = horses }
+			283 = { change_trade_goods = horses }
+			297 = { change_trade_goods = horses }
+			301 = { change_trade_goods = horses }
+			303 = { change_trade_goods = horses }
+			304 = { change_trade_goods = horses }
+			323 = { change_trade_goods = horses }
+			399 = { change_trade_goods = horses }
+			464 = { change_trade_goods = horses }
+			466 = { change_trade_goods = horses }
+			468 = { change_trade_goods = horses }
+			472 = { change_trade_goods = horses }
+			475 = { change_trade_goods = horses }
+			476 = { change_trade_goods = horses }
+			714 = { change_trade_goods = horses }
+			724 = { change_trade_goods = horses }
+			728 = { change_trade_goods = horses }
+			730 = { change_trade_goods = horses }
+			1082 = { change_trade_goods = horses }
+			1749 = { change_trade_goods = horses }
+			1864 = { change_trade_goods = horses }
+			1944 = { change_trade_goods = horses }
+			2114 = { change_trade_goods = horses }
+			2329 = { change_trade_goods = horses }
+			2353 = { change_trade_goods = horses }
+			2357 = { change_trade_goods = horses }
+			2360 = { change_trade_goods = horses }
+			2368 = { change_trade_goods = horses }
+			2408 = { change_trade_goods = horses }
+			2411 = { change_trade_goods = horses }
+			2414 = { change_trade_goods = horses }
+			2421 = { change_trade_goods = horses }
+			4147 = { change_trade_goods = horses }
+			4219 = { change_trade_goods = horses }
+		# Olives	
+			102 = { change_trade_goods = olives }
+			115 = { change_trade_goods = olives }
+			121 = { change_trade_goods = olives }
+			122 = { change_trade_goods = olives }
+			123 = { change_trade_goods = olives }
+			125 = { change_trade_goods = olives }
+			127 = { change_trade_goods = olives }
+			136 = { change_trade_goods = olives }
+			138 = { change_trade_goods = olives }
+			144 = { change_trade_goods = olives }
+			148 = { change_trade_goods = olives }
+			197 = { change_trade_goods = olives }
+			200 = { change_trade_goods = olives }
+			218 = { change_trade_goods = olives }
+			221 = { change_trade_goods = olives }
+			229 = { change_trade_goods = olives }
+			230 = { change_trade_goods = olives }
+			316 = { change_trade_goods = olives }
+			318 = { change_trade_goods = olives }
+			329 = { change_trade_goods = olives }
+			330 = { change_trade_goods = olives }
+			337 = { change_trade_goods = olives }
+			338 = { change_trade_goods = olives }
+			356 = { change_trade_goods = olives }
+			378 = { change_trade_goods = olives }
+			407 = { change_trade_goods = olives }
+			1247 = { change_trade_goods = olives }
+			1750 = { change_trade_goods = olives }
+			1764 = { change_trade_goods = olives }
+			1773 = { change_trade_goods = olives }
+			1853 = { change_trade_goods = olives }
+			1855 = { change_trade_goods = olives }
+			1933 = { change_trade_goods = olives }
+			2296 = { change_trade_goods = olives }
+			2299 = { change_trade_goods = olives }
+			2302 = { change_trade_goods = olives }
+			2452 = { change_trade_goods = olives }
+			2455 = { change_trade_goods = olives }
+			2751 = { change_trade_goods = olives }
+			3003 = { change_trade_goods = olives }
+			4174 = { change_trade_goods = olives }
+		# Sulfur (ignore the name being misspelled)	
+			124 = { change_trade_goods = sulfer }
+			2982 = { change_trade_goods = sulfer }
+		# Bier	
+			52 = { change_trade_goods = beer }
+			62 = { change_trade_goods = beer }
+			65 = { change_trade_goods = beer }
+			67 = { change_trade_goods = beer }
+			74 = { change_trade_goods = beer }
+			79 = { change_trade_goods = beer }
+			80 = { change_trade_goods = beer }
+			84 = { change_trade_goods = beer }
+			85 = { change_trade_goods = beer }
+			88 = { change_trade_goods = beer }
+			89 = { change_trade_goods = beer }
+			90 = { change_trade_goods = beer }
+			95 = { change_trade_goods = beer }
+			127 = { change_trade_goods = beer }
+			132 = { change_trade_goods = beer }
+			265 = { change_trade_goods = beer }
+			267 = { change_trade_goods = beer }
+			373 = { change_trade_goods = beer }
+			1763 = { change_trade_goods = beer }
+			2955 = { change_trade_goods = beer }
+			2956 = { change_trade_goods = beer }
+			2968 = { change_trade_goods = beer }
+			2971 = { change_trade_goods = beer }
+			2974 = { change_trade_goods = beer }
+			2993 = { change_trade_goods = beer }
+			2996 = { change_trade_goods = beer }
+			4149 = { change_trade_goods = beer }
+		# Cheese
+			14 = { change_trade_goods = cheese }
+			54 = { change_trade_goods = cheese }
+			59 = { change_trade_goods = cheese }
+			75 = { change_trade_goods = cheese }
+			81 = { change_trade_goods = cheese }
+			86 = { change_trade_goods = cheese }
+			94 = { change_trade_goods = cheese }
+			97 = { change_trade_goods = cheese }
+			99 = { change_trade_goods = cheese }
+			105 = { change_trade_goods = cheese }
+			108 = { change_trade_goods = cheese }
+			110 = { change_trade_goods = cheese }
+			118 = { change_trade_goods = cheese }
+			165 = { change_trade_goods = cheese }
+			173 = { change_trade_goods = cheese }
+			175 = { change_trade_goods = cheese }
+			178 = { change_trade_goods = cheese }
+			181 = { change_trade_goods = cheese }
+			185 = { change_trade_goods = cheese }
+			193 = { change_trade_goods = cheese }
+			195 = { change_trade_goods = cheese }
+			198 = { change_trade_goods = cheese }
+			203 = { change_trade_goods = cheese }
+			204 = { change_trade_goods = cheese }
+			216 = { change_trade_goods = cheese }
+			240 = { change_trade_goods = cheese }
+			242 = { change_trade_goods = cheese }
+			1742 = { change_trade_goods = cheese }
+			1747 = { change_trade_goods = cheese }
+			1748 = { change_trade_goods = cheese } # File says La Mancha, but province is Jaen. Not replacing any gold mines here.
+			1867 = { change_trade_goods = cheese }
+			1870 = { change_trade_goods = cheese }
+			1873 = { change_trade_goods = cheese }
+			2202 = { change_trade_goods = cheese }
+			2207 = { change_trade_goods = cheese }
+			2977 = { change_trade_goods = cheese }
+			2979 = { change_trade_goods = cheese }
+			4130 = { change_trade_goods = cheese }
+			4144 = { change_trade_goods = cheese }
+		# Vanilla
+			848 = { change_trade_goods = vanilla }
+			2647 = { change_trade_goods = vanilla }
+		# Cinnamon
+			572 = { change_trade_goods = cinnamon }
+			2099 = { change_trade_goods = cinnamon }
+		# Exotic Spices
+			649 = { change_trade_goods = exotic_spices }
+			650 = { change_trade_goods = exotic_spices }
+		# Marble
+			2 = { change_trade_goods = marble }
+			32 = { change_trade_goods = marble }
+			117 = { change_trade_goods = marble }
+			144 = { change_trade_goods = marble }
+			156 = { change_trade_goods = marble }
+			164 = { change_trade_goods = marble }
+			209 = { change_trade_goods = marble }
+			1757 = { change_trade_goods = marble }
+			2066 = { change_trade_goods = marble }
+			2980 = { change_trade_goods = marble }
+			3001 = { change_trade_goods = marble }
+		# Tar
+			9 = { change_trade_goods = tar }
+			11 = { change_trade_goods = tar }
+			18 = { change_trade_goods = tar }
+			19 = { change_trade_goods = tar }
+			28 = { change_trade_goods = tar }
+			34 = { change_trade_goods = tar }
+			313 = { change_trade_goods = tar }
+			4113 = { change_trade_goods = tar }
+			4114 = { change_trade_goods = tar }
+			4258 = { change_trade_goods = tar }
+		# Steel	
+			382 = { change_trade_goods = steel }
+			533 = { change_trade_goods = steel }
+			2141 = { change_trade_goods = steel }
+		# The following are to add more vanilla goods that have been changed away (and to make Europe's goods more accurate)
+			227 = { change_trade_goods = salt }
+			231 = { change_trade_goods = salt }
+			1761 = { change_trade_goods = wine }
+			1851 = { change_trade_goods = fish }
+			4150 = { change_trade_goods = grain }
 		}
 	}
 }
