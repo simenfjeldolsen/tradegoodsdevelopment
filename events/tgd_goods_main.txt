@@ -8,18 +8,28 @@ province_event = {
 
 	is_triggered_only = yes
 
-	#immediate prevents player from enacting decision several times to get event in several provinces
-	#which can otherwise bypass the 'must have 3 of a good to develop' rule
-	#dev_tier variable adds up to +500 ducats
 	immediate = {
 		hidden_effect = {
 			remove_building = tradegoodsdevelopment
 
 			remove_province_modifier = stora_kopparberget_modifier
-			remove_province_modifier = cerro_rico_modifier
-			remove_province_modifier = spice_islands_modifier
+			remove_province_modifier = granary_of_the_mediterranean
+			remove_province_modifier = ven_murano_glass_industry
+			remove_province_modifier = diamond_mines_of_golconda_modifier
+			remove_province_modifier = coffea_arabica_modifier
 			remove_province_modifier = skanemarket
+			remove_province_modifier = spice_islands_modifier
+			remove_province_modifier = comet_ore_modifier
+			remove_province_modifier = paradise_modifier
+			remove_province_modifier = cerro_rico_modifier
+			#remove_province_modifier = ned_house_of_elzevir # Gives other bonuses and is small enough that I let it stay
+			remove_province_modifier = bookmarket_of_x
+			remove_province_modifier = grand_bank_fisheries
+			remove_province_modifier = diamond_district
+			remove_province_modifier = jingdezhen_kilns
+			remove_province_modifier = perfume_capital
 			remove_province_modifier = hab_schwaz_mine
+
 
 
 			owner = { every_owned_province = { remove_building = tradegoodsdevelopment } }
@@ -401,9 +411,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	#immediate prevents player from enacting decision several times to get event in several provinces
-	#which can otherwise bypass the 'must have 3 of a good to develop' rule
-	#dev_tier variable adds up to +500 ducats
 	immediate = {
 		hidden_effect = {
 			every_subject_country = {
@@ -418,9 +425,21 @@ country_event = {
 					#remove_building = tradegoodsdevelopment
 
 					remove_province_modifier = stora_kopparberget_modifier
-					remove_province_modifier = cerro_rico_modifier
-					remove_province_modifier = spice_islands_modifier
+					remove_province_modifier = granary_of_the_mediterranean
+					remove_province_modifier = ven_murano_glass_industry
+					remove_province_modifier = diamond_mines_of_golconda_modifier
+					remove_province_modifier = coffea_arabica_modifier
 					remove_province_modifier = skanemarket
+					remove_province_modifier = spice_islands_modifier
+					remove_province_modifier = comet_ore_modifier
+					remove_province_modifier = paradise_modifier
+					remove_province_modifier = cerro_rico_modifier
+					#remove_province_modifier = ned_house_of_elzevir # Gives other bonuses and is small enough that I let it stay
+					remove_province_modifier = bookmarket_of_x
+					remove_province_modifier = grand_bank_fisheries
+					remove_province_modifier = diamond_district
+					remove_province_modifier = jingdezhen_kilns
+					remove_province_modifier = perfume_capital
 					remove_province_modifier = hab_schwaz_mine
 
 
