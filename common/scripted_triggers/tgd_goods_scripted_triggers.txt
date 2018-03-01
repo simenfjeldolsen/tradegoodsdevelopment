@@ -21,28 +21,34 @@ tar_dev = {
 	OR = {
 		AND = {
 			has_terrain = woods
-			development = 16
 			has_port = yes
 		}
 		AND = {
 			has_terrain = forest
 			has_port = yes
 		}
-		OR = {
-			area = south_appalachia_area
-			area = chesapeake_area
-			area = great_valley_area
-			area = piedmont_north_america_area
-			area = american_georgia_area 
-			area = carolinas_area
-			area = south_carolina_area
-			area = upper_american_georgia_area
-			area = great_woods_area
-			area = massachusetts_bay_area
-			area = connecticut_valley_area
-			area = hudson_valley_area
-			area = delaware_valley_area
-			area = maryland_area
+		AND = {
+			OR = {
+				has_terrain = woods
+				has_terrain = forest
+				has_terrain = hills
+			}
+			OR = {
+				area = south_appalachia_area
+				area = chesapeake_area
+				area = great_valley_area
+				area = piedmont_north_america_area
+				area = american_georgia_area 
+				area = carolinas_area
+				area = south_carolina_area
+				area = upper_american_georgia_area
+				area = great_woods_area
+				area = massachusetts_bay_area
+				area = connecticut_valley_area
+				area = hudson_valley_area
+				area = delaware_valley_area
+				area = maryland_area
+			}
 		}
 	}
 }
