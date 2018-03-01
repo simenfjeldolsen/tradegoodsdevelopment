@@ -523,7 +523,7 @@ cocoa = {
 }
 tobacco = {
 	color = { 0.33 0.56 0.38 }
-	modifier = { global_foreign_trade_power = 0.10 }
+	modifier = { global_foreign_trade_power = 0.20 }
 	province = { province_trade_power_modifier = 0.10 }
 	chance = {
 		factor = 15
@@ -1020,7 +1020,7 @@ wool = {
 }
 cotton = {
 	color = { 0.52 0.68 0.6 }
-	modifier = { global_colonial_growth = 20 }
+	modifier = { global_trade_power = 0.1 }
 	province = { local_development_cost = -0.10 }
 	chance = {
 		factor = 20
@@ -1459,7 +1459,7 @@ glass = {
 }
 chinaware = {
 	color = { 0.18 0.57 0.8 }
-	modifier = { global_own_trade_power = 0.10 }
+	modifier = { global_own_trade_power = 0.20 }
 	province = { local_autonomy = -0.1 }
 	chance = {
 		factor = 15
