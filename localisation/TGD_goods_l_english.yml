@@ -139,6 +139,9 @@
  #########################
  ### Goods development ###
  #########################
+ tgd_mapchanges.1.t: "Trade Goods Development"
+ tgd_mapchanges.1.d: "Welcome to Trade Goods Development! This mod enables the player to change the trade good produced in a province, and adds new goods and bonues to encourage players to develop these new goods."
+ tgd_mapchanges.1.yes: "Ok"
  manual_dev_title: "Develop Tradegoods in Province"
  manual_dev_desc: "This decision allows you to change the tradegoods in a province."
  manual_dev_explanation: "You must build a Trade Goods Development in the province you would like to change trade goods in. Please view the Tutorial Decision for more information."
