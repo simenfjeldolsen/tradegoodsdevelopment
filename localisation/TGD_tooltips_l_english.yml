@@ -2,7 +2,7 @@
  SEGOODS: "Trade Goods"
  prospecting_fire: "We will receive news from §Y[This.GetName]§! about what ores they have found."
  info_allow: "Always Available."
- prices.33.a.tt: "Vanilla can now be developed on all islands in the Zanzibar trade node, or in 18 development jungle provinces in the Mexico trade node."
+ prices.33.a.tt: "Vanilla can now be developed on all islands in the Zanzibar trade node, or in 15 development jungle provinces in the Mexico trade node."
  prices.36.a.tt: "Cinnamon can now be developed anywhere in the Ceylon and Philippines trade nodes."
  prices.40.a.tt: "Exotic spices can now be developed anywhere in the Malacca and Moluccas trade nodes."
  prospecting_des: "This decision enables you to prospect for ores in a provine where you have built a mine.\nBe warned - ores are not guaranteed to spawn!"
