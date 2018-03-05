@@ -1610,7 +1610,7 @@ gold = {
 }
 iron = {
 	color = { 0.2 0.2 0.2 }
-	modifier = { global_regiment_cost = -0.05 }
+	modifier = { army_tradition = 0.5 }
 	province = { local_production_efficiency = 0.10 }
 	chance = {
 		factor = 10
@@ -1657,7 +1657,7 @@ iron = {
 }
 copper = {
 	color = { 0.85 0.46 0.15 }
-	modifier = { army_tradition = 0.5 }
+	modifier = { siege_ability = 0.10 }
 	province = { local_production_efficiency = 0.10 }
 	chance = {
 		factor = 15
