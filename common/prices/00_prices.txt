@@ -33,7 +33,7 @@ leather		=	{ base_price = 3 } # +10%(0.3) prices.31, adm 11
 naval_supplies	=	{ base_price = 2.5 } # +50%(1.25) prices.19, dip 22
 tar				=	{ base_price = 2.5 } # +40%(1) prices.19, dip 22
 tropical_wood	=	{ base_price = 2.5 } # +35%(0.9) prices.26, dip 12
-optics			=	{ base_price = 3 } # +20%(0.5) prices.19, dip 22
+optics			=	{ base_price = 4 } # +20%(0.5) prices.19, dip 22
 
 #dyes
 dyes		=	{ base_price = 4 } # +25%(1) prices.14, mil 21# +15%(0.6) prices.16, dip 22# +10%(0.4) prices.24, dip 18
