@@ -87,9 +87,7 @@ munitions = {
 paper = {
 	color = { 0.95 1.00 0.95 }
 	modifier = { core_creation = -0.1 }
-	province = {
-		local_state_maintenance_modifier = -0.1
-	}
+	province = { local_state_maintenance_modifier = -0.1 }
 	chance = {
 		factor = 5
 		modifier = {
@@ -387,7 +385,7 @@ citrus = {
 coffee = {
 	color = { 0.22 0.15 0.09 }
 	modifier = { global_institution_spread = 0.10 }
-	province = { local_institution_spread = 0.1 }
+	province = { local_institution_spread = 0.10 }
 	chance = {
 		factor = 15
 		modifier = {
@@ -701,8 +699,8 @@ salt = {
 }
 cheese = {
 	color = { 0.30 0.55 0.45 }
-	modifier = { garrison_size = 0.25 }
-	province = { local_defensiveness = 0.15 }
+	modifier = { defensiveness = 0.15 }
+	province = { trade_value_modifier = 0.1 }
 	chance = {
 		factor = 3
 		modifier = {
@@ -930,9 +928,8 @@ wine = {
 }
 beer = {
 	color = { 0.45 0.15 0.15 }
-	modifier = { hostile_attrition = 1 }
+	modifier = { war_exhaustion = -0.03 }
 	province = { local_unrest = -1 }
-	#drink, colder areas where wine grapes weren't grown
 	chance = { factor = 0 }
 }
 rum = {
@@ -943,7 +940,7 @@ rum = {
 }
 wool = {
 	color = { 0.72 0.49 0.44 }
-	modifier = { global_ship_cost = -0.05 }
+	modifier = { global_ship_cost = -0.1 }
 	province = { local_friendly_movement_speed = 0.10 }
 	chance = {
 		factor = 30
@@ -1247,7 +1244,6 @@ naval_supplies = {
 	}
 }
 tar = {
-	#northern europe, americas, ashphalt/oil-like substances
 	color = { 0.10 0.10 0.20 }
 	modifier = { ship_durability = 0.1 }
 	province = { ship_recruit_speed = -0.25 }
@@ -1355,8 +1351,7 @@ tropical_wood = {
 dyes = {
 	color = { 0.63 0.17 0.50 }
 	modifier = { tolerance_heathen = 2 }
-	province = { province_trade_power_modifier = 0.20 }
-	
+	province = { province_trade_power_modifier = 0.20 }	
 	chance = {
 		factor = 15
 		modifier = {
@@ -1389,7 +1384,6 @@ ivory = {
 	color = { 0.75 0.7 0.63 }
 	modifier = { diplomatic_reputation = 2 }
 	province = { local_state_maintenance_modifier = -0.2 }
-
 	chance = {
 		factor = 15
 		modifier = {
@@ -1437,11 +1431,10 @@ marble = {
 	chance = { factor = 0 }
 }
 glass = {
- 	#glassworking took place in europe, luxurious
 	color = { 0.60 0.90 1.00 }
 	modifier = { technology_cost = -0.05 }
 	province = { province_trade_power_modifier = 0.20 }
-		chance = {
+	chance = {
 		factor = 5
 		modifier = {
 			factor = 0
@@ -1521,8 +1514,7 @@ slaves = {
 }
 gold = {
 	color = { 1.0 0.84 0.19 }
-	modifier = { yearly_inflation = 0.05 }
-	#just for fun
+	modifier = { yearly_inflation = 0.05 } # What is this?!?
 	chance = {
 		factor = 5
 		modifier = {
@@ -2077,12 +2069,8 @@ leather = {
 }
 incense = {
 	color = { 0.89 0.79 0.47 }
-	modifier = {
-		tolerance_own = 0.5
-	}
-	province = {
-		trade_value_modifier = 0.1
-	}
+	modifier = { global_tax_modifier = 0.10 }
+	province = { trade_value_modifier = 0.1 }
 	chance = {
 		factor = 25
 		modifier = {
@@ -2118,12 +2106,8 @@ incense = {
 }
 livestock = {
 	color = { 0.72 0.49 0.44 }
-	modifier = {
-		global_manpower_modifier = 0.10	
-	}
-	province = {
-		supply_limit_modifier = 0.5
-	}
+	modifier = { global_manpower_modifier = 0.10 }
+	province = { supply_limit_modifier = 0.5 }
 	chance = {
 		factor = 30
 		modifier = {
@@ -2204,12 +2188,8 @@ livestock = {
 }
 gems = {
 	color = { 0.96 0.78 0.78 }
-	modifier = {
-		prestige = 1
-	}
-	province = {
-		local_tax_modifier = 0.15
-	}
+	modifier = { prestige = 1 }
+	province = { local_tax_modifier = 0.15 }
 	chance = {
 		factor = 5
 		modifier = {
