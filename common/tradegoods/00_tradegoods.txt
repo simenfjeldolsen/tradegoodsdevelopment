@@ -1610,7 +1610,7 @@ gold = {
 }
 iron = {
 	color = { 0.2 0.2 0.2 }
-	modifier = { production_efficiency = 0.05 }
+	modifier = { global_regiment_cost = -0.05 }
 	province = { local_production_efficiency = 0.10 }
 	chance = {
 		factor = 10
@@ -1657,7 +1657,7 @@ iron = {
 }
 copper = {
 	color = { 0.85 0.46 0.15 }
-	modifier = { production_efficiency = 0.05 }
+	modifier = { army_tradition = 0.5 }
 	province = { local_production_efficiency = 0.10 }
 	chance = {
 		factor = 15
@@ -1737,7 +1737,7 @@ copper = {
 }
 sulfer = {
 	color = { 139 234 239 }
-	modifier = { production_efficiency = 0.05 }
+	modifier = { mil_tech_cost_modifier  = -0.10 }
 	province = { local_production_efficiency = 0.10 }
 	chance = {
 		factor = 7
@@ -1830,7 +1830,7 @@ sulfer = {
 }
 lead = {
 	color = { 0.15 0.15 0.15 }
-	modifier = { production_efficiency = 0.05 }
+	modifier = { infantry_cost = -0.1 }
 	province = { local_production_efficiency = 0.10 }
 	chance = {
 		factor = 10
@@ -1921,7 +1921,7 @@ lead = {
 }
 zinc = {
 	color = { 0.65 0.65 0.70 }
-	modifier = { production_efficiency = 0.05 }
+	modifier = { artillery_cost = -0.10 }
 	province = { local_production_efficiency = 0.10 }
 	chance = {
 		factor = 5
