@@ -197,7 +197,7 @@
  tgd_info.35.back: "Back"
  tgd_info.35.exit: "Exit"
  tgd_info.36.t: "Tar"
- tgd_info.36.d: "Trading-in Bonus: Ship Durability +10%\nLocal Bonus: Shipbuilding Time -25%\n\nTar exists in northern Scandinavia in 1444, and can developed in any of the following:\n\na coastal province with woods or forest,\n\nor any province in the Chesapeake Bay trade node with woods, forest or hills."
+ tgd_info.36.d: "Trading-in Bonus: Ship Durability +10%\nLocal Bonus: Shipbuilding Time -25%\n\nTar exists in northern Scandinavia in 1444, and can developed in any of the following:\n\na coastal province forest,\n\nor any province in the Chesapeake Bay trade node with woods, forest or hills."
  tgd_info.36.back: "Back"
  tgd_info.36.exit: "Exit"
  tgd_info.37.t: "Tea"

@@ -20,10 +20,6 @@ tar_dev = {
 	NOT = { trade_goods = tar }
 	OR = {
 		AND = {
-			has_terrain = woods
-			has_port = yes
-		}
-		AND = {
 			has_terrain = forest
 			has_port = yes
 		}
