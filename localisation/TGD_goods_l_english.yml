@@ -76,6 +76,10 @@
  exotic_spicesDESC: "The term 'Exotic Spices' represents a wide range of spices that can only be found in the East Indies, such as Nutmeg and Cloves."
  leather: "Leather"
  leatherDESC: "Leather is a strong and ductile material produced from tanning animal skins, often cattle hide. It is used in the production of many valuable goods, such as clothing, books, armor, wallpaper, and furniture. A wide range of techniques are used across the world to produce many different varieties."
+ iron: "Iron"
+ ironDESC: "Iron formed the basis of the metallurgical industry and was used extensively in the production of weapons and other military equipment."
+ copper: "Copper"
+ copperDESC: "Copper was the main component of bronze and was essential in the early production of cannons."
  ####################
  ### Price Events ###
  ####################
