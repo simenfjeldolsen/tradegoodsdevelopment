@@ -1,3 +1,4 @@
+
 #title
 
 horses_dev ={
@@ -538,6 +539,7 @@ wool_dev = {
 	NOT = { has_climate = tropical }
 }
 silk_dev = {
+	NOT = { trade_goods = silk }
 	OR = {
 		AND = {
 			continent = asia
@@ -549,6 +551,15 @@ silk_dev = {
 			trade_goods = cloth
 		}
 	}
+}
+livestock_dev = {
+	NOT = { trade_goods = livestock }
+	NOT = { has_climate = arctic }
+}
+
+incense_dev = {
+	NOT = { trade_goods = incense }
+	NOT = { has_climate = arctic }
 }
 
 # For developing in Colonial nations
@@ -584,29 +595,31 @@ colonial_nation_tar_dev = {
 			has_building = tradegoodsdevelopment
 			OR = {
 				AND = {
-					has_terrain = woods
-					development = 16
-					has_port = yes
-				}
-				AND = {
 					has_terrain = forest
 					has_port = yes
 				}
-				OR = {
-					area = south_appalachia_area
-					area = chesapeake_area
-					area = great_valley_area
-					area = piedmont_north_america_area
-					area = american_georgia_area 
-					area = carolinas_area
-					area = south_carolina_area
-					area = upper_american_georgia_area
-					area = great_woods_area
-					area = massachusetts_bay_area
-					area = connecticut_valley_area
-					area = hudson_valley_area
-					area = delaware_valley_area
-					area = maryland_area
+				AND = {
+					OR = {
+						has_terrain = woods
+						has_terrain = forest
+						has_terrain = hills
+					}
+					OR = {
+						area = south_appalachia_area
+						area = chesapeake_area
+						area = great_valley_area
+						area = piedmont_north_america_area
+						area = american_georgia_area 
+						area = carolinas_area
+						area = south_carolina_area
+						area = upper_american_georgia_area
+						area = great_woods_area
+						area = massachusetts_bay_area
+						area = connecticut_valley_area
+						area = hudson_valley_area
+						area = delaware_valley_area
+						area = maryland_area
+					}
 				}
 			}
 		}
@@ -1169,6 +1182,45 @@ colonial_nation_silk_dev = {
 			has_building = tradegoodsdevelopment
 			development = 35
 			trade_goods = cloth
+		}
+	}
+}
+
+colonial_nation_tropical_wood_dev {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = tropical_wood }
+			has_building = tradegoodsdevelopment
+			has_climate = tropical
+			OR = {
+				has_terrain = jungle
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = hills
+			}
+		}
+	}
+}
+
+colonial_nation_livestock_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = livestock }
+			has_building = tradegoodsdevelopment
+			NOT = { has_climate = arctic }
+		}
+	}
+}
+
+colonial_nation_incense_dev = {
+	any_subject_country = {
+		is_colonial_nation = yes
+		any_owned_province = {
+			NOT = { trade_goods = incense }
+			has_building = tradegoodsdevelopment
+			NOT = { has_climate = arctic }
 		}
 	}
 }
