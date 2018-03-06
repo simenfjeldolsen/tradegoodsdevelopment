@@ -33,7 +33,7 @@ province_event = {
 
 
 			owner = { every_owned_province = { remove_building = tradegoodsdevelopment } }
-			add_province_modifier = { name = "recently_changed_goods_timer" duration = 10950 }
+			add_province_modifier = { name = "recently_changed_goods_timer" duration = 3650 }
 			export_to_variable = {
 				which = dev_tier_variable
 				value = development
@@ -401,6 +401,20 @@ province_event = {
 		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
 		owner = {  add_treasury = -50 }
 	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.livestock
+		trigger = { livestock_dev = yes }
+		change_trade_goods = livestock
+		dev_tier_cost_effect = yes
+		owner = { add_treasury = -50 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.incense
+		trigger = { incense_dev = yes }
+		change_trade_goods = incense
+		dev_tier_cost_effect = yes
+		owner = { add_treasury = -100 }
+	}
 }
 
 country_event = {
@@ -444,162 +458,10 @@ country_event = {
 
 
 					#owner = { every_owned_province = { remove_building = tradegoodsdevelopment } }
-					add_province_modifier = { name = "recently_changed_goods_timer" duration = 10950 }
-					if = {
-						limit = { development = 2 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 3 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 4 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 5 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 6 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 7 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 8 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 9 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 10 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 11 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 12 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 13 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 14 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 15 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 16 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 17 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 18 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 19 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 20 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 21 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 22 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 23 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 24 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 25 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 26 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 27 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 28 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 29 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 30 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 31 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 32 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 33 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 34 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 35 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 36 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 37 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 38 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 39 }
-						change_variable = { which = dev_tier_variable value = 1 }
-					}
-					if = {
-						limit = { development = 40 }
-						change_variable = { which = dev_tier_variable value = 1 }
+					add_province_modifier = { name = "recently_changed_goods_timer" duration = 3650 }
+					export_to_variable = {
+						which = dev_tier_variable
+						value = development
 					}
 				}
 			}
@@ -1385,6 +1247,66 @@ country_event = {
 		#dev_tier_cost_effect = yes
 		#add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
 		add_treasury = -100
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.tropical_wood
+		trigger = { colonial_nation_tropical_wood_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				remove_building = prospecting
+				change_trade_goods = tropical_wood
+			}
+		}
+		#dev_tier_cost_effect = yes
+		#add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
+		add_treasury = -50
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.livestock
+		trigger = { colonial_nation_livestock_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				remove_building = prospecting
+				change_trade_goods = livestock
+			}
+		}
+		#dev_tier_cost_effect = yes
+		#add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
+		add_treasury = -50
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.incense
+		trigger = { colonial_nation_incense_dev = yes }
+		every_subject_country = {
+			limit = {
+				any_owned_province = {
+					has_building = tradegoodsdevelopment
+				}
+			}
+			random_owned_province = {
+				limit = { has_building = tradegoodsdevelopment }
+				remove_building = tradegoodsdevelopment
+				remove_building = prospecting
+				change_trade_goods = incense
+			}
+		}
+		#dev_tier_cost_effect = yes
+		#add_adm_power = -10 add_mil_power = -10 add_dip_power = -10
+		add_treasury = -50
 	}
 }
 
