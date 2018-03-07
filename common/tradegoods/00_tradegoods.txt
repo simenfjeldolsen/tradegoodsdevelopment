@@ -940,7 +940,7 @@ rum = {
 }
 wool = {
 	color = { 0.72 0.49 0.44 }
-	modifier = { global_ship_cost = -0.1 }
+	modifier = { land_attrition = -0.10 }
 	province = { local_friendly_movement_speed = 0.10 }
 	chance = {
 		factor = 30

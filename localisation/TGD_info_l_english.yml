@@ -230,7 +230,7 @@
  tgd_info.43.back: "Back"
  tgd_info.43.exit: "Exit"
  tgd_info.44.t: "Wool"
- tgd_info.44.d: "Trading-in Bonus: Ship Costs -10%\nLocal Bonus: Friendly Movement Speed +10%\n\nWool is found all over the world, and can be developed in any province that isn't Tropical."
+ tgd_info.44.d: "Trading-in Bonus: Land Attrition -10%\nLocal Bonus: Friendly Movement Speed +10%\n\nWool is found all over the world, and can be developed in any province that isn't Tropical."
  tgd_info.44.back: "Back"
  tgd_info.44.exit: "Exit"
  tgd_info.45.t: "Zinc"
