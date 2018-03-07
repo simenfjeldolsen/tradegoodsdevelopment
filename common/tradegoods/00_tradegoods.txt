@@ -1452,7 +1452,7 @@ glass = {
 }
 chinaware = {
 	color = { 0.18 0.57 0.8 }
-	modifier = { global_own_trade_power = 0.20 }
+	modifier = { global_prov_trade_power_modifier = 0.20 }
 	province = { local_autonomy = -0.1 }
 	chance = {
 		factor = 15

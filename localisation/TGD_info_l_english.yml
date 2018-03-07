@@ -70,7 +70,7 @@
  tgd_info.3.back: "Back"
  tgd_info.3.exit: "Exit"
  tgd_info.4.t: "Chinaware"
- tgd_info.4.d: "Trading-in Bonus: Domestic Trade Power +20%\nLocal Bonus: Monthly Autonomy -0.10\n\nChinaware exists mainly in China, hence the name. It can be developed in any 12 development province in China, or after the artificial Porcelain event has fired, can be developed in any province with 20 development."
+ tgd_info.4.d: "Trading-in Bonus: Provincial Trade Power +20%\nLocal Bonus: Monthly Autonomy -0.10\n\nChinaware exists mainly in China, hence the name. It can be developed in any 12 development province in China, or after the artificial Porcelain event has fired, can be developed in any province with 20 development."
  tgd_info.4.back: "Back"
  tgd_info.4.exit: "Exit"
  tgd_info.5.t: "Citrus"
