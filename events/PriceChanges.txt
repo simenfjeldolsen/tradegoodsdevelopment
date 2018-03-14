@@ -1344,62 +1344,51 @@ country_event = {
 }
 
 # Expansion of the Bengali Dye Production
-#country_event = {
-#	id = prices.25
-#	title = prices.25.t
-#	desc = prices.25.d
-#	picture = TRADEGOODS_eventPicture
-#
-#	fire_only_once = yes
-#	
-#	major = yes
-#
-#	trigger = {
-#		capital_scope = { continent = europe }
-#		owns = 2047 #Tirhut
-#		owns = 2063 #Central Doabd
-#		bengal_region = { type = all owned_by = ROOT }
-#		bihar_area = { type = all owned_by = ROOT }
-#	}
-#	mean_time_to_happen = {
-#		months = 60
-#	}
-#	
-#	
-#	option = {
-#		name = prices.25.a
-#		random_owned_province = {
-#			limit = {
-#				region = bengal_region
-#				NOT = { trade_goods = silk }
-#				NOT = { trade_goods = dyes }
-#			}
-#			change_trade_goods = dyes
-#		}
-#		random_owned_province = {
-#			limit = {
-#				area = bihar_area
-#				NOT = { trade_goods = silk }
-#				NOT = { trade_goods = dyes }
-#			}
-#			change_trade_goods = dyes
-#		}
-#		every_owned_province = {
-#			limit = { trade_goods = dyes }
-#			add_unrest = 5
-#		}
-#		change_price = {
-#			trade_goods = dyes
-#			key = BENGALI_INDIGO_PRODUCTION
-#			value = -0.25
-#			duration = -1
-#		}
-#	}
-#	option = {
-#		name = prices.25.b
-#		add_stability = -1
-#	}
-#}
+country_event = {
+	id = prices.25
+	title = prices.25.t
+	desc = prices.25.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		capital_scope = { NOT = { superregion = india_superregion } }
+		owns = 2047 #Tirhut
+		owns = 2063 #Central Doabd
+		bengal_region = { type = all owned_by = ROOT }
+		bihar_area = { type = all owned_by = ROOT }
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	
+	option = {
+		name = prices.25.a
+
+		every_owned_province = {
+			limit = {
+				trade_goods = dyes
+				superregion = india_superregion
+			}
+			add_base_production = 2
+			add_unrest = 5
+		}
+		change_price = {
+			trade_goods = dyes
+			key = BENGALI_INDIGO_PRODUCTION
+			value = -0.25
+			duration = -1
+		}
+	}
+	option = {
+		name = prices.25.b
+		add_stability = -1
+	}
+}
 
 # Development of Veneering
 country_event = {
