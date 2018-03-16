@@ -148,6 +148,10 @@ country_event = {
 		country_event = { id = tgd_info.51 }
 	}
 	option = {
+		name = tgd_info.2.livestock
+		country_event = { id = tgd_info.54 }
+	}
+	option = {
 		name = tgd_info.2.machinery
 		country_event = { id = tgd_info.21 }
 	}
