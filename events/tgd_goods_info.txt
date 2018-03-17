@@ -17,11 +17,11 @@ country_event = {
 		country_event = { id = tgd_info.100 }
 	}
 	option = {
-		name = tgd_info.1.metals
+		name = tgd_info.metals
 		country_event = { id = tgd_info.200 }
 	}
 	option = {
-		name = tgd_info.1.exit
+		name = tgd_info.exit
 	}
 }
 country_event = {
@@ -33,11 +33,11 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = tgd_info.2.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.1 }
 	}
 	option = {
-		name = tgd_info.2.exit
+		name = tgd_info.exit
 	}
 	option = {
 		name = tgd_info.2.beer
@@ -261,11 +261,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.52.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.52.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -277,11 +277,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.3.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.3.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -293,11 +293,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.53.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.53.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -309,11 +309,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.4.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.4.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -325,11 +325,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.5.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.5.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -341,11 +341,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.6.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.6.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -357,11 +357,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.7.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.7.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -373,11 +373,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.8.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.8.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -389,15 +389,15 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.9.metals
+		name = tgd_info.metals
 		country_event = { id = tgd_info.200 }
 	}
 	option = {
-		name = tgd_info.9.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.9.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -409,11 +409,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.10.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.10.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -425,11 +425,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.11.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.11.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -441,11 +441,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.12.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.12.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -457,11 +457,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.13.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.13.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -473,11 +473,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.14.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.14.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -489,11 +489,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.15.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.15.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -505,11 +505,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.16.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.16.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -521,11 +521,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.17.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.17.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -537,15 +537,15 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.18.metals
+		name = tgd_info.metals
 		country_event = { id = tgd_info.200 }
 	}
 	option = {
-		name = tgd_info.18.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.18.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -557,11 +557,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.19.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.19.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -573,15 +573,15 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.20.metals
+		name = tgd_info.metals
 		country_event = { id = tgd_info.200 }
 	}
 	option = {
-		name = tgd_info.20.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.20.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -593,11 +593,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.21.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.21.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -609,11 +609,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.22.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.22.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -625,15 +625,15 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.23.metals
+		name = tgd_info.metals
 		country_event = { id = tgd_info.200 }
 	}
 	option = {
-		name = tgd_info.23.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.23.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -645,15 +645,15 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.24.metals
+		name = tgd_info.metals
 		country_event = { id = tgd_info.200 }
 	}
 	option = {
-		name = tgd_info.24.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.24.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -665,11 +665,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.25.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.25.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -681,11 +681,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.26.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.26.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -697,11 +697,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.27.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.27.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -713,11 +713,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.28.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.28.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -729,11 +729,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.29.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.29.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -745,11 +745,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.30.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.30.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -761,11 +761,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.31.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.31.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -777,11 +777,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.32.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.32.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -793,11 +793,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.33.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.33.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -809,15 +809,15 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.34.metals
+		name = tgd_info.metals
 		country_event = { id = tgd_info.200 }
 	}
 	option = {
-		name = tgd_info.34.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.34.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -829,11 +829,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.35.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.35.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -845,11 +845,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.36.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.36.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -861,11 +861,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.37.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.37.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -877,15 +877,15 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.38.metals
+		name = tgd_info.metals
 		country_event = { id = tgd_info.200 }
 	}
 	option = {
-		name = tgd_info.38.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.38.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -897,11 +897,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.39.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.39.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -913,11 +913,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.40.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.40.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -929,11 +929,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.41.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.41.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -945,11 +945,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.42.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.42.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -961,11 +961,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.43.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.43.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -977,11 +977,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.44.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.44.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -993,15 +993,15 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.45.metals
+		name = tgd_info.metals
 		country_event = { id = tgd_info.200 }
 	}
 	option = {
-		name = tgd_info.45.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.45.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -1013,11 +1013,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.46.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.46.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -1029,11 +1029,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.47.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.47.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -1045,15 +1045,15 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.48.metals
+		name = tgd_info.metals
 		country_event = { id = tgd_info.200 }
 	}
 	option = {
-		name = tgd_info.48.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.48.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -1065,11 +1065,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.49.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.49.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -1081,15 +1081,15 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.50.metals
+		name = tgd_info.metals
 		country_event = { id = tgd_info.200 }
 	}
 	option = {
-		name = tgd_info.50.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.50.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -1101,11 +1101,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.51.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.51.exit
+		name = tgd_info.exit
 	}
 }
 country_event = {
@@ -1116,11 +1116,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.53.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.53.exit
+		name = tgd_info.exit
 	}
 }
 country_event = {
@@ -1131,11 +1131,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.54.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.54.exit
+		name = tgd_info.exit
 	}
 }
 country_event = {
@@ -1146,11 +1146,11 @@ country_event = {
 
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.55.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.2 }
 	}
 	option = {
-		name = tgd_info.55.exit
+		name = tgd_info.exit
 	}
 }
 
@@ -1181,11 +1181,11 @@ country_event = {
 		country_event = { id = tgd_info.113 }
 	}
 	option = {
-		name = tgd_info.100.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.1 }
 	}
 	option = {
-		name = tgd_info.100.exit
+		name = tgd_info.exit
 	}
 }
 country_event = {
@@ -1197,11 +1197,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = tgd_info.110.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.100 }
 	}
 	option = {
-		name = tgd_info.110.exit
+		name = tgd_info.exit
 	}
 }
 country_event = {
@@ -1213,11 +1213,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = tgd_info.111.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.100 }
 	}
 	option = {
-		name = tgd_info.111.exit
+		name = tgd_info.exit
 	}
 }
 country_event = {
@@ -1233,11 +1233,11 @@ country_event = {
 		country_event = { id = tgd_info.113 }
 	}
 	option = {
-		name = tgd_info.112.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.100 }
 	}
 	option = {
-		name = tgd_info.112.exit
+		name = tgd_info.exit
 	}
 }
 country_event = {
@@ -1265,11 +1265,11 @@ country_event = {
 		country_event = { id = tgd_info.140 }
 	}
 	option = {
-		name = tgd_info.113.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.100 }
 	}
 	option = {
-		name = tgd_info.113.exit
+		name = tgd_info.exit
 	}
 }
 country_event = {
@@ -1281,11 +1281,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = tgd_info.114.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.100 }
 	}
 	option = {
-		name = tgd_info.114.exit
+		name = tgd_info.exit
 	}
 }
 country_event = {
@@ -1297,11 +1297,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = tgd_info.120.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.113 }
 	}
 	option = {
-		name = tgd_info.120.exit
+		name = tgd_info.exit
 	}
 }
 country_event = {
@@ -1312,11 +1312,11 @@ country_event = {
 	
 	is_triggered_only = yes
 	option = {
-		name = tgd_info.130.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.113 }
 	}
 	option = {
-		name = tgd_info.130.exit
+		name = tgd_info.exit
 	}
 }
 country_event = {
@@ -1328,11 +1328,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = tgd_info.140.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.113 }
 	}
 	option = {
-		name = tgd_info.140.exit
+		name = tgd_info.exit
 	}
 }
 country_event = {
@@ -1348,11 +1348,11 @@ country_event = {
 		country_event = { id = tgd_info.201 }
 	}
 	option = {
-		name = tgd_info.200.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.1 }
 	}
 	option = {
-		name = tgd_info.200.exit
+		name = tgd_info.exit
 	}
 }
 country_event = {
@@ -1368,11 +1368,11 @@ country_event = {
 		country_event = { id = tgd_info.202 }
 	}
 	option = {
-		name = tgd_info.201.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.200 }
 	}
 	option = {
-		name = tgd_info.201.exit
+		name = tgd_info.exit
 	}
 }
 country_event = {
@@ -1388,10 +1388,211 @@ country_event = {
 		country_event = { id = tgd_info.100 }
 	}
 	option = {
-		name = tgd_info.202.back
+		name = tgd_info.back
 		country_event = { id = tgd_info.201 }
 	}
 	option = {
-		name = tgd_info.202.exit
+		name = tgd_info.exit
+	}
+}
+
+province_event = {
+	id = tgd_info.300
+	title = tgd_info.300.t
+	desc = tgd_info.300.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			remove_building = goodstest
+
+			owner = { every_owned_province = { remove_building = goodstest } }
+		}
+	}
+	option = {
+		name = tgd_info.300.horses
+		trigger = { horses_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.beer
+		trigger = { beer_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.tar
+		trigger = { tar_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.olives
+		trigger = { olives_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.cheese
+		trigger = { cheese_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.vanilla
+		trigger = { vanilla_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.glass
+		trigger = { glass_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.paper
+		trigger = { paper_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.steel
+		trigger = { steel_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.citrus
+		trigger = { citrus_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.munitions
+		trigger = { munitions_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.potatoes
+		trigger = { potatoes_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.rum
+		trigger = { rum_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.uniforms
+		trigger = { uniforms_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.marble
+		trigger = { marble_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.machinery
+		trigger = { machinery_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.bronze
+		trigger = { bronze_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.cinnamon
+		trigger = { cinnamon_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.exotic_spices
+		trigger = { exotic_spices_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.brass
+		trigger = { brass_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.gunpowder
+		trigger = { gunpowder_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.optics
+		trigger = { optics_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.leather
+		trigger = { leather_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.cocoa
+		trigger = { cocoa_dev = yes }	
+	}
+	option = {
+		name = tgd_info.300.chinaware
+		trigger = { chinaware_dev = yes }	
+	}
+	option = {
+		name = tgd_info.300.cloth
+		trigger = { cloth_dev = yes }	
+	}
+	option = {
+		name = tgd_info.300.coffee
+		trigger = { coffee_dev = yes }	
+	}
+	option = {
+		name = tgd_info.300.cotton
+		trigger = { cotton_dev = yes }	
+	}
+	option = {
+		name = tgd_info.300.dyes
+		trigger = { dyes_dev = yes }	
+	}
+	option = {
+		name = tgd_info.300.fish
+		trigger = { fish_dev = yes }	
+	}
+	option = {
+		name = tgd_info.300.fur
+		trigger = { fur_dev = yes }	
+	}
+	option = {
+		name = tgd_info.300.grain
+		trigger = { grain_dev = yes }	
+	}
+	option = {
+		name = tgd_info.300.ivory
+		trigger = { ivory_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.naval_supplies
+		trigger = { naval_supplies_dev = yes }	
+	}
+	option = {
+		name = tgd_info.300.salt
+		trigger = { salt_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.silk
+		trigger = { silk_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.slaves
+		trigger = { slaves_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.spices
+		trigger = { spices_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.sugar
+		trigger = { sugar_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.tea
+		trigger = { tea_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.tobacco
+		trigger = { tobacco_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.tropical_wood
+		trigger = { tropical_wood_dev = yes }	
+	}
+	option = {
+		name = tgd_info.300.wine
+		trigger = { wine_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.wool
+		trigger = { wool_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.livestock
+		trigger = { livestock_dev = yes }
+	}
+	option = {
+		name = tgd_info.300.incense
+		trigger = { incense_dev = yes }
 	}
 }
