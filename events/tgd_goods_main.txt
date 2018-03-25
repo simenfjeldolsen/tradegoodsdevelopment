@@ -10,6 +10,7 @@ province_event = {
 
 	immediate = {
 		hidden_effect = {
+			set_country_flag = developed_trade_good
 			remove_building = tradegoodsdevelopment
 
 			remove_province_modifier = stora_kopparberget_modifier

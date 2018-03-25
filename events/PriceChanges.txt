@@ -1803,7 +1803,7 @@ country_event = {
 		any_owned_province = {
 			province_without_special_goods_produced_trigger = yes
 			is_state = yes
-			region = lowlands_region
+			region = low_countries_region
 			OR = {
 				trade_goods = cloth #Lump
 				trade_goods = naval_supplies #Hemp
@@ -3184,6 +3184,91 @@ country_event = {
 			trade_goods = gunpowder
 			key = MUNITION_EXPANSION
 			value = 0.15
+			duration = -1
+		}
+	}
+}
+# Greater Availability of Coal
+country_event = {
+	id = prices.46
+	title = prices.46.t
+	desc = prices.46.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		#has_dlc = "Rule Britannia"
+		NOT = { has_global_flag = steam_engine_happened }
+		has_country_flag = watt_steam_engine_flag #Set by Industrialization Events
+		has_country_flag = coke_blast_furnaces_flag #Set by Industrialization Events.
+		has_institution = enlightenment
+		any_owned_province = {
+			trade_goods = coal
+			has_building = furnace
+		}
+		coal = 10
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					trade_goods = coal
+					has_building = furnace
+				}
+				save_event_target_as = coal_province
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						trade_goods = coal
+						NOT = { has_building = furnace }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						any_owned_province = {
+							trade_goods = coal
+							NOT = { has_building = furnace }
+						}
+					}
+					save_event_target_as = potential_furnace
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = prices.46.a
+		add_years_of_income = 1
+		add_dip_power = 50
+		if = {
+			limit = {
+				has_saved_event_target = potential_furnace
+			}
+			event_target:coal_province = {
+				add_base_production = 2
+			}
+			event_target:potential_furnace = {
+				add_building = furnace
+			}
+		}
+		else = {
+			event_target:coal_province = {
+				add_base_production = 6
+			}
+		}
+		change_price = {
+			trade_goods = coal
+			key = IMPROVED_COAL_MINING
+			value = -0.30
 			duration = -1
 		}
 	}

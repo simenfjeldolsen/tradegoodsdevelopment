@@ -634,18 +634,21 @@ fort_18th = {
 # Manufactories
 ################################################
 
-
-wharf = {
+manufactory = {
 	cost = 500
 	time = 60
+	modifier = {
+		trade_goods_size = 1.0
+	}
+}
+
+
+wharf = {
 	manufactory = {
 		naval_supplies
 		fish
 		salt
 		tar
-	}
-	modifier = {
-		trade_goods_size = 1.0
 	}
 	onmap = yes
 	
@@ -680,8 +683,6 @@ wharf = {
 }
 
 weapons = {
-	cost = 500
-	time = 60
 	manufactory = {
 		copper
 		iron
@@ -695,9 +696,6 @@ weapons = {
 		gunpowder
 		brass
 	}
-	modifier = {
-		trade_goods_size = 1.0
-	}
 	onmap = yes	
 	
 	ai_will_do = {
@@ -706,8 +704,6 @@ weapons = {
 }
 
 textile = {
-	cost = 500
-	time = 60
 	manufactory = {
 		wool
 		cloth
@@ -715,9 +711,6 @@ textile = {
 		dyes
 		uniforms
 		leather
-	}
-	modifier = {
-		trade_goods_size = 1.0
 	}
 	onmap = yes
 	
@@ -727,8 +720,6 @@ textile = {
 }
 
 plantations = {
-	cost = 500
-	time = 60
 	manufactory = {
 		coffee
 		cotton
@@ -738,9 +729,6 @@ plantations = {
 		cocoa
 		citrus
 	}
-	modifier = {
-		trade_goods_size = 1.0	
-	}
 	onmap = yes
 	
 	ai_will_do = {
@@ -749,8 +737,6 @@ plantations = {
 }
 
 tradecompany = {
-	cost = 500
-	time = 60
 	manufactory = {
 		ivory
 		slaves
@@ -762,9 +748,6 @@ tradecompany = {
 		cinnamon
 		exotic_spices
 	}
-	modifier = {
-		trade_goods_size = 1.0	
-	}
 	onmap = yes
 
 	ai_will_do = {
@@ -773,8 +756,6 @@ tradecompany = {
 }
 
 farm_estate = {
-	cost = 500
-	time = 60
 	manufactory = {
 		grain
 		livestock
@@ -785,9 +766,6 @@ farm_estate = {
 		horses
 		beer
 	}
-	modifier = {
-		trade_goods_size = 1.0
-	}
 	onmap = yes
 	
 	ai_will_do = {
@@ -797,8 +775,6 @@ farm_estate = {
 
 
 mills = {
-	cost = 500
-	time = 60
 	manufactory = {
 		paper
 		gems
@@ -808,10 +784,27 @@ mills = {
 		marble
 		optics
 	}
+	onmap = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+furnace = {
+	manufactory = {
+		coal
+	}
+
+	potential = {
+		has_dlc = "Rule Britannia"
+	}
+
 	modifier = {
-		trade_goods_size = 1.0
+		global_trade_goods_size_modifier = 0.05 #National Bonus
 	}
 	onmap = yes
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	
 	ai_will_do = {
 		factor = 1

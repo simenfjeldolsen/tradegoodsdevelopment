@@ -1,1 +1,7 @@
-recently_changed_goods_timer = { trade_goods_size_modifier = -0.20 }
+recently_changed_goods_timer = {
+	trade_goods_size_modifier = -0.20
+}
+
+developed_trade_good = {
+	global_autonomy = -0.05
+}

@@ -73,7 +73,8 @@ incense		=	{ base_price = 2.5 }
 paper		=	{ base_price = 3.5 } # +20%(0.5) prices.31, adm 11# +20%(0.5) prices.32, adm 13# +20%(0.5) prices.39, adm 24
 machinery	=	{ base_price = 4.5 }
 uniforms	=	{ base_price = 3.5 } # +40%(1.2) prices.14, mil 21
-gems 		=	{ base_price = 4}
+gems 		=	{ base_price = 4 }
+coal 		=	{ base_price = 10 }
 
 
 unknown		=	{ base_price = 0 }
