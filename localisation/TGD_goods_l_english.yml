@@ -18,6 +18,8 @@
  tradegoodsdevelopment_short: "Trade Goods Development"
  building_tradegoodsdevelopment: "Trade Goods Development"
  building_tradegoodsdevelopment_desc: "Allows the province to have its Trade Good changed."
+ building_goodstest: "What trade goods can I develop?"
+ building_goodstest_desc: "Construct this building in a province that you wish to view the possible goods of."
  building_prospecting: "Mining Operation"
  building_prospecting_desc: "Constructs a mine in the province to discover if there are any ores under the surface."
  building_guildhouse: "Guildhouse"

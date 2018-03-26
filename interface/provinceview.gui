@@ -6071,13 +6071,13 @@ guiTypes = {
 		
 		iconType = {
 			name = "tradegoods_banner"
-			position = { x = 240 y = 291 }
-			spriteType = "GFX_banner_right_2"
+			position = { x = 188 y = 388 }
+			spriteType = "GFX_banner_right_3"
 		}
 
 		instantTextBoxType={
 			name = "title_tradegoods"
-			position = {x = 288 y = 300 }
+			position = {x = 240 y = 397 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 200
@@ -6088,19 +6088,19 @@ guiTypes = {
 		iconType ={
 			name ="goods_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 262 y = 294}
+			position = { x = 213 y = 391}
 			frame = 8
 		}
 
 		checkboxType = {
 			name = "build_tradegoodsdevelopment"
-			position = { x = 268 y = 323 }
+			position = { x = 216 y = 420 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
 		}
 
 		instantTextBoxType={
 			name = "tradegoodsdevelopment_cost"
-			position = {x = 268 y = 373 }
+			position = {x = 216 y = 470 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
@@ -6110,13 +6110,13 @@ guiTypes = {
 		
 		checkboxType = {
 			name = "build_prospecting"
-			position = { x = 320 y = 323 }
+			position = { x = 268 y = 420 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
 		}
 
 		instantTextBoxType={
 			name = "prospecting_cost"
-			position = {x = 320 y = 373 }
+			position = {x = 268 y = 470 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
@@ -6177,6 +6177,21 @@ guiTypes = {
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
+		}
+		checkboxType = {
+			name = "build_goodstest"
+			position = { x = 320 y = 420 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+
+		instantTextBoxType={
+			name = "goodstest_cost"
+			position = {x = 320 y = 470 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"
 		}
 	}
 	

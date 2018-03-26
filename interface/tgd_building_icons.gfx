@@ -11,6 +11,11 @@ spriteTypes = {
 		loadType = "INGAME"
 	}
 	spriteType = {
+		name = "GFX_goodstest"
+		texturefile = "gfx//interface//buildings//latin_grain_depot.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
 		name = "GFX_banner_left_6"
 		texturefile = "gfx//interface//banner_left_6.dds"
 		loadType = "INGAME"

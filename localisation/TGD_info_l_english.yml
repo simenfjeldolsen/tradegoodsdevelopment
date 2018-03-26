@@ -258,5 +258,5 @@
  tgd_info.300.tropical_wood: "Tropical Wood (50)"
  tgd_info.300.wine: "Wine (50)"
  tgd_info.300.wool: "Wool (50)"
- tgd_info.300.wool: "Livestock (50)"
- tgd_info.300.wool: "Incense (100)"
+ tgd_info.300.livestock: "Livestock (50)"
+ tgd_info.300.incense: "Incense (100)"

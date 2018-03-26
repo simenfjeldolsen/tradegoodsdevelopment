@@ -14,5 +14,31 @@ country_decisions = {
 		}
 		ai_will_do = { factor = 0 }
 	}
-	
+	goods_test = {
+		major = yes
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = goodstest
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = goodstest_explanation
+				any_owned_province = {
+					has_building = goodstest
+				}
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = { has_building = goodstest }
+				custom_tooltip = goodstest_fire
+				hidden_effect = { province_event = { id = tgd_info.300 } }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }
