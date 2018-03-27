@@ -131,7 +131,7 @@ country_event = {
 		change_price = {
 			trade_goods = chinaware
 			key = JOHAN_FRIEDRICH_BOTTGER
-			value = -0.5
+			value = -0.9
 			duration = -1
 		}
 		61 = {
