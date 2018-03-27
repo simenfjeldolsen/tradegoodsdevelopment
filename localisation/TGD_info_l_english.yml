@@ -82,7 +82,7 @@
  tgd_info.10.t: "Cotton"
  tgd_info.10.d: "Trading-in Bonus: Global Trade Power +10%\nLocal Bonus: Development Cost -10%\n\nCotton is produced in North America, India, and some parts of Anatolia. It can be developed in any province in North America or India that does not have Mountains, Highlands, or Jungle terrain."
  tgd_info.11.t: "Dyes"
- tgd_info.11.d: "Trading-in Bonus: Tolerance of Heathens +2\nLocal Bonus: Province Trade Power +2\n\nDyes are primarily produced in Persia and India, but there are a few centers of production in the rest of the world. It can be developed in any province with 16 devlopment in Asia."
+ tgd_info.11.d: "Trading-in Bonus: Tolerance of Heathens +2\nLocal Bonus: Province Trade Power +10%\n\nDyes are primarily produced in Persia and India, but there are a few centers of production in the rest of the world. It can be developed in any province with 16 devlopment in Asia."
  tgd_info.12.t: "Fish"
  tgd_info.12.d: "Trading-in Bonus: National Sailors +25%\nLocal Bonus: Local Sailors +25%\n\nFish exist in many coastal provinces all over the world, and can be developed in any coastal province."
  tgd_info.13.t: "Fur"

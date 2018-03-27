@@ -2576,7 +2576,7 @@ country_event = {
 	
 	option = {
 		name = prices.103.a
-		custom_tooltip = "prices.103.a.tt"
+		custom_tooltip = prices.103.a.tt
 		change_price = {
 			trade_goods = vanilla
 			key = VANILLASPREAD
@@ -2705,7 +2705,7 @@ country_event = {
 	
 	option = {
 		name = prices.106.a
-		custom_tooltip = "prices.106.a.tt"
+		custom_tooltip = prices.106.a.tt
 		change_price = {
 			trade_goods = cinnamon
 			key = CINNAMONSPREAD
@@ -2885,7 +2885,7 @@ country_event = {
 	
 	option = {
 		name = prices.110.a
-		custom_tooltip = "prices.110.a.tt"
+		custom_tooltip = prices.110.a.tt
 		change_price = {
 			trade_goods = exotic_spices
 			key = SPICESPREAD
@@ -3138,7 +3138,7 @@ country_event = {
 	
 	option = {
 		name = prices.116.a
-		custom_tooltip = "prices.116.a.tt"
+		custom_tooltip = prices.116.a.tt
 		change_price = {
 			trade_goods = dyes
 			key = SYNTHETIC_DYES
