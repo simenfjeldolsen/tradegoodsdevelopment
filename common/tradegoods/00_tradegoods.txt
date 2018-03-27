@@ -1351,7 +1351,7 @@ tropical_wood = {
 dyes = {
 	color = { 0.63 0.17 0.50 }
 	modifier = { tolerance_heathen = 2 }
-	province = { province_trade_power_modifier = 0.20 }	
+	province = { province_trade_power_modifier = 0.10 }	
 	chance = {
 		factor = 15
 		modifier = {
