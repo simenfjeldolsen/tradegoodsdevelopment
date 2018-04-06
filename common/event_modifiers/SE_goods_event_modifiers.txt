@@ -2,6 +2,60 @@ recently_changed_goods_timer = {
 	trade_goods_size_modifier = -0.20
 }
 
-developed_trade_good = {
-	global_autonomy = -0.05
+# Missions
+
+# Country
+tgd_naval_dominance = {
+	global_ship_cost = -0.25
+	global_ship_recruit_speed = -0.25
+	global_sailors_modifier = 0.25
+	global_ship_trade_power = 0.1
+	navy_tradition = 1
+}
+tgd_military_might = {
+	global_regiment_cost = -0.10
+	global_manpower_modifier = 0.20
+	free_leader_pool = 1
+	general_cost = -0.25
+}
+tgd_burgeoning_trade_power = {
+	global_foreign_trade_power = 0.25
+	global_ship_trade_power = 0.25
+	trade_range_modifier = 0.25
+}
+tgd_strong_trade_position = {
+	trade_efficiency = 0.3
+}
+tgd_food_surplus = {
+	development_cost = -0.10
+	manpower_recovery_speed = 0.1
+}
+tgd_abundant_resources = {
+	development_cost = -0.10
+	build_cost = -0.10
+}
+tgd_expanding_domestic_arms_industry = {
+	build_time = -0.4
+}
+tgd_ample_access_to_horses = {
+	cavalry_cost = -0.25
+    cavalry_power = 0.10
+    movement_speed = 0.20
+}
+tgd_inca_cocoa = {
+	land_morale = 0.10
+}
+
+#Province
+tgd_growing_economy = {
+	trade_goods_size_modifier = 0.20
+}
+tgd_developing_urban_center = {
+	local_development_cost = -0.20
+	local_build_cost = -0.20
+	trade_goods_size_modifier = 0.10
+}
+tgd_early_industrialization = {
+	trade_goods_size_modifier = 0.10
+	local_development_cost = -0.20
 }

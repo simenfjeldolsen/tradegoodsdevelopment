@@ -1,0 +1,487 @@
+tgd_slot_1 = {
+	slot = 1
+	generic = no
+	ai = no
+
+	potential = {
+		NOT = {
+			tag = ENG
+			tag = GBR
+			tag = SCO
+			tag = IRE
+			tag = FRA
+			tag = mos
+			tag = RUS
+			tag = TUR
+			tag = BYZ
+			tag = POR
+			tag = NED
+			tag = PER
+			tag = SPA
+			tag = CAS
+			tag = TRY
+			tag = TYR
+			tag = ULS
+			tag = SLN
+			tag = CNN
+			tag = FLY
+			tag = MNS
+			tag = KID
+			tag = ORD
+			tag = LEI
+			tag = DMS
+			tag = MCM
+			tag = MTH
+		}
+	}
+	has_country_shield = no
+
+	expand_food_supply = {
+		position = 8
+		icon = mission_rb_import_potatoes
+		required_missions = { develop_ten_goods }
+		trigger = {
+			potatoes = 10
+		}
+		effect = {
+			add_country_modifier = {
+				name = "tgd_food_surplus"
+				duration = 9125
+			}
+		}
+	}
+}
+
+
+tgd_slot_2 = {
+	slot = 2
+	generic = no
+	ai = no
+	
+	potential = {
+		NOT = {
+			tag = ENG
+			tag = GBR
+			tag = SCO
+			tag = IRE
+			tag = FRA
+			tag = mos
+			tag = RUS
+			tag = TUR
+			tag = BYZ
+			tag = POR
+			tag = NED
+			tag = PER
+			tag = SPA
+			tag = CAS
+			tag = TRY
+			tag = TYR
+			tag = ULS
+			tag = SLN
+			tag = CNN
+			tag = FLY
+			tag = MNS
+			tag = KID
+			tag = ORD
+			tag = LEI
+			tag = DMS
+			tag = MCM
+			tag = MTH
+		}
+	}
+	has_country_shield = no
+	
+	develop_ten_goods = {
+		position = 7
+		icon = mission_rb_prospect_for_coal
+		required_missions = { develop_a_trade_good }
+		trigger = {
+			is_variable_equal = {
+				which = number_of_times_developed
+				value = 10
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					NOT = { has_province_modifier = tgd_developing_urban_center }
+					OR = {
+						development = 20
+						has_terrain = farmlands
+						has_province_modifier = inland_center_of_trade_modifier
+						has_province_modifier = center_of_trade_modifier
+						has_province_modifier = bosphorous_sound_toll
+						has_province_modifier = sound_toll
+					}
+				}
+				save_event_target_as = reward_province
+			}
+			random_owned_province = {
+				limit = {
+					has_province_modifier = "recently_changed_goods_timer"
+				}
+				save_event_target_as = reward_province
+			}
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					NOT = { has_province_modifier = tgd_developing_urban_center }
+					has_province_modifier = "recently_changed_goods_timer"
+					OR = {
+						development = 20
+						has_terrain = farmlands
+						has_province_modifier = inland_center_of_trade_modifier
+						has_province_modifier = center_of_trade_modifier
+						has_province_modifier = bosphorous_sound_toll
+						has_province_modifier = sound_toll
+					}
+				}
+				save_event_target_as = reward_province
+			}
+			if = {
+				limit = { has_saved_event_target = reward_province }
+				event_target:reward_province = {
+					add_province_modifier = {
+						name = "tgd_developing_urban_center"
+						duration = 5475
+					}
+				}
+			}
+			else = {
+				custom_tooltip = developing_urban_center_tooltip
+			}
+		}
+	}
+	early_industrialization = {
+		position = 9
+		icon = mission_rb_build_furnaces
+		required_missions = { develop_ten_goods }
+		trigger = {
+			steel = 6
+			coal = 3
+			furnace = 3
+			custom_trigger_tooltip = {
+				tooltip = trading_in_machinery.tooltip
+				trading_bonus = {
+					trade_goods = machinery
+					value = yes
+				}
+			}
+			
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 30
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = "tgd_early_industrialization"
+						duration = 9125
+					}
+				}
+			}
+		}
+	}
+}
+
+tgd_slot_3 = {
+
+	slot = 3
+	generic = no
+	ai = no
+	
+	potential = {
+		NOT = {
+			tag = ENG
+			tag = GBR
+			tag = SCO
+			tag = IRE
+			tag = FRA
+			tag = mos
+			tag = RUS
+			tag = TUR
+			tag = BYZ
+			tag = POR
+			tag = NED
+			tag = PER
+			tag = SPA
+			tag = CAS
+			tag = TRY
+			tag = TYR
+			tag = ULS
+			tag = SLN
+			tag = CNN
+			tag = FLY
+			tag = MNS
+			tag = KID
+			tag = ORD
+			tag = LEI
+			tag = DMS
+			tag = MCM
+			tag = MTH
+		}
+	}
+	has_country_shield = no
+	
+	develop_a_trade_good = {
+		position = 6
+		icon = mission_rb_prospect_for_coal
+		required_missions = { }
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = develop_trade_good.tooltip
+				has_country_flag = developed_trade_good
+			}
+		}
+		
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_treasury = 300
+			random_owned_province = {
+				limit = {
+					has_province_modifier = "recently_changed_goods_timer"
+				}
+				remove_province_modifier = "recently_changed_goods_timer"
+				add_province_modifier = {
+					name = "tgd_growing_economy"
+					duration = 3650
+				}
+			}
+		}
+	}
+
+	trade_in_three_goods = {
+		position = 7
+		icon = mission_dominate_home_trade_node
+		required_missions = { develop_a_trade_good }
+		
+		trigger = {
+			num_of_trading_bonuses = 3
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "tgd_burgeoning_trade_power"
+				duration = 9125
+			}
+		}
+	}
+
+	break_monopolies = {
+		position = 8
+		icon = mission_rb_colonise_spice_islands
+		required_missions = { trade_in_three_goods }
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = broke_monopolies.tooltip
+				has_country_flag = broke_monopolies
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "tgd_strong_trade_position"
+				duration = 9125
+			}
+		}
+	}
+	guarantee_naval_dominance = {
+		position = 9
+		icon = mission_rb_grow_the_channel
+		required_missions = { secure_metal_sources }
+		
+		trigger = {
+			optics = 1
+			naval_supplies = 1
+			OR = {
+				tar = 1
+				custom_trigger_tooltip = {
+					tooltip = trading_in_tar.tooltip
+					trading_bonus = {
+						trade_goods = tar
+						value = yes
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = trading_in_citrus.tooltip
+				trading_bonus = {
+					trade_goods = citrus
+					value = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = trading_in_rum.tooltip
+				trading_bonus = {
+					trade_goods = rum
+					value = yes
+				}
+			}
+			wharf = 5
+		}
+		
+		effect = {
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			add_country_modifier = {
+				name = "tgd_naval_dominance"
+				duration = 9125
+			}
+		}
+	}
+}
+
+tgd_slot_4 = {
+	slot = 4
+	generic = no
+	ai = no
+	
+	potential = {
+		NOT = {
+			tag = ENG
+			tag = GBR
+			tag = SCO
+			tag = IRE
+			tag = FRA
+			tag = mos
+			tag = RUS
+			tag = TUR
+			tag = BYZ
+			tag = POR
+			tag = NED
+			tag = PER
+			tag = SPA
+			tag = CAS
+			tag = TRY
+			tag = TYR
+			tag = ULS
+			tag = SLN
+			tag = CNN
+			tag = FLY
+			tag = MNS
+			tag = KID
+			tag = ORD
+			tag = LEI
+			tag = DMS
+			tag = MCM
+			tag = MTH
+		}
+	}
+	has_country_shield = no
+	
+	domestic_weapons_production = {
+		position = 7
+		icon = mission_build_up_to_force_limit
+		required_missions = { develop_a_trade_good }
+		trigger = {
+			steel = 1
+			bronze = 1
+		}
+		effect = {
+			add_adm_power = 75
+			add_dip_power = 75
+			add_mil_power = 75
+			add_treasury = 500
+			add_country_modifier = {
+				name = "tgd_expanding_domestic_arms_industry"
+				duration = 9125
+			}
+		}
+	}
+	secure_metal_sources = {
+		position = 8
+		icon = mission_high_income
+		required_missions = { domestic_weapons_production }
+		trigger = {
+			iron = 1
+			copper = 1
+			sulfer = 1
+			zinc = 1
+			lead = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "tgd_abundant_resources"
+				duration = 9125
+			}
+		}
+	}
+	military_industry = {
+		position = 9
+		icon = mission_cannons_firing
+		required_missions = { secure_metal_sources }
+		trigger = {
+			steel = 1
+			leather = 1
+			bronze = 1
+			brass = 1
+			bronze = 1
+			munitions = 1
+			uniforms = 1
+			weapons = 10
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			add_country_modifier = {
+				name = "tgd_military_might"
+				duration = 9125
+			}
+		}
+	}
+}
+
+#tgd_slot_5 = {
+	#slot = 5
+	#generic = no
+	#ai = no
+#	
+	#potential = {
+		#always = yes
+	#}
+	#has_country_shield = no
+#	
+	#break_monopoly = {
+		#position = 7
+		#icon = mission_dominate_home_trade_node
+		#required_missions = { develop_a_trade_good }
+		#trigger = {
+			#OR = {
+				#vanilla = 1
+				#exotic_spices = 1
+				#cinnamon = 1
+			#}
+		#}
+		#effect = {
+			#add_treasury = 1000
+		#}
+	#}
+#}

@@ -2572,6 +2572,7 @@ country_event = {
 	
 	immediate = {
 		set_global_flag = vanillaspread_happened
+		set_country_flag = broke_monopolies
 	}
 	
 	option = {
@@ -2701,6 +2702,7 @@ country_event = {
 	
 	immediate = {
 		set_global_flag = cinnamonspread_happened
+		set_country_flag = broke_monopolies
 	}
 	
 	option = {
@@ -2881,6 +2883,7 @@ country_event = {
 	
 	immediate = {
 		set_global_flag = spicespread_happened
+		set_country_flag = broke_monopolies
 	}
 	
 	option = {

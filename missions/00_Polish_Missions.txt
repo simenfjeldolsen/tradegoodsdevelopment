@@ -1,0 +1,342 @@
+polish_missions_main_slot = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = POL
+			tag = PLC
+		}
+	}
+	has_country_shield = yes
+	
+	# a mission before this. alliance/pu with LIT OR Lit is dead
+	lithuanian_alliance = {
+		icon = mission_alliances
+		required_missions = { }
+		completed_by = 1466.10.19
+		trigger = {
+			if = {
+				limit = {
+					exists = LIT
+					NOT = { is_rival = LIT }
+				}
+				OR = {
+					alliance_with = LIT
+					LIT = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			else = {
+				samogitia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			west_prussia_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			pomerelia_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	conquer_warmia = { #Conquer Western Prussia
+		icon = mission_conquer_5_states
+		required_missions = { lithuanian_alliance }
+		completed_by = 1466.10.19
+		provinces_to_highlight = {
+			OR = {
+				area = west_prussia_area
+				area = pomerelia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			west_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			pomerelia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					1938 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					257 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					256 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				add_country_modifier = {
+					name = "integrating_mazovia"
+					duration = 5475
+				}
+				add_dip_power = 50
+			}
+			else = {
+				1938 = {
+					add_permanent_claim = ROOT
+				}
+				257 = {
+					add_permanent_claim = ROOT
+				}
+				256 = {
+					add_permanent_claim = ROOT
+				}
+				add_adm_power = 50
+			}
+		}
+	}
+	annex_mazovia = {
+		icon = mission_have_two_subjects
+		required_missions = { conquer_warmia }
+		completed_by = 1526.3.9
+		provinces_to_highlight = {
+			OR = {
+				province_id = 257
+				province_id = 1938
+				province_id = 256
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			owns_core_province = 257
+			owns_core_province = 1938
+			owns_core_province = 256
+		}
+		effect = {
+			# a strong modifier
+			add_country_modifier = { # check this
+				name = "polish_ambition"
+				duration = 5475
+			}
+			# permaclaims on a big chunk of lithuania if not under PU
+			if = {
+				limit = {
+					LIT = {
+						junior_union_with = ROOT
+						lithuania_area = {
+							type = all
+							owned_by = LIT
+						}
+						minsk_area = {
+							type = all
+							owned_by = LIT
+						}
+						west_dniepr_area = {
+							type = all
+							owned_by = LIT
+						}
+						pripyat_area = {
+							type = all
+							owned_by = LIT
+						}
+						smolensk_area = {
+							type = all
+							owned_by = LIT
+						}
+					}
+				}
+			}
+			else = {
+				lithuania_area = {
+					limit = {
+						NOT = { owned_by = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				minsk_area = {
+					limit = {
+						NOT = { owned_by = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				west_dniepr_area = {
+					limit = {
+						NOT = { owned_by = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				pripyat_area = {
+					limit = {
+						NOT = { owned_by = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				smolensk_area = {
+					limit = {
+						NOT = { owned_by = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	vassalize_lithuania = { # INTEGRATE lithuania
+		icon = mission_monarch_in_throne_room
+		required_missions = { annex_mazovia }
+		position = 5
+		completed_by = 1569.7.1
+		provinces_to_highlight = {
+			OR = {
+				area = lithuania_area
+				area = minsk_area
+				area = west_dniepr_area
+				area = pripyat_area
+				area = smolensk_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			lithuania_area = {
+				type = all
+				owned_by = ROOT
+			}
+			minsk_area = {
+				type = all
+				owned_by = ROOT
+			}
+			west_dniepr_area = {
+				type = all
+				owned_by = ROOT
+			}
+			pripyat_area = {
+				type = all
+				owned_by = ROOT
+			}
+			smolensk_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = { # autonomy reduction speed
+				name = "integration_of_lithuania"
+				duration = 5475
+			}
+			if = {
+				limit = {
+					exists = TEU
+					TEU = {
+						is_subject = no
+						east_prussia_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT	
+						}
+					}
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300
+					target = TEU
+				}
+			}
+			else = {
+				east_prussia_area = {
+					limit = {
+						NOT = { owned_by = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			silesia_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	vassalize_the_teutonic_order = {
+		icon = mission_conquer_50_development
+		required_missions = { vassalize_lithuania }
+		provinces_to_highlight = {
+			area = east_prussia_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			east_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "teutons_pacified"
+				duration = 5475
+			}
+		}
+	}
+}
+
+polish_missions_branch_slot = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = POL
+			tag = PLC
+		}
+	}
+	has_country_shield = yes
+	
+	conquer_silesia = {
+		icon = mission_conquer_5_states
+		required_missions = { vassalize_lithuania }
+		position = 6
+		provinces_to_highlight = {
+			area = silesia_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			silesia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "silesia_conquered"
+				duration = 5475
+			}
+		}
+	}
+}
