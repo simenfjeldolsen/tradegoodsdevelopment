@@ -3,7 +3,6 @@ grain		=	{ base_price = 2.5 }	#
 olives		=	{ base_price = 3 }  # +10%(0.3) prices.12, dip 20
 potatoes	=	{ base_price = 2.5 }
 citrus		=	{ base_price = 3 } # +50%(1.5) prices.43, dip 21
-fruit			=	{ base_price = 2.5 }
 
 #plantations
 coffee 		= 	{ base_price = 3 } # +50%(1.75) prices.5, around 1550
@@ -43,7 +42,7 @@ dyes		=	{ base_price = 4 } # +25%(1) prices.14, mil 21# +15%(0.6) prices.16, dip
 #tradegoods
 ivory		=	{ base_price = 4 } # +25%(1) prices.27, 1750
 marble 		= 	{ base_price = 4 } 
-glass		=	{ base_price = 3 } # +25%(5) prices.12, dip 20
+glass		=	{ base_price = 4 } # +25%(5) prices.12, dip 20
 chinaware 	= 	{ base_price = 3.5 }	# +50%(1.5) prices.2, around 1600. -25%(0.75) prices.3, admin 24
 slaves		=	{ base_price = 2 } # +100%(2.5) prices.1, around 1550. -40% (2) prices.9, at 1700
 
@@ -77,6 +76,7 @@ machinery	=	{ base_price = 4.5 }
 uniforms	=	{ base_price = 3.5 } # +40%(1.2) prices.14, mil 21
 gems 		=	{ base_price = 4 }
 coal 		=	{ base_price = 10 }
+furniture	=	{ base_price = 4 } #+35% (5.4) prices.118, adm 21 (temp +35% right at start)
 
 
 unknown		=	{ base_price = 0 }

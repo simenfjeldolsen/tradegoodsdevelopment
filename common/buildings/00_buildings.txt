@@ -729,7 +729,6 @@ plantations = {
 		tea
 		cocoa
 		citrus
-		fruit
 	}
 	onmap = yes
 	
@@ -785,6 +784,7 @@ mills = {
 		chinaware
 		marble
 		optics
+		furniture
 	}
 	onmap = yes
 	

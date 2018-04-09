@@ -97,17 +97,23 @@ vanilla_dev = {
 }
 glass_dev = {
 	NOT = { trade_goods = glass }
-	owner = {
-		dip_tech = 5
+	development = 21
+	OR = {
+		NOT = { has_global_flag = murano_monopoly_started }
+		AND = {
+			has_global_flag = murano_monopoly_started
+			NOT = { has_global_flag = murano_monopoly_ended }
+			trading_bonus = {
+				trade_goods = glass
+				value = yes
+			}
+		}
+		has_global_flag = murano_monopoly_ended
 	}
-	development = 25
-} 
+}
 paper_dev = {
 	NOT = { trade_goods = paper }
-	owner = {
-		adm_tech = 8
-	}
-	development = 18
+	development = 17
 }
 steel_dev = {
 	NOT = { trade_goods = steel }
@@ -543,12 +549,26 @@ silk_dev = {
 	OR = {
 		AND = {
 			continent = asia
-			development = 25
+			development = 23
 			trade_goods = cloth
 		}
 		AND = {
-			development = 35
+			development = 33
 			trade_goods = cloth
+		}
+		AND = {
+			development = 23
+			trade_goods = cloth
+			OR = {
+				area = provence_area
+				area = savoy_dauphine_area
+				area = languedoc_area
+				area = carinthia_area
+				area = aragon_area
+				area = catalonia_area
+				area = valencia_area
+				region = italy_region
+			}
 		}
 	}
 }
@@ -561,10 +581,10 @@ incense_dev = {
 	NOT = { trade_goods = incense }
 	NOT = { has_climate = arctic }
 }
-fruit_dev = {
-	NOT = { trade_goods = fruit }
-	NOT = { has_winter = severe_winter }
-	NOT = { has_winter = normal_winter }
+furniture_dev = {
+	NOT = { trade_goods = furniture}
+	development = 28
+	renaissance = 100
 }
 big_ship_dev = {
 	NOT = { trade_goods = big_ship }

@@ -2280,76 +2280,11 @@ coal = {
 		factor = 1
 	}
 }
-fruit = {
+furniture = {
 	color = { 0.8 0.4 0.6 }
-	modifier = { development_cost = -0.05 }
-	province = { supply_limit_modifier = 1.0 }
-	chance = {
-		factor = 10
-		modifier = {
-			factor = 0
-			is_random_new_world = yes
-			continent = new_world #Always in RNW
-			OR = {
-				has_climate = arid
-				has_climate = arctic
-				has_terrain = glacier
-				has_terrain = forest
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				AND = {
-					is_random_new_world = no
-					OR = {
-						continent = north_america
-						continent = south_america
-					}
-				}
-				continent = oceania
-			}
-			FROM = {
-				OR = {
-					capital_scope = { continent = north_america }
-					capital_scope = { continent = south_america }
-					capital_scope = { continent = oceania }
-					capital_scope = { continent = new_world }
-				}
-				NOT = {
-					OR = {
-						is_colonial_nation = yes
-						technology_group = western
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				OR = {
-					area = california_area
-					area = baja_california_area
-					area = sonora_y_sinaloa_area
-					area = central_valley_area
-					AND = {
-						superregion = china_superregion
-						has_climate = tropical
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			is_random_new_world = yes
-			continent = new_world #Always in RNW
-		}
-		modifier = {
-			factor = 1.5
-			is_random_new_world = no
-			region = california_region
-		}
-	}
+	modifier = { improve_relations = 0.30 }
+	province = { province_trade_power_value = 2 }
+	chance = ( factor = 0 }
 }
 big_ship = {
 	color = { 0.8 0.4 0.6 }

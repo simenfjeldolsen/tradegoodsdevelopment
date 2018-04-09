@@ -31,6 +31,7 @@ province_event = {
 			remove_province_modifier = perfume_capital
 			remove_province_modifier = hab_schwaz_mine
 			remove_province_modifier = silk_market
+			remove_province_modifier = vvv
 
 
 
@@ -119,14 +120,14 @@ province_event = {
         province_event = { id = tgd_tradegoodsdevelopment.112 }
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.10.fruit.yes
-		trigger = { fruit_dev = yes }
-        province_event = { id = tgd_tradegoodsdevelopment.156 }
-	}
-	option = {
 		name = tgd_tradegoodsdevelopment.10.fur.yes
 		trigger = { fur_dev = yes }
         province_event = { id = tgd_tradegoodsdevelopment.113 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.furniture.yes
+		trigger = { furniture_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.156 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.glass.yes
@@ -375,16 +376,16 @@ province_event = {
 		remove_province_modifier = "developinggoods"
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.10.fruit.no
-		trigger = { fruit_dev = no }
-        owner = { country_event = { id = tgd_info.156 } }
-		remove_province_modifier = "developinggoods"	
-	}
-	option = {
 		name = tgd_tradegoodsdevelopment.10.fur.no
 		trigger = { fur_dev = no }
         owner = { country_event = { id = tgd_info.13 } }
 		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.furniture.no
+		trigger = { furniture_dev = no }
+        owner = { country_event = { id = tgd_info.156 } }
+		remove_province_modifier = "developinggoods"	
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.10.glass.no
@@ -619,6 +620,7 @@ country_event = {
 					remove_province_modifier = jingdezhen_kilns
 					remove_province_modifier = perfume_capital
 					remove_province_modifier = hab_schwaz_mine
+					remove_province_modifier = vvv
 
 
 					#owner = { every_owned_province = { remove_building = tradegoodsdevelopment } }
@@ -1505,6 +1507,7 @@ province_event = {
 			remove_province_modifier = perfume_capital
 			#remove_province_modifier = hab_schwaz_mine # if you remove the gold for another metal you deserve the goods bonus tbh
 			remove_province_modifier = silk_market
+			remove_province_modifier = vvv
 		}
 	}
 	
@@ -2159,6 +2162,10 @@ province_event = {
 		name = tgd_tradegoodsdevelopment.214.a
 		change_trade_goods = glass
 		remove_province_modifier = "developinggoods"
+		if = {
+			limit = { has_global_modifier = murano_monopoly_started }
+			owner = { country_event = { id = prices.120 } }
+		}
 	}
 }
 ########
@@ -3494,7 +3501,7 @@ province_event = {
 	}
 }
 ########
-#fruit
+#furniture
 province_event = {
 	id = tgd_tradegoodsdevelopment.156
 	title = tgd_tradegoodsdevelopment.100.t
@@ -3526,7 +3533,7 @@ province_event = {
 	
 	option = {
 		name = tgd_tradegoodsdevelopment.256.a
-		change_trade_goods = fruit
+		change_trade_goods = furniture
 		remove_province_modifier = "developinggoods"
 	}
 }

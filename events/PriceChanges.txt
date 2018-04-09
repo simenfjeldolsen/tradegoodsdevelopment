@@ -77,6 +77,7 @@ country_event = {
 					share = 5
 				}
 			}
+			year = 1630
 		}
 		NOT = { has_global_flag = europeans_in_china_happened }
 	}
@@ -2491,10 +2492,96 @@ country_event = {
 		}
 	}
 }
+# Greater Availability of Coal
+country_event = {
+	id = prices.46
+	title = prices.46.t
+	desc = prices.46.d
+	picture = TRADEGOODS_eventPicture
 
-##########################################################
-#TGD events: some carried over from SE; most added by Maxo
-##########################################################
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		#has_dlc = "Rule Britannia"
+		NOT = { has_global_flag = steam_engine_happened }
+		has_country_flag = watt_steam_engine_flag #Set by Industrialization Events
+		has_country_flag = coke_blast_furnaces_flag #Set by Industrialization Events.
+		has_institution = enlightenment
+		any_owned_province = {
+			trade_goods = coal
+			has_building = furnace
+		}
+		coal = 10
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					trade_goods = coal
+					has_building = furnace
+				}
+				save_event_target_as = coal_province
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						trade_goods = coal
+						NOT = { has_building = furnace }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						any_owned_province = {
+							trade_goods = coal
+							NOT = { has_building = furnace }
+						}
+					}
+					save_event_target_as = potential_furnace
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = prices.46.a
+		add_years_of_income = 1
+		add_dip_power = 50
+		if = {
+			limit = {
+				has_saved_event_target = potential_furnace
+			}
+			event_target:coal_province = {
+				add_base_production = 2
+			}
+			event_target:potential_furnace = {
+				add_building = furnace
+			}
+		}
+		else = {
+			event_target:coal_province = {
+				add_base_production = 6
+			}
+		}
+		change_price = {
+			trade_goods = coal
+			key = IMPROVED_COAL_MINING
+			value = -0.30
+			duration = -1
+		}
+	}
+}
+
+
+###########################################################
+#TGD events: some carried over from SE; most added by Maxo#
+###########################################################
 
 #Bookbinding
 country_event = {
@@ -2535,6 +2622,40 @@ country_event = {
 			key = BOOKBINDING
 			value = 0.20
 			duration = -1
+		}
+	}
+}
+#Furniture Boom
+country_event = {
+	id = prices.102
+	title = prices.102.t
+	desc = prices.102.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		furniture = 1
+		NOT = { has_global_flag = furniture_boom }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		set_global_flag = furniture_boom
+	}
+	
+	option = {
+		name = prices.102.a
+		change_price = {
+			trade_goods = furniture
+			key = FURNITURE_BOOM
+			value = 0.35
+			duration = 9125 #25 years
 		}
 	}
 }
@@ -3191,11 +3312,11 @@ country_event = {
 		}
 	}
 }
-# Greater Availability of Coal
+#Baroque Furniture
 country_event = {
-	id = prices.46
-	title = prices.46.t
-	desc = prices.46.d
+	id = prices.118
+	title = prices.118.t
+	desc = prices.118.d
 	picture = TRADEGOODS_eventPicture
 
 	fire_only_once = yes
@@ -3203,75 +3324,124 @@ country_event = {
 	major = yes
 
 	trigger = {
-		#has_dlc = "Rule Britannia"
-		NOT = { has_global_flag = steam_engine_happened }
-		has_country_flag = watt_steam_engine_flag #Set by Industrialization Events
-		has_country_flag = coke_blast_furnaces_flag #Set by Industrialization Events.
-		has_institution = enlightenment
-		any_owned_province = {
-			trade_goods = coal
-			has_building = furnace
-		}
-		coal = 10
+		furniture = 1
+		capital_scope = { development = 35 }
+		owner = { adm_tech = 21 }
+		NOT = { has_global_flag = baroque_furniture }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
 	}
 	
 	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					trade_goods = coal
-					has_building = furnace
-				}
-				save_event_target_as = coal_province
+		set_global_flag = baroque_furniture
+	}
+	
+	option = {
+		name = prices.118.a
+		change_price = {
+			trade_goods = furniture
+			key = BAROQUE_FURNITURE
+			value = 0.35
+			duration = -1
+		}
+	}
+}
+#Venetian Monopoly (read:trash)
+country_event = {
+	id = prices.119
+	title = prices.119.t
+	desc = prices.119.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			112 = { has_province_modifier = ven_murano_glass_industry }
+			year = 1475
+		}
+		glass = 1
+		NOT = { has_global_flag = murano_monopoly_started }
+		NOT = { owns = 112 }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {
+		set_global_flag = murano_monopoly_started
+	}
+	
+	option = {
+		name = prices.119.a
+		custom_tooltip = prices.119.a.tt
+		change_price = {
+			trade_goods = glass
+			key = MURANO_MONOPOLY
+			value = -0.25
+			duration = -1
+		}
+		every_country  = {
+			limit = {
+				is_subject = no
+				glass = 1
 			}
-			if = {
-				limit = {
-					any_owned_province = {
-						trade_goods = coal
-						NOT = { has_building = furnace }
-					}
-				}
-				random_owned_province = {
-					limit = {
-						any_owned_province = {
-							trade_goods = coal
-							NOT = { has_building = furnace }
-						}
-					}
-					save_event_target_as = potential_furnace
-				}
+			add_opinion = {
+				who = VEN
+				modifier = ven_glass_monopoly
+			}
+			add_casus_belli = {	
+				target = VEN
+				type = cb_trade_war_triggered
+				months = 24
 			}
 		}
+	}
+	
+}
+country_event = {
+	id = prices.120
+	title = prices.120.t
+	desc = prices.120.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			112 = { NOT = { trade_goods = glass } }
+			glass = 5
+			trading_bonus = {
+				trade_goods = glass
+				value = yes
+			}
+			year = 1475
+		}
+		glass = 1
+		NOT = { has_global_flag = murano_monopoly_ended }
 	}
 	
 	mean_time_to_happen = {
 		months = 1
 	}
 	
+	immediate = {
+		set_global_flag = murano_monopoly_ended
+	}
+	
 	option = {
-		name = prices.46.a
-		add_years_of_income = 1
-		add_dip_power = 50
-		if = {
-			limit = {
-				has_saved_event_target = potential_furnace
-			}
-			event_target:coal_province = {
-				add_base_production = 2
-			}
-			event_target:potential_furnace = {
-				add_building = furnace
-			}
-		}
-		else = {
-			event_target:coal_province = {
-				add_base_production = 6
-			}
-		}
+		name = prices.120.a
 		change_price = {
-			trade_goods = coal
-			key = IMPROVED_COAL_MINING
-			value = -0.30
+			trade_goods = glass
+			key = MURANO_MONOPOLY_BROKEN
+			value = 0.30
 			duration = -1
 		}
 	}

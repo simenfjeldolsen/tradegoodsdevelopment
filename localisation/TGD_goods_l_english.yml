@@ -65,8 +65,8 @@
  machinery: "Machinery"
  machineryDESC: "Machinery represents all kinds of items and goods needed to operate machinery, as well as pre-industrial constructions such as clockwork."
  uniforms: "Uniforms"
- uniformsDESC: "For as long as there have been professional militaries, there have been uniforms. Or at least there has been a soldier complaining about a lack thereof. Styilsh uniforms not only help distinguish troops on the battlefield, but also give a sense of national pride to all those who wear them."
- gunpowder: "Powder"
+ uniformsDESC: "For as long as there have been professional militaries, there have been uniforms. Or at least there has been a soldier complaining about a lack thereof. Stylish uniforms not only help distinguish troops on the battlefield, but also give a sense of national pride to all those who wear them."
+ gunpowder: "Gunpowder"
  gunpowderDESC: "Gunpowder, or black powder, is a chemical explosive consisting of sulfur, charcoal, and saltpeter, with a wide range of uses - most of them involving war. Gunpowder has been used since its inception for firearms, rockets, fireworks, and as a blasting powder for mining and quarrying."
  brass: "Brass"
  brassDESC: "Brass is an alloy consisting primarily of Copper and Zinc, sometimes including marginal amounts of Lead, Aluminium, and Silicon. While Brass is often frivolously used for decorative purposes, it is invaluable in situations that require a spark not be struck, such as in the fittings of cannons."
@@ -82,6 +82,10 @@
  ironDESC: "Iron formed the basis of the metallurgical industry and was used extensively in the production of weapons and other military equipment."
  copper: "Copper"
  copperDESC: "Copper was the main component of bronze and was essential in the early production of cannons."
+ furniture: "Furniture"
+ fruitDESC: "furniture.desc"
+ big_ship: "Ship of the Line"
+ big_shipDESC: "Ships of the line were the biggest, toughest warships on the seas from the 17th to mid-19th century. In line-of-battle engagements, the heavier ship with the most powerful guns would almost always prevail, and thus ships of the line were feared and respected on the waters."
  ####################
  ### Price Events ###
  ####################
@@ -89,10 +93,10 @@
  prices.101.d: "For most of European history, only the clergy have been literate. But we are entering a new age, a rebirth of knowledge across the continent. The production of books is slowly growing, and with it, the demand for paper and leather."
  prices.101.a: "Bah! Warriors do not read books!"
  BOOKBINDING: "Bookbinding"
- prices.102.t: "The Printing Revolution"
- prices.102.d: "The introduction of mechanical movable-type printing to Europe has changed the world - it may very well have been the most important invention in early-modern history. With books now so easily produced, demand for paper has skyrocketed, though we expect the market to normalize shortly."
- prices.102.a: "T h a n k   y o u , J o h a n n   G u t e n b e r g"
- PRINTINGPRESS: "The Printing Press"
+ prices.102.t: "The Renaissance of Furniture"
+ prices.102.d: "During the Renaissance in Italy, a rebirth of furniture production took place. Relatively absent during Europe's Dark Ages, the production of furniture has been reborn as an artform during this springtime of culture."
+ prices.102.a: "After sitting on a cushioned chair, one can never go back."
+ FURNITURE_BOOM: "Rebirth of Furniture"
  prices.103.t: "Prevalence of Vanilla"
  prices.103.d: "The production of Vanilla had long been confined to Mexico, but some adventurous merchants have discovered that it can be cultivated on Madagascar and the surrounding islands. This will greatly increase the supply of vanilla in the future, lowering its price."
  prices.103.a: "Perhaps we should have kept it in Mexico..."
@@ -157,6 +161,15 @@
  prices.117.d: "While other states command armies, the [Root.GetAdjective] army commands a state. Our disciplined, well-equiped troops are the finest fighting force in all of the world. This is due in no short part to our excellent supply of munitions, the production of which is fueled by the riches of the earth."
  prices.117.a: "The meek will not inherit the earth, as long as we hold its mineral rights."
  MUNITION_EXPANSION: "Expanded Munitions Industries"
+ prices.118.t: "[Root.GetAdjective] Court Furniture"
+ prices.118.d: "The majesty of a ruler is determined by the opulence of his court, everyone knows this. Recently an artisan by the name of André Boulle has come to our court with an array of cabinets with perfected inlays and stunning beauty. Naturally, we have awarded this master craftsman with the title of 'Master Cabinetmaker,' and have commissioned many pieces for our palace. If they have any wits about them, the other monarchs of the world will surely follow in the suit of the Court of [Root.GetName]."
+ prices.119.t: "The Venetian Monopoly on Glass"
+ prices.119.d: "The Glass business in Murano is booming now more than ever, and the always-scheming merchants of Venice have taken this opportunity to sieze a monopoly on the production of Glass. Through protectionism and secrecy is normally unbecoming of any free Republic, this sort of underhanded behavior is all-too-common in Venice, and they have successfully hidden their secrets of glassblowing perfection. Their control of Glass must not last."
+ prices.119.a: "From this hour the independence of Venice has ceased to be..."
+ prices.119.a.tt: "Until the Venetian Monopoly ends, we can only develop Glass if we are trading in it. The monopoly will be broken once Glass is developed by anyone, or if any one nation owns 5 provinces producing Glass."
+ prices.120.t: "The End of the Venetian Monopoly on Glass"
+ prices.120.d: "The weak, poor, and otherwise inept Venetians have proven unable to retain their monopoly on Glass. Their attempts to stop the flow of information out of Murano have failed, and the secrets of better glassblowing techniques have emerged, primarily concerning the production of mirrors. This is truly a great day for the world market."
+ prices.120.a: "Good riddance. That's not how monopolies were supposed to work anyway."
  ################
  ### Tooltips ###
  ################
@@ -182,6 +195,7 @@
  tgd_tradegoodsdevelopment.10.d: "Here is a list of all available goods that can be developed in this province.\n\n Goods are listed alphabetically, and you may need to scroll to see all your options."
  developinggoods: "Goods Development in Progress"
  silk_market: "Silk Market of [Root.GetName]"
+ vvv: "The City of Silk"
 #####
  tgd_tradegoodsdevelopment.10.olives.yes: "Olives (§G+§!)"
  tgd_tradegoodsdevelopment.10.potatoes.yes: "Potatoes (§G+§!)"
@@ -230,6 +244,8 @@
  tgd_tradegoodsdevelopment.10.wool.yes: "Wool (§G+§!)"
  tgd_tradegoodsdevelopment.10.livestock.yes: "Livestock (§G+§!)"
  tgd_tradegoodsdevelopment.10.incense.yes: "Incense (§G+§!)"
+ tgd_tradegoodsdevelopment.10.furniture.yes: "Furniture (§G+§!)"
+ tgd_tradegoodsdevelopment.10.big_ship.yes: "Ships of the Line (§G+§!)"
  ###################################################################
  tgd_tradegoodsdevelopment.10.olives.no: "Olives (§R-§!)"
  tgd_tradegoodsdevelopment.10.potatoes.no: "Potatoes (§R-§!)"
@@ -278,6 +294,8 @@
  tgd_tradegoodsdevelopment.10.wool.no: "Wool (§R-§!)"
  tgd_tradegoodsdevelopment.10.livestock.no: "Livestock (§R-§!)"
  tgd_tradegoodsdevelopment.10.incense.no: "Incense (§R-§!)"
+ tgd_tradegoodsdevelopment.10.furniture.no: "Furniture (§R-§!)"
+ tgd_tradegoodsdevelopment.10.big_ship.no: "Ships of the Line (§R-§!)"
  ###############
  tgd_tradegoodsdevelopment.100.t: "Developing Goods in [Root.GetName]"
  tgd_tradegoodsdevelopment.100.back: "I've changed my mind, I would like to develop something else."
@@ -328,7 +346,7 @@
  tgd_tradegoodsdevelopment.153.d: "Would you like to develop Gems in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
  tgd_tradegoodsdevelopment.154.d: "Would you like to develop Livestock in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
  tgd_tradegoodsdevelopment.155.d: "Would you like to develop Incense in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
- tgd_tradegoodsdevelopment.156.d: "Would you like to develop Fruit in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
+ tgd_tradegoodsdevelopment.156.d: "Would you like to develop Furniture in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
  tgd_tradegoodsdevelopment.157.d: "Would you like to develop Ships of the Line in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
  ####################
  tgd_tradegoodsdevelopment.200.t: "Development Complete in [Root.GetName]"
@@ -381,7 +399,7 @@
  tgd_tradegoodsdevelopment.253.a: "Ooh, shiny!"
  tgd_tradegoodsdevelopment.254.a: "Now why on earth did we spend money on this..."
  tgd_tradegoodsdevelopment.255.a: "Smokin'!"
- tgd_tradegoodsdevelopment.256.a: "Delicious'!"
+ tgd_tradegoodsdevelopment.256.a: "Wonderful"
  tgd_tradegoodsdevelopment.257.a: "A port worthy of our glorious nation!"
  
  
