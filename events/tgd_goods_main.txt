@@ -30,11 +30,12 @@ province_event = {
 			remove_province_modifier = jingdezhen_kilns
 			remove_province_modifier = perfume_capital
 			remove_province_modifier = hab_schwaz_mine
+			remove_province_modifier = silk_market
 
 
 
 			owner = { every_owned_province = { remove_building = tradegoodsdevelopment } }
-			add_province_modifier = { name = "recently_changed_goods_timer" duration = 3650 }
+			add_province_modifier = { name = "developinggoods" duration = -1 }
 			export_to_variable = {
 				which = dev_tier_variable
 				value = development
@@ -42,381 +43,520 @@ province_event = {
 		}
 	}
 
-	#custom triggers checks if relevant goods can be produced
-	#then fires goods change event in
 	option = {
 		name = tgd_tradegoodsdevelopment.10.nevermind
-		remove_province_modifier = "recently_changed_goods_timer"
-		owner { add_treasury = 100 }
-		custom_tooltip = nevermind_tooltip
+		remove_province_modifier = "developinggoods"
 	}
+	###############################################################################
 	option = {
-		name = tgd_tradegoodsdevelopment.10.horses
-		trigger = { horses_dev = yes }
-		change_trade_goods = horses
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.beer
+		name = tgd_tradegoodsdevelopment.10.beer.yes
 		trigger = { beer_dev = yes }
-		change_trade_goods = beer
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.152 }
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.10.tar
-		trigger = { tar_dev = yes }
-		change_trade_goods = tar
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.olives
-		trigger = { olives_dev = yes }
-		change_trade_goods = olives
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.cheese
-		trigger = { cheese_dev = yes }
-		change_trade_goods = cheese
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.vanilla
-		trigger = { vanilla_dev = yes }
-		change_trade_goods = vanilla
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -100 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.glass
-		trigger = { glass_dev = yes }
-		change_trade_goods = glass
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -100 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.paper
-		trigger = { paper_dev = yes }
-		change_trade_goods = paper
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -100 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.steel
-		trigger = { steel_dev = yes }
-		change_trade_goods = steel
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -100 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.citrus
-		trigger = { citrus_dev = yes }
-		change_trade_goods = citrus
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.munitions
-		trigger = { munitions_dev = yes }
-		change_trade_goods = munitions
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -250 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.potatoes
-		trigger = { potatoes_dev = yes }
-		change_trade_goods = potatoes
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.rum
-		trigger = { rum_dev = yes }
-		change_trade_goods = rum
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -100 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.uniforms
-		trigger = { uniforms_dev = yes }
-		change_trade_goods = uniforms
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
-		owner = {  add_treasury = -500 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.marble
-		trigger = { marble_dev = yes }
-		change_trade_goods = marble
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
-		owner = {  add_treasury = -100 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.machinery
-		trigger = { machinery_dev = yes }
-		change_trade_goods = machinery
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
-		owner = {  add_treasury = -500 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.bronze
-		trigger = { bronze_dev = yes }
-		change_trade_goods = bronze
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -40 add_mil_power = -40 add_dip_power = -40 }
-		owner = {  add_treasury = -1000 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.cinnamon
-		trigger = { cinnamon_dev = yes }
-		change_trade_goods = cinnamon
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -100 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.exotic_spices
-		trigger = { exotic_spices_dev = yes }
-		change_trade_goods = exotic_spices
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -100 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.brass
+		name = tgd_tradegoodsdevelopment.10.brass.yes
 		trigger = { brass_dev = yes }
-		change_trade_goods = brass
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -250 }
+        province_event = { id = tgd_tradegoodsdevelopment.148 }
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.10.gunpowder
+		name = tgd_tradegoodsdevelopment.10.bronze.yes
+		trigger = { bronze_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.123 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.cheese.yes
+		trigger = { cheese_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.103 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.chinaware.yes
+		trigger = { chinaware_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.104 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.cinnamon.yes
+		trigger = { cinnamon_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.146 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.citrus.yes
+		trigger = { citrus_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.105 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.cloth.yes
+		trigger = { cloth_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.106 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.cocoa.yes
+		trigger = { cocoa_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.107 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.coffee.yes
+		trigger = { coffee_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.108 }	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.cotton.yes
+		trigger = { cotton_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.110 }	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.dyes.yes
+		trigger = { dyes_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.111 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.exotic_spices.yes
+		trigger = { exotic_spices_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.147 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.fish.yes
+		trigger = { fish_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.112 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.fur.yes
+		trigger = { fur_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.113 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.glass.yes
+		trigger = { glass_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.114 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.grain.yes
+		trigger = { grain_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.116 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.gunpowder.yes
 		trigger = { gunpowder_dev = yes }
-		change_trade_goods = gunpowder
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -200 }
+        province_event = { id = tgd_tradegoodsdevelopment.150 }
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.10.optics
-		trigger = { optics_dev = yes }
-		change_trade_goods = optics
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -250 }
+		name = tgd_tradegoodsdevelopment.10.horses.yes
+		trigger = { horses_dev = yes }
+		province_event = { id = tgd_tradegoodsdevelopment.117 }
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.10.leather
-		trigger = { leather_dev = yes }
-		change_trade_goods = leather
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -100 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.cocoa
-		trigger = { cocoa_dev = yes }	
-		change_trade_goods = cocoa
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.chinaware
-		trigger = { chinaware_dev = yes }	
-		change_trade_goods = chinaware
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.cloth
-		trigger = { cloth_dev = yes }	
-		change_trade_goods = cloth
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.coffee
-		trigger = { coffee_dev = yes }	
-		change_trade_goods = coffee
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.cotton
-		trigger = { cotton_dev = yes }	
-		change_trade_goods = cotton
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.dyes
-		trigger = { dyes_dev = yes }	
-		change_trade_goods = dyes
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -100 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.fish
-		trigger = { fish_dev = yes }	
-		change_trade_goods = fish
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.fur
-		trigger = { fur_dev = yes }	
-		change_trade_goods = fur
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.grain
-		trigger = { grain_dev = yes }	
-		change_trade_goods = grain
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.ivory
-		trigger = { ivory_dev = yes }	
-		change_trade_goods = ivory
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.naval_supplies
-		trigger = { naval_supplies_dev = yes }	
-		change_trade_goods = naval_supplies
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.salt
-		trigger = { salt_dev = yes }	
-		change_trade_goods = salt
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -100 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.silk
-		trigger = { silk_dev = yes }	
-		change_trade_goods = silk
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -30 add_mil_power = -30 add_dip_power = -30 }
-		owner = {  add_treasury = -100 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.slaves
-		trigger = { slaves_dev = yes }	
-		change_trade_goods = slaves
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.spices
-		trigger = { spices_dev = yes }	
-		change_trade_goods = spices
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -100 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.sugar
-		trigger = { sugar_dev = yes }	
-		change_trade_goods = sugar
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.tea
-		trigger = { tea_dev = yes }	
-		change_trade_goods = tea
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.tobacco
-		trigger = { tobacco_dev = yes }	
-		change_trade_goods = tobacco
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.tropical_wood
-		trigger = { tropical_wood_dev = yes }	
-		change_trade_goods = tropical_wood
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.wine
-		trigger = { wine_dev = yes }	
-		change_trade_goods = wine
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.wool
-		trigger = { wool_dev = yes }	
-		change_trade_goods = wool
-		dev_tier_cost_effect = yes
-		#owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-		owner = {  add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.livestock
-		trigger = { livestock_dev = yes }
-		change_trade_goods = livestock
-		dev_tier_cost_effect = yes
-		owner = { add_treasury = -50 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.10.incense
+		name = tgd_tradegoodsdevelopment.10.incense.yes
 		trigger = { incense_dev = yes }
-		change_trade_goods = incense
-		dev_tier_cost_effect = yes
-		owner = { add_treasury = -100 }
+        province_event = { id = tgd_tradegoodsdevelopment.155 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.ivory.yes
+		trigger = { ivory_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.119 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.leather.yes
+		trigger = { leather_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.151 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.livestock.yes
+		trigger = { livestock_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.154 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.machinery.yes
+		trigger = { machinery_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.121 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.marble.yes
+		trigger = { marble_dev = yes }
+		province_event = { id = tgd_tradegoodsdevelopment.122 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.munitions.yes
+		trigger = { munitions_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.124 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.naval_supplies.yes
+		trigger = { naval_supplies_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.125 }	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.olives.yes
+		trigger = { olives_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.126 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.paper.yes
+		trigger = { paper_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.127 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.optics.yes
+		trigger = { optics_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.149 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.potatoes.yes
+		trigger = { potatoes_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.128 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.rum.yes
+		trigger = { rum_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.129 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.salt.yes
+		trigger = { salt_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.130 }	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.silk.yes
+		trigger = { silk_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.131 }	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.slaves.yes
+		trigger = { slaves_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.132 }	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.spices.yes
+		trigger = { spices_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.133 }	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.steel.yes
+		trigger = { steel_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.134 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.sugar.yes
+		trigger = { sugar_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.135 }	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.tar.yes
+		trigger = { tar_dev = yes }
+		province_event = { id = tgd_tradegoodsdevelopment.136 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.tea.yes
+		trigger = { tea_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.137 }	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.tobacco.yes
+		trigger = { tobacco_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.139 }	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.tropical_wood.yes
+		trigger = { tropical_wood_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.140 }	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.uniforms.yes
+		trigger = { uniforms_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.141 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.vanilla.yes
+		trigger = { vanilla_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.142 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.wine.yes
+		trigger = { wine_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.143 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.wool.yes
+		trigger = { wool_dev = yes }
+        province_event = { id = tgd_tradegoodsdevelopment.144 }
+	}
+######################################no
+	option = {
+		name = tgd_tradegoodsdevelopment.10.beer.no
+		trigger = { beer_dev = no }
+		owner = { country_event = { id = tgd_info.52 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.brass.no
+		trigger = { brass_dev = no }
+        owner = { country_event = { id = tgd_info.48 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.bronze.no
+		trigger = { bronze_dev = no }
+        owner = { country_event = { id = tgd_info.23 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.cheese.no
+		trigger = { cheese_dev = no }
+        owner = { country_event = { id = tgd_info.3 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.chinaware.no
+		trigger = { chinaware_dev = no }
+        owner = { country_event = { id = tgd_info.4 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.cinnamon.no
+		trigger = { cinnamon_dev = no }
+        owner = { country_event = { id = tgd_info.46 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.citrus.no
+		trigger = { citrus_dev = no }
+        owner = { country_event = { id = tgd_info.5 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.cloth.no
+		trigger = { cloth_dev = no }
+        owner = { country_event = { id = tgd_info.6 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.cocoa.no
+		trigger = { cocoa_dev = no }
+        owner = { country_event = { id = tgd_info.7 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.coffee.no
+		trigger = { coffee_dev = no }
+        owner = { country_event = { id = tgd_info.8 } }
+		remove_province_modifier = "developinggoods"	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.cotton.no
+		trigger = { cotton_dev = no }
+        owner = { country_event = { id = tgd_info.10 } }
+		remove_province_modifier = "developinggoods"	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.dyes.no
+		trigger = { dyes_dev = no }
+        owner = { country_event = { id = tgd_info.11 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.exotic_spices.no
+		trigger = { exotic_spices_dev = no }
+        owner = { country_event = { id = tgd_info.47 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.fish.no
+		trigger = { fish_dev = no }
+        owner = { country_event = { id = tgd_info.12 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.fur.no
+		trigger = { fur_dev = no }
+        owner = { country_event = { id = tgd_info.13 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.glass.no
+		trigger = { glass_dev = no }
+        owner = { country_event = { id = tgd_info.14 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.grain.no
+		trigger = { grain_dev = no }
+        owner = { country_event = { id = tgd_info.16 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.gunpowder.no
+		trigger = { gunpowder_dev = no }
+        owner = { country_event = { id = tgd_info.50 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.horses.no
+		trigger = { horses_dev = no }
+		owner = { country_event = { id = tgd_info.17 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.incense.no
+		trigger = { incense_dev = no }
+        owner = { country_event = { id = tgd_info.55 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.ivory.no
+		trigger = { ivory_dev = no }
+        owner = { country_event = { id = tgd_info.19 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.leather.no
+		trigger = { leather_dev = no }
+        owner = { country_event = { id = tgd_info.51 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.livestock.no
+		trigger = { livestock_dev = no }
+        owner = { country_event = { id = tgd_info.54 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.machinery.no
+		trigger = { machinery_dev = no }
+        owner = { country_event = { id = tgd_info.21 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.marble.no
+		trigger = { marble_dev = no }
+		owner = { country_event = { id = tgd_info.22 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.munitions.no
+		trigger = { munitions_dev = no }
+        owner = { country_event = { id = tgd_info.24 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.naval_supplies.no
+		trigger = { naval_supplies_dev = no }
+        owner = { country_event = { id = tgd_info.25 } }
+		remove_province_modifier = "developinggoods"	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.olives.no
+		trigger = { olives_dev = no }
+        owner = { country_event = { id = tgd_info.26 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.paper.no
+		trigger = { paper_dev = no }
+        owner = { country_event = { id = tgd_info.27 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.optics.no
+		trigger = { optics_dev = no }
+        owner = { country_event = { id = tgd_info.49 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.potatoes.no
+		trigger = { potatoes_dev = no }
+        owner = { country_event = { id = tgd_info.28 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.rum.no
+		trigger = { rum_dev = no }
+        owner = { country_event = { id = tgd_info.29 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.salt.no
+		trigger = { salt_dev = no }
+        owner = { country_event = { id = tgd_info.30 } }
+		remove_province_modifier = "developinggoods"	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.silk.no
+		trigger = { silk_dev = no }
+        owner = { country_event = { id = tgd_info.31 } }
+		remove_province_modifier = "developinggoods"	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.slaves.no
+		trigger = { slaves_dev = no }
+        owner = { country_event = { id = tgd_info.32 } }
+		remove_province_modifier = "developinggoods"	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.spices.no
+		trigger = { spices_dev = no }
+        owner = { country_event = { id = tgd_info.33 } }
+		remove_province_modifier = "developinggoods"	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.steel.no
+		trigger = { steel_dev = no }
+        owner = { country_event = { id = tgd_info.34 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.sugar.no
+		trigger = { sugar_dev = no }
+        owner = { country_event = { id = tgd_info.35 } }
+		remove_province_modifier = "developinggoods"	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.tar.no
+		trigger = { tar_dev = no }
+		owner = { country_event = { id = tgd_info.36 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.tea.no
+		trigger = { tea_dev = no }
+        owner = { country_event = { id = tgd_info.37 } }
+		remove_province_modifier = "developinggoods"	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.tobacco.no
+		trigger = { tobacco_dev = no }
+        owner = { country_event = { id = tgd_info.39 } }
+		remove_province_modifier = "developinggoods"	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.tropical_wood.no
+		trigger = { tropical_wood_dev = no }
+        owner = { country_event = { id = tgd_info.40 } }
+		remove_province_modifier = "developinggoods"	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.uniforms.no
+		trigger = { uniforms_dev = no }
+        owner = { country_event = { id = tgd_info.41 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.vanilla.no
+		trigger = { vanilla_dev = no }
+        owner = { country_event = { id = tgd_info.42 } }
+		remove_province_modifier = "developinggoods"
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.wine.no
+		trigger = { wine_dev = no }
+        owner = { country_event = { id = tgd_info.43 } }
+		remove_province_modifier = "developinggoods"	
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.10.wool.no
+		trigger = { wool_dev = no }
+        owner = { country_event = { id = tgd_info.44 } }
+		remove_province_modifier = "developinggoods"	
 	}
 }
+
 
 country_event = {
 	id = tgd_tradegoodsdevelopment.11
@@ -1325,133 +1465,139 @@ province_event = {
 			remove_building = prospecting
 
 			remove_province_modifier = stora_kopparberget_modifier
-			remove_province_modifier = cerro_rico_modifier
-			remove_province_modifier = spice_islands_modifier
+			remove_province_modifier = granary_of_the_mediterranean
+			remove_province_modifier = ven_murano_glass_industry
+			remove_province_modifier = diamond_mines_of_golconda_modifier
+			remove_province_modifier = coffea_arabica_modifier
 			remove_province_modifier = skanemarket
-			remove_province_modifier = hab_schwaz_mine
-			set_variable = { which = ores_variable value = 0 }
+			remove_province_modifier = spice_islands_modifier
+			remove_province_modifier = comet_ore_modifier
+			remove_province_modifier = paradise_modifier
+			remove_province_modifier = cerro_rico_modifier
+			#remove_province_modifier = ned_house_of_elzevir # Gives other bonuses and is small enough that I let it stay
+			remove_province_modifier = bookmarket_of_x
+			remove_province_modifier = grand_bank_fisheries
+			remove_province_modifier = diamond_district
+			remove_province_modifier = jingdezhen_kilns
+			remove_province_modifier = perfume_capital
+			#remove_province_modifier = hab_schwaz_mine # if you remove the gold for another metal you deserve the goods bonus tbh
+			remove_province_modifier = silk_market
 		}
 	}
 	
 	option = {
-		name = tgd_tradegoodsdevelopment.13.mountain1
+		name = tgd_tradegoodsdevelopment.13.prospectstart
 		trigger = { mountain_prospecting_1 = yes }
 		custom_tooltip = mountain_prospecting_tooltip1
 		owner = { add_treasury = -100 }
 		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
 		hidden_effect = {
 			random_list = {
-				45 = { set_variable = { which = ores_variable value = 0 } } #Iron
-				20 = { set_variable = { which = ores_variable value = 1 } } #Copper
-				19 = { set_variable = { which = ores_variable value = 2 } } #Sulfer
-				0 = { set_variable = { which = ores_variable value = 3 } } #Zinc
-				0 = { set_variable = { which = ores_variable value = 4 } } #Lead
-				1 = { set_variable = { which = ores_variable value = 5 } } #Gold
-				1 = { set_variable = { which = ores_variable value = 6 } } #Gems
-				14 = { set_variable = { which = ores_variable value = 7 } } #No Ore
+				45 = { province_event = { id = tgd_tradegoodsdevelopment.15 days = 2 } } #Iron
+				20 = { province_event = { id = tgd_tradegoodsdevelopment.16 days = 2 } } #Copper
+				19 = { province_event = { id = tgd_tradegoodsdevelopment.17 days = 2 } } #Sulfur
+				0 = { province_event = { id = tgd_tradegoodsdevelopment.18 days = 2 } }  #Zinc
+				0 = { province_event = { id = tgd_tradegoodsdevelopment.19 days = 2 } }  #Lead
+				1 = { province_event = { id = tgd_tradegoodsdevelopment.20 days = 2 } }  #Gold
+				1 = { province_event = { id = tgd_tradegoodsdevelopment.21 days = 2 } }  #Gems
+				14 = { province_event = { id = tgd_tradegoodsdevelopment.22 days = 2 } } #No Ore
 			}
 		}
-		province_event = { id = tgd_tradegoodsdevelopment.14 }
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.13.mountain2
+		name = tgd_tradegoodsdevelopment.13.prospectstart
 		trigger = { mountain_prospecting_2 = yes }
 		custom_tooltip = mountain_prospecting_tooltip2
 		owner = { add_treasury = -100 }
 		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
 		hidden_effect = {
 			random_list = {
-				20 = { set_variable = { which = ores_variable value = 0 } } #Iron
-				10 = { set_variable = { which = ores_variable value = 1 } } #Copper
-				15 = { set_variable = { which = ores_variable value = 2 } } #Sulfer
-				19 = { set_variable = { which = ores_variable value = 3 } } #Zinc
-				34 = { set_variable = { which = ores_variable value = 4 } } #Lead
-				1 = { set_variable = { which = ores_variable value = 5 } } #Gold
-				1 = { set_variable = { which = ores_variable value = 6 } } #Gems
-				0 = { set_variable = { which = ores_variable value = 7 } } #No Ore
+				20 = { province_event = { id = tgd_tradegoodsdevelopment.15 days = 2 } } #Iron
+				10 = { province_event = { id = tgd_tradegoodsdevelopment.16 days = 2 } } #Copper
+				15 = { province_event = { id = tgd_tradegoodsdevelopment.17 days = 2 } } #Sulfur
+				19 = { province_event = { id = tgd_tradegoodsdevelopment.18 days = 2 } }  #Zinc
+				34 = { province_event = { id = tgd_tradegoodsdevelopment.19 days = 2 } }  #Lead
+				1 = { province_event = { id = tgd_tradegoodsdevelopment.20 days = 2 } }  #Gold
+				1 = { province_event = { id = tgd_tradegoodsdevelopment.21 days = 2 } }  #Gems
+				0 = { province_event = { id = tgd_tradegoodsdevelopment.22 days = 2 } } #No Ore
 			}
 		}
-		province_event = { id = tgd_tradegoodsdevelopment.14 }
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.13.forest1
+		name = tgd_tradegoodsdevelopment.13.prospectstart
 		trigger = { forest_prospecting_1 = yes }
 		custom_tooltip = forest_prospecting_tooltip1
 		owner = { add_treasury = -100 }
 		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
 		hidden_effect = {
 			random_list = {
-				15 = { set_variable = { which = ores_variable value = 0 } } #Iron
-				35 = { set_variable = { which = ores_variable value = 1 } } #Copper
-				10 = { set_variable = { which = ores_variable value = 2 } } #Sulfer
-				0 = { set_variable = { which = ores_variable value = 3 } } #Zinc
-				0 = { set_variable = { which = ores_variable value = 4 } } #Lead
-				0 = { set_variable = { which = ores_variable value = 5 } } #Gold
-				0 = { set_variable = { which = ores_variable value = 6 } } #Gems
-				40 = { set_variable = { which = ores_variable value = 7 } } #No Ore
+				15 = { province_event = { id = tgd_tradegoodsdevelopment.15 days = 2 } } #Iron
+				35 = { province_event = { id = tgd_tradegoodsdevelopment.16 days = 2 } } #Copper
+				10 = { province_event = { id = tgd_tradegoodsdevelopment.17 days = 2 } } #Sulfur
+				0 = { province_event = { id = tgd_tradegoodsdevelopment.18 days = 2 } }  #Zinc
+				0 = { province_event = { id = tgd_tradegoodsdevelopment.19 days = 2 } }  #Lead
+				0 = { province_event = { id = tgd_tradegoodsdevelopment.20 days = 2 } }  #Gold
+				0 = { province_event = { id = tgd_tradegoodsdevelopment.21 days = 2 } }  #Gems
+				40 = { province_event = { id = tgd_tradegoodsdevelopment.22 days = 2 } } #No Ore
 			}
 		}
-		province_event = { id = tgd_tradegoodsdevelopment.14 }
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.13.forest2
+		name = tgd_tradegoodsdevelopment.13.prospectstart
 		trigger = { forest_prospecting_2 = yes }
 		custom_tooltip = forest_prospecting_tooltip2
 		owner = { add_treasury = -100 }
 		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
 		hidden_effect = {
 			random_list = {
-				25 = { set_variable = { which = ores_variable value = 0 } } #Iron
-				20 = { set_variable = { which = ores_variable value = 1 } } #Copper
-				10 = { set_variable = { which = ores_variable value = 2 } } #Sulfer
-				35 = { set_variable = { which = ores_variable value = 3 } } #Zinc
-				10 = { set_variable = { which = ores_variable value = 4 } } #Lead
-				0 = { set_variable = { which = ores_variable value = 5 } } #Gold
-				0 = { set_variable = { which = ores_variable value = 6 } } #Gems
-				0 = { set_variable = { which = ores_variable value = 7 } } #No Ore
+				25 = { province_event = { id = tgd_tradegoodsdevelopment.15 days = 2 } } #Iron
+				20 = { province_event = { id = tgd_tradegoodsdevelopment.16 days = 2 } } #Copper
+				10 = { province_event = { id = tgd_tradegoodsdevelopment.17 days = 2 } } #Sulfur
+				35 = { province_event = { id = tgd_tradegoodsdevelopment.18 days = 2 } }  #Zinc
+				10 = { province_event = { id = tgd_tradegoodsdevelopment.19 days = 2 } }  #Lead
+				0 = { province_event = { id = tgd_tradegoodsdevelopment.20 days = 2 } }  #Gold
+				0 = { province_event = { id = tgd_tradegoodsdevelopment.21 days = 2 } }  #Gems
+				0 = { province_event = { id = tgd_tradegoodsdevelopment.22 days = 2 } } #No Ore
 			}
 		}
-		province_event = { id = tgd_tradegoodsdevelopment.14 }
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.13.desert1
+		name = tgd_tradegoodsdevelopment.13.prospectstart
 		trigger = { desert_prospecting_1 = yes }
 		custom_tooltip = desert_prospecting_tooltip1
 		owner = { add_treasury = -100 }
 		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
 		hidden_effect = {
 			random_list = {
-				15 = { set_variable = { which = ores_variable value = 0 } } #Iron
-				10 = { set_variable = { which = ores_variable value = 1 } } #Copper
-				25 = { set_variable = { which = ores_variable value = 2 } } #Sulfer
-				0 = { set_variable = { which = ores_variable value = 3 } } #Zinc
-				0 = { set_variable = { which = ores_variable value = 4 } } #Lead
-				0 = { set_variable = { which = ores_variable value = 5 } } #Gold
-				0 = { set_variable = { which = ores_variable value = 6 } } #Gems
-				50 = { set_variable = { which = ores_variable value = 7 } } #No Ore
+				15 = { province_event = { id = tgd_tradegoodsdevelopment.15 days = 2 } } #Iron
+				10 = { province_event = { id = tgd_tradegoodsdevelopment.16 days = 2 } } #Copper
+				25 = { province_event = { id = tgd_tradegoodsdevelopment.17 days = 2 } } #Sulfur
+				0 = { province_event = { id = tgd_tradegoodsdevelopment.18 days = 2 } }  #Zinc
+				0 = { province_event = { id = tgd_tradegoodsdevelopment.19 days = 2 } }  #Lead
+				0 = { province_event = { id = tgd_tradegoodsdevelopment.20 days = 2 } }  #Gold
+				0 = { province_event = { id = tgd_tradegoodsdevelopment.21 days = 2 } }  #Gems
+				50 = { province_event = { id = tgd_tradegoodsdevelopment.22 days = 2 } } #No Ore
 			}
 		}
-		province_event = { id = tgd_tradegoodsdevelopment.14 }
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.13.desert2
+		name = tgd_tradegoodsdevelopment.13.prospectstart
 		trigger = { desert_prospecting_2 = yes }
 		custom_tooltip = desert_prospecting_tooltip2
 		owner = { add_treasury = -100 }
 		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
 		hidden_effect = {
 			random_list = {
-				10 = { set_variable = { which = ores_variable value = 0 } } #Iron
-				10 = { set_variable = { which = ores_variable value = 1 } } #Copper
-				35 = { set_variable = { which = ores_variable value = 2 } } #Sulfer
-				10 = { set_variable = { which = ores_variable value = 3 } } #Zinc
-				10 = { set_variable = { which = ores_variable value = 4 } } #Lead
-				1 = { set_variable = { which = ores_variable value = 5 } } #Gold
-				1 = { set_variable = { which = ores_variable value = 6 } } #Gems
-				23 = { set_variable = { which = ores_variable value = 7 } } #No Ore
+				10 = { province_event = { id = tgd_tradegoodsdevelopment.15 days = 2 } } #Iron
+				10 = { province_event = { id = tgd_tradegoodsdevelopment.16 days = 2 } } #Copper
+				35 = { province_event = { id = tgd_tradegoodsdevelopment.17 days = 2 } } #Sulfur
+				10 = { province_event = { id = tgd_tradegoodsdevelopment.18 days = 2 } }  #Zinc
+				10 = { province_event = { id = tgd_tradegoodsdevelopment.19 days = 2 } }  #Lead
+				1 = { province_event = { id = tgd_tradegoodsdevelopment.20 days = 2 } }  #Gold
+				1 = { province_event = { id = tgd_tradegoodsdevelopment.21 days = 2 } }  #Gems
+				23 = { province_event = { id = tgd_tradegoodsdevelopment.22 days = 2 } } #No Ore
 			}
 		}
-		province_event = { id = tgd_tradegoodsdevelopment.14 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.13.error
@@ -1469,114 +1615,1824 @@ province_event = {
 		}
 	}
 }
-province_event = {
-	id = tgd_tradegoodsdevelopment.14
+
+province_event = { #iron
+	id = tgd_tradegoodsdevelopment.15
 	title = tgd_tradegoodsdevelopment.14.t
 	desc = tgd_tradegoodsdevelopment.14.d
 	picture = TRADEGOODS_eventPicture
 	
 	is_triggered_only = yes
 	
-	immediate = {
-		hidden_effect = {
-			remove_building = prospecting
-
-			remove_province_modifier = stora_kopparberget_modifier
-			remove_province_modifier = cerro_rico_modifier
-			remove_province_modifier = spice_islands_modifier
-			remove_province_modifier = skanemarket
-			remove_province_modifier = hab_schwaz_mine
-
-
-			owner = { every_owned_province = { remove_building = prospecting } }
-		}
+	option = {
+		name = tgd_tradegoodsdevelopment.15.a
+		change_trade_goods = iron
 	}
+}
+province_event = { #copper
+	id = tgd_tradegoodsdevelopment.16
+	title = tgd_tradegoodsdevelopment.14.t
+	desc = tgd_tradegoodsdevelopment.14.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
 	
 	option = {
-		name = tgd_tradegoodsdevelopment.14.iron
-		trigger = { 
-			check_variable = { which = ores_variable value = 0 }
-			NOT = { check_variable = { which = ores_variable value = 1 } }
-		}
-		change_trade_goods = iron
-		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.14.copper
-		trigger = { 
-			check_variable = { which = ores_variable value = 1 }
-			NOT = { check_variable = { which = ores_variable value = 2 } }
-		}
+		name = tgd_tradegoodsdevelopment.16.a
 		change_trade_goods = copper
-		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
 	}
+}
+province_event = { #sulfur
+	id = tgd_tradegoodsdevelopment.17
+	title = tgd_tradegoodsdevelopment.14.t
+	desc = tgd_tradegoodsdevelopment.14.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
 	option = {
-		name = tgd_tradegoodsdevelopment.14.sulfer
-		trigger = { 
-			check_variable = { which = ores_variable value = 2 }
-			NOT = { check_variable = { which = ores_variable value = 3 } }
-		}
-		change_trade_goods = sulfer
-		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
+		name = tgd_tradegoodsdevelopment.17.a
+		change_trade_goods = sulfur
 	}
+}
+province_event = { #zinc
+	id = tgd_tradegoodsdevelopment.18
+	title = tgd_tradegoodsdevelopment.14.t
+	desc = tgd_tradegoodsdevelopment.14.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
 	option = {
-		name = tgd_tradegoodsdevelopment.14.zinc
-		trigger = { 
-			check_variable = { which = ores_variable value = 3 }
-			NOT = { check_variable = { which = ores_variable value = 4 } }
-		}
+		name = tgd_tradegoodsdevelopment.18.a
 		change_trade_goods = zinc
-		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
 	}
+}
+province_event = { #lead
+	id = tgd_tradegoodsdevelopment.19
+	title = tgd_tradegoodsdevelopment.14.t
+	desc = tgd_tradegoodsdevelopment.14.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
 	option = {
-		name = tgd_tradegoodsdevelopment.14.lead
-		trigger = { 
-			check_variable = { which = ores_variable value = 4 }
-			NOT = { check_variable = { which = ores_variable value = 5 } }
-		}
+		name = tgd_tradegoodsdevelopment.19.a
 		change_trade_goods = lead
-		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
 	}
+}
+province_event = { #gold
+	id = tgd_tradegoodsdevelopment.20
+	title = tgd_tradegoodsdevelopment.14.t
+	desc = tgd_tradegoodsdevelopment.14.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
 	option = {
-		name = tgd_tradegoodsdevelopment.14.gold
-		trigger = { 
-			check_variable = { which = ores_variable value = 5 }
-			NOT = { check_variable = { which = ores_variable value = 6 } }
-		}
+		name = tgd_tradegoodsdevelopment.20.a
 		change_trade_goods = gold
-		owner = { add_years_of_income = 0.50 }
-		owner = { add_inflation = 1 }
-		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
 	}
+}
+province_event = { #gems
+	id = tgd_tradegoodsdevelopment.21
+	title = tgd_tradegoodsdevelopment.14.t
+	desc = tgd_tradegoodsdevelopment.14.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
 	option = {
-		name = tgd_tradegoodsdevelopment.14.gems
-		trigger = { 
-			check_variable = { which = ores_variable value = 6 }
-			NOT = { check_variable = { which = ores_variable value = 7 } }
-		}
+		name = tgd_tradegoodsdevelopment.21.a
 		change_trade_goods = gems
-		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
+	}
+}
+province_event = { #nothing
+	id = tgd_tradegoodsdevelopment.22
+	title = tgd_tradegoodsdevelopment.14.t
+	desc = tgd_tradegoodsdevelopment.14.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.22.a #well this sucks
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.14.nothing
-		trigger = { 
-			check_variable = { which = ores_variable value = 7 }
-			NOT = { check_variable = { which = ores_variable value = 8 } }
-		}
-		owner = { add_treasury = 50 }
-		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.14.butsalt
-		trigger = { 
-			check_variable = { which = ores_variable value = 7 }
-			NOT = { check_variable = { which = ores_variable value = 8 } }
-			OR = {
+		name = tgd_tradegoodsdevelopment.22.b #well this is redeemable
+		trigger = {
+			OR = { 
 				desert_prospecting_1 = yes
 				desert_prospecting_2 = yes
 			}
 		}
 		change_trade_goods = salt
-		hidden_effect = { set_variable = { which = ores_variable value = 0 } }
 	}
 }
+#########################################
+#Long list of good-change related events#
+#########################################
+#cheese
+province_event = {
+	id = tgd_tradegoodsdevelopment.103
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.103.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.203 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.203
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.203.a
+		change_trade_goods = cheese
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#chinaware
+province_event = {
+	id = tgd_tradegoodsdevelopment.104
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.104.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.204 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.204
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.204.a
+		change_trade_goods = chinaware
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#citrus
+province_event = {
+	id = tgd_tradegoodsdevelopment.105
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.105.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.205 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.205
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.205.a
+		change_trade_goods = citrus
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#cloth
+province_event = {
+	id = tgd_tradegoodsdevelopment.106
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.106.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.206 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.206
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.206.a
+		change_trade_goods = cloth
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#cocoa
+province_event = {
+	id = tgd_tradegoodsdevelopment.107
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.107.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.207 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.207
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.207.a
+		change_trade_goods = cocoa
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#coffee
+province_event = {
+	id = tgd_tradegoodsdevelopment.108
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.108.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.208 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.208
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.208.a
+		change_trade_goods = coffee
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#cotton
+province_event = {
+	id = tgd_tradegoodsdevelopment.110
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.110.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.210 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.210
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.210.a
+		change_trade_goods = cotton
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#dyes
+province_event = {
+	id = tgd_tradegoodsdevelopment.111
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.111.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.211 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.211
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.211.a
+		change_trade_goods = dyes
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#fish
+province_event = {
+	id = tgd_tradegoodsdevelopment.112
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.112.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.212 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.212
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.212.a
+		change_trade_goods = fish
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#fur
+province_event = {
+	id = tgd_tradegoodsdevelopment.113
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.113.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.213 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.213
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.213.a
+		change_trade_goods = fur
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#glass
+province_event = {
+	id = tgd_tradegoodsdevelopment.114
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.114.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.214 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.214
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.214.a
+		change_trade_goods = glass
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#grain
+province_event = {
+	id = tgd_tradegoodsdevelopment.116
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.116.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.216 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.216
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.216.a
+		change_trade_goods = grain
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#horses
+province_event = {
+	id = tgd_tradegoodsdevelopment.117
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.117.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.217 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.217
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.217.a
+		change_trade_goods = horses
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#ivory
+province_event = {
+	id = tgd_tradegoodsdevelopment.119
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.119.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.219 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.219
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.219.a
+		change_trade_goods = ivory
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#machinery
+province_event = {
+	id = tgd_tradegoodsdevelopment.121
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.121.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.221 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.221
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.221.a
+		change_trade_goods = machinery
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#marble
+province_event = {
+	id = tgd_tradegoodsdevelopment.122
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.122.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.222 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.222
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.222.a
+		change_trade_goods = marble
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#bronze
+province_event = {
+	id = tgd_tradegoodsdevelopment.123
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.123.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.223 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.223
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.223.a
+		change_trade_goods = bronze
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#munitions
+province_event = {
+	id = tgd_tradegoodsdevelopment.124
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.124.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.224 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.224
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.224.a
+		change_trade_goods = munitions
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#naval_supplies
+province_event = {
+	id = tgd_tradegoodsdevelopment.125
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.125.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.225 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.225
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.225.a
+		change_trade_goods = naval_supplies
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#olives
+province_event = {
+	id = tgd_tradegoodsdevelopment.126
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.126.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.226 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.226
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.226.a
+		change_trade_goods = olives
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#paper
+province_event = {
+	id = tgd_tradegoodsdevelopment.127
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.127.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.227 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.227
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.227.a
+		change_trade_goods = paper
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#potatoes
+province_event = {
+	id = tgd_tradegoodsdevelopment.128
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.128.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.228 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.228
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.228.a
+		change_trade_goods = potatoes
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#rum
+province_event = {
+	id = tgd_tradegoodsdevelopment.129
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.129.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.229 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.229
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.229.a
+		change_trade_goods = rum
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#salt
+province_event = {
+	id = tgd_tradegoodsdevelopment.130
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.130.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.230 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.230
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.230.a
+		change_trade_goods = salt
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#silk
+province_event = {
+	id = tgd_tradegoodsdevelopment.131
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.131.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.231 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.231
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.231.a
+		change_trade_goods = silk
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#slaves
+province_event = {
+	id = tgd_tradegoodsdevelopment.132
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.132.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.232 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.232
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.232.a
+		change_trade_goods = slaves
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#spices
+province_event = {
+	id = tgd_tradegoodsdevelopment.133
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.133.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.233 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.233
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.233.a
+		change_trade_goods = spices
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#steel
+province_event = {
+	id = tgd_tradegoodsdevelopment.134
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.134.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.234 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.234
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.234.a
+		change_trade_goods = steel
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#sugar
+province_event = {
+	id = tgd_tradegoodsdevelopment.135
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.135.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.235 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.235
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.235.a
+		change_trade_goods = sugar
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#tar
+province_event = {
+	id = tgd_tradegoodsdevelopment.136
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.136.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.236 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.236
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.236.a
+		change_trade_goods = tar
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#tea
+province_event = {
+	id = tgd_tradegoodsdevelopment.137
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.137.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.237 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.237
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.237.a
+		change_trade_goods = tea
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#tobacco
+province_event = {
+	id = tgd_tradegoodsdevelopment.139
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.139.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.239 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.239
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.239.a
+		change_trade_goods = tobacco
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#tropical_wood
+province_event = {
+	id = tgd_tradegoodsdevelopment.140
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.140.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.240 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.240
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.240.a
+		change_trade_goods = tropical_wood
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#uniforms
+province_event = {
+	id = tgd_tradegoodsdevelopment.141
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.141.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.241 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.241
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.241.a
+		change_trade_goods = uniforms
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#vanilla
+province_event = {
+	id = tgd_tradegoodsdevelopment.142
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.142.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.242 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.242
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.242.a
+		change_trade_goods = vanilla
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#wine
+province_event = {
+	id = tgd_tradegoodsdevelopment.143
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.143.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.243 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.243
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.243.a
+		change_trade_goods = wine
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#wool
+province_event = {
+	id = tgd_tradegoodsdevelopment.144
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.144.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.244 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.244
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.244.a
+		change_trade_goods = wool
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#cinnamon
+province_event = {
+	id = tgd_tradegoodsdevelopment.146
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.146.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.246 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.246
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.246.a
+		change_trade_goods = cinnamon
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#exotic_spices
+province_event = {
+	id = tgd_tradegoodsdevelopment.147
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.147.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.247 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.247
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.247.a
+		change_trade_goods = exotic_spices
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#brass
+province_event = {
+	id = tgd_tradegoodsdevelopment.148
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.148.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.248 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.248
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.248.a
+		change_trade_goods = brass
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#optics
+province_event = {
+	id = tgd_tradegoodsdevelopment.149
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.149.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.249 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.249
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.249.a
+		change_trade_goods = optics
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#gunpowder
+province_event = {
+	id = tgd_tradegoodsdevelopment.150
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.150.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.250 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.250
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.250.a
+		change_trade_goods = gunpowder
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#leather
+province_event = {
+	id = tgd_tradegoodsdevelopment.151
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.151.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.251 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.251
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.251.a
+		change_trade_goods = leather
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#beer
+province_event = {
+	id = tgd_tradegoodsdevelopment.152
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.152.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.252 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.252
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.252.a
+		change_trade_goods = beer
+		remove_province_modifier = "developinggoods"
+	}
+}
+########
+#gems
+province_event = {
+	id = tgd_tradegoodsdevelopment.153
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.153.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.253 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.253
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.253.a
+		change_trade_goods = gems
+		remove_province_modifier = "developinggoods"
+	}
+}
+###########
+#livestock
+province_event = {
+	id = tgd_tradegoodsdevelopment.154
+	title = tgd_tradegoodsdevelopment.100.t
+	desc = tgd_tradegoodsdevelopment.154.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.100.back
+		province_event = { id = tgd_tradegoodsdevelopment.10 }
+	}
+	option = {
+		name = tgd_tradegoodsdevelopment.100.yes
+		#dev_tier_cost_effect = yes
+		owner = { add_adm_power = -20 add_mil_power = -20 add_dip_power = -20 }
+		owner = {  add_treasury = -50 }
+		province_event = { id = tgd_tradegoodsdevelopment.254 days = 2 }
+	}
+}
+
+province_event = {
+	id = tgd_tradegoodsdevelopment.254
+	title = tgd_tradegoodsdevelopment.200.t
+	desc = tgd_tradegoodsdevelopment.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgd_tradegoodsdevelopment.254.a
+		change_trade_goods = livestock
+		remove_province_modifier = "developinggoods"
+	}
+}
+######################
+#it's over, it's done#
+######################

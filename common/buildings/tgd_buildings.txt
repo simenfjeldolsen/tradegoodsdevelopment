@@ -1,34 +1,14 @@
 #building to enable tradegoods development
 #requires you to own 2 (or 3, if grains) of the good you are developing away from, to avoid maxing out everything in your country
 tradegoodsdevelopment = {
-	cost = 200
-	time = 12
+	cost = 0
+	time = 0
 
 	trigger = {
-	}
-
-	one_per_country = yes
-
-	modifier = {
-		allowed_num_of_buildings = 1
-	}
-
-	ai_will_do = {
-		factor = 0
-	}
-}
-prospecting = {
-	cost = 150
-	time = 30
-
-	trigger = {
-		OR = {
-			mountain_prospecting_1 = yes
-			mountain_prospecting_2 = yes
-			forest_prospecting_1 = yes
-			forest_prospecting_2 = yes
-			desert_prospecting_1 = yes
-			desert_prospecting_2 = yes
+		owner = {
+			NOT = {
+				any_owned_province = { has_province_modifier = developinggoods }
+			}
 		}
 	}
 
@@ -42,9 +22,20 @@ prospecting = {
 		factor = 0
 	}
 }
-goodstest = {
+prospecting = {
 	cost = 0
-	time = -1
+	time = 0
+
+	trigger = {
+		OR = {
+			mountain_prospecting_1 = yes
+			mountain_prospecting_2 = yes
+			forest_prospecting_1 = yes
+			forest_prospecting_2 = yes
+			desert_prospecting_1 = yes
+			desert_prospecting_2 = yes
+		}
+	}
 
 	one_per_country = yes
 

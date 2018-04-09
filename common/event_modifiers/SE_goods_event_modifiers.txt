@@ -1,5 +1,17 @@
+# Goods Development
+
 recently_changed_goods_timer = {
 	trade_goods_size_modifier = -0.20
+}
+developinggoods = {
+	trade_goods_size_modifier = -1
+}
+
+# Event Modifiers
+
+silk_market = {
+	province_trade_power_value = 0.10
+	trade_goods_size = 1.0
 }
 
 # Missions
