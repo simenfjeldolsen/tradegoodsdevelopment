@@ -100,6 +100,10 @@ country_event = {
 		country_event = { id = tgd_info.12 }
 	}
 	option = {
+		name = tgd_info.2.fruit
+		country_event = { id = tgd_info.56 }
+	}
+	option = {
 		name = tgd_info.2.fur
 		country_event = { id = tgd_info.13 }
 	}
@@ -190,6 +194,10 @@ country_event = {
 	option = {
 		name = tgd_info.2.salt
 		country_event = { id = tgd_info.30 }
+	}
+	option = {
+		name = tgd_info.2.big_ship
+		country_event = { id = tgd_info..57 }
 	}
 	option = {
 		name = tgd_info.2.silk
@@ -1142,6 +1150,36 @@ country_event = {
 	id = tgd_info.55
 	title = tgd_info.55.t
 	desc = tgd_info.55.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.back
+		country_event = { id = tgd_info.2 }
+	}
+	option = {
+		name = tgd_info.exit
+	}
+}
+country_event = {
+	id = tgd_info.56
+	title = tgd_info.56.t
+	desc = tgd_info.56.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.back
+		country_event = { id = tgd_info.2 }
+	}
+	option = {
+		name = tgd_info.exit
+	}
+}
+country_event = {
+	id = tgd_info.57
+	title = tgd_info.57.t
+	desc = tgd_info.57.d
 	picture = TRADEGOODS_eventPicture
 
 	is_triggered_only = yes

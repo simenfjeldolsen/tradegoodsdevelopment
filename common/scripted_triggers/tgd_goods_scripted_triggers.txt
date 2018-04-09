@@ -561,8 +561,21 @@ incense_dev = {
 	NOT = { trade_goods = incense }
 	NOT = { has_climate = arctic }
 }
+fruit_dev = {
+	NOT = { trade_goods = fruit }
+	NOT = { has_winter = severe_winter }
+	NOT = { has_winter = normal_winter }
+}
+big_ship_dev = {
+	NOT = { trade_goods = big_ship }
+	has_port = yes
+	development = 40
+	owner = { dip_tech = 20 }
+}
 
-# For developing in Colonial nations
+##############################
+# For developing in Colonial nations#
+##############################
 
 colonial_nation_horses_dev = {
 	any_subject_country = {

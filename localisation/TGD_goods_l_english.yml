@@ -327,6 +327,9 @@
  tgd_tradegoodsdevelopment.152.d: "Would you like to develop Beer in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point."
  tgd_tradegoodsdevelopment.153.d: "Would you like to develop Gems in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
  tgd_tradegoodsdevelopment.154.d: "Would you like to develop Livestock in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
+ tgd_tradegoodsdevelopment.155.d: "Would you like to develop Incense in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
+ tgd_tradegoodsdevelopment.156.d: "Would you like to develop Fruit in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
+ tgd_tradegoodsdevelopment.157.d: "Would you like to develop Ships of the Line in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
  ####################
  tgd_tradegoodsdevelopment.200.t: "Development Complete in [Root.GetName]"
  tgd_tradegoodsdevelopment.200.d: "After many long and tiring half-days of back-breaking bureaucratic labor, state administrators in [Root.GetName ] have finally enforced our whimsical demands on the local producers, shifting the entire industrial output to the trade good that we arbitarily chose."
@@ -377,6 +380,10 @@
  tgd_tradegoodsdevelopment.252.a: "Prost!"
  tgd_tradegoodsdevelopment.253.a: "Ooh, shiny!"
  tgd_tradegoodsdevelopment.254.a: "Now why on earth did we spend money on this..."
+ tgd_tradegoodsdevelopment.255.a: "Smokin'!"
+ tgd_tradegoodsdevelopment.256.a: "Delicious'!"
+ tgd_tradegoodsdevelopment.257.a: "A port worthy of our glorious nation!"
+ 
  
  
  

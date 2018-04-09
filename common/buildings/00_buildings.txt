@@ -649,6 +649,7 @@ wharf = {
 		fish
 		salt
 		tar
+		big_ship
 	}
 	onmap = yes
 	
@@ -728,6 +729,7 @@ plantations = {
 		tea
 		cocoa
 		citrus
+		fruit
 	}
 	onmap = yes
 	
