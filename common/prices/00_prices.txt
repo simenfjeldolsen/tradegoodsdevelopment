@@ -10,6 +10,7 @@ sugar		=	{ base_price = 3 } # +25%(0.75) prices.7, around 1600# +50%(1.5) prices
 cocoa		=	{ base_price = 4 } # +40%(1.6) prices.29, dip 16
 tobacco		=	{ base_price = 3 } # +50%(1.5) prices.30, dip 16
 tea			=	{ base_price = 2 } # +25%(0.5) prices.7, around 1600# +25%(0.5) prices.21, dip 8
+tulips		=	{ base_price = 1 } # Tulipmania, from 1630-1637
 
 #other foods and drink
 cheese 		=	{ base_price = 3 }
@@ -28,6 +29,7 @@ cloth		=	{ base_price = 3 } # +20%(0.3) prices.13, dip 11# +15%(0.2) prices.14, 
 silk		=	{ base_price = 4 } # +25%(1) prices.24, dip 18
 fur			=	{ base_price = 2 } # +40%(0.8) prices.17, 1570# +35%(0.7) prices.18, around 1550
 leather		=	{ base_price = 3 } # +10%(0.3) prices.31, adm 11
+calicoes	=	{ base_price = 5 }
 
 #naval supplies, wood
 naval_supplies	=	{ base_price = 2.5 } # +50%(1.25) prices.19, dip 22
@@ -42,7 +44,7 @@ dyes		=	{ base_price = 4 } # +25%(1) prices.14, mil 21# +15%(0.6) prices.16, dip
 #tradegoods
 ivory		=	{ base_price = 4 } # +25%(1) prices.27, 1750
 marble 		= 	{ base_price = 4 } 
-glass		=	{ base_price = 4 } # +25%(5) prices.12, dip 20
+glass		=	{ base_price = 4.5 } # +25%(5) prices.12, dip 20
 chinaware 	= 	{ base_price = 3.5 }	# +50%(1.5) prices.2, around 1600. -25%(0.75) prices.3, admin 24
 slaves		=	{ base_price = 2 } # +100%(2.5) prices.1, around 1550. -40% (2) prices.9, at 1700
 
@@ -62,6 +64,7 @@ bronze		=	{ base_price = 3.5 }
 gunpowder	=	{ base_price = 3.5 } # +15%(0.5) prices.49, mil 21
 brass		=	{ base_price = 4 }
 munitions	=	{ base_price = 4 } # +25%(1) prices.49, mil 21
+military_texts	=	{ base_price = 2.5 } #Rises during large wars
 
 #spices
 spices		=	{ base_price = 4 } # +50% (2) prices.8, around 1550# -40%(1.6) prices.22, 1600
@@ -77,6 +80,7 @@ uniforms	=	{ base_price = 3.5 } # +40%(1.2) prices.14, mil 21
 gems 		=	{ base_price = 4 }
 coal 		=	{ base_price = 10 }
 furniture	=	{ base_price = 4 } #+35% (5.4) prices.118, adm 21 (temp +35% right at start)
+mirrors		=	{ base_price = 6 } # booms
 
 
 unknown		=	{ base_price = 0 }

@@ -749,7 +749,7 @@ country_event = {
 		change_price = {
 			trade_goods = glass
 			key = WINE_CORKS
-			value = 0.20
+			value = 0.10
 			duration = -1
 		}
 		change_price = {
@@ -1332,7 +1332,7 @@ country_event = {
 		change_price = {
 			trade_goods = silk
 			key = POPULAR_SILK_FABRICS
-			value = 0.25
+			value = 0.35
 			duration = -1
 		}
 		change_price = {
@@ -1894,7 +1894,7 @@ country_event = {
 		change_price = {
 			trade_goods = paper
 			key = HOLLENDER_BEATER
-			value = -0.4
+			value = -0.50
 			duration = -1
 		}
 	}
@@ -1980,7 +1980,7 @@ country_event = {
 		change_price = {
 			trade_goods = paper
 			key = LENDING_LIBRARIES
-			value = 0.35
+			value = 0.40
 			duration = -1
 		}
 		if = {
@@ -2374,7 +2374,7 @@ country_event = {
 			culture = czech
 			trade_goods = glass
 		}
-		dip_tech = 17
+		dip_tech = 16
 	}
 	
 	mean_time_to_happen = {
@@ -2422,8 +2422,7 @@ country_event = {
 
 	trigger = {
 		NOT = { has_global_flag = development_of_optics }
-		dip_tech = 18
-		has_institution = global_trade
+		dip_tech = 25
 		any_owned_province = {
 			trade_goods = glass
 			has_building = mills
@@ -2440,7 +2439,7 @@ country_event = {
 		change_price = {
 			trade_goods = glass
 			key = MODERN_OPTICS
-			value = 0.20
+			value = 0.25
 			duration = -1
 		}
 	}
@@ -2460,8 +2459,9 @@ country_event = {
 
 	trigger = {
 		NOT = { has_global_flag = lead_crystal_happened }
-		dip_tech = 18
+		dip_tech = 21
 		lead = 1
+		glass = 1
 		has_institution = manufactories
 		any_owned_province = {
 			manufactories = 100
@@ -2481,7 +2481,7 @@ country_event = {
 		change_price = {
 			trade_goods = glass
 			key = LEAD_CRYSTAL
-			value = -0.50
+			value = -0.60
 			duration = -1
 		}
 		change_price = {
@@ -2620,7 +2620,7 @@ country_event = {
 		change_price = {
 			trade_goods = paper
 			key = BOOKBINDING
-			value = 0.20
+			value = 0.10
 			duration = -1
 		}
 	}
@@ -2748,7 +2748,7 @@ country_event = {
 		}
 	}
 }
-# Pewter
+# CHANGE EVENT pls
 country_event = {
 	id = prices.105
 	title = prices.105.t
@@ -2930,7 +2930,7 @@ country_event = {
 		add_prestige = 10
 	}
 }
-# Bank Notes
+#Bank Notes
 country_event = {
 	id = prices.109
 	title = prices.109.t
@@ -2959,7 +2959,7 @@ country_event = {
 		change_price = {
 			trade_goods = paper
 			key = BANKNOTES
-			value = 0.2
+			value = 0.20
 			duration = -1
 		}
 		add_years_of_income  = 0.1
@@ -3112,7 +3112,7 @@ country_event = {
 		}
 	}
 }
-# Limes
+#Limes
 country_event = {
 	id = prices.113
 	title = prices.113.t
@@ -3146,7 +3146,7 @@ country_event = {
 		}
 	}
 }
-# Brass Speltering
+#Brass Speltering
 country_event = {
 	id = prices.114
 	title = prices.114.t
@@ -3187,7 +3187,7 @@ country_event = {
 		}
 	}
 }
-# Watt's Steam Engine
+#Watt's Steam Engine
 country_event = {
 	id = prices.115
 	title = prices.115.t
@@ -3235,7 +3235,7 @@ country_event = {
 		}
 	}
 }
-# Synthetic Dyes
+#Synthetic Dyes
 country_event = {
 	id = prices.116
 	title = prices.116.t
@@ -3362,7 +3362,7 @@ country_event = {
 	trigger = {
 		OR = {
 			112 = { has_province_modifier = ven_murano_glass_industry }
-			year = 1475
+			year = 1460
 		}
 		glass = 1
 		NOT = { has_global_flag = murano_monopoly_started }
@@ -3404,6 +3404,8 @@ country_event = {
 	}
 	
 }
+#End of Venetian Monopoly
+#Note: Can fire immediately after the previous event. Funny when it does.
 country_event = {
 	id = prices.120
 	title = prices.120.t
@@ -3422,8 +3424,9 @@ country_event = {
 				trade_goods = glass
 				value = yes
 			}
-			year = 1475
+			year = 1515
 		}
+		has_global_flag = murano_monopoly_started
 		glass = 1
 		NOT = { has_global_flag = murano_monopoly_ended }
 	}
@@ -3441,7 +3444,451 @@ country_event = {
 		change_price = {
 			trade_goods = glass
 			key = MURANO_MONOPOLY_BROKEN
-			value = 0.30
+			value = 0.25
+			duration = -1
+		}
+		change_price = {
+			trade_goods = glass
+			key = GLASS_REBIRTH
+			value = 0.25
+			duration = 9125
+		}
+	}
+}
+#Silk in Europe
+country_event = {
+	id = prices.121
+	title = prices.121.t
+	desc = prices.121.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				capital_scope = { continent = europe }
+				silk = 2
+			}
+			AND = {
+				silk = 1
+				capital_scope = { continent = europe }
+				dip_tech = 6
+			}
+		}
+		NOT = { has_global_flag = silk_in_europe }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		set_global_flag = silk_in_europe
+	}
+	
+	option = {
+		name = prices.121.a
+		add_years_of_income  = 0.50
+		add_prestige = 15
+		change_price = {
+			trade_goods = silk
+			key = SILK_IN_EUROPE
+			value = 0.40
+			duration = -1
+		}
+	}
+}
+#Silk Decline in Europe
+country_event = {
+	id = prices.122
+	title = prices.122.t
+	desc = prices.122.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				capital_scope = { continent = europe }
+				silk = 1
+				year = 1520
+			}
+			AND = {
+				silk = 1
+				capital_scope = { continent = europe }
+				NOT = {
+					any_country = {
+						limit = {
+							capital_scope = { continent = europe } 
+							trading_part = {
+								trade_goods = silk
+								value = 0.10
+							}
+						}
+					}
+				}
+				year = 1500
+			}
+		}
+		has_global_flag = silk_in_europe
+		NOT = { has_global_flag = silk_disseminated }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		set_global_flag = silk_disseminated
+	}
+	
+	option = {
+		name = prices.122.a
+		change_price = {
+			trade_goods = silk
+			key = SILK_DISSEMINATED
+			value = -0.40
+			duration = -1
+		}
+	}
+}
+#Military Texts
+country_event = {
+	id = prices.123
+	title = prices.123.t
+	desc = prices.123.d
+	picture = TRADEGOODS_eventPicture
+	
+	major = yes
+
+	trigger = {
+		land_forcelimit = 200
+		any_enemy_country = { land_forcelimit = 200 }
+		NOT = { has_global_flag = military_texts_war }
+	}
+	
+	mean_time_to_happen = { months = 3 }
+	
+	immediate = { set_global_flag = military_texts_war }
+	
+	option = {
+		name = prices.123.a
+		hidden_effect = { country_event = prices.124 days = 3650 }
+		change_price = {
+			trade_goods = military_texts
+			key = MILITARY_TEXTS_WAR
+			value = 0.50
+			duration = 3650
+		}
+	}
+}
+#Hidden event to refresh Military Texts every 10 years
+country_event = {
+	id = prices.124
+	title = prices.124.t
+	desc = prices.124.d
+	picture = TRADEGOODS_eventPicture
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = { clr_global_flag = military_texts_war }
+
+	option = {
+		name = prices.124.a
+		ai_chance = { factor = 100 }
+	}
+}
+#Ban Dyed Fabrics
+country_event = {
+	id = prices.124
+	title = prices.124.t
+	desc = prices.124.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		adm_tech = 24
+		cloth = 1
+		capital_scope = { continent = europe }
+		num_of_cities = 20
+		NOT = { has_global_flag = dyed_fabrics_banned }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		set_global_flag = dyed_fabrics_banned
+	}
+	
+	option = {
+		name = prices.124.a
+		change_price = {
+			trade_goods = silk
+			key = BAN_DYED_FABRIC
+			value = -0.30
+			duration = -1
+		}
+		change_price = {
+			trade_goods = dyes
+			key = BAN_DYED_FABRIC
+			value = -0.30
+			duration = -1
+		}
+		change_price = {
+			trade_goods = cloth
+			key = BAN_DYED_FABRIC
+			value = 0.25
+			duration = -1
+		}
+		change_price = {
+			trade_goods = calicoes
+			key = BAN_DYED_FABRIC
+			value = 0.25
+			duration = 9125
+		}
+	}
+}
+########
+#TULIPS#
+########
+country_event = {
+	id = prices.130
+	title = prices.130.t
+	desc = prices.130.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		any_owned_province = {
+			is_state = yes
+			region = low_countries_region
+		}
+		year = 1620
+		NOT = { has_global_flag = tulipmania }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		set_global_flag = tulipmania
+		hidden_effect = { country_event = { id = prices.131 days = 3650 } }
+	}
+	
+	option = {
+		name = prices.130.a
+		custom_tooltip = prices.130.a.tt
+	}
+}
+country_event = {
+	id = prices.131
+	title = prices.131.t
+	desc = prices.131.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	immediate = { hidden_effect = { country_event = { id = prices.132 days = 730 } } }
+	
+	option = {
+		name = prices.131.a
+		change_price = {
+			trade_goods = tulips
+			key = TULIPS_1
+			value = 1
+			duration = -1
+		}
+	}
+}
+country_event = {
+	id = prices.132
+	title = prices.132.t
+	desc = prices.132.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	immediate = { hidden_effect = { country_event = { id = prices.133 days = 730 } } }
+	
+	option = {
+		name = prices.132.a
+		change_price = {
+			trade_goods = tulips
+			key = TULIPS_1
+			value = 3
+			duration = -1
+		}
+	}
+}
+country_event = {
+	id = prices.133
+	title = prices.133.t
+	desc = prices.133.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	immediate = { hidden_effect = { country_event = { id = prices.134 days = 365 } } }
+	
+	option = {
+		name = prices.133.a
+		change_price = {
+			trade_goods = tulips
+			key = TULIPS_1
+			value = 5
+			duration = -1
+		}
+	}
+}
+country_event = {
+	id = prices.134
+	title = prices.134.t
+	desc = prices.134.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	immediate = { hidden_effect = { country_event = { id = prices.135 days = 365 } } }
+	
+	option = {
+		name = prices.134.a
+		change_price = {
+			trade_goods = tulips
+			key = TULIPS_1
+			value = 15
+			duration = -1
+		}
+	}
+}
+country_event = {
+	id = prices.135
+	title = prices.135.t
+	desc = prices.135.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	immediate = { hidden_effect = { country_event = { id = prices.136 days = 180 } } }
+	
+	option = {
+		name = prices.135.a
+		change_price = {
+			trade_goods = tulips
+			key = TULIPS_1
+			value = 25
+			duration = -1
+		}
+	}
+}
+country_event = {
+	id = prices.136
+	title = prices.136.t
+	desc = prices.136.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	immediate = { hidden_effect = { country_event = { id = prices.137 days = 180 } } }
+	
+	option = {
+		name = prices.136.a
+		change_price = {
+			trade_goods = tulips
+			key = TULIPS_1
+			value = 25
+			duration = -1
+		}
+	}
+}
+country_event = {
+	id = prices.137
+	title = prices.137.t
+	desc = prices.137.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	immediate = { hidden_effect = { country_event = { id = prices.138 days = 60 } } }
+	
+	option = {
+		name = prices.137.a
+		change_price = {
+			trade_goods = tulips
+			key = TULIPS_1
+			value = 25
+			duration = -1
+		}
+		hidden_effect = { country_event = { id = prices.138 days = 60 } }
+	}
+}
+country_event = {
+	id = prices.138
+	title = prices.138.t
+	desc = prices.138.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_global_flag = tulipmania
+	}
+	
+	option = {
+		name = prices.138.a
+		custom_tooltip = prices.138.a.tt
+		change_price = {
+			trade_goods = tulips
+			key = TULIPS_2
+			value = -99.99
 			duration = -1
 		}
 	}

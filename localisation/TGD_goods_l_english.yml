@@ -85,7 +85,15 @@
  furniture: "Furniture"
  fruitDESC: "furniture.desc"
  big_ship: "Ship of the Line"
- big_shipDESC: "Ships of the line were the biggest, toughest warships on the seas from the 17th to mid-19th century. In line-of-battle engagements, the heavier ship with the most powerful guns would almost always prevail, and thus ships of the line were feared and respected on the waters."
+ big_shipDESC: "Ships of the line were the biggest, toughest warships on the seas from the 17th to mid-19th century. In line-of-battle engagements, the heavier ship with the most powerful guns would almost always prevail, and thus ships of the line were a necessary component in any professional navy."
+ tulips: "Tulips"
+ tulipsDESC: ""
+ military_texts: "Military Texts"
+ military_textsDESC: ""
+ mirrors: "Mirrors"
+ mirrorsDESC: ""
+ calicoes: "Calicoes"
+ calicoesDESC: ""
  ####################
  ### Price Events ###
  ####################
@@ -166,10 +174,54 @@
  prices.119.t: "The Venetian Monopoly on Glass"
  prices.119.d: "The Glass business in Murano is booming now more than ever, and the always-scheming merchants of Venice have taken this opportunity to sieze a monopoly on the production of Glass. Through protectionism and secrecy is normally unbecoming of any free Republic, this sort of underhanded behavior is all-too-common in Venice, and they have successfully hidden their secrets of glassblowing perfection. Their control of Glass must not last."
  prices.119.a: "From this hour the independence of Venice has ceased to be..."
- prices.119.a.tt: "Until the Venetian Monopoly ends, we can only develop Glass if we are trading in it. The monopoly will be broken once Glass is developed by anyone, or if any one nation owns 5 provinces producing Glass."
+ prices.119.a.tt: "Until the Venetian Monopoly ends, we can only develop Glass if we are trading in it. The monopoly will be broken if Glass is developed by anyone, if any one nation owns 5 provinces producing Glass, or when the year 1515 is reached."
+ MURANO_MONOPOLY: "The Venetian Monopoly"
  prices.120.t: "The End of the Venetian Monopoly on Glass"
  prices.120.d: "The weak, poor, and otherwise inept Venetians have proven unable to retain their monopoly on Glass. Their attempts to stop the flow of information out of Murano have failed, and the secrets of better glassblowing techniques have emerged, primarily concerning the production of mirrors. This is truly a great day for the world market."
- prices.120.a: "Good riddance. That's not how monopolies were supposed to work anyway."
+ prices.120.a: "Good riddance! That's not how monopolies were supposed to work anyway."
+ MURANO_MONOPOLY_ENDED: "Venice Humbled"	
+ prices.121.t: "Growing European Silk Industry"
+ prices.121.d: ""
+ prices.121.a: "I'm certain this bubble will last!"
+ SILK_IN_EUROPE: "Silk in Europe" 
+ prices.122.t: "Dissemination "
+ prices.122.d: ""
+ prices.122.a: ""
+ SILK_DISSEMINATED: "Silk Disseminated"
+ ########
+ #Tulips#
+ ########
+ prices.130.t: "Tulips!"
+ prices.130.d: "Tulips have blah blah..."
+ prices.130.a: "Why would anyone want to buy this? It's just a flower!"
+ prices.130.a.tt: "Tulips are now available to be developed! Their price will begin to climb 10 years from now..."
+ prices.131.t: "Tulips"
+ prices.131.d: "It appears that these unassuming flowers can fetch quite the price at the markets of Amsterdam and Antwerp. Why, we will never know."
+ prices.131.a: "They look pretty! Is that not reason enough?"
+ prices.132.t: "Tulips"
+ prices.132.d: "Tulip farms have been steadily expanding due to the ever-increasing demand. Economists remain baffled."
+ prices.132.a: "Whatever the reason, we will profit!"
+ prices.133.t: "Tulips?"
+ prices.133.d: "Tulips have been exponentially increasing in value over the past couple of years, leading to a boom the likes of which the world has never seen. Prices have skyrocketed and show no signs of slowing."
+ prices.133.a: "One might liken this trend to a large bubble that seems as if it will inflate forever..."
+ prices.134.t: "Tulips!"
+ prices.134.d: "Tulips are more than a flower, they're a way of life down here in the lowlands. Tulip fields as far as the eye can see, market squares packed of sellers and buyers, it's truly a cultural phenomenon."
+ prices.134.a: "...Does that number say 25?"
+ prices.135.t: "Tulips!"
+ prices.135.d: "Citizens have began to worship Tulips in small numbers. Naturally, they must pool together enough money between themselves to afford a single flower to act as an idol, but it's a cost they deem beyond worth it."
+ prices.135.a: "How long will this go on for?"
+ prices.136.t: "TULIPS!"
+ prices.136.d: "T     U L\n\n\nI P     S ."
+ prices.136.a: "Tulips will never experience a loss in value!"
+ prices.137.t: "TULIPS!!!"
+ prices.137.d: "T U L I P S\n\nU\n\nL\n\nI\n\nP\n\nS"
+ prices.137.a: "TULIPS!"
+ prices.138.t: "Tu.. Tulips?"
+ prices.138.d: "For the first time in over a decade, today's Tulips went unsold. It appears that the people have just realized they've been buying flowers this entire time instead of something of actual value. All we can do now is recover from this bursting bubble, and pray we never make such a silly investment again."
+ prices.138.a: "Well, that was fun while it lasted..."
+ prices.138.a.tt: "Tulips are no longer available to develop. Not that you would want to, with their current price..."
+ TULIPS_1: "The Bubble Rises"
+ TULIPS_2: "The Bubble Bursts"
  ################
  ### Tooltips ###
  ################
@@ -246,6 +298,10 @@
  tgd_tradegoodsdevelopment.10.incense.yes: "Incense (§G+§!)"
  tgd_tradegoodsdevelopment.10.furniture.yes: "Furniture (§G+§!)"
  tgd_tradegoodsdevelopment.10.big_ship.yes: "Ships of the Line (§G+§!)"
+ tgd_tradegoodsdevelopment.10.tulips.yes: "Tulips (§G+§!)"
+ tgd_tradegoodsdevelopment.10.military_texts.yes: "Military Texts (§G+§!)"
+ tgd_tradegoodsdevelopment.10.mirrors.yes: "Mirrors (§G+§!)"
+ tgd_tradegoodsdevelopment.10.calicoes.yes: "Calicoes (§G+§!)"
  ###################################################################
  tgd_tradegoodsdevelopment.10.olives.no: "Olives (§R-§!)"
  tgd_tradegoodsdevelopment.10.potatoes.no: "Potatoes (§R-§!)"
@@ -296,6 +352,10 @@
  tgd_tradegoodsdevelopment.10.incense.no: "Incense (§R-§!)"
  tgd_tradegoodsdevelopment.10.furniture.no: "Furniture (§R-§!)"
  tgd_tradegoodsdevelopment.10.big_ship.no: "Ships of the Line (§R-§!)"
+ tgd_tradegoodsdevelopment.10.tulips.no: "Tulips (§R-§!)"
+ tgd_tradegoodsdevelopment.10.military_texts.no: "Military Texts (§R-§!)"
+ tgd_tradegoodsdevelopment.10.mirrors.no: "Mirrors (§R-§!)"
+ tgd_tradegoodsdevelopment.10.calicoes.no: "Calicoes (§R-§!)"
  ###############
  tgd_tradegoodsdevelopment.100.t: "Developing Goods in [Root.GetName]"
  tgd_tradegoodsdevelopment.100.back: "I've changed my mind, I would like to develop something else."
@@ -348,6 +408,10 @@
  tgd_tradegoodsdevelopment.155.d: "Would you like to develop Incense in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
  tgd_tradegoodsdevelopment.156.d: "Would you like to develop Furniture in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
  tgd_tradegoodsdevelopment.157.d: "Would you like to develop Ships of the Line in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
+ tgd_tradegoodsdevelopment.158.d: "Would you like to develop Tulips in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
+ tgd_tradegoodsdevelopment.159.d: "Would you like to develop Military Texts in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
+ tgd_tradegoodsdevelopment.160.d: "Would you like to develop Mirrors in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
+ tgd_tradegoodsdevelopment.161.d: "Would you like to develop Calicoes in [Root.GetName]? The total cost will be 50 Ducats, and 10 of each Monarch Point.*\n\n*NOTE that this cost may be inaccurate - these events are WIP."
  ####################
  tgd_tradegoodsdevelopment.200.t: "Development Complete in [Root.GetName]"
  tgd_tradegoodsdevelopment.200.d: "After many long and tiring half-days of back-breaking bureaucratic labor, state administrators in [Root.GetName ] have finally enforced our whimsical demands on the local producers, shifting the entire industrial output to the trade good that we arbitarily chose."
@@ -399,13 +463,12 @@
  tgd_tradegoodsdevelopment.253.a: "Ooh, shiny!"
  tgd_tradegoodsdevelopment.254.a: "Now why on earth did we spend money on this..."
  tgd_tradegoodsdevelopment.255.a: "Smokin'!"
- tgd_tradegoodsdevelopment.256.a: "Wonderful"
+ tgd_tradegoodsdevelopment.256.a: "Wonderful!"
  tgd_tradegoodsdevelopment.257.a: "A port worthy of our glorious nation!"
- 
- 
- 
- 
- 
+ tgd_tradegoodsdevelopment.258.a: "I'm sure this is a great long-term investment..."
+ tgd_tradegoodsdevelopment.259.a: "Drilliant!"
+ tgd_tradegoodsdevelopment.260.a: "Reflecting on this decision, we made the clear choice."
+ tgd_tradegoodsdevelopment.261.a: "Take THAT, cloth!"
  tgd_tradegoodsdevelopment.10.nevermind: "I don't want to develop anything!"
  #############
  #Prospecting#

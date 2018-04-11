@@ -712,6 +712,7 @@ textile = {
 		dyes
 		uniforms
 		leather
+		calicoes
 	}
 	onmap = yes
 	
@@ -766,6 +767,7 @@ farm_estate = {
 		cheese
 		horses
 		beer
+		tulips
 	}
 	onmap = yes
 	
@@ -785,6 +787,8 @@ mills = {
 		marble
 		optics
 		furniture
+		military_texts
+		mirrors
 	}
 	onmap = yes
 	

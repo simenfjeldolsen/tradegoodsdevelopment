@@ -52,6 +52,10 @@ country_event = {
 		country_event = { id = tgd_info.23 }
 	}
 	option = {
+		name = tgd_info.2.calicoes
+		country_event = { id = tgd_info.61 }
+	}
+	option = {
 		name = tgd_info.2.cheese
 		country_event = { id = tgd_info.3 }
 	}
@@ -164,6 +168,14 @@ country_event = {
 		country_event = { id = tgd_info.22 }
 	}
 	option = {
+		name = tgd_info.2.military_texts
+		country_event = { id = tgd_info.59 }
+	}
+	option = {
+		name = tgd_info.2.mirrors
+		country_event = { id = tgd_info.60 }
+	}
+	option = {
 		name = tgd_info.2.munitions
 		country_event = { id = tgd_info.24 }
 	}
@@ -238,6 +250,10 @@ country_event = {
 	option = {
 		name = tgd_info.2.tropical_wood
 		country_event = { id = tgd_info.40 }
+	}
+	option = {
+		name = tgd_info.2.tulips
+		country_event = { id = tgd_info.58 }
 	}
 	option = {
 		name = tgd_info.2.uniforms
@@ -1191,6 +1207,66 @@ country_event = {
 		name = tgd_info.exit
 	}
 }
+country_event = {
+	id = tgd_info.58
+	title = tgd_info.58.t
+	desc = tgd_info.58.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.back
+		country_event = { id = tgd_info.2 }
+	}
+	option = {
+		name = tgd_info.exit
+	}
+}
+country_event = {
+	id = tgd_info.59
+	title = tgd_info.59.t
+	desc = tgd_info.59.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.back
+		country_event = { id = tgd_info.2 }
+	}
+	option = {
+		name = tgd_info.exit
+	}
+}
+country_event = {
+	id = tgd_info.60
+	title = tgd_info.60.t
+	desc = tgd_info.60.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.back
+		country_event = { id = tgd_info.2 }
+	}
+	option = {
+		name = tgd_info.exit
+	}
+}
+country_event = {
+	id = tgd_info.61
+	title = tgd_info.61.t
+	desc = tgd_info.61.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = tgd_info.back
+		country_event = { id = tgd_info.2 }
+	}
+	option = {
+		name = tgd_info.exit
+	}
+}
 
 #prospecting
 
@@ -1431,206 +1507,5 @@ country_event = {
 	}
 	option = {
 		name = tgd_info.exit
-	}
-}
-
-province_event = {
-	id = tgd_info.300
-	title = tgd_info.300.t
-	desc = tgd_info.300.d
-	picture = TRADEGOODS_eventPicture
-
-	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			remove_building = goodstest
-
-			owner = { every_owned_province = { remove_building = goodstest } }
-		}
-	}
-	option = {
-		name = tgd_info.300.horses
-		trigger = { horses_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.beer
-		trigger = { beer_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.tar
-		trigger = { tar_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.olives
-		trigger = { olives_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.cheese
-		trigger = { cheese_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.vanilla
-		trigger = { vanilla_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.glass
-		trigger = { glass_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.paper
-		trigger = { paper_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.steel
-		trigger = { steel_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.citrus
-		trigger = { citrus_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.munitions
-		trigger = { munitions_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.potatoes
-		trigger = { potatoes_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.rum
-		trigger = { rum_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.uniforms
-		trigger = { uniforms_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.marble
-		trigger = { marble_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.machinery
-		trigger = { machinery_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.bronze
-		trigger = { bronze_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.cinnamon
-		trigger = { cinnamon_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.exotic_spices
-		trigger = { exotic_spices_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.brass
-		trigger = { brass_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.gunpowder
-		trigger = { gunpowder_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.optics
-		trigger = { optics_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.leather
-		trigger = { leather_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.cocoa
-		trigger = { cocoa_dev = yes }	
-	}
-	option = {
-		name = tgd_info.300.chinaware
-		trigger = { chinaware_dev = yes }	
-	}
-	option = {
-		name = tgd_info.300.cloth
-		trigger = { cloth_dev = yes }	
-	}
-	option = {
-		name = tgd_info.300.coffee
-		trigger = { coffee_dev = yes }	
-	}
-	option = {
-		name = tgd_info.300.cotton
-		trigger = { cotton_dev = yes }	
-	}
-	option = {
-		name = tgd_info.300.dyes
-		trigger = { dyes_dev = yes }	
-	}
-	option = {
-		name = tgd_info.300.fish
-		trigger = { fish_dev = yes }	
-	}
-	option = {
-		name = tgd_info.300.fur
-		trigger = { fur_dev = yes }	
-	}
-	option = {
-		name = tgd_info.300.grain
-		trigger = { grain_dev = yes }	
-	}
-	option = {
-		name = tgd_info.300.ivory
-		trigger = { ivory_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.naval_supplies
-		trigger = { naval_supplies_dev = yes }	
-	}
-	option = {
-		name = tgd_info.300.salt
-		trigger = { salt_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.silk
-		trigger = { silk_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.slaves
-		trigger = { slaves_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.spices
-		trigger = { spices_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.sugar
-		trigger = { sugar_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.tea
-		trigger = { tea_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.tobacco
-		trigger = { tobacco_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.tropical_wood
-		trigger = { tropical_wood_dev = yes }	
-	}
-	option = {
-		name = tgd_info.300.wine
-		trigger = { wine_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.wool
-		trigger = { wool_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.livestock
-		trigger = { livestock_dev = yes }
-	}
-	option = {
-		name = tgd_info.300.incense
-		trigger = { incense_dev = yes }
 	}
 }
