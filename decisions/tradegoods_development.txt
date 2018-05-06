@@ -84,12 +84,14 @@ country_decisions = {
 			random_owned_province = {
 				limit = { has_building = prospecting }
 				custom_tooltip = prospecting_fire
-				hidden_effect = { province_event = { id = tgd_tradegoodsdevelopment.13 } }
+			}
+			hidden_effect = {
+				change_variable = { which = ores_variable value = 1 }
+				country_event = { id = tgd_tradegoodsdevelopment.20 }
 			}
 		}
 		ai_will_do = {
 			factor = 0
 		}
 	}
-
 }
