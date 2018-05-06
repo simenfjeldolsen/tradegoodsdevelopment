@@ -367,8 +367,6 @@ coffee_dev = {
 	development = 10
 	NOT = {
 		has_terrain = savannah
-		has_terrain = desert
-		has_terrain = coastal_desert
 	}
 	OR = {
 		continent = south_america
@@ -394,8 +392,13 @@ cotton_dev = {
 }
 dyes_dev = {
 	NOT = { trade_goods = dyes }
-	development = 16
-	continent = asia
+	OR = {
+		has_global_flag = synthetic_dyes
+		AND = {
+			development = 16
+			continent = asia
+		}
+	}
 }
 fish_dev = {
 	NOT = { trade_goods = fish }
