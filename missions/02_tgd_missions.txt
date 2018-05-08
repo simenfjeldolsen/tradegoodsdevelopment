@@ -96,7 +96,7 @@ tgd_slot_2 = {
 		icon = mission_rb_prospect_for_coal
 		required_missions = { develop_a_trade_good }
 		trigger = {
-			is_variable_equal = {
+			check_variable = {
 				which = number_of_times_developed
 				value = 10
 			}
