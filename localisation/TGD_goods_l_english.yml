@@ -468,7 +468,7 @@
  tgd_tradegoodsdevelopment.13.d: "It has been some time now, and our mining operation in [Root.GetName] should have found results by now. We have sent for a report, and are expecting a reply any day now."
  tgd_tradegoodsdevelopment.13.prospectstart: "Let us hope they'll find something of value..."
  tgd_tradegoodsdevelopment.13.error: "If you're seeing this, either something is broken or you built a mine where you weren't supposed to be able to."
- tgd_tradegoodsdevelopment.14.a: "Keep searching! Dig deeper!"
+ tgd_tradegoodsdevelopment.13.a: "Keep searching! Dig deeper!"
  tgd_tradegoodsdevelopment.15.a: "We will focus our efforts on extracting Iron."
  tgd_tradegoodsdevelopment.16.a: "We will extract the Copper present here."
  tgd_tradegoodsdevelopment.17.a: "We need the Sulfur found here for Gunpower."

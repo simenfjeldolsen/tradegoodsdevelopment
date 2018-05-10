@@ -1510,7 +1510,6 @@ province_event = {
 	immediate = {
 		hidden_effect = {
 			remove_building = prospecting
-			add_province_modifier = prospecting
 		
 			remove_province_modifier = stora_kopparberget_modifier
 			remove_province_modifier = granary_of_the_mediterranean
@@ -1531,6 +1530,8 @@ province_event = {
 			#remove_province_modifier = hab_schwaz_mine # if you remove the gold for another metal you deserve the goods bonus tbh
 			remove_province_modifier = silk_market
 			remove_province_modifier = vvv
+			
+			
 			owner = { every_owned_province = { remove_building = prospecting } }
 			add_province_modifier = { name = "prospecting" duration = -1 }
 		}
@@ -1538,50 +1539,21 @@ province_event = {
 	
 	option = {
 		name = tgd_tradegoodsdevelopment.13.prospectstart
-		trigger = { mountain_prospecting_1 = yes }
-		custom_tooltip = mountain_prospecting_tooltip1
-		owner = { add_treasury = -100 }
-		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.13.prospectstart
-		trigger = { mountain_prospecting_2 = yes }
-		custom_tooltip = mountain_prospecting_tooltip2
-		owner = { add_treasury = -100 }
-		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.13.prospectstart
-		trigger = { forest_prospecting_1 = yes }
-		custom_tooltip = forest_prospecting_tooltip1
-		owner = { add_treasury = -100 }
-		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.13.prospectstart
-		trigger = { forest_prospecting_2 = yes }
-		custom_tooltip = forest_prospecting_tooltip2
-		owner = { add_treasury = -100 }
-		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.13.prospectstart
-		trigger = { desert_prospecting_1 = yes }
-		custom_tooltip = desert_prospecting_tooltip1
-		owner = { add_treasury = -100 }
-		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
-	}
-	option = {
-		name = tgd_tradegoodsdevelopment.13.prospectstart
-		trigger = { desert_prospecting_2 = yes }
-		custom_tooltip = desert_prospecting_tooltip2
+		if = {
+			limit = { mountain_prospecting1 = yes }
+			custom_tooltip = mountain_prospecting_tooltip1
+		}
+		if = {
+			limit = {forest_prospecting1 = yes }
+			custom_tooltip = forest_prospecting_tooltip1
+		}
 		owner = { add_treasury = -100 }
 		owner = { add_adm_power = -10 add_mil_power = -10 add_dip_power = -10 }
 	}
 	option = {
 		name = tgd_tradegoodsdevelopment.13.error
 		trigger = {
-			OR = {
+			AND = {
 				mountain_prospecting_1 = no
 				mountain_prospecting_2 = no
 				forest_prospecting_1 = no
@@ -1601,7 +1573,6 @@ province_event = { #iron
 	
 	trigger = {
 		has_province_modifier = prospecting
-		has_building = prospecting
 	}
 
 	mean_time_to_happen = {
@@ -1726,7 +1697,7 @@ province_event = { #iron
 		remove_province_modifier = gemsvein
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.14.a
+		name = tgd_tradegoodsdevelopment.13.a
 		owner = { treasury -20 adm -10 }
 	}
 }
@@ -1738,7 +1709,6 @@ province_event = { #copper
 	
 	trigger = {
 		has_province_modifier = prospecting
-		has_building = prospecting
 	}
 
 	mean_time_to_happen = {
@@ -1864,7 +1834,7 @@ province_event = { #copper
 		remove_province_modifier = gemsvein
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.15.a
+		name = tgd_tradegoodsdevelopment.13.a
 		owner = { treasury -20 adm -10 }
 	}
 	
@@ -1879,7 +1849,6 @@ province_event = { #sulfur
 	
 	trigger = {
 		has_province_modifier = prospecting
-		has_building = prospecting
 	}
 
 	mean_time_to_happen = {
@@ -2002,7 +1971,7 @@ province_event = { #sulfur
 		remove_province_modifier = gemsvein
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.15.a
+		name = tgd_tradegoodsdevelopment.13.a
 		owner = { treasury -20 adm -10 }
 	}
 	
@@ -2017,7 +1986,6 @@ province_event = { #zinc
 	
 	trigger = {
 		has_province_modifier = prospecting
-		has_building = prospecting
 		mountain_prospecting_1 = no
 		forest_prospecting_1 = no
 		desert_prospecting_1 = no
@@ -2131,7 +2099,7 @@ province_event = { #zinc
 		remove_province_modifier = gemsvein
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.15.a
+		name = tgd_tradegoodsdevelopment.13.a
 		owner = { treasury -20 adm -10 }
 	}
 }
@@ -2143,7 +2111,6 @@ province_event = { #lead
 	
 	trigger = {
 		has_province_modifier = prospecting
-		has_building = prospecting
 		mountain_prospecting_1 = no
 		forest_prospecting_1 = no
 		desert_prospecting_1 = no
@@ -2260,7 +2227,7 @@ province_event = { #lead
 		remove_province_modifier = gemsvein
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.15.a
+		name = tgd_tradegoodsdevelopment.13.a
 		owner = { treasury -20 adm -10 }
 	}
 }
@@ -2272,7 +2239,6 @@ province_event = { #gold
 	
 	trigger = {
 		has_province_modifier = prospecting
-		has_building = prospecting
 	}
 
 	mean_time_to_happen = {
@@ -2398,7 +2364,7 @@ province_event = { #gold
 		remove_province_modifier = gemsvein
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.15.a
+		name = tgd_tradegoodsdevelopment.13.a
 		owner = { treasury -20 adm -10 }
 	}
 }
@@ -2410,7 +2376,6 @@ province_event = { #gems
 	
 	trigger = {
 		has_province_modifier = prospecting
-		has_building = prospecting
 	}
 
 	mean_time_to_happen = {
@@ -2536,7 +2501,7 @@ province_event = { #gems
 		remove_province_modifier = gemsvein
 	}
 	option = {
-		name = tgd_tradegoodsdevelopment.15.a
+		name = tgd_tradegoodsdevelopment.13.a
 		owner = { treasury -20 adm -10 }
 	}
 }
@@ -2546,11 +2511,8 @@ province_event = { #nothing
 	desc = tgd_tradegoodsdevelopment.22.d
 	picture = TRADEGOODS_eventPicture
 	
-	is_triggered_only = yes
-	
 	trigger = {
 		has_province_modifier = prospecting
-		has_building = prospecting
 		mountain_prospecting_2 = no
 		forest_prospecting_2 = no
 		desert_prospecting_2 = no
