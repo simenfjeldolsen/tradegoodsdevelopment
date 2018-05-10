@@ -586,12 +586,6 @@ furniture_dev = {
 	development = 28
 	renaissance = 100
 }
-big_ship_dev = {
-	NOT = { trade_goods = big_ship }
-	has_port = yes
-	development = 40
-	owner = { dip_tech = 20 }
-}
 tulip_dev = {
 	has_global_flag = tulipmania
 	OR = {
@@ -599,12 +593,6 @@ tulip_dev = {
 		terrain = grasslands
 		terrain = marsh
 	}
-}
-military_texts_dev = {
-	owner = { army_professionalism = 0.25 }
-	owner = { mil_tech = 15 }
-	trade_goods = paper
-	has_building = fort_16th
 }
 mirrors_dev = {
 }

@@ -77,7 +77,7 @@ country_event = {
 					share = 5
 				}
 			}
-			year = 1630
+			is_year = 1630
 		}
 		NOT = { has_global_flag = europeans_in_china_happened }
 	}
@@ -3362,7 +3362,7 @@ country_event = {
 	trigger = {
 		OR = {
 			112 = { has_province_modifier = ven_murano_glass_industry }
-			year = 1460
+			is_year = 1460
 		}
 		glass = 1
 		NOT = { has_global_flag = murano_monopoly_started }
@@ -3424,7 +3424,7 @@ country_event = {
 				trade_goods = glass
 				value = yes
 			}
-			year = 1515
+			is_year = 1515
 		}
 		has_global_flag = murano_monopoly_started
 		glass = 1
@@ -3517,7 +3517,7 @@ country_event = {
 			AND = {
 				capital_scope = { continent = europe }
 				silk = 1
-				year = 1520
+				is_year = 1520
 			}
 			AND = {
 				silk = 1
@@ -3533,7 +3533,7 @@ country_event = {
 						}
 					}
 				}
-				year = 1500
+				is_year = 1500
 			}
 		}
 		has_global_flag = silk_in_europe
@@ -3582,8 +3582,8 @@ country_event = {
 		hidden_effect = { country_event = prices.124 days = 3650 }
 		change_price = {
 			trade_goods = military_texts
-			key = MILITARY_TEXTS_WAR
-			value = 0.50
+			key = PAPER
+			value = 0.20
 			duration = 3650
 		}
 	}
@@ -3608,9 +3608,9 @@ country_event = {
 }
 #Ban Dyed Fabrics
 country_event = {
-	id = prices.124
-	title = prices.124.t
-	desc = prices.124.d
+	id = prices.125
+	title = prices.125.t
+	desc = prices.125.d
 	picture = TRADEGOODS_eventPicture
 
 	fire_only_once = yes
@@ -3634,7 +3634,7 @@ country_event = {
 	}
 	
 	option = {
-		name = prices.124.a
+		name = prices.125.a
 		change_price = {
 			trade_goods = silk
 			key = BAN_DYED_FABRIC
@@ -3679,7 +3679,7 @@ country_event = {
 			is_state = yes
 			region = low_countries_region
 		}
-		year = 1620
+		is_year = 1620
 		NOT = { has_global_flag = tulipmania }
 	}
 	

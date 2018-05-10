@@ -6,6 +6,9 @@ recently_changed_goods_timer = {
 developinggoods = {
 	trade_goods_size_modifier = -1
 }
+prospecting = {
+	trade_goods_size_modifier = -1
+}
 
 # Event Modifiers
 

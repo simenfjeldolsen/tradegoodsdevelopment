@@ -2286,20 +2286,9 @@ furniture = {
 	province = { province_trade_power_value = 2 }
 	chance = ( factor = 0 }
 }
-big_ship = {
-	color = { 0.8 0.4 0.6 }
-	modifier = { heavy_ship_power = 0.15 }
-	province = { naval_forcelimit = 5 ship_recruit_speed = -0.33 }
-	chance = { factor = 0 }
-}
 tulips = {
 	color = { 0.9 0.7 0.7 }
 	chance = { factor = 0 }
-}
-military_texts = {
-	color = { 0.4 0.2 0.3 }
-	modifier = { drill_gain_modifier = 0.5 }
-	province = { defensiveness = 0.20 }
 }
 mirrors = {
 	color = { 0.8 0.9 0.85 }

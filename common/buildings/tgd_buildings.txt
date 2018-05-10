@@ -5,11 +5,7 @@ tradegoodsdevelopment = {
 	time = 0
 
 	trigger = {
-		owner = {
-			NOT = {
-				any_owned_province = { has_province_modifier = developinggoods }
-			}
-		}
+		owner = { NOT = { any_owned_province = { has_province_modifier = developinggoods } } }
 	}
 
 	one_per_country = yes
@@ -35,6 +31,7 @@ prospecting = {
 			desert_prospecting_1 = yes
 			desert_prospecting_2 = yes
 		}
+		owner = { NOT = { any_owned_province = { has_province_modifier = prospecting } } }
 	}
 
 	one_per_country = yes

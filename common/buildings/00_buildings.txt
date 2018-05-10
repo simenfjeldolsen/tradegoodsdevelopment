@@ -649,7 +649,6 @@ wharf = {
 		fish
 		salt
 		tar
-		big_ship
 	}
 	onmap = yes
 	
@@ -787,7 +786,6 @@ mills = {
 		marble
 		optics
 		furniture
-		military_texts
 		mirrors
 	}
 	onmap = yes
